@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소비 유형 테스트</title>
+    <style>
+:root {
+  color-scheme: light;
+  --ink: #18181b;
+  --muted: #66616c;
+  --line: #e8e0d8;
+  --paper: #fffdf8;
+  --accent: #ff4f79;
+  --accent-2: #18a999;
+  --accent-3: #ffb703;
+  --accent-4: #6c63ff;
+  --shadow: 0 22px 70px rgba(31, 24, 18, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family:
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(255, 79, 121, 0.16), transparent 34%),
+    linear-gradient(225deg, rgba(24, 169, 153, 0.16), transparent 30%),
+    #fff7ec;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.shell {
+  width: min(100%, 520px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 28px 18px;
+  display: grid;
+  align-items: center;
+}
+
+.intro,
+.quiz,
+.result {
+  width: 100%;
+}
+
+.intro {
+  padding: 42px 0 34px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  height: 36px;
+  padding: 0 14px 0 8px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(24, 24, 27, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  color: #3b343a;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-3);
+  color: #4a2f00;
+  font-weight: 900;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  max-width: 440px;
+  font-size: clamp(42px, 13vw, 68px);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.intro p {
+  max-width: 330px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.primary-button,
+.ghost-button {
+  min-height: 54px;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-weight: 900;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.primary-button {
+  margin-top: 34px;
+  width: 100%;
+  background: var(--ink);
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(24, 24, 27, 0.18);
+}
+
+.ghost-button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--ink);
+  border: 1px solid rgba(24, 24, 27, 0.12);
+}
+
+.primary-button:hover,
+.ghost-button:hover {
+  transform: translateY(-2px);
+}
+
+.topbar {
+  display: grid;
+  gap: 20px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.quiz h2 {
+  font-size: 30px;
+  line-height: 1.16;
+  word-break: keep-all;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(24, 24, 27, 0.08);
+}
+
+.progress span {
+  display: block;
+  width: 33.333%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent), var(--accent-3));
+  transition: width 0.25s ease;
+}
+
+.answers {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.answer-button {
+  min-height: 116px;
+  padding: 22px 20px;
+  border: 2px solid rgba(24, 24, 27, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(41, 34, 24, 0.08);
+}
+
+.answer-button:hover,
+.answer-button:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.answer-kicker {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.answer-text {
+  display: block;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+
+.result {
+  align-self: start;
+  padding: 10px 0 28px;
+}
+
+.result-card {
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.result-copy {
+  padding: 28px 24px 16px;
+}
+
+.result-copy h2 {
+  font-size: clamp(30px, 9vw, 46px);
+  line-height: 1.03;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+
+.result-copy p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.visual-row {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px 8px;
+}
+
+.mascot {
+  position: relative;
+  min-height: 190px;
+}
+
+.mascot-face {
+  position: absolute;
+  left: 50%;
+  top: 42px;
+  width: 122px;
+  height: 122px;
+  transform: translateX(-50%) rotate(-7deg);
+  border: 4px solid #18181b;
+  border-radius: 38% 62% 46% 54%;
+  background: linear-gradient(145deg, #ffde59, #ff934f);
+  box-shadow: 10px 12px 0 rgba(24, 24, 27, 0.12);
+}
+
+.eye {
+  position: absolute;
+  top: 43px;
+  width: 14px;
+  height: 20px;
+  border-radius: 50%;
+  background: #18181b;
+}
+
+.eye.left {
+  left: 34px;
+}
+
+.eye.right {
+  right: 34px;
+}
+
+.mouth {
+  position: absolute;
+  left: 42px;
+  top: 77px;
+  width: 38px;
+  height: 17px;
+  border-bottom: 5px solid #18181b;
+  border-radius: 50%;
+}
+
+.coin {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #18181b;
+  border-radius: 50%;
+  background: #ffe15d;
+  font-weight: 900;
+  box-shadow: 5px 5px 0 rgba(24, 24, 27, 0.12);
+}
+
+.coin-a {
+  left: 6px;
+  top: 22px;
+}
+
+.coin-b {
+  right: 4px;
+  bottom: 20px;
+}
+
+.chart-wrap {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  min-width: 0;
+}
+
+.pie {
+  width: min(100%, 220px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 18px 40px rgba(24, 24, 27, 0.14);
+}
+
+.chart-center {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 45%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--paper);
+  text-align: center;
+  box-shadow: inset 0 0 0 1px rgba(24, 24, 27, 0.08);
+}
+
+.chart-center strong {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.chart-center span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 8px 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 900;
+  gap: 8px;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.swatch {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+
+.legend strong {
+  flex: 0 0 auto;
+}
+
+.description,
+.share-line {
+  margin: 18px 24px 0;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.description {
+  color: #3d3940;
+  font-size: 16px;
+}
+
+.share-line {
+  margin-bottom: 24px;
+  padding: 15px 16px;
+  border-radius: 8px;
+  background: #18181b;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.actions .primary-button,
+.actions .ghost-button {
+  margin-top: 0;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 5;
+  width: min(90vw, 360px);
+  padding: 13px 16px;
+  border-radius: 8px;
+  background: #18181b;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .shell {
+    padding: 22px 14px;
+  }
+
+  .visual-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mascot {
+    min-height: 155px;
+  }
+
+  .mascot-face {
+    top: 18px;
+  }
+
+  .coin-b {
+    right: 28px;
+  }
+
+  .legend {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro" id="intro">
+        <div class="brand">
+          <span class="brand-mark">₩</span>
+          <span>소비 유형 테스트</span>
+        </div>
+        <h1>내 통장을 털어가는 소비 캐릭터는?</h1>
+        <p>8개만 고르면 예상 소비 비율과 캐릭터가 바로 나와요.</p>
+        <button class="primary-button" id="startButton" type="button">
+          테스트 시작
+        </button>
+      </section>
+
+      <section class="quiz is-hidden" id="quiz" aria-live="polite">
+        <div class="topbar">
+          <div>
+            <span class="eyebrow" id="questionCount">Q1 / 8</span>
+            <h2 id="questionTitle"></h2>
+          </div>
+          <div class="progress" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+        <div class="answers" id="answers"></div>
+      </section>
+
+      <section class="result is-hidden" id="result">
+        <div class="result-card" id="shareCard">
+          <div class="result-copy">
+            <span class="eyebrow">소비 캐릭터</span>
+            <h2 id="resultTitle"></h2>
+            <p id="resultSubtitle"></p>
+          </div>
+
+          <div class="visual-row">
+            <div class="mascot" aria-hidden="true">
+              <div class="mascot-face">
+                <span class="eye left"></span>
+                <span class="eye right"></span>
+                <span class="mouth"></span>
+              </div>
+              <div class="coin coin-a">₩</div>
+              <div class="coin coin-b">₩</div>
+            </div>
+
+            <div class="chart-wrap">
+              <div class="pie" id="pieChart"></div>
+              <div class="chart-center">
+                <strong id="topPercent"></strong>
+                <span id="topLabel"></span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="legend" id="legend"></ul>
+
+          <p class="description" id="resultDescription"></p>
+          <p class="share-line" id="shareLine"></p>
+        </div>
+
+        <div class="actions">
+          <button class="primary-button" id="shareButton" type="button">
+            스토리에 공유하기
+          </button>
+          <button class="ghost-button" id="retryButton" type="button">
+            다시 해보기
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script>
+const questions = [
+  {
+    title: "월급이나 용돈 들어오면 가장 먼저 하는 건?",
+    answers: [
+      {
+        key: "A",
+        label: "장바구니에 넣어둔 거 바로 결제한다",
+        scores: { "쇼핑": 4, "감정소비": 1 },
+      },
+      {
+        key: "B",
+        label: "이번 달 먹고 싶던 맛집부터 잡는다",
+        scores: { "식비": 4, "감정소비": 1 },
+      },
+    ],
+  },
+  {
+    title: "이번 주 배달 앱 주문 횟수는?",
+    answers: [
+      {
+        key: "A",
+        label: "0~1회, 거의 안 시켰다",
+        scores: { "절약": 3, "기타": 1 },
+      },
+      {
+        key: "B",
+        label: "2회 이상, 배달 없인 못 산다",
+        scores: { "배달": 4, "식비": 1 },
+      },
+    ],
+  },
+  {
+    title: "스트레스 받았을 때 나는?",
+    answers: [
+      {
+        key: "A",
+        label: "기분전환 소비부터 한다",
+        scores: { "감정소비": 4, "쇼핑": 1, "식비": 1 },
+      },
+      {
+        key: "B",
+        label: "침대에 누워 영상 보면서 버틴다",
+        scores: { "절약": 3, "기타": 2 },
+      },
+    ],
+  },
+  {
+    title: "이번 달 가장 많이 새는 돈은?",
+    answers: [
+      {
+        key: "A",
+        label: "커피, 디저트, 간식",
+        scores: { "식비": 3, "감정소비": 1 },
+      },
+      {
+        key: "B",
+        label: "옷, 화장품, 소품",
+        scores: { "쇼핑": 3, "감정소비": 1 },
+      },
+    ],
+  },
+  {
+    title: "결제할 때 나는?",
+    answers: [
+      {
+        key: "A",
+        label: "할인이나 쿠폰 있으면 바로 흔들린다",
+        scores: { "쇼핑": 2, "배달": 1, "감정소비": 1 },
+      },
+      {
+        key: "B",
+        label: "필요하면 정가도 그냥 산다",
+        scores: { "기타": 2, "감정소비": 1 },
+      },
+    ],
+  },
+  {
+    title: "친구 약속이 잡히면?",
+    answers: [
+      {
+        key: "A",
+        label: "맛집이나 카페부터 검색한다",
+        scores: { "식비": 3, "감정소비": 1 },
+      },
+      {
+        key: "B",
+        label: "교통비랑 예산부터 생각한다",
+        scores: { "절약": 4, "기타": 1 },
+      },
+    ],
+  },
+  {
+    title: "월말의 나는?",
+    answers: [
+      {
+        key: "A",
+        label: "카드값 보고 잠깐 기억을 잃는다",
+        scores: { "감정소비": 3, "쇼핑": 1, "배달": 1 },
+      },
+      {
+        key: "B",
+        label: "그래도 대충 예상 범위 안이다",
+        scores: { "절약": 3, "기타": 2 },
+      },
+    ],
+  },
+  {
+    title: "돈 아끼려고 가장 먼저 줄이는 건?",
+    answers: [
+      {
+        key: "A",
+        label: "배달이나 외식",
+        scores: { "식비": 2, "배달": 3, "절약": 1 },
+      },
+      {
+        key: "B",
+        label: "쇼핑이나 취미템",
+        scores: { "쇼핑": 3, "기타": 2, "절약": 1 },
+      },
+    ],
+  },
+];
+
+const colors = {
+  "식비": "#ff4f79",
+  "쇼핑": "#6c63ff",
+  "배달": "#18a999",
+  "기타": "#ffb703",
+};
+
+const resultTypes = {
+  "쇼핑": {
+    title: "장바구니 폭주형 소비요정",
+    subtitle: "결제 전 고민은 길지만, 결제 버튼 앞에서는 손가락이 누구보다 빠릅니다.",
+    description:
+      "예쁜 것, 갖고 싶던 것, 지금 사면 행복할 것 같은 것에 약합니다. 참는 시간은 길어도 한 번 열리면 장바구니가 꽤 과감해져요.",
+    share: "나는 장바구니 폭주형 소비요정 나왔다. 너는?",
+  },
+  "식비": {
+    title: "맛집 원정대장",
+    subtitle: "이번 달 행복은 예약 가능한 맛집 순서대로 옵니다.",
+    description:
+      "좋은 한 끼가 주는 회복감을 잘 아는 타입이에요. 맛집, 디저트, 분위기 좋은 카페에 쓰는 돈은 아깝지 않게 느껴집니다.",
+    share: "나는 맛집 원정대장 나왔다. 너는?",
+  },
+  "배달": {
+    title: "배달 VIP 먹방요정",
+    subtitle: "냉장고보다 배달 앱 추천 메뉴를 더 자주 봅니다.",
+    description:
+      "먹는 행복이 확실한 타입이에요. 피곤한 날에는 요리보다 주문 버튼이 훨씬 현실적이고, 빠른 위로처럼 느껴집니다.",
+    share: "나는 배달 VIP 먹방요정 나왔다. 너는?",
+  },
+  "감정소비": {
+    title: "감정결제 스나이퍼",
+    subtitle: "기분이 흔들리면 결제창을 정확히 조준합니다.",
+    description:
+      "스트레스와 보상 심리에 소비가 연결되기 쉬운 타입이에요. 하루를 버틴 나에게 주는 선물이라는 명분이 꽤 강합니다.",
+    share: "나는 감정결제 스나이퍼 나왔다. 너는?",
+  },
+  "절약": {
+    title: "침대 위 무소비 관찰자",
+    subtitle: "돈을 안 쓰는 것 같지만, 소소한 결제가 은근히 쌓입니다.",
+    description:
+      "큰 소비에는 신중하고 예산 감각도 있는 편이에요. 다만 작은 간식, 구독, 편의 소비가 조용히 새는 구멍이 될 수 있습니다.",
+    share: "나는 침대 위 무소비 관찰자 나왔다. 너는?",
+  },
+  "기타": {
+    title: "생활비 밸런스러",
+    subtitle: "한쪽으로 폭주하기보다 여기저기 조금씩 쓰는 타입입니다.",
+    description:
+      "크게 낭비하는 느낌은 적지만, 여러 카테고리에서 조금씩 새는 돈이 생길 수 있어요. 전체 흐름을 보면 패턴이 더 잘 보입니다.",
+    share: "나는 생활비 밸런스러 나왔다. 너는?",
+  },
+};
+
+const chartLabels = ["식비", "쇼핑", "배달", "기타"];
+
+const state = {
+  current: 0,
+  selected: [],
+};
+
+const intro = document.querySelector("#intro");
+const quiz = document.querySelector("#quiz");
+const result = document.querySelector("#result");
+const startButton = document.querySelector("#startButton");
+const questionCount = document.querySelector("#questionCount");
+const questionTitle = document.querySelector("#questionTitle");
+const progressBar = document.querySelector("#progressBar");
+const answers = document.querySelector("#answers");
+const resultTitle = document.querySelector("#resultTitle");
+const resultSubtitle = document.querySelector("#resultSubtitle");
+const resultDescription = document.querySelector("#resultDescription");
+const shareLine = document.querySelector("#shareLine");
+const pieChart = document.querySelector("#pieChart");
+const legend = document.querySelector("#legend");
+const topPercent = document.querySelector("#topPercent");
+const topLabel = document.querySelector("#topLabel");
+const shareButton = document.querySelector("#shareButton");
+const retryButton = document.querySelector("#retryButton");
+const toast = document.querySelector("#toast");
+
+function showScreen(screen) {
+  intro.classList.toggle("is-hidden", screen !== "intro");
+  quiz.classList.toggle("is-hidden", screen !== "quiz");
+  result.classList.toggle("is-hidden", screen !== "result");
+}
+
+function renderQuestion() {
+  const question = questions[state.current];
+  questionCount.textContent = `Q${state.current + 1} / ${questions.length}`;
+  questionTitle.textContent = question.title;
+  progressBar.style.width = `${((state.current + 1) / questions.length) * 100}%`;
+
+  answers.innerHTML = "";
+  question.answers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.className = "answer-button";
+    button.type = "button";
+    button.innerHTML = `
+      <span class="answer-kicker">${answer.key}</span>
+      <span class="answer-text">${answer.label}</span>
+    `;
+    button.addEventListener("click", () => selectAnswer(answer));
+    answers.appendChild(button);
+  });
+}
+
+function selectAnswer(answer) {
+  state.selected[state.current] = answer;
+
+  if (state.current < questions.length - 1) {
+    state.current += 1;
+    renderQuestion();
+    return;
+  }
+
+  renderResult();
+}
+
+function calculateScores() {
+  const scores = {
+    "식비": 0,
+    "쇼핑": 0,
+    "배달": 0,
+    "기타": 0,
+    "감정소비": 0,
+    "절약": 0,
+  };
+
+  state.selected.forEach((answer) => {
+    Object.entries(answer.scores).forEach(([label, value]) => {
+      scores[label] += value;
+    });
+  });
+
+  return scores;
+}
+
+function getTopType(scores) {
+  return Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
+}
+
+function getRatios(scores) {
+  const chartScores = chartLabels.map((label) => ({
+    label,
+    score: Math.max(scores[label], 0) + 1,
+  }));
+  const baseTotal = chartScores.reduce((sum, item) => sum + item.score, 0) || 1;
+  let used = 0;
+
+  const ratios = chartScores.map((item, index) => {
+    if (index === chartScores.length - 1) {
+      return { label: item.label, value: 100 - used };
+    }
+
+    const value = Math.round((item.score / baseTotal) * 100);
+    used += value;
+    return { label: item.label, value };
+  });
+
+  return ratios;
+}
+
+function renderResult() {
+  const scores = calculateScores();
+  const typeKey = getTopType(scores);
+  const data = resultTypes[typeKey] || resultTypes["기타"];
+  const ratios = getRatios(scores);
+  const sorted = [...ratios].sort((a, b) => b.value - a.value);
+  let cursor = 0;
+
+  const gradient = ratios
+    .map(({ label, value }) => {
+      const start = cursor;
+      cursor += value;
+      return `${colors[label]} ${start}% ${cursor}%`;
+    })
+    .join(", ");
+
+  resultTitle.textContent = data.title;
+  resultSubtitle.textContent = data.subtitle;
+  resultDescription.textContent = data.description;
+  shareLine.textContent = data.share;
+  pieChart.style.background = `conic-gradient(${gradient})`;
+  topPercent.textContent = `${sorted[0].value}%`;
+  topLabel.textContent = sorted[0].label;
+
+  legend.innerHTML = "";
+  ratios.forEach(({ label, value }) => {
+    const item = document.createElement("li");
+    item.innerHTML = `
+      <span><i class="swatch" style="background: ${colors[label]}"></i>${label}</span>
+      <strong>${value}%</strong>
+    `;
+    legend.appendChild(item);
+  });
+
+  showScreen("result");
+}
+
+function restart() {
+  state.current = 0;
+  state.selected = [];
+  renderQuestion();
+  showScreen("quiz");
+}
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  window.setTimeout(() => toast.classList.remove("is-visible"), 1800);
+}
+
+async function shareResult() {
+  const title = resultTitle.textContent;
+  const text = `${shareLine.textContent}\n소비 유형 테스트 해보기`;
+  const url = window.location.href;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url });
+      return;
+    } catch (error) {
+      if (error.name === "AbortError") return;
+    }
+  }
+
+  try {
+    await navigator.clipboard.writeText(`${text}\n${url}`);
+    showToast("공유 문구가 복사됐어요");
+  } catch {
+    showToast("공유 문구 복사가 막혔어요");
+  }
+}
+
+startButton.addEventListener("click", () => {
+  renderQuestion();
+  showScreen("quiz");
+});
+
+retryButton.addEventListener("click", restart);
+shareButton.addEventListener("click", shareResult);
+
+    </script>
+  </body>
+</html>

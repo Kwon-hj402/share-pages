@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>머니핏 모바일 | 개인 소비 분석과 예산 추천</title>
+  <meta name="description" content="휴대폰에서 보기 편한 개인 소비 분석과 예산 추천 웹앱입니다." />
+  <style>
+    :root {
+      --bg: #fff1f5;
+      --panel: #ffffff;
+      --ink: #1f2b27;
+      --muted: #68746f;
+      --line: #ead9df;
+      --mint: #2f8f83;
+      --coral: #d94f70;
+      --amber: #d98324;
+      --blue: #5a72b5;
+      --plum: #6f5ba7;
+      --shadow: 0 12px 30px rgba(74, 42, 54, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      margin: 0;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .mobile-shell {
+      margin: 0 auto;
+      max-width: 480px;
+      min-height: 100vh;
+      padding: 16px 14px 92px;
+    }
+
+    .app-header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 2px 18px;
+    }
+
+    .brand {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+    }
+
+    .brand-mark {
+      align-items: center;
+      background: var(--ink);
+      border-radius: 12px;
+      color: #ffffff;
+      display: flex;
+      font-weight: 900;
+      height: 42px;
+      justify-content: center;
+      width: 42px;
+    }
+
+    .brand strong,
+    .brand small {
+      display: block;
+    }
+
+    .brand small {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: 2px;
+    }
+
+    .trial-button,
+    .add-button {
+      background: var(--ink);
+      border: 0;
+      color: #ffffff;
+      font-weight: 900;
+    }
+
+    .trial-button {
+      border-radius: 999px;
+      min-height: 42px;
+      padding: 0 14px;
+    }
+
+    .hero-card,
+    .summary-card,
+    .section-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      background:
+        linear-gradient(145deg, rgba(217, 79, 112, 0.12), transparent 48%),
+        linear-gradient(315deg, rgba(47, 143, 131, 0.12), transparent 44%),
+        #ffffff;
+      margin-bottom: 14px;
+      padding: 24px 20px;
+    }
+
+    .eyebrow,
+    .section-label {
+      color: var(--mint);
+      font-size: 0.78rem;
+      font-weight: 900;
+      margin: 0 0 8px;
+    }
+
+    h1,
+    h2 {
+      letter-spacing: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.45rem;
+      line-height: 1.06;
+    }
+
+    h2 {
+      font-size: 1.18rem;
+      line-height: 1.3;
+    }
+
+    .hero-card p:last-child {
+      color: #43504b;
+      font-size: 0.98rem;
+      line-height: 1.65;
+      margin: 14px 0 0;
+    }
+
+    .summary-card {
+      margin-bottom: 14px;
+      padding: 18px;
+    }
+
+    .summary-head {
+      align-items: flex-start;
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    .summary-head span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.82rem;
+      margin-bottom: 5px;
+    }
+
+    .summary-head strong {
+      display: block;
+      font-size: 1.9rem;
+      line-height: 1.05;
+    }
+
+    .status {
+      background: #e7f5f0;
+      border-radius: 999px;
+      color: #176c61;
+      font-size: 0.76rem;
+      font-weight: 900;
+      padding: 8px 10px;
+      white-space: nowrap;
+    }
+
+    .status.danger {
+      background: #fdecef;
+      color: #a4334d;
+    }
+
+    .budget-track,
+    .bar-track {
+      background: #efe3e7;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .budget-track {
+      height: 10px;
+      margin: 16px 0;
+    }
+
+    .budget-track span,
+    .bar-track span {
+      display: block;
+      height: 100%;
+      transition: width 0.25s ease;
+    }
+
+    .budget-track span {
+      background: linear-gradient(90deg, var(--mint), var(--amber), var(--coral));
+    }
+
+    .summary-grid {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .summary-grid div {
+      background: #fbf7f8;
+      border: 1px solid #f0dde3;
+      border-radius: 14px;
+      padding: 10px;
+    }
+
+    .summary-grid span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.72rem;
+      margin-bottom: 5px;
+    }
+
+    .summary-grid strong {
+      display: block;
+      font-size: 0.88rem;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    .section-card {
+      margin-bottom: 14px;
+      padding: 18px;
+      scroll-margin-top: 14px;
+    }
+
+    .section-title {
+      margin-bottom: 16px;
+    }
+
+    .input-form {
+      display: grid;
+      gap: 12px;
+    }
+
+    label {
+      color: #33413c;
+      display: grid;
+      font-size: 0.88rem;
+      font-weight: 800;
+      gap: 7px;
+    }
+
+    input,
+    select {
+      background: #fffafb;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--ink);
+      min-height: 48px;
+      padding: 0 13px;
+      width: 100%;
+    }
+
+    button,
+    input,
+    select,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus {
+      outline: 3px solid rgba(47, 143, 131, 0.2);
+      outline-offset: 2px;
+    }
+
+    .add-button {
+      border-radius: 14px;
+      min-height: 52px;
+      width: 100%;
+    }
+
+    .analysis-summary {
+      background: #fffafb;
+      border: 1px solid #f0dde3;
+      border-radius: 14px;
+      display: grid;
+      gap: 6px;
+      margin-bottom: 14px;
+      padding: 14px;
+    }
+
+    .analysis-summary strong {
+      font-size: 1rem;
+    }
+
+    .analysis-summary p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .chart-empty {
+      background: #fbf7f8;
+      border: 1px dashed #d9c8cf;
+      border-radius: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+      padding: 14px;
+    }
+
+    .chart-empty.hidden {
+      display: none;
+    }
+
+    .bar-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .bar-meta {
+      align-items: baseline;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
+    .bar-meta span {
+      color: #33413c;
+      font-weight: 900;
+    }
+
+    .bar-meta strong {
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    .bar-track {
+      height: 12px;
+      margin-bottom: 5px;
+    }
+
+    .bar-row small {
+      color: var(--muted);
+      display: block;
+      font-size: 0.76rem;
+      text-align: right;
+    }
+
+    .recommend-budget {
+      background: #f1f8f5;
+      border-left: 4px solid var(--mint);
+      border-radius: 14px;
+      display: grid;
+      gap: 5px;
+      margin-bottom: 14px;
+      padding: 14px;
+    }
+
+    .recommend-budget span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .recommend-budget strong {
+      font-size: 1.42rem;
+    }
+
+    .recommend-list {
+      color: var(--muted);
+      display: grid;
+      gap: 10px;
+      line-height: 1.55;
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .expense-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .expense-item {
+      align-items: center;
+      background: #fffafb;
+      border: 1px solid #f0dde3;
+      border-radius: 14px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 12px minmax(0, 1fr) auto;
+      padding: 12px;
+    }
+
+    .category-dot {
+      border-radius: 50%;
+      height: 12px;
+      width: 12px;
+    }
+
+    .expense-item strong,
+    .expense-item p {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .expense-item p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .expense-item > span:last-of-type {
+      font-size: 0.9rem;
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .expense-item button {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: #5b6863;
+      grid-column: 2 / -1;
+      justify-self: start;
+      min-height: 38px;
+      padding: 0 12px;
+    }
+
+    .report-list {
+      display: grid;
+      gap: 10px;
+      margin: 0 0 14px;
+    }
+
+    .report-list div {
+      align-items: center;
+      background: #fffafb;
+      border: 1px solid #f0dde3;
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+    }
+
+    .report-list dt,
+    .report-list dd {
+      margin: 0;
+    }
+
+    .report-list dt {
+      color: var(--muted);
+    }
+
+    .report-list dd {
+      font-weight: 900;
+      text-align: right;
+    }
+
+    .report-sentence {
+      background: #fff7ea;
+      border-left: 4px solid var(--amber);
+      border-radius: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .bottom-nav {
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      bottom: max(12px, env(safe-area-inset-bottom));
+      box-shadow: 0 10px 30px rgba(74, 42, 54, 0.16);
+      display: grid;
+      gap: 4px;
+      grid-template-columns: repeat(4, 1fr);
+      left: 12px;
+      margin: 0 auto;
+      max-width: 456px;
+      padding: 8px;
+      position: fixed;
+      right: 12px;
+      z-index: 10;
+    }
+
+    .bottom-nav a {
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      min-height: 42px;
+      padding: 8px 4px;
+      text-align: center;
+    }
+
+    .bottom-nav a:first-child {
+      background: #f1f8f5;
+      color: var(--mint);
+    }
+
+    @media (max-width: 360px) {
+      .mobile-shell {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="mobile-shell">
+    <header class="app-header">
+      <a class="brand" href="#top" aria-label="머니핏 모바일 홈">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>머니핏</strong>
+          <small>모바일 소비 분석</small>
+        </span>
+      </a>
+      <button type="button" class="trial-button">체험</button>
+    </header>
+
+    <section id="top" class="hero-card">
+      <p class="eyebrow">개인 소비 분석 + 예산 추천</p>
+      <h1>머니핏</h1>
+      <p>한 달 소비 내역을 입력하면 어디에 돈을 많이 쓰는지 분석하고 다음 달 예산을 추천합니다.</p>
+    </section>
+
+    <section class="summary-card" aria-label="이번 달 소비 요약">
+      <div class="summary-head">
+        <div>
+          <span>이번 달 총 지출</span>
+          <strong id="total-spending">0원</strong>
+        </div>
+        <span id="budget-status" class="status">정상 범위</span>
+      </div>
+      <div class="budget-track" aria-label="예산 사용률">
+        <span id="budget-track-fill"></span>
+      </div>
+      <div class="summary-grid">
+        <div>
+          <span>월 예산</span>
+          <strong id="budget-display">0원</strong>
+        </div>
+        <div>
+          <span>최다 지출</span>
+          <strong id="top-category">-</strong>
+        </div>
+        <div>
+          <span>예상 절약</span>
+          <strong id="saving-target">0원</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="input" class="section-card">
+      <div class="section-title">
+        <p class="section-label">소비 데이터 입력</p>
+        <h2>이번 달 지출 추가</h2>
+      </div>
+      <form class="input-form">
+        <label>
+          월 예산
+          <input id="budget-input" type="number" min="0" step="10000" aria-label="월 예산" />
+        </label>
+        <label>
+          카테고리
+          <select id="category-input" aria-label="소비 카테고리"></select>
+        </label>
+        <label>
+          금액
+          <input id="amount-input" inputmode="numeric" aria-label="소비 금액" />
+        </label>
+        <label>
+          메모
+          <input id="memo-input" aria-label="소비 메모" />
+        </label>
+        <button type="submit" class="add-button">+ 소비 추가</button>
+      </form>
+    </section>
+
+    <section id="analysis" class="section-card">
+      <div class="section-title">
+        <p class="section-label">소비 분석</p>
+        <h2>카테고리별 지출 그래프</h2>
+      </div>
+      <div class="analysis-summary">
+        <strong id="chart-title">소비 내역을 추가해 주세요.</strong>
+        <p id="chart-description">금액과 카테고리를 입력하면 분석 그래프가 바로 표시됩니다.</p>
+      </div>
+      <div id="chart-empty" class="chart-empty">아직 입력된 소비가 없습니다. 소비를 추가하면 카테고리별 막대 그래프가 채워집니다.</div>
+      <div id="category-bars" class="bar-list"></div>
+    </section>
+
+    <section id="recommend" class="section-card">
+      <div class="section-title">
+        <p class="section-label">AI 추천</p>
+        <h2>다음 달 예산 제안</h2>
+      </div>
+      <div class="recommend-budget">
+        <span>추천 월 예산</span>
+        <strong id="recommended-budget">0원</strong>
+      </div>
+      <ul id="recommend-list" class="recommend-list"></ul>
+    </section>
+
+    <section class="section-card">
+      <div class="section-title">
+        <p class="section-label">소비 내역</p>
+        <h2>최근 입력 내역</h2>
+      </div>
+      <div id="expense-list" class="expense-list"></div>
+    </section>
+
+    <section id="report" class="section-card">
+      <div class="section-title">
+        <p class="section-label">월간 리포트</p>
+        <h2>이번 달 요약</h2>
+      </div>
+      <dl class="report-list">
+        <div>
+          <dt>총 지출</dt>
+          <dd id="report-total">0원</dd>
+        </div>
+        <div>
+          <dt>가장 많이 쓴 항목</dt>
+          <dd id="report-top-category">-</dd>
+        </div>
+        <div>
+          <dt>예산 사용률</dt>
+          <dd id="report-budget-usage">0%</dd>
+        </div>
+        <div>
+          <dt>절약 가능 금액</dt>
+          <dd id="report-saving">0원</dd>
+        </div>
+      </dl>
+      <p class="report-sentence" id="report-sentence"></p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="모바일 하단 메뉴">
+    <a href="#top">요약</a>
+    <a href="#input">입력</a>
+    <a href="#analysis">분석</a>
+    <a href="#report">리포트</a>
+  </nav>
+
+  <script>
+    const categories = [
+      { id: "food", label: "식비", color: "#2f8f83" },
+      { id: "cafe", label: "카페", color: "#d98324" },
+      { id: "shopping", label: "쇼핑", color: "#d94f70" },
+      { id: "transit", label: "교통", color: "#5a72b5" },
+      { id: "subscription", label: "구독", color: "#6f5ba7" },
+      { id: "etc", label: "기타", color: "#8a6f45" },
+    ];
+
+    let budget = 0;
+    let expenses = [];
+
+    const formatCurrency = (value) => `${Math.round(value).toLocaleString("ko-KR")}원`;
+    const getCategory = (categoryId) => categories.find((item) => item.id === categoryId) || categories[0];
+
+    const form = document.querySelector(".input-form");
+    const budgetInput = document.querySelector("#budget-input");
+    const categoryInput = document.querySelector("#category-input");
+    const amountInput = document.querySelector("#amount-input");
+    const memoInput = document.querySelector("#memo-input");
+
+    categories.forEach((category) => {
+      const option = document.createElement("option");
+      option.value = category.id;
+      option.textContent = category.label;
+      categoryInput.appendChild(option);
+    });
+    categoryInput.value = "shopping";
+
+    function calculateTotals() {
+      const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
+      const categoryTotals = categories.map((category) => {
+        const amount = expenses
+          .filter((expense) => expense.category === category.id)
+          .reduce((sum, expense) => sum + expense.amount, 0);
+        return {
+          ...category,
+          amount,
+          percent: total > 0 ? (amount / total) * 100 : 0,
+        };
+      });
+      const topCategory =
+        total > 0 ? [...categoryTotals].sort((a, b) => b.amount - a.amount)[0] : categories[0];
+      const savingTarget = topCategory.amount * 0.2;
+
+      return {
+        total,
+        categoryTotals,
+        topCategory,
+        savingTarget,
+        recommendedBudget: Math.max(total - savingTarget, 0),
+        budgetUsage: budget > 0 ? (total / budget) * 100 : 0,
+      };
+    }
+
+    function makeRecommendations(totals) {
+      if (totals.total === 0) {
+        return ["소비 내역을 입력하면 다음 달 예산 추천이 생성됩니다."];
+      }
+
+      const cafe = totals.categoryTotals.find((item) => item.id === "cafe");
+      const shopping = totals.categoryTotals.find((item) => item.id === "shopping");
+      const messages = [
+        `${totals.topCategory.label} 지출이 전체 소비의 ${totals.topCategory.percent.toFixed(1)}%입니다. 다음 달 ${totals.topCategory.label} 예산을 20% 줄이면 ${formatCurrency(totals.savingTarget)} 절약할 수 있습니다.`,
+      ];
+
+      if (shopping && shopping.percent >= 30) {
+        messages.push("쇼핑 비율이 높은 편입니다. 결제 전 24시간 보류 규칙을 적용해보세요.");
+      }
+
+      if (cafe && cafe.amount >= 100000) {
+        messages.push(`카페 지출이 ${formatCurrency(cafe.amount)}입니다. 주 2회만 줄여도 절약 효과가 큽니다.`);
+      }
+
+      if (totals.budgetUsage > 100) {
+        messages.push(`월 예산을 ${formatCurrency(totals.total - budget)} 초과했습니다. 다음 달 추천 예산은 ${formatCurrency(totals.recommendedBudget)}입니다.`);
+      } else {
+        messages.push(`현재 예산 사용률은 ${totals.budgetUsage.toFixed(1)}%입니다. 남은 예산은 ${formatCurrency(Math.max(budget - totals.total, 0))}입니다.`);
+      }
+
+      return messages;
+    }
+
+    function render() {
+      const totals = calculateTotals();
+      const budgetStatus = document.querySelector("#budget-status");
+
+      document.querySelector("#total-spending").textContent = formatCurrency(totals.total);
+      document.querySelector("#budget-display").textContent = formatCurrency(budget);
+      document.querySelector("#top-category").textContent = totals.total > 0 ? totals.topCategory.label : "-";
+      document.querySelector("#saving-target").textContent = formatCurrency(totals.savingTarget);
+      document.querySelector("#budget-track-fill").style.width = `${Math.min(totals.budgetUsage, 100)}%`;
+      budgetStatus.textContent = totals.budgetUsage > 100 ? "예산 초과" : "정상 범위";
+      budgetStatus.className = totals.budgetUsage > 100 ? "status danger" : "status";
+
+      document.querySelector("#chart-title").textContent =
+        totals.total > 0 ? `${totals.topCategory.label} 지출이 가장 큽니다.` : "소비 내역을 추가해 주세요.";
+      document.querySelector("#chart-description").textContent =
+        totals.total > 0
+          ? `전체 소비 중 ${totals.topCategory.label}이 ${totals.topCategory.percent.toFixed(1)}%를 차지합니다.`
+          : "금액과 카테고리를 입력하면 분석 그래프가 바로 표시됩니다.";
+      document.querySelector("#chart-empty").className = totals.total > 0 ? "chart-empty hidden" : "chart-empty";
+
+      const bars = document.querySelector("#category-bars");
+      bars.innerHTML = "";
+      totals.categoryTotals.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "bar-row";
+        row.innerHTML = `
+          <div class="bar-meta">
+            <span>${item.label}</span>
+            <strong>${formatCurrency(item.amount)}</strong>
+          </div>
+          <div class="bar-track" aria-label="${item.label} 소비 비율 ${item.percent.toFixed(1)}%">
+            <span style="width: ${Math.max(item.percent, item.amount > 0 ? 6 : 0)}%; background-color: ${item.color};"></span>
+          </div>
+          <small>${item.percent.toFixed(1)}%</small>
+        `;
+        bars.appendChild(row);
+      });
+
+      document.querySelector("#recommended-budget").textContent = formatCurrency(totals.recommendedBudget);
+      const recommendList = document.querySelector("#recommend-list");
+      recommendList.innerHTML = "";
+      makeRecommendations(totals).forEach((message) => {
+        const li = document.createElement("li");
+        li.textContent = message;
+        recommendList.appendChild(li);
+      });
+
+      const expenseList = document.querySelector("#expense-list");
+      expenseList.innerHTML = "";
+      if (expenses.length === 0) {
+        const emptyItem = document.createElement("div");
+        emptyItem.className = "expense-item";
+        emptyItem.innerHTML = `
+          <span class="category-dot" style="background-color: #d9c8cf;"></span>
+          <div>
+            <strong>아직 입력된 내역이 없습니다.</strong>
+            <p>위 입력칸에서 소비 내역을 추가해 주세요.</p>
+          </div>
+          <span>-</span>
+        `;
+        expenseList.appendChild(emptyItem);
+      }
+
+      expenses.forEach((expense) => {
+        const category = getCategory(expense.category);
+        const item = document.createElement("div");
+        item.className = "expense-item";
+        item.innerHTML = `
+          <span class="category-dot" style="background-color: ${category.color};"></span>
+          <div>
+            <strong>${category.label}</strong>
+            <p>${expense.memo}</p>
+          </div>
+          <span>${formatCurrency(expense.amount)}</span>
+          <button type="button" data-id="${expense.id}" aria-label="${expense.memo} 내역 삭제">삭제</button>
+        `;
+        expenseList.appendChild(item);
+      });
+
+      expenseList.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const id = Number(button.dataset.id);
+          expenses = expenses.filter((expense) => expense.id !== id);
+          render();
+        });
+      });
+
+      document.querySelector("#report-total").textContent = formatCurrency(totals.total);
+      document.querySelector("#report-top-category").textContent = totals.total > 0 ? totals.topCategory.label : "-";
+      document.querySelector("#report-budget-usage").textContent = `${totals.budgetUsage.toFixed(1)}%`;
+      document.querySelector("#report-saving").textContent = formatCurrency(totals.savingTarget);
+      document.querySelector("#report-sentence").textContent =
+        totals.total > 0
+          ? `이번 달은 ${totals.topCategory.label} 지출 비중이 가장 높았습니다. 다음 달 ${totals.topCategory.label} 예산을 20% 줄이면 약 ${formatCurrency(totals.savingTarget)}을 절약할 수 있습니다.`
+          : "소비 내역을 추가하면 이번 달 리포트가 자동으로 생성됩니다.";
+    }
+
+    budgetInput.addEventListener("input", () => {
+      budget = Number(budgetInput.value) || 0;
+      render();
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const parsedAmount = Number.parseInt(amountInput.value.replaceAll(",", ""), 10);
+      const selectedCategory = categoryInput.value;
+
+      if (!parsedAmount || parsedAmount < 1000) {
+        return;
+      }
+
+      expenses = [
+        {
+          id: Date.now(),
+          category: selectedCategory,
+          amount: parsedAmount,
+          memo: memoInput.value.trim() || getCategory(selectedCategory).label,
+        },
+        ...expenses,
+      ];
+
+      amountInput.value = "";
+      memoInput.value = "";
+      render();
+    });
+
+    render();
+  </script>
+</body>
+</html>
