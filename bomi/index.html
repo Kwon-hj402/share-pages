@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#167d36" />
+    <title>遊꾩씠 | ?앺솢吏?먯궗</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="遊꾩씠 ?앺솢吏?먯궗 ??>
+      <header class="app-header">
+        <button class="brand" aria-label="遊꾩씠 ?덉쑝濡? data-page="home"><span>??/span>遊꾩씠</button>
+        <div class="header-actions">
+          <button class="icon-button" aria-label="?뚮┝"><span aria-hidden="true">??/span><b>3</b></button>
+          <button class="icon-button" aria-label="?ㅼ젙" data-page="settings">??/button>
+        </div>
+      </header>
+
+      <section id="home" class="page active">
+        <div class="hello-banner">
+          <div>
+            <p class="eyebrow">2026??7??14???붿슂??/p>
+            <h1>?덈뀞?섏꽭?? 源?몃쫫 ?앺솢吏?먯궗??</h1>
+            <p>?ㅻ뒛???대Ⅴ?좊뱾??嫄닿컯??蹂듭빟???④퍡 ?댄렣蹂쇨쾶??</p>
+          </div>
+          <div class="elder-illustration" aria-hidden="true">?뫒?뤋<span>?뫓?뤋</span></div>
+        </div>
+
+        <section aria-labelledby="today-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">DAILY CHECK</p><h2 id="today-title">?ㅻ뒛??蹂듭빟 ?꾪솴 <small>珥?15紐?/small></h2></div>
+            <button class="text-button" data-page="seniors">?꾩껜 蹂닿린 ??/button>
+          </div>
+          <div class="status-grid">
+            <button class="status-card success" data-filter="?뺤긽"><strong>10</strong><span>?뺤긽</span><small>蹂듭빟 ?꾨즺</small></button>
+            <button class="status-card warning" data-filter="?뺤씤?붿껌"><strong>2</strong><span>?뺤씤 ?꾩슂</span><small>異붽? ?뺤씤 ?꾩슂</small></button>
+            <button class="status-card danger" data-filter="湲닿툒?곌껐"><strong>1</strong><span>湲닿툒 ?곌껐</span><small>利됱떆 ?뺤씤 ?꾩슂</small></button>
+            <button class="status-card absent" data-filter="誘몄쓳??><strong>2</strong><span>誘몄쓳??/span><small>?곕씫 ?쒕룄 以?/small></button>
+          </div>
+        </section>
+
+        <section class="attention-list" aria-label="?곗꽑 ?뺤씤 ???>
+          <div class="section-heading compact"><h2>?곗꽑 ?뺤씤 ???/h2><span class="count-badge">3嫄?/span></div>
+          <button class="attention-card danger-border" data-person="源泥좎닔">
+            <span class="avatar rose">源</span><span class="attention-copy"><em class="pill danger-pill">湲닿툒 ?곌껐</em><strong>源泥좎닔 ?대Ⅴ??<small>76??/small></strong><span>?쒖빟 癒뱀쑝硫??띿씠 硫붿뒪猿띻퀬 ?댁??ъ썙????/span><small class="risk-text">?쎈Ъ 遺?묒슜 ?섏떖 쨌 ?섏궗 ?곷떞 ?꾩슂</small></span><i>??/i>
+          </button>
+          <button class="attention-card warning-border" data-person="諛뺤쁺??>
+            <span class="avatar yellow">諛?/span><span class="attention-copy"><em class="pill warning-pill">?뺤씤 ?붿껌</em><strong>諛뺤쁺???대Ⅴ??<small>72??/small></strong><span>?쒖쭛??臾쇱씠 ?⑥뼱?몄꽌 ?쎌쓣 紐?癒뱀뿀?댁슂.??/span><small class="risk-text">?섍꼍???붿씤 쨌 吏?먯궗 議곗튂 ?꾩슂</small></span><i>??/i>
+          </button>
+        </section>
+
+        <section class="checklist" aria-labelledby="check-title">
+          <div class="section-heading compact"><h2 id="check-title">???ㅻ뒛???꾩옣 泥댄겕由ъ뒪??/h2><button class="text-button" id="clear-checks">?꾨즺</button></div>
+          <label><input type="checkbox" checked /><span>諛뺤쁺???대Ⅴ?????앹닔 ?꾨떖</span></label>
+          <label><input type="checkbox" /><span>源泥좎닔 ?대Ⅴ??吏꾨즺??AI 由ы룷???꾨떖</span></label>
+        </section>
+      </section>
+
+      <section id="seniors" class="page">
+        <div class="page-title"><p class="eyebrow">SENIOR MANAGEMENT</p><h1>?대Ⅴ??紐⑸줉</h1></div>
+        <div class="search-row"><label class="search"><span>??/span><input id="search-input" placeholder="?대쫫?쇰줈 寃?됲븯?몄슂" /></label><button class="sort-button">媛?섎떎?쒋똾</button></div>
+        <div class="legend"><span>?꾩껜 <b>15紐?/b></span><span><i class="dot green"></i>?뺤긽</span><span><i class="dot amber"></i>?뺤씤?붿껌</span><span><i class="dot red"></i>湲닿툒?곌껐</span><span><i class="dot gray"></i>誘몄쓳??/span></div>
+        <div id="senior-list" class="senior-list"></div>
+      </section>
+
+      <section id="reports" class="page">
+        <div class="page-title"><p class="eyebrow">AI MEDICAL REPORT</p><h1>吏꾨즺??由ы룷??/h1></div>
+        <div class="report-intro"><span>??/span><div><h2>?대Ⅴ??吏꾨즺??AI 由ы룷??/h2><p>留ㅼ씪????붾? ?섎즺吏꾩씠 ?댄빐?섍린 ?ъ슫 湲곕줉?쇰줈 ?뺣━?덉뼱??</p></div></div>
+        <div class="report-card">
+          <div class="report-person"><span class="avatar rose">源</span><div><p class="eyebrow">諛쒗뻾??2026.07.14</p><h2>源泥좎닔 ?대Ⅴ??<small>76??/ ?⑥꽦</small></h2></div><button class="outline-button" id="print-report">?몄뇙</button></div>
+          <div class="adherence"><div><p>理쒓렐 30??蹂듭빟 ?쒖쓳??/p><strong>83<small>%</small></strong><span>25 / 30??蹂듭빟</span></div><div class="donut" style="--value:83"><b>83%</b></div></div>
+          <div class="report-section"><h3>蹂듭빟 嫄곕? ?먯씤 遺꾩꽍</h3><div class="reason-row"><span class="reason-icon red-bg">!</span><div><strong>?섎룄??蹂듭빟 嫄곕? <em>3??/em></strong><p>蹂듭슜 ????硫붿뒪爰쇱? 쨌 ?댁??ъ? ?몄냼</p></div></div><div class="reason-row"><span class="reason-icon amber-bg">!</span><div><strong>鍮꾩쓽?꾩쟻 誘몃났??<em>2??/em></strong><p>?몄텧 諛?臾?遺?щ줈 蹂듭슜 ?쒖젏 ?볦묠</p></div></div></div>
+          <div class="report-section summary"><h3>AI 利앹긽 ?붿빟</h3><p>理쒓렐 2二쇨컙 ?붿슂?셋룸ぉ?붿씪 蹂듭빟 ??<b>硫붿뒪爰쇱?怨??댁??ъ?</b>??珥?3???몄냼?덉뒿?덈떎. ?꾩옣 ?μ븷 ?먮뒗 ?쎈Ъ ?⑸웾 愿??諛섏쓳???뺤씤???꾩슂媛 ?덉뒿?덈떎.</p></div>
+          <button class="primary-button full" id="share-report">?섎즺吏꾩뿉寃?由ы룷??怨듭쑀</button>
+        </div>
+      </section>
+
+      <section id="settings" class="page">
+        <div class="page-title"><p class="eyebrow">MY SETTINGS</p><h1>?ㅼ젙</h1></div>
+        <div class="setting-card"><span class="avatar green-avatar">源</span><div><strong>源?몃쫫 ?앺솢吏?먯궗</strong><p>?섎큵?몄씤蹂듭??쇳꽣 쨌 ?대떦 15紐?/p></div></div>
+        <div class="setting-list"><button>AI ?덈? ?꾪솕 ?쒓컙 ?ㅼ젙 <span>?ㅼ쟾 9:00 ??/span></button><button>?뚮┝ ?ㅼ젙 <span>耳쒖쭚 ??/span></button><button>媛쒖씤?뺣낫 諛?蹂댁븞 <span>??/span></button></div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="二쇱슂 硫붾돱">
+        <button class="nav-item active" data-page="home"><span>??/span>??/button>
+        <button class="nav-item" data-page="seniors"><span>??/span>?대Ⅴ??紐⑸줉</button>
+        <button class="nav-item" data-page="reports"><span>??/span>由ы룷??/button>
+        <button class="nav-item" data-page="settings"><span>??/span>?ㅼ젙</button>
+      </nav>
+    </main>
+
+    <dialog id="person-dialog" class="person-dialog">
+      <button class="close-dialog" aria-label="?リ린">횞</button>
+      <div id="person-detail"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
