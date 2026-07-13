@@ -17,3 +17,19 @@
 @media (min-width:700px) { body { padding:22px; } .app-shell { border-radius:27px; min-height:calc(100dvh - 44px); box-shadow:0 18px 55px #16351c25; } .bottom-nav { bottom:22px; border-radius:0 0 27px 27px; } }
 
 #person-detail { padding:25px 18px 19px; }
+
+/* Keep all dashboard cards inside compact mobile screens. */
+.status-grid { grid-template-columns:repeat(4, minmax(0, 1fr)); }
+.status-card, .attention-card { min-width:0; }
+.attention-card { overflow:hidden; }
+
+@media (max-width:390px) {
+  .app-shell { padding-left:14px; padding-right:14px; }
+  .status-grid { gap:5px; }
+  .status-card { min-height:108px; }
+  .status-card strong { font-size:28px; }
+  .status-card span { font-size:12px; }
+  .status-card small { font-size:9px; }
+  .attention-card { gap:8px; padding:9px; }
+  .attention-copy > span { font-size:11px; }
+}
