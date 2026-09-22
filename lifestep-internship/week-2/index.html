@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LifeStep Internship 자료조사 2회차. OpenCV, CNN, 전이 학습, 분류·검출·분할의 핵심 개념과 대표 실습을 정리한 컴퓨터 비전 커리큘럼.">
+  <meta name="description" content="LifeStep Internship 자료조사 2회차. OpenCV, CNN, 전이 학습, 분류·검출·분할의 핵심 주제와 키워드를 정리한 컴퓨터 비전 커리큘럼.">
   <title>홍석찬 LifeStep Internship · 자료조사 2회차</title>
   <style>
     :root { color-scheme: light; --paper: #fff; --ink: #000; --line: #ddd; }
@@ -24,29 +24,20 @@
     li { padding-left: 3px; margin: 4px 0; }
     ul:last-child, ol:last-child { margin-bottom: 0; }
     strong { font-weight: 600; }
-    .reference { font-size: 14px; margin-bottom: 14px; }
     a { color: inherit; text-underline-offset: 4px; }
     a:focus-visible { outline: 2px solid #000; outline-offset: 5px; }
     .section-divider { border-top: 1px solid var(--line); padding-top: 32px; }
-    .table-wrap { overflow-x: auto; margin: 22px 0; }
-    table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.7; }
-    caption { text-align: left; font-weight: 600; margin-bottom: 12px; }
-    th, td { padding: 12px 10px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
-    th { font-weight: 600; border-top: 1px solid #000; }
     footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
     @media (max-width: 540px) {
       main { width: calc(100% - 40px); padding: 44px 0 64px; }
       header { padding-bottom: 28px; }
       section { margin-top: 32px; }
       body { font-size: 15px; }
-      th, td { padding: 10px 5px; }
-      table { font-size: 13px; }
     }
     @media print {
       main { width: 100%; padding: 0; }
       h2, h3 { break-after: avoid; }
-      li, tr { break-inside: avoid; }
-      .table-wrap { overflow: visible; }
+      li { break-inside: avoid; }
       footer { display: none; }
     }
   </style>
@@ -58,19 +49,11 @@
       <p class="chapter">Chapter 02. Deep Learning for Computer Vision</p>
     </header>
 
-    <section aria-labelledby="learning-objective">
-      <h2 id="learning-objective">Learning Objective</h2>
-      <p>1회차에서 학습한 MLP를 바탕으로, 컴퓨터가 이미지를 입력받아 특징을 학습하고 대상을 인식하는 과정을 이해합니다. 특히 CNN이 이미지의 공간 구조를 어떻게 활용하는지, 분류·검출·분할이 어떤 문제를 해결하는지 자신의 언어로 설명하는 것을 목표로 합니다.</p>
-      <p><strong>이미지 입력 → 전처리 → 특징 학습 → 예측 → 결과 평가</strong></p>
-      <p class="reference">교재 범위: 2.1 OpenCV 소개 / Chapter 07 딥러닝 비전 / Chapter 08 컨볼루션 신경망 / Chapter 09 인식 중 핵심 내용. 아래 2.1–2.7은 이번 자료조사의 학습 순서입니다.</p>
-    </section>
-
     <section aria-labelledby="topics">
       <h2 id="topics">Topics</h2>
 
       <section class="topic" aria-labelledby="topic-2-1">
         <h3 id="topic-2-1">2.1 OpenCV &amp; Image Representation</h3>
-        <p class="reference">교재: 2.1 / 7.3 · 이미지 처리 기초</p>
         <ul>
           <li>OpenCV의 역할과 TensorFlow / Keras의 역할</li>
           <li>Pixel, Image Shape, Height × Width × Channels</li>
@@ -78,12 +61,10 @@
           <li>Image Loading, Resizing, Normalization</li>
           <li>Tensor와 Batch Dimension</li>
         </ul>
-        <p>이미지 한 장이 숫자 배열로 어떻게 표현되는지 설명합니다. 흑백 영상과 컬러 영상의 차원, OpenCV로 읽은 컬러 영상의 BGR 순서, 모델 입력에 필요한 전처리를 확인합니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-2">
         <h3 id="topic-2-2">2.2 From MLP to Deep Learning Vision</h3>
-        <p class="reference">교재: 7.1–7.3 / 7.5–7.7 · 1회차 복습과 연결</p>
         <ul>
           <li>Handcrafted Features vs. Learned Features</li>
           <li>Supervised Learning, Input and Label</li>
@@ -91,13 +72,10 @@
           <li>Flatten, MLP, Softmax, Cross-Entropy</li>
           <li>Training vs. Inference</li>
         </ul>
-        <p>MNIST 이미지를 1차원 벡터로 펼쳐 MLP에 입력하는 과정을 정리합니다. 이미지를 펼치면 픽셀 값은 남지만, 일반적인 완전연결층은 인접한 픽셀의 공간 관계를 구조적으로 활용하지 않는다는 점을 이해합니다.</p>
-        <p>학습용 데이터는 가중치 학습에, 검증용 데이터는 설정 선택에, 테스트 데이터는 최종 평가에 사용하는 이유를 설명합니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-3">
         <h3 id="topic-2-3">2.3 Convolutional Neural Networks (CNN)</h3>
-        <p class="reference">교재: 8.1–8.4 · 이번 회차의 중심 주제</p>
         <ul>
           <li>Convolution, Kernel / Filter, Feature Map</li>
           <li>Local Receptive Field, Weight Sharing</li>
@@ -105,13 +83,10 @@
           <li>ReLU and Pooling</li>
           <li>Convolutional Layers → Classification Head</li>
         </ul>
-        <p>작은 필터가 이미지를 이동하며 특징을 추출하는 과정을 직접 그려 봅니다. MLP와 비교하여 CNN의 지역 연결과 가중치 공유가 이미지 처리에 왜 유용한지 설명합니다.</p>
-        <p><strong>직접 확인:</strong> 5 × 5 입력에 3 × 3 필터, stride 1, padding 0을 적용했을 때 출력이 3 × 3이 되는 과정을 계산합니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-4">
         <h3 id="topic-2-4">2.4 Training &amp; Generalization</h3>
-        <p class="reference">교재: 7.6 / 8.3 / 8.6</p>
         <ul>
           <li>SGD vs. Adam · 개념 비교</li>
           <li>Learning Rate, Epoch, Batch Size · 복습</li>
@@ -119,13 +94,10 @@
           <li>Overfitting and Generalization</li>
           <li>Data Augmentation, Dropout, Early Stopping</li>
         </ul>
-        <p>학습 정확도만으로 모델의 성능을 판단하지 않고, 학습·검증 곡선을 함께 해석합니다. 학습 손실은 감소하지만 검증 손실은 증가하는 상황을 설명하고, 과적합을 줄일 방법을 정리합니다.</p>
-        <p>데이터 증강은 정답의 의미를 유지하는 범위에서 학습 데이터에 적용합니다. 예를 들어 숫자를 뒤집는 변환이 항상 적절한지 생각해 봅니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-5">
         <h3 id="topic-2-5">2.5 Transfer Learning</h3>
-        <p class="reference">교재: 8.7 · ResNet50을 대표 사례로 조사</p>
         <ul>
           <li>Pretrained Model and ImageNet</li>
           <li>Feature Extraction and Layer Freezing</li>
@@ -133,13 +105,10 @@
           <li>Fine-tuning</li>
           <li>Model-specific Input Preprocessing</li>
         </ul>
-        <p>이미 학습된 모델을 활용하면 새로운 과제에 필요한 데이터와 학습 부담을 어떻게 줄일 수 있는지 설명합니다. 특징 추출 방식과 미세 조정 방식에서 어떤 가중치가 학습되는지 비교합니다.</p>
-        <p><strong>구분할 점:</strong> 사전학습된 ResNet50으로 이미지의 기존 클래스를 예측하는 것은 추론입니다. 새로운 데이터의 분류층을 학습하거나 기존 층을 미세 조정하는 전이 학습과 구분합니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-6">
         <h3 id="topic-2-6">2.6 Image Classification &amp; Object Detection</h3>
-        <p class="reference">교재: 9.1–9.3</p>
         <ul>
           <li>Image Classification vs. Object Detection</li>
           <li>Class Label, Bounding Box, Confidence Score</li>
@@ -147,12 +116,10 @@
           <li>Intersection over Union (IoU)</li>
           <li>Non-Maximum Suppression (NMS)</li>
         </ul>
-        <p>이미지 전체의 종류를 예측하는 것과, 여러 물체의 종류·위치를 찾는 것의 차이를 설명합니다. 검출 결과에서 상자·클래스·점수가 무엇을 의미하는지 읽고, 겹치는 후보 상자를 정리하는 NMS의 목적을 이해합니다.</p>
       </section>
 
       <section class="topic" aria-labelledby="topic-2-7">
         <h3 id="topic-2-7">2.7 Image Segmentation &amp; Applications</h3>
-        <p class="reference">교재: 9.4–9.6 · 분할 개념과 사람 인식 응용</p>
         <ul>
           <li>Pixel-wise Prediction and Segmentation Mask</li>
           <li>Semantic Segmentation vs. Instance Segmentation</li>
@@ -160,51 +127,11 @@
           <li>Background Replacement</li>
           <li>사람 검출과 사람 영역 분할의 활용 차이</li>
         </ul>
-        <p>의미 분할은 픽셀마다 클래스를 지정하고, 사례 분할은 같은 클래스에 속하는 개별 객체도 구분합니다. 여러 사람이 있는 사진을 예로 들어 두 결과의 차이를 설명합니다.</p>
-        <div class="table-wrap">
-          <table>
-            <caption>같은 사람 사진, 서로 다른 인식 결과</caption>
-            <thead><tr><th scope="col">과제</th><th scope="col">출력</th><th scope="col">답하는 질문</th></tr></thead>
-            <tbody>
-              <tr><td>분류</td><td>이미지 단위 클래스</td><td>사람이 있는 사진인가?</td></tr>
-              <tr><td>검출</td><td>사람별 경계 상자</td><td>사람이 어디에 몇 명 있는가?</td></tr>
-              <tr><td>의미 분할</td><td>사람 클래스의 픽셀 영역</td><td>어느 픽셀이 사람인가?</td></tr>
-              <tr><td>사례 분할</td><td>사람별로 구분된 마스크</td><td>어느 영역이 각각의 사람인가?</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>배경을 바꾸는 과제에서 경계 상자만으로 충분한지, 픽셀 단위 마스크가 왜 필요한지 설명합니다.</p>
       </section>
-    </section>
-
-    <section class="section-divider" aria-labelledby="practice">
-      <h2 id="practice">Selected Practice</h2>
-      <p>필수 실습은 <strong>데이터 확인 → MLP와 CNN 비교</strong>에 집중합니다. 전체 프로그램을 모두 구현할 필요는 없습니다.</p>
-      <ol>
-        <li><strong>데이터 확인 · 프로그램 7-1</strong><br>MNIST의 이미지와 라벨을 확인하고, 데이터 shape와 픽셀 값 범위를 기록합니다. 전처리 전후의 차이를 설명합니다.</li>
-        <li><strong>MLP 기준 모델 · 프로그램 7-3</strong><br>Adam을 사용하는 MLP로 MNIST를 학습합니다. 모델 구조, 학습·검증 곡선, 테스트 정확도를 기록합니다.</li>
-        <li><strong>CNN 비교 · 프로그램 8-1</strong><br>LeNet-5 기반 MNIST 실습을 수행하고 MLP와 비교합니다. 데이터 분할·전처리·학습 조건을 가능한 한 맞추고, 실제로 다른 조건은 함께 기록합니다.</li>
-      </ol>
-      <p><strong>비교 항목:</strong> 입력 형태, 주요 층, 파라미터 수, 테스트 정확도, 오분류 이미지. 실행 결과를 근거로 설명하고, CNN이 반드시 더 좋다는 결론을 미리 정하지 않습니다.</p>
-      <p><strong>선택 실습 · 하나만:</strong> 프로그램 8-6으로 사전학습 모델의 추론 결과를 확인하거나, 프로그램 9-1로 정지 영상의 검출 결과를 해석합니다.</p>
-      <p class="reference">프로그램 번호는 제공된 교재 목차 기준입니다. 교재 코드의 설치 환경과 사용 중인 라이브러리 버전을 확인하며 진행합니다.</p>
-    </section>
-
-    <section class="section-divider" aria-labelledby="research-output">
-      <h2 id="research-output">Research Output</h2>
-      <p>자료조사 결과는 다음 네 가지를 중심으로 정리합니다.</p>
-      <ol>
-        <li><strong>구조 비교:</strong> MLP와 CNN의 입력·연결 방식·특징 추출 과정을 그림과 짧은 설명으로 정리합니다.</li>
-        <li><strong>학습 결과:</strong> 필수 실습의 비교표, 학습·검증 곡선, 대표 오분류 사례와 해석을 제시합니다.</li>
-        <li><strong>인식 과제 비교:</strong> 분류·검출·의미 분할·사례 분할의 출력과 활용 사례를 구분합니다.</li>
-        <li><strong>응용 제안:</strong> 사람 인식 또는 배경 교체 중 하나를 골라 필요한 입력, 모델의 출력, 평가 방법을 설명하고 조사한 출처를 남깁니다.</li>
-      </ol>
-      <p class="reference">이번 회차에서 생략: 신경망의 역사와 MLP 수식 재유도, SGD·Adam 전체 비교 실험, 우편번호·견종 인식 GUI, 동영상 처리량 측정, PixelLib의 모든 예제 구현. 개념 이해와 대표 실습을 마친 뒤 확장합니다.</p>
     </section>
 
     <section class="section-divider" aria-labelledby="references">
       <h2 id="references">References</h2>
-      <p>교재의 해당 절을 먼저 읽고, 아래 공식 자료로 개념과 구현 흐름을 보완합니다. 공식 예제의 데이터셋·모델은 교재와 다를 수 있습니다.</p>
       <ul>
         <li><a href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html">OpenCV · Python Tutorials</a> — 이미지 입출력과 기본 처리</li>
         <li><a href="https://www.tensorflow.org/tutorials/images/cnn">TensorFlow · Convolutional Neural Network</a> — CNN 구조와 학습 흐름</li>
