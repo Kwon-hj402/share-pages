@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LifeStep Internship 자료조사: 1주차 MLP와 2주차 Computer Vision 커리큘럼">
+  <title>홍석찬 LifeStep Internship · 자료조사</title>
+  <style>
+    :root { color-scheme: light; --paper: #fff; --ink: #000; --line: #ddd; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Noto Serif CJK KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 16px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
+    main { width: min(100% - 48px, 800px); margin: 0 auto; padding: 88px 0 112px; }
+    header { padding-bottom: 36px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0; font-size: clamp(25px, 4.5vw, 36px); font-weight: 600; letter-spacing: -0.045em; line-height: 1.5; }
+    .chapter { margin: 18px 0 0; font-size: clamp(18px, 3vw, 23px); font-weight: 400; line-height: 1.6; }
+    section { margin-top: 44px; }
+    h2 { margin: 0 0 20px; font-size: 21px; font-weight: 600; line-height: 1.6; }
+    h3 { margin: 0 0 12px; font-size: 18px; font-weight: 600; line-height: 1.6; }
+    p { margin: 0 0 18px; }
+    p:last-child { margin-bottom: 0; }
+    .topic { padding-top: 32px; margin-top: 32px; border-top: 1px solid var(--line); }
+    .topic:first-of-type { padding-top: 0; border-top: 0; margin-top: 0; }
+    ul, ol { margin: 0 0 24px; padding-left: 22px; }
+    li { padding-left: 3px; margin: 4px 0; }
+    ul:last-child, ol:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid #000; outline-offset: 5px; }
+    .section-divider { border-top: 1px solid var(--line); padding-top: 32px; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
+    @media (max-width: 540px) {
+      main { width: calc(100% - 40px); padding: 44px 0 64px; }
+      header { padding-bottom: 28px; }
+      section { margin-top: 32px; }
+      body { font-size: 15px; }
+    }
+    @media print {
+      main { width: 100%; padding: 0; }
+      h2, h3 { break-after: avoid; }
+      li { break-inside: avoid; }
+      footer { display: none; }
+    }
+  
+    [hidden] { display: none !important; }
+    .week-tabs { display: flex; gap: 28px; margin: 28px 0 0; border-bottom: 1px solid var(--line); }
+    .week-tabs a { display: inline-block; padding: 12px 4px; text-decoration: none; border-bottom: 3px solid transparent; font-size: 17px; }
+    .week-tabs a[aria-selected="true"] { border-bottom-color: #000; font-weight: 600; }
+    .week-panel { padding-top: 28px; }
+    .week-panel > .chapter { margin: 0; }
+    .equation { margin: 26px 0; overflow-x: auto; }
+    .week-links { display: flex; gap: 24px; margin: 0 0 28px; font-size: 15px; }
+    @media print { .week-tabs { display: none; } .week-panel { padding-top: 20px; } }
+</style>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+      options: { enableMenu: false }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>홍석찬 LifeStep Internship</h1>
+    <p class="chapter">자료조사</p>
+  </header>
+  <nav class="week-tabs" role="tablist" aria-label="주차 선택">
+    <a href="#week-1" id="tab-week-1" role="tab" aria-controls="panel-week-1" aria-selected="true">1주차 · MLP</a>
+    <a href="#week-2" id="tab-week-2" role="tab" aria-controls="panel-week-2" aria-selected="false">2주차 · Computer Vision</a>
+  </nav>
+<article class="week-panel" id="panel-week-1" role="tabpanel" aria-labelledby="tab-week-1" tabindex="0">
+<p class="chapter">Chapter 01. Multilayer Perceptron (MLP)</p>
+
+
+    <section aria-labelledby="w1-learning-objective">
+      <h2 id="w1-learning-objective">Learning Objective</h2>
+      <p>이번 학습에서는 Multilayer Perceptron의 구조와 학습 원리를 이론적·수학적 관점에서 살펴보고, 주요 개념과 동작 과정을 자신의 언어로 설명할 수 있는 수준까지 이해하는 것을 목표로 합니다.</p>
+      <p>특히 Neural Network가 입력으로부터 출력을 계산하는 과정과, 예측 오차를 이용하여 Weight와 Bias를 업데이트하는 과정을 수식 수준에서 이해하는 것을 목표로 합니다.</p>
+    </section>
+
+    <section aria-labelledby="w1-topics">
+      <h2 id="w1-topics">Topics</h2>
+
+      <section class="topic" aria-labelledby="w1-topic-1-1">
+        <h3 id="w1-topic-1-1">1.1 Fundamentals of Neural Networks</h3>
+        <ul>
+          <li>Artificial Neuron</li>
+          <li>Input, Weight, Bias</li>
+          <li>Weighted Sum</li>
+          <li>Activation Function</li>
+          <li>Layer</li>
+          <li>Forward Propagation</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-2">
+        <h3 id="w1-topic-1-2">1.2 Perceptron</h3>
+        <ul>
+          <li>Perceptron Model</li>
+          <li>Linear Combination</li>
+          <li>Threshold Function</li>
+          <li>Decision Boundary</li>
+          <li>Perceptron Learning Rule</li>
+          <li>Limitations of a Single-Layer Perceptron</li>
+          <li>XOR Problem</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-3">
+        <h3 id="w1-topic-1-3">1.3 Multilayer Perceptron (MLP)</h3>
+        <ul>
+          <li>Input Layer</li>
+          <li>Hidden Layer</li>
+          <li>Output Layer</li>
+          <li>Weight and Bias</li>
+          <li>Activation Functions</li>
+          <li>Non-linearity</li>
+          <li>Forward Propagation</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-4">
+        <h3 id="w1-topic-1-4">1.4 Backpropagation Algorithm</h3>
+        <ul>
+          <li>Loss Function</li>
+          <li>Gradient</li>
+          <li>Partial Derivative</li>
+          <li>Chain Rule</li>
+          <li>Computational Graph</li>
+          <li>Gradient Calculation</li>
+          <li>Backpropagation</li>
+          <li>Weight and Bias Update</li>
+        </ul>
+        <p>Backpropagation은 단순히 공식을 암기하지 말고,</p>
+        <p><strong>Forward Propagation → Loss Calculation → Gradient Calculation → Backpropagation → Parameter Update</strong></p>
+        <p>과정이 왜 필요한지 설명할 수 있도록 학습합니다.</p>
+        <p>특히 Chain Rule을 이용하여</p>
+        <div class="equation">\[
+          \frac{\partial L}{\partial w}
+        \]</div>
+        <p>가 어떻게 계산되는지 간단한 Neural Network를 직접 전개해 봅니다.</p>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-5">
+        <h3 id="w1-topic-1-5">1.5 Mini-batch Stochastic Gradient Descent</h3>
+        <ul>
+          <li>Gradient Descent</li>
+          <li>Batch Gradient Descent</li>
+          <li>Stochastic Gradient Descent (SGD)</li>
+          <li>Mini-batch SGD</li>
+          <li>Learning Rate</li>
+          <li>Epoch</li>
+          <li>Batch Size</li>
+          <li>Iteration</li>
+          <li>Parameter Update</li>
+        </ul>
+        <p>Batch / Stochastic / Mini-batch Gradient Descent의 차이와 각각의 장단점을 설명할 수 있도록 합니다.</p>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-6">
+        <h3 id="w1-topic-1-6">1.6 Classification Using Multilayer Perceptrons</h3>
+        <ul>
+          <li>Input Data</li>
+          <li>Forward Propagation</li>
+          <li>Output Prediction</li>
+          <li>Binary Classification</li>
+          <li>Multi-class Classification</li>
+          <li>Sigmoid</li>
+          <li>Softmax</li>
+          <li>Cross-Entropy Loss</li>
+          <li>Training and Inference</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w1-topic-1-7">
+        <h3 id="w1-topic-1-7">1.7 Characteristics of Multilayer Perceptrons</h3>
+        <ul>
+          <li>Non-linear Representation</li>
+          <li>Representation Learning</li>
+          <li>Universal Approximation</li>
+          <li>Model Capacity</li>
+          <li>Overfitting</li>
+          <li>Generalization</li>
+          <li>Vanishing Gradient</li>
+          <li>Effect of Network Depth</li>
+        </ul>
+      </section>
+    </section>
+  
+</article>
+<article class="week-panel" id="panel-week-2" role="tabpanel" aria-labelledby="tab-week-2" tabindex="0">
+<p class="chapter">Chapter 02. Deep Learning for Computer Vision</p>
+
+
+    <section aria-labelledby="w2-topics">
+      <h2 id="w2-topics">Topics</h2>
+
+      <section class="topic" aria-labelledby="w2-topic-2-1">
+        <h3 id="w2-topic-2-1">2.1 OpenCV &amp; Image Representation</h3>
+        <ul>
+          <li>OpenCV의 역할과 TensorFlow / Keras의 역할</li>
+          <li>Pixel, Image Shape, Height × Width × Channels</li>
+          <li>Grayscale, RGB / BGR</li>
+          <li>Image Loading, Resizing, Normalization</li>
+          <li>Tensor와 Batch Dimension</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-2">
+        <h3 id="w2-topic-2-2">2.2 From MLP to Deep Learning Vision</h3>
+        <ul>
+          <li>Handcrafted Features vs. Learned Features</li>
+          <li>Supervised Learning, Input and Label</li>
+          <li>Training / Validation / Test Sets</li>
+          <li>Flatten, MLP, Softmax, Cross-Entropy</li>
+          <li>Training vs. Inference</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-3">
+        <h3 id="w2-topic-2-3">2.3 Convolutional Neural Networks (CNN)</h3>
+        <ul>
+          <li>Convolution, Kernel / Filter, Feature Map</li>
+          <li>Local Receptive Field, Weight Sharing</li>
+          <li>Stride and Padding</li>
+          <li>ReLU and Pooling</li>
+          <li>Convolutional Layers → Classification Head</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-4">
+        <h3 id="w2-topic-2-4">2.4 Training &amp; Generalization</h3>
+        <ul>
+          <li>SGD vs. Adam · 개념 비교</li>
+          <li>Learning Rate, Epoch, Batch Size · 복습</li>
+          <li>Training / Validation Loss and Accuracy</li>
+          <li>Overfitting and Generalization</li>
+          <li>Data Augmentation, Dropout, Early Stopping</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-5">
+        <h3 id="w2-topic-2-5">2.5 Transfer Learning</h3>
+        <ul>
+          <li>Pretrained Model and ImageNet</li>
+          <li>Feature Extraction and Layer Freezing</li>
+          <li>Replacing the Classification Head</li>
+          <li>Fine-tuning</li>
+          <li>Model-specific Input Preprocessing</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-6">
+        <h3 id="w2-topic-2-6">2.6 Image Classification &amp; Object Detection</h3>
+        <ul>
+          <li>Image Classification vs. Object Detection</li>
+          <li>Class Label, Bounding Box, Confidence Score</li>
+          <li>YOLO</li>
+          <li>Intersection over Union (IoU)</li>
+          <li>Non-Maximum Suppression (NMS)</li>
+        </ul>
+      </section>
+
+      <section class="topic" aria-labelledby="w2-topic-2-7">
+        <h3 id="w2-topic-2-7">2.7 Image Segmentation &amp; Applications</h3>
+        <ul>
+          <li>Pixel-wise Prediction and Segmentation Mask</li>
+          <li>Semantic Segmentation vs. Instance Segmentation</li>
+          <li>U-Net · Encoder, Decoder, Skip Connection</li>
+          <li>Background Replacement</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="section-divider" aria-labelledby="w2-references">
+      <h2 id="w2-references">References</h2>
+      <ul>
+        <li><a href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html">OpenCV · Python Tutorials</a> — 이미지 입출력과 기본 처리</li>
+        <li><a href="https://www.tensorflow.org/tutorials/images/cnn">TensorFlow · Convolutional Neural Network</a> — CNN 구조와 학습 흐름</li>
+        <li><a href="https://www.tensorflow.org/tutorials/images/transfer_learning">TensorFlow · Transfer Learning and Fine-tuning</a> — 특징 추출과 미세 조정</li>
+        <li><a href="https://www.tensorflow.org/tutorials/images/segmentation">TensorFlow · Image Segmentation</a> — 픽셀 단위 예측과 U-Net 구조</li>
+      </ul>
+    </section>
+  
+</article>
+</main>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    function selectWeek() {
+      const id = location.hash === '#week-2' ? 'week-2' : 'week-1';
+      tabs.forEach(tab => {
+        const selected = tab.getAttribute('aria-controls') === 'panel-' + id;
+        tab.setAttribute('aria-selected', String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      panels.forEach(panel => { panel.hidden = panel.id !== 'panel-' + id; });
+      document.title = '홍석찬 LifeStep Internship · ' + (id === 'week-1' ? '1주차' : '2주차');
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', event => {
+        event.preventDefault();
+        if (location.hash !== tab.hash) history.pushState(null, '', tab.hash);
+        selectWeek();
+      });
+      tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else if (event.key === ' ') { event.preventDefault(); tab.click(); return; }
+        else return;
+        event.preventDefault();
+        tabs[next].focus();
+        tabs[next].click();
+      });
+    });
+    addEventListener('hashchange', selectWeek);
+    addEventListener('popstate', selectWeek);
+    selectWeek();
+  </script>
+</body>
+</html>
