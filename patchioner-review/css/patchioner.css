@@ -108,3 +108,6 @@ html[data-preview="1"] .deck{box-shadow:none}html[data-preview="1"] .presentatio
 
 /* Paper title image and conference profile, immediately before Introduction. */
 .venue-slide .slide-body{justify-content:flex-start;gap:24px}.venue-slide .h2{margin-bottom:22px}.venue-paper{height:290px;flex:none}.venue-paper .zoom-target,.venue-paper .zoom-target img{height:290px;max-height:290px}.venue-facts{display:grid;grid-template-columns:1fr 1fr;gap:55px;border-top:1px solid #aaa;padding-top:22px}.venue-label{font-size:15px;letter-spacing:.12em;color:#666;margin:0 0 8px!important}.venue-name{font-size:27px;line-height:1.4;margin:0 0 19px!important}.venue-facts .explain-bullets{gap:12px;padding-left:25px}.venue-facts .explain-bullets li{font-size:24px;line-height:1.5;padding-left:2px}.venue-metrics{border-left:1px solid #bbb;padding-left:40px;display:flex;flex-direction:column;gap:23px}.venue-metrics p{margin:0!important;font-size:27px;line-height:1.4}.venue-metrics span{display:block;font-size:21px;color:#555;margin-top:6px}.venue-slide .source-line{font-size:13px}
+
+/* Static captures and presenter previews must not inherit slide transitions. */
+html[data-preview="1"] .slide{transition:none!important;animation:none!important}
