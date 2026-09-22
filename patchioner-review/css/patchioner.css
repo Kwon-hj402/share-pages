@@ -111,3 +111,6 @@ html[data-preview="1"] .deck{box-shadow:none}html[data-preview="1"] .presentatio
 
 /* Static captures and presenter previews must not inherit slide transitions. */
 html[data-preview="1"] .slide{transition:none!important;animation:none!important}
+
+/* Page explanations: readable tables and examples in the notes drawer. */
+.notes-overlay pre{white-space:pre-wrap;overflow-wrap:anywhere}.notes-overlay table{border-collapse:collapse;width:100%;margin:1em 0}.notes-overlay th,.notes-overlay td{border:1px solid #777;padding:.3em .6em;text-align:left}.notes-overlay blockquote{margin:1em 0;padding-left:1em;border-left:3px solid #aaa}

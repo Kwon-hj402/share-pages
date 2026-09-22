@@ -437,6 +437,11 @@
     font-family: "SF Mono", monospace; font-size: .9em;
     background: rgba(255,255,255,.08); padding: 1px 6px; border-radius: 4px;
   }
+
+  .pcard-notes pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .pcard-notes table { border-collapse: collapse; width: 100%; margin: .8em 0; }
+  .pcard-notes th, .pcard-notes td { border: 1px solid #484f58; padding: .35em .55em; text-align: left; }
+  .pcard-notes blockquote { margin: .8em 0; padding-left: .8em; border-left: 3px solid #8b949e; }
   .pcard-notes .empty { color: #484f58; font-style: italic; }
 
   /* Timer card */
@@ -538,7 +543,7 @@
   <div class="pcard pcard-notes" id="card-notes" style="--dot-color:#f0883e">
     <div class="pcard-head" data-drag>
       <span class="pcard-dot"></span>
-      <span class="pcard-title">SPEAKER SCRIPT · 발표 대본</span>
+      <span class="pcard-title">PAGE GUIDE · 페이지 해설</span>
     </div>
     <div class="pcard-body" id="notes-body"></div>
     <div class="pcard-resize" data-resize></div>
@@ -786,7 +791,7 @@
 
     /* Notes */
     var note = slideMeta[n].notes;
-    notesBody.innerHTML = note || '<span class="empty">이 슬라이드에는 대본이 없습니다.</span>';
+    notesBody.innerHTML = note || '<span class="empty">이 슬라이드에는 해설이 없습니다.</span>';
 
     /* Timer count */
     timerCount.textContent = (n + 1) + ' / ' + total;
@@ -860,7 +865,7 @@
   iframeCur.src = deckUrl + '?preview=' + (idx + 1);
   if (idx + 1 < total) iframeNxt.src = deckUrl + '?preview=' + (idx + 2);
   /* Initialize notes/timer/count without touching iframes */
-  notesBody.innerHTML = slideMeta[idx].notes || '<span class="empty">이 슬라이드에는 대본이 없습니다.</span>';
+  notesBody.innerHTML = slideMeta[idx].notes || '<span class="empty">이 슬라이드에는 해설이 없습니다.</span>';
   curMeta.textContent = (idx + 1) + '/' + total;
   nxtMeta.textContent = (idx + 2) + '/' + total;
   timerCount.textContent = (idx + 1) + ' / ' + total;
