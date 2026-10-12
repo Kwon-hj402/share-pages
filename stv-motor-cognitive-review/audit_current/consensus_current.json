@@ -1,0 +1,364 @@
+{
+  "independent_agents": [
+    "audit_current_numbers",
+    "audit_current_interpretation",
+    "audit_current_style"
+  ],
+  "root_source_cells_checked": 320,
+  "root_effect_contexts": [
+    {
+      "paragraph": 33,
+      "phase": "primary",
+      "group": "Main_Motor",
+      "source": "ver8 / Main_Motor!E62:K62",
+      "significant": true
+    },
+    {
+      "paragraph": 33,
+      "phase": "sensitivity",
+      "group": "Motor Performance",
+      "source": "ver7 / Main!F77:L77",
+      "significant": true
+    },
+    {
+      "paragraph": 36,
+      "phase": "primary",
+      "group": "Athlete",
+      "source": "ver8 / Motor_Population!F44:L44",
+      "significant": true
+    },
+    {
+      "paragraph": 36,
+      "phase": "primary",
+      "group": "Healthy",
+      "source": "ver8 / Motor_Population!F52:L52",
+      "significant": false
+    },
+    {
+      "paragraph": 36,
+      "phase": "primary",
+      "group": "Patients",
+      "source": "ver8 / Motor_Population!F68:L68",
+      "significant": false
+    },
+    {
+      "paragraph": 36,
+      "phase": "sensitivity",
+      "group": "Athlete",
+      "source": "ver7 / Motor_Population!F43:L43",
+      "significant": true
+    },
+    {
+      "paragraph": 36,
+      "phase": "sensitivity",
+      "group": "Patients",
+      "source": "ver7 / Motor_Population!F58:L58",
+      "significant": false
+    },
+    {
+      "paragraph": 37,
+      "phase": "primary",
+      "group": "Static Balance",
+      "source": "ver8 / Motor_Type!F66:L66",
+      "significant": false
+    },
+    {
+      "paragraph": 37,
+      "phase": "primary",
+      "group": "Dynamic Balance",
+      "source": "ver8 / Motor_Type!F19:L19",
+      "significant": true
+    },
+    {
+      "paragraph": 37,
+      "phase": "primary",
+      "group": "Functional",
+      "source": "ver8 / Motor_Type!F54:L54",
+      "significant": true
+    },
+    {
+      "paragraph": 37,
+      "phase": "sensitivity",
+      "group": "Static Balance",
+      "source": "ver7 / Motor_Type!F58:L58",
+      "significant": false
+    },
+    {
+      "paragraph": 37,
+      "phase": "sensitivity",
+      "group": "Functional",
+      "source": "ver7 / Motor_Type!F47:L47",
+      "significant": true
+    },
+    {
+      "paragraph": 38,
+      "phase": "primary",
+      "group": "multi-session",
+      "source": "ver8 / Motor_Duration!F55:L55",
+      "significant": true
+    },
+    {
+      "paragraph": 38,
+      "phase": "primary",
+      "group": "single-session",
+      "source": "ver8 / Motor_Duration!F64:L64",
+      "significant": false
+    },
+    {
+      "paragraph": 38,
+      "phase": "sensitivity",
+      "group": "multi-session",
+      "source": "ver7 / Motor_Duration!F48:L48",
+      "significant": true
+    },
+    {
+      "paragraph": 38,
+      "phase": "sensitivity",
+      "group": "single-session",
+      "source": "ver7 / Motor_Duration!F56:L56",
+      "significant": false
+    },
+    {
+      "paragraph": 39,
+      "phase": "primary",
+      "group": "Constant",
+      "source": "ver8 / Motor_Variablity!F42:L42",
+      "significant": true
+    },
+    {
+      "paragraph": 39,
+      "phase": "primary",
+      "group": "Variable",
+      "source": "ver8 / Motor_Variablity!F64:L64",
+      "significant": true
+    },
+    {
+      "paragraph": 39,
+      "phase": "sensitivity",
+      "group": "Constant",
+      "source": "ver7 / Motor_Variablity!F41:L41",
+      "significant": true
+    },
+    {
+      "paragraph": 39,
+      "phase": "sensitivity",
+      "group": "Variable",
+      "source": "ver7 / Motor_Variablity!F56:L56",
+      "significant": true
+    },
+    {
+      "paragraph": 42,
+      "phase": "primary",
+      "group": "Main_Cognitive",
+      "source": "ver8 / Main_Cognitive!E26:K26",
+      "significant": true
+    },
+    {
+      "paragraph": 42,
+      "phase": "sensitivity",
+      "group": "Cognitive Performance",
+      "source": "ver7 / Main!F24:L24",
+      "significant": true
+    },
+    {
+      "paragraph": 45,
+      "phase": "primary",
+      "group": "Athlete",
+      "source": "ver8 / Cognitive_Population!F21:L21",
+      "significant": true
+    },
+    {
+      "paragraph": 45,
+      "phase": "primary",
+      "group": "Healthy",
+      "source": "ver8 / Cognitive_Population!F25:L25",
+      "significant": false
+    },
+    {
+      "paragraph": 45,
+      "phase": "primary",
+      "group": "Patients",
+      "source": "ver8 / Cognitive_Population!F30:L30",
+      "significant": false
+    },
+    {
+      "paragraph": 46,
+      "phase": "primary",
+      "group": "Basic Reaction & Processing Speed",
+      "source": "ver8 / Cognitve_Type!F22:L22",
+      "significant": true
+    },
+    {
+      "paragraph": 46,
+      "phase": "primary",
+      "group": "Anticipation & Decision-Making",
+      "source": "ver8 / Cognitve_Type!F13:L13",
+      "significant": true
+    },
+    {
+      "paragraph": 46,
+      "phase": "primary",
+      "group": "Executive Function & Working Memory",
+      "source": "ver8 / Cognitve_Type!F28:L28",
+      "significant": false
+    },
+    {
+      "paragraph": 46,
+      "phase": "primary",
+      "group": "Visuospatial Function",
+      "source": "ver8 / Cognitve_Type!F32:L32",
+      "significant": false
+    },
+    {
+      "paragraph": 46,
+      "phase": "sensitivity",
+      "group": "Anticipation & Decision-Making",
+      "source": "ver7 / Cognitve_Type!F11:L11",
+      "significant": true
+    },
+    {
+      "paragraph": 47,
+      "phase": "primary",
+      "group": "multi-session",
+      "source": "ver8 / Cognitive_Duration!F20:L20",
+      "significant": true
+    },
+    {
+      "paragraph": 47,
+      "phase": "primary",
+      "group": "single-session",
+      "source": "ver8 / Cognitive_Duration!F28:L28",
+      "significant": false
+    },
+    {
+      "paragraph": 47,
+      "phase": "sensitivity",
+      "group": "single-session",
+      "source": "ver7 / Cognitive_Duration!F26:L26",
+      "significant": false
+    },
+    {
+      "paragraph": 48,
+      "phase": "primary",
+      "group": "Variable",
+      "source": "ver8 / Cognitive_Variablility!F28:L28",
+      "significant": true
+    },
+    {
+      "paragraph": 48,
+      "phase": "primary",
+      "group": "Constant",
+      "source": "ver8 / Cognitive_Variablility!F14:L14",
+      "significant": false
+    },
+    {
+      "paragraph": 48,
+      "phase": "sensitivity",
+      "group": "Constant",
+      "source": "ver7 / Cognitive_Variablility!F12:L12",
+      "significant": true
+    }
+  ],
+  "agent_numeric_checks": 426,
+  "reported_estimates": 36,
+  "numeric_mismatches": 0,
+  "unresolved_disagreements": [],
+  "decisions": [
+    {
+      "topic": "기재 수치와 유의·비유의 / 방향",
+      "numeric": "426개 체크 일치",
+      "interpretation": "36개 P·CI 판정 일치",
+      "style": "문구 역전 없음",
+      "root": "원표 셀 재대조 일치",
+      "conclusion": "기재 결과 통과"
+    },
+    {
+      "topic": "전체 I² low 25.3 / moderate 43.7",
+      "numeric": "원표 일치",
+      "interpretation": "근사 표현 타당",
+      "style": "표현 허용",
+      "root": "지침 범위·문맥상 타당",
+      "conclusion": "수정 불필요"
+    },
+    {
+      "topic": "Egger = 확정 출판편향 표현 네 곳",
+      "numeric": "과도한 해석",
+      "interpretation": "수정 필요",
+      "style": "수정 필요",
+      "root": "잠재적 비대칭으로 교정",
+      "conclusion": "세 검수자 합의"
+    },
+    {
+      "topic": "인지 고정 설정 P .224 → .034",
+      "numeric": "비유의 → 유의",
+      "interpretation": "변화 명시 권고",
+      "style": "also 표현 명료화",
+      "root": "판정은 맞으나 유지 아님",
+      "conclusion": "세 검수자 합의"
+    },
+    {
+      "topic": "Motor 고령자 한 연구 미서술",
+      "numeric": "59개 중 한 비교 설명 없음",
+      "interpretation": "보고 범위 설명",
+      "style": "기존 생략·의도 미확인",
+      "root": "Sep30/Oct07에서도 미서술",
+      "conclusion": "자동 복원 없이 확인"
+    },
+    {
+      "topic": "Motor 전체 민감도 51 / 18",
+      "numeric": "원표 값 확인·본문 직접 표기 없음",
+      "interpretation": "명시 권고",
+      "style": "영역 간 보고 통일",
+      "root": "51비교·18편 명시 권고",
+      "conclusion": "세 검수자 합의"
+    },
+    {
+      "topic": "소수·종속 비교의 Egger 해석",
+      "numeric": "값 일치 ≠ 타당성",
+      "interpretation": "독립 연구 수·SMD 한계",
+      "style": "한계 별도 설명",
+      "root": "Methods·CMA 설정 확인 필요",
+      "conclusion": "세 검수자 합의"
+    },
+    {
+      "topic": "8비교 / 3연구 제외 범위",
+      "numeric": "영역 전체 제외 규모",
+      "interpretation": "하위집단별 수와 구분",
+      "style": "보고 범위 구분",
+      "root": "전체 영역이라는 수식 명시",
+      "conclusion": "숫자 오류 아닌 범위 명료성"
+    },
+    {
+      "topic": "I²·β₀ 누락",
+      "numeric": "I² 없음 7개 = 0%; Egger 없음 2개 = 원표 없음",
+      "interpretation": "누락 수치 오류 없음",
+      "style": "임의 숫자 채우지 않기",
+      "root": "최근 추가 β₀ 포함 확인",
+      "conclusion": "추가 미기재 없음"
+    },
+    {
+      "topic": "P 이탤릭 두 곳 / Fig. 공란 열 곳",
+      "numeric": "Fig. 연결 미정",
+      "interpretation": "해당 검수 범위 아님",
+      "style": "native 서식 확인",
+      "root": "해당 위치 교정 필요",
+      "conclusion": "형식 미완료"
+    },
+    {
+      "topic": "기존 전체효과 forest 그림",
+      "numeric": "01/06 두 그림 = ver7 민감도",
+      "interpretation": "본 분석과 연결 시 주의",
+      "style": "Fig. 번호 미정",
+      "root": "메인·민감도 그림 대응 확인",
+      "conclusion": "현재 그림 연결 확정 불가"
+    },
+    {
+      "topic": "effect/effects · for/on · 한 자리 수 · 순서",
+      "numeric": "해당 검수 범위 아님",
+      "interpretation": "서술 범위 적절",
+      "style": "현재 구조 적절",
+      "root": "핵심 병렬·용어 보존",
+      "conclusion": "수정 불필요"
+    }
+  ]
+}
