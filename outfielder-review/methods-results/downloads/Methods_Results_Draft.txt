@@ -1,0 +1,60 @@
+OUTFIELDER METHODS AND RESULTS — AUTHOR REVIEW DRAFT — 13 OCTOBER 2026
+Ethics/consent, equipment configuration, cue timing and preprocessing still require author confirmation; see the HTML fields and Supplementary Methods. The original 15-participant primary analysis is retained.
+
+METHODS
+
+### 2.1 Participants
+
+Fifteen healthy adult men (age: 22.1 ± 2.2 years; height: 177.3 ± 5.9 cm; body mass: 77.3 ± 8.7 kg; mean ± SD) participated in this study. Exclusion criteria were a history of lower-extremity surgery or fracture, restricted or painful lower-extremity movement, and musculoskeletal disorders, including muscle, tendon, or ligament injuries.
+
+### 2.2 Experimental design
+
+A repeated-measures design was used to compare two preparatory movement conditions (Walking and Split), two spatial congruency conditions (congruent and incongruent), and eight response directions (D1–D8). The direction codes corresponded to angles from 0° to 315° in 45° increments. Each participant performed two trials for each combination, resulting in 32 trials per movement condition and 64 trials in total.
+
+### 2.3 Experimental procedures
+
+Target markers were placed 2 m from the center of the force plate in eight directions. A green signal and a directional arrow indicated when and where to move. Participants were instructed to move in the direction of the arrowhead and pass the corresponding target marker as quickly as possible. Congruent arrows pointed outward from their radial presentation location, whereas incongruent arrows pointed toward the center and required movement opposite to that location. For example, an inward-pointing arrow at the D1 location required movement toward D5. D1–D8 represented the required movement direction.
+
+In the Walking condition, participants were instructed to prepare with a natural stepping movement and to move toward the target when the visual cue appeared. This condition was referred to as the applied crossover start during instruction. In the Split condition, participants were instructed to jump with both feet, land on both feet simultaneously, and use the landing action to initiate movement toward the target.
+
+Before testing, participants received approximately 15 min of instruction and familiarization. They practiced each movement condition for 3 min with congruent cues, followed by 3 min of practice across both movement conditions with congruent and incongruent cues. They were instructed to correct an initially mistaken direction and continue to the required target without stopping. The 32 trials for each movement condition were randomized and divided into two blocks of 16 trials. The starting movement condition was randomly selected, and Walking and Split alternated across the four blocks. A 2 min rest period was provided between blocks.
+
+### 2.4 Data collection
+
+After familiarization, EMG electrodes were attached, muscle-specific maximal voluntary contractions were performed, and reflective markers were placed on anatomical landmarks. Three-dimensional marker trajectories were recorded at 100 Hz. The pelvic markers used for the present analysis were the bilateral iliac crest (RIC and LIC), anterior superior iliac spine (RASIS and LASIS), and posterior superior iliac spine (RPSIS and LPSIS) markers. The full reported marker set and additional EMG/MVC preparation are described in Supplementary Methods.
+
+### 2.5 Data processing
+
+The horizontal pelvic marker center was calculated as the mean of the coordinates of the six pelvic markers in the horizontal plane. The recorded green-signal timestamp was aligned to the nearest trajectory sample relative to the recording start timestamp. The pelvic marker center position at this reference frame was used as the origin for horizontal displacement. The analysis interval ended at the first recorded sample at which displacement from this origin reached at least 1 m.
+
+Time to 1 m was calculated as the number of sample intervals between the reference and end frames divided by the sampling frequency. Horizontal path length was calculated as the sum of the distances between consecutive pelvic marker center positions over the same interval. Mean speed was calculated for each trial by dividing horizontal path length by time to 1 m. Time, path length, and mean speed are reported in seconds, meters, and meters per second, respectively.
+
+Of the 960 trial records, 955 reached the 1 m displacement threshold and contributed to the analysis. Trial values were averaged within each participant and condition. All 32 condition means were available for each participant; five condition means were based on one valid trial, and the remaining condition means were based on two. When a pelvic marker coordinate was unavailable, the center was calculated using the available marker coordinates. Detailed trial and marker availability are provided in Supplementary Methods.
+
+### 2.6 Statistical analysis
+
+Each outcome was analyzed in MATLAB using a three-way repeated-measures ANOVA with movement condition, congruency, and direction as within-participant factors. All main effects and interactions were included. Greenhouse–Geisser-corrected degrees of freedom and p values are reported, with partial eta squared (ηp²) as the effect size. For each direction, participant-level condition means were averaged equally across the two congruency conditions before comparing Walking and Split. MATLAB’s Bonferroni comparison option was applied separately within each direction; the primary analysis did not adjust across all eight directional comparisons. Statistical significance was set at p < 0.05. Descriptive data are presented as means and between-participant standard deviations of participant-level condition means. Pointwise 95% confidence intervals for the Walking–Split differences were calculated from the paired participant differences.
+
+Additional assumption and participant-influence checks were conducted retrospectively in Python using Shapiro–Wilk tests, Q–Q plots, and leave-one-participant-out ANOVAs. Their procedures and results are provided in Supplementary Methods and Supplementary Table S2.
+
+
+RESULTS
+
+### 3.1 Time to 1 m
+
+The ANOVA results are summarized in Table 5. A significant movement condition × direction interaction was observed for time to 1 m (F(3.48, 48.70) = 9.20, p < 0.001, ηp² = 0.397). Time to 1 m was shorter during Walking than during Split in D3 (Walking–Split difference: -0.0950 s; p = 0.004) and D4 (-0.0483 s; p = 0.040), whereas it was longer during Walking in D7 (0.0878 s; p < 0.001) and D8 (0.0335 s; p = 0.026). No significant Walking–Split difference was observed in D1, D2, D5, or D6. Direction-specific means, standard deviations, and confidence intervals are presented in Table 2.
+
+Averaged across movement conditions and directions, time to 1 m was longer in the incongruent condition than in the congruent condition (1.239 ± 0.060 vs. 1.162 ± 0.070 s; F(1, 14) = 101.25, p < 0.001, ηp² = 0.879). A congruency × direction interaction was also observed (F(3.95, 55.26) = 5.39, p = 0.001, ηp² = 0.278). Direction-specific descriptive values for both congruency conditions are provided in Supplementary Table S1. Neither the overall movement-condition main effect (F(1, 14) = 0.38, p = 0.548, ηp² = 0.026) nor the three-way interaction (F(3.46, 48.47) = 1.09, p = 0.366, ηp² = 0.072) was significant.
+
+### 3.2 Horizontal path length
+
+A significant movement condition × direction interaction was observed for horizontal path length (F(1.68, 23.51) = 11.05, p < 0.001, ηp² = 0.441). Path length was longer during Walking than during Split in D5–D8, with differences ranging from 0.106 to 0.269 m (all p ≤ 0.002). No significant Walking–Split difference was observed in D1–D4 (Table 3). Averaged across directions and congruency conditions, path length was 1.260 ± 0.096 m during Walking and 1.154 ± 0.033 m during Split (F(1, 14) = 20.68, p < 0.001, ηp² = 0.596).
+
+Averaged across movement conditions and directions, path length was longer in the incongruent condition than in the congruent condition (1.219 ± 0.058 vs. 1.195 ± 0.056 m; F(1, 14) = 20.17, p < 0.001, ηp² = 0.590). The congruency × direction interaction (F(4.17, 58.39) = 2.13, p = 0.086, ηp² = 0.132) and the three-way interaction (F(3.74, 52.35) = 1.08, p = 0.373, ηp² = 0.072) were not significant.
+
+### 3.3 Mean speed
+
+A significant movement condition × direction interaction was observed for mean speed (F(2.83, 39.66) = 3.60, p = 0.023, ηp² = 0.205). Mean speed was greater during Walking than during Split in all eight directions, with differences ranging from 0.051 to 0.131 m/s (all p ≤ 0.024; Table 4). Averaged across directions and congruency conditions, mean speed was 1.054 ± 0.086 m/s during Walking and 0.966 ± 0.063 m/s during Split (F(1, 14) = 21.12, p < 0.001, ηp² = 0.601).
+
+Averaged across movement conditions and directions, mean speed was lower in the incongruent condition than in the congruent condition (0.988 ± 0.063 vs. 1.033 ± 0.070 m/s; F(1, 14) = 63.58, p < 0.001, ηp² = 0.820). A congruency × direction interaction was observed (F(4.50, 63.02) = 2.57, p = 0.040, ηp² = 0.155), whereas the three-way interaction was not significant (F(4.94, 69.11) = 1.43, p = 0.224, ηp² = 0.093). Supplementary Table S1 presents all condition-specific descriptive data, and Supplementary Table S2 presents the additional assumption and participant-influence checks.
+

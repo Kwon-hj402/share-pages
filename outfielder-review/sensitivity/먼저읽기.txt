@@ -1,0 +1,11 @@
+S10 제외 민감도 분석 (2026-10-13)
+
+index.html: 제외 전후 통계·그래프 비교
+Outfielder_without_S10.xlsx: 원본 형식의 n=14 ANOVA·요약·조건부 사후표 및 전후 비교
+figures/PNG/, figures/SVG/, figures/PDF/: n=14 그림을 형식별 폴더에 저장; 각 폴더 아래 TimeTo1m, Distance, Speed
+reference_full15/PNG/, reference_full15/SVG/, reference_full15/PDF/: 기존 n=15 그림의 형식별 동일 복사본
+statistics/exports/: SI 단위 전후 비교 CSV
+
+계산: Python/SciPy, 동일 2×2×8 RM-ANOVA·GG·원 Bonferroni family. MATLAB 원 결과의 20시트 숫자를 먼저 재현한 뒤 S10만 제외했다. MATLAB fitrm 직접 실행은 Statistics Toolbox 미설치로 실패했고 성공으로 기록하지 않았다. 원본 파일은 변경하지 않았다.
+
+공개 공유본 2026-10-14. 참가자 실명 대신 S10 코드를 사용합니다. 15명 주분석과 14명 민감도 분석을 구분합니다.
