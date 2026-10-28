@@ -70,7 +70,7 @@ async function loadPDF(p){
   }
   sizePages();
   pageObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)renderPage(pageRecords[+e.target.dataset.page-1],token)}),{root:pagesEl,rootMargin:'900px 0px'});pageRecords.forEach(r=>pageObserver.observe(r.el));
-  positionObserver=new IntersectionObserver(entries=>{const visible=pageRecords.filter(r=>{const a=r.el.getBoundingClientRect(),b=pagesEl.getBoundingClientRect();return a.bottom>b.top+15&&a.top<b.bottom-15});if(visible.length){currentPage=+visible[0].el.dataset.page;$('#page-number').value=currentPage}},{root:pagesEl,threshold:[0,.1,.3,.5,.8]});pageRecords.forEach(r=>positionObserver.observe(r.el));
+  positionObserver=new IntersectionObserver(entries=>{const visible=pageRecords.filter(r=>{const a=r.el.getBoundingClientRect(),b=pagesEl.getBoundingClientRect();return a.bottom>b.top+15&&a.top<b.bottom-15});if(visible.length){currentPage=+visible[0].el.dataset.page;if(document.activeElement!==$('#page-number'))$('#page-number').value=currentPage}},{root:pagesEl,threshold:[0,.1,.3,.5,.8]});pageRecords.forEach(r=>positionObserver.observe(r.el));
   await renderPage(pageRecords[0],token);
  }catch(error){if(token!==generation)return;console.error(error);pagesEl.innerHTML=`<div class="error-note">PDF를 화면에 표시하지 못했습니다. 원본 파일 전체는 아래 링크에서 열 수 있습니다.<a href="papers/${p.id}.pdf" target="_blank" rel="noopener">원본 PDF 열기 ↗</a></div>`}
 }
