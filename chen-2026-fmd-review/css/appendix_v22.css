@@ -1,0 +1,16 @@
+/* Appendix uses the existing monochrome slide hierarchy. */
+#deck>.appendix-slide .slide-body{gap:24px}
+#deck>.appendix-slide .appendix-context{font-size:25px;line-height:1.45;margin:0}
+#deck>.appendix-slide .appendix-table{margin:0;width:100%;table-layout:fixed}
+#deck>.appendix-slide .appendix-table th{font-size:23px;line-height:1.35;padding:16px 18px}
+#deck>.appendix-slide .appendix-table td{font-size:27px;line-height:1.48;padding:20px 18px;vertical-align:middle}
+#deck>.appendix-slide .appendix-main{font-size:27px;line-height:1.5;margin:0}
+#deck>.appendix-slide .appendix-qualification{font-size:25px;line-height:1.5;margin:0;color:var(--text-2)}
+#deck>.appendix-slide .takeaway{font-size:28px;line-height:1.5;margin:0}
+#deck>.appendix-slide .appendix-two{display:grid;grid-template-columns:1fr 1fr;gap:44px;width:100%}
+#deck>.appendix-slide .appendix-two h3{font-size:30px;line-height:1.4;margin:0 0 12px}
+#deck>.appendix-slide .appendix-study{font-size:23px;line-height:1.5;margin:0 0 16px;color:var(--text-2)}
+#deck>.appendix-quipu .appendix-table th{font-size:22px;padding:13px 14px}
+#deck>.appendix-quipu .appendix-table td{font-size:25px;padding:15px 14px}
+#deck>.appendix-groups .appendix-table th{font-size:22px;padding:15px 13px}
+#deck>.appendix-groups .appendix-table td{font-size:23px;padding:24px 13px;line-height:1.55}
