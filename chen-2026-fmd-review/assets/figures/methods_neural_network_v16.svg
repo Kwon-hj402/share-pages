@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" role="img" aria-labelledby="title desc">
+ <title id="title">신경망의 입력층·은닉층·출력층 개념도</title>
+ <desc id="desc">지도학습 설명을 위한 일반적인 뉴런 연결 그림. 실제 YOLOv12 구조를 나타내지 않음.</desc>
+ <g stroke="#b5bdc1" stroke-width="1.1" fill="none">
+  <path d="M35 38L135 22 M35 38L135 62 M35 38L135 102 M35 38L135 142 M35 90L135 22 M35 90L135 62 M35 90L135 102 M35 90L135 142 M35 142L135 22 M35 142L135 62 M35 142L135 102 M35 142L135 142"/>
+  <path d="M135 22L250 22 M135 22L250 62 M135 22L250 102 M135 22L250 142 M135 62L250 22 M135 62L250 62 M135 62L250 102 M135 62L250 142 M135 102L250 22 M135 102L250 62 M135 102L250 102 M135 102L250 142 M135 142L250 22 M135 142L250 62 M135 142L250 102 M135 142L250 142"/>
+  <path d="M250 22L365 58 M250 22L365 118 M250 62L365 58 M250 62L365 118 M250 102L365 58 M250 102L365 118 M250 142L365 58 M250 142L365 118"/>
+ </g>
+ <g stroke="#1c5770" stroke-width="2" fill="#fff">
+  <circle cx="35" cy="38" r="10"/><circle cx="35" cy="90" r="10"/><circle cx="35" cy="142" r="10"/>
+  <circle cx="365" cy="58" r="10"/><circle cx="365" cy="118" r="10"/>
+ </g>
+ <g stroke="#1c5770" stroke-width="2" fill="#edf4f7">
+  <circle cx="135" cy="22" r="10"/><circle cx="135" cy="62" r="10"/><circle cx="135" cy="102" r="10"/><circle cx="135" cy="142" r="10"/>
+  <circle cx="250" cy="22" r="10"/><circle cx="250" cy="62" r="10"/><circle cx="250" cy="102" r="10"/><circle cx="250" cy="142" r="10"/>
+ </g>
+ <rect x="179" y="68" width="27" height="26" rx="4" fill="#fff"/>
+ <g fill="#111" font-family="Arial,sans-serif" text-anchor="middle">
+  <text x="192" y="87" font-size="23">…</text>
+  <text x="35" y="174" font-size="18">Input</text><text x="192" y="174" font-size="18">Hidden layers</text><text x="365" y="174" font-size="18">Output</text>
+ </g>
+</svg>

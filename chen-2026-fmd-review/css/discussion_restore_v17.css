@@ -1,0 +1,9 @@
+.paper-v17-discussion-restore .paper-v16-discussion-table{width:100%;max-width:none;table-layout:fixed}
+.paper-v17-discussion-restore .paper-v16-discussion-table th:first-child{width:21%}
+.paper-v17-discussion-restore .paper-v16-discussion-table th:nth-child(2){width:12%}
+.paper-v17-discussion-restore .paper-v16-discussion-table th:nth-child(3){width:15%}
+.paper-v17-discussion-restore .paper-v16-discussion-table th:last-child{width:52%}
+.paper-v17-discussion-restore .paper-v17-reading{vertical-align:middle;border-left:1px solid var(--rule);padding:10px 22px}
+.paper-v17-reading p{font-size:24px;line-height:1.45;letter-spacing:-.025em;margin:0;color:var(--text-2)}
+.paper-v17-reading b{font-weight:650;color:var(--ink)}
+@media print{.paper-v17-reading p{font-size:14px;line-height:1.25}}

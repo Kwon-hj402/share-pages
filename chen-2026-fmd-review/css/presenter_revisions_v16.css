@@ -1,0 +1,25 @@
+.v16-scope-lead{font-size:30px;line-height:1.5;color:var(--text-2)}
+.v16-scope-lead b{color:var(--ink)}
+.v16-manual-slide .v7-ai-purpose,.v16-manual-slide .v7-manual-arrow{opacity:0;transform:translateX(-24px);transition:opacity .45s,transform .45s;pointer-events:none}
+.v16-manual-slide[data-stage="1"] .v7-ai-purpose,.v16-manual-slide[data-stage="1"] .v7-manual-arrow,body.edit-mode .v16-manual-slide .v7-ai-purpose{opacity:1;transform:none;pointer-events:auto}
+.v16-manual-slide .v7-ai-purpose h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.v16-ai-word{font-size:76px;font-weight:800;line-height:1.05;color:#be292b;letter-spacing:-.045em}
+.v16-ai-rest{font-size:28px;line-height:1.3}
+.v16-gap-slide .comparison>div:nth-child(2){opacity:0;transform:translateY(20px);transition:opacity .45s,transform .45s;pointer-events:none}
+.v16-gap-slide[data-stage="1"] .comparison>div:nth-child(2),body.edit-mode .v16-gap-slide .comparison>div:nth-child(2){opacity:1;transform:none;pointer-events:auto}
+.v16-bridge-stage{position:relative;width:100%;height:100%;min-height:600px}
+.v16-bridge-question{position:absolute;left:50%;top:210px;transform:translateX(-50%);width:100%;font-size:77px;font-weight:700;line-height:1.3;text-align:center;letter-spacing:-.045em;transition:top .55s,left .55s,transform .55s,font-size .55s}
+.v16-bridge-detail{display:flex;flex-direction:column;gap:22px;padding-top:85px;opacity:0;transform:translateY(28px);transition:opacity .45s .2s,transform .45s .2s;pointer-events:none}
+.v16-bridge-detail>.lead{font-size:27px;line-height:1.45}
+.v16-bridge-detail .project-compare>div{padding:18px 23px}
+.v16-bridge-detail .project-compare h3{font-size:27px;margin-bottom:14px}
+.v16-bridge-detail .project-compare p{font-size:26px;line-height:1.45}
+.v16-bridge-detail .project-flow>div{font-size:26px;padding:12px}
+.v16-bridge-slide[data-stage="0"]>.h2,.v16-bridge-slide[data-stage="0"]>.section-label,.v16-bridge-slide[data-stage="0"]>.source-line{opacity:0}
+.v16-bridge-slide[data-stage="1"] .v16-bridge-question,body.edit-mode .v16-bridge-slide .v16-bridge-question{left:0;top:0;transform:none;font-size:34px;text-align:left}
+.v16-bridge-slide[data-stage="1"] .v16-bridge-detail,body.edit-mode .v16-bridge-slide .v16-bridge-detail{opacity:1;transform:none;pointer-events:auto}
+.v16-open-discussion>.h2,.v16-open-discussion>.section-label,.v16-open-discussion>.source-line{display:none}
+.v16-open-discussion .slide-body{justify-content:center;align-items:center}
+.v16-open-question{font-size:92px;font-weight:700;line-height:1.2;letter-spacing:-.05em;text-align:center}
+#deck>[data-slide-id="chen-review-cardiac-phase"] [data-review-panel="dataset"] .review-detail-copy{gap:8px}
+#deck>[data-slide-id="chen-review-cardiac-phase"] [data-review-panel="dataset"] .review-detail-copy p{line-height:1.3}

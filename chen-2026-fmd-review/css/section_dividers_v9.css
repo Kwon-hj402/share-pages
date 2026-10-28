@@ -1,0 +1,7 @@
+/* Section transitions: white canvas and one large editable title. */
+.section-divider{background:#fff;padding:80px 105px;justify-content:center}
+.section-divider::before{display:none}
+.section-divider>.slide-body{display:flex;align-items:center;justify-content:center;gap:0;width:100%;height:100%;text-align:center}
+.section-divider .divider-title{font-family:var(--font-sans);font-size:112px;font-weight:750;line-height:1.18;letter-spacing:-.045em;color:#111;margin:0;max-width:1320px;word-break:keep-all;overflow-wrap:normal}
+.section-divider[data-slide-id="chen-divider-motivation"] .divider-title{font-size:91px;max-width:1180px}
+.section-divider>.source-line,.section-divider>.deck-footer{display:none}

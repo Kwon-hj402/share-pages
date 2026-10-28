@@ -1,0 +1,4 @@
+#deck>[data-slide-id="chen-stats-overview"] .v19-stats-abbreviations{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;width:100%;border-top:1px solid var(--rule);padding-top:9px;margin-top:0;color:var(--text-2);font-size:16.5px;line-height:1.45}
+#deck>[data-slide-id="chen-stats-overview"] .v19-stats-abbreviations p{font-size:inherit;line-height:inherit;margin:0;letter-spacing:0}
+#deck>[data-slide-id="chen-stats-overview"] .v19-stats-abbreviations b{font-weight:650;color:var(--ink)}
+#deck>[data-slide-id="chen-stats-overview"] .v19-stats-abbreviations sub{font-size:.72em}

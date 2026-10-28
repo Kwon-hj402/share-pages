@@ -1,0 +1,4 @@
+/* Keep the original media element and pixel ratio while filling the canvas. */
+.slide.is-video-expanded .personal-project-video-wrap .personal-marker-video{position:absolute;inset:0;width:1600px;height:900px;max-width:none;max-height:none;aspect-ratio:auto;object-fit:contain;display:block;background:#000;border:0;z-index:40}
+.slide.is-video-expanded>.section-label,.slide.is-video-expanded>.h2,.slide.is-video-expanded>.source-line,.slide.is-video-expanded>.deck-footer,.slide.is-video-expanded>.canvas-layer{visibility:hidden}
+body.edit-mode .slide.is-video-expanded .personal-marker-video{position:static;inset:auto;width:auto;height:350px;max-width:100%;max-height:350px;z-index:auto}

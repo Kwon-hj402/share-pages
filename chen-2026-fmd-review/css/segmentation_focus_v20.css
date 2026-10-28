@@ -1,0 +1,10 @@
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"]>.section-label,
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"]>.h2,
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"]>.source-line,
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"]>.deck-footer,
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"]>.canvas-layer,
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"] .v7-cv-tasks{visibility:hidden}
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"] .v20-segmentation-figure{position:absolute;left:80px;top:65px;width:1440px;height:770px;max-width:none;max-height:none;gap:12px;visibility:visible;z-index:40;background:var(--white);border:0;padding:0;margin:0}
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"] .v20-segmentation-figure button{flex:1;width:100%;min-height:0;overflow:visible}
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"] .v20-segmentation-figure img{width:100%;height:100%;max-width:none;max-height:none;object-fit:contain}
+body:not(.edit-mode) #deck>.segmentation-focus-v20[data-stage="1"] .v20-segmentation-figure figcaption{font-size:18px;line-height:1.4;min-height:0}

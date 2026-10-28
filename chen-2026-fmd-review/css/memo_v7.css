@@ -1,0 +1,81 @@
+/* Memo v7: scoped layouts for FMD introduction and dataset teaching slides. */
+.v7-bridge{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.v7-bridge-column h3{font-size:30px;line-height:1.35;margin:0 0 17px}
+.figure.v7-bridge-figure{height:330px;gap:9px}.v7-bridge-figure button{height:292px}.v7-bridge-figure img{max-height:292px}.v7-bridge-figure figcaption{font-size:16px}
+.v7-bridge-column>p{font-size:28px;line-height:1.5;margin-top:19px}
+.v7-definition-lead{font-size:31px;line-height:1.5;letter-spacing:-.02em}
+.v7-definition-layout{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center}
+.figure.v7-definition-figure{height:360px}.v7-definition-figure button{height:323px}.v7-definition-figure img{max-height:323px}
+.v7-definition-copy{display:flex;flex-direction:column;gap:23px}.v7-definition-copy p{font-size:28px;line-height:1.5}
+.v7-manual-layout{display:grid;grid-template-columns:1fr 74px 1fr;gap:37px;align-items:center}
+.v7-manual-column{border-top:3px solid #111;padding-top:24px}.v7-manual-column h3{font-size:31px;line-height:1.35;margin:0 0 27px}
+.v7-manual-column>div{margin-top:22px}.v7-manual-column>div>b{font-size:28px;line-height:1.4}.v7-manual-column p{font-size:25px;line-height:1.5;margin-top:6px}
+.v7-manual-arrow{font-size:55px;text-align:center}.v7-ai-purpose{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.v7-ai-purpose .v7-manual-purpose{font-size:34px;line-height:1.5;margin:13px 0 30px}
+.v7-dataset-lead{font-size:29px;line-height:1.5}.v7-annotation-prep{display:grid;grid-template-columns:.95fr 70px 1.2fr;gap:30px;align-items:center}
+.figure.v7-data-image{height:265px}.v7-data-image button{height:230px}.v7-data-image img{max-height:230px}.v7-data-image figcaption{font-size:16px}
+.v7-data-arrow{font-size:42px;text-align:center}.v7-annotation-copy{border-top:2px solid #111;padding-top:20px}.v7-annotation-copy h3{font-size:31px;margin:0 0 17px}.v7-annotation-copy p{font-size:27px;line-height:1.5}
+.v7-annotation-copy .v7-muted{font-size:21px;color:#555;margin-top:16px}
+.v7-split-lanes{display:grid;grid-template-columns:1fr 1fr;gap:50px}.v7-split-lanes>div{border-top:2px solid #111;padding-top:18px}.v7-split-lanes h3{font-size:27px;line-height:1.4;margin:0 0 10px}.v7-split-lanes p{font-size:25px;line-height:1.5}
+.v7-training-diagram{position:relative;height:470px;flex:none}.v7-training-diagram>svg{position:absolute;inset:0;width:100%;height:100%}.v7-training-diagram>svg>path{fill:none;stroke:#666;stroke-width:2.5;marker-end:url(#v7-learning-arrow)}
+.v7-learning-input{position:absolute;left:0;top:0;width:330px}.v7-learning-output{position:absolute;left:930px;top:0;width:410px}
+.figure.v7-learning-image{height:266px}.v7-learning-image button{height:232px}.v7-learning-image img{max-height:232px}.v7-learning-image figcaption{font-size:18px;text-align:center}
+.v7-learning-model{position:absolute;left:470px;top:60px;width:305px;min-height:155px;border:2px solid #111;padding:25px 15px;text-align:center}
+.v7-learning-model b{font-size:33px}.v7-learning-model p{font-size:25px;line-height:1.5;margin-top:13px}
+.v7-learning-target,.v7-learning-comparison{position:absolute;top:325px;min-height:123px;border-top:2px solid #111;padding:18px 12px;text-align:center}
+.v7-learning-target{left:0;width:330px}.v7-learning-comparison{left:470px;width:380px}.v7-learning-target b,.v7-learning-comparison b{font-size:26px;line-height:1.4}.v7-learning-target p,.v7-learning-comparison p{font-size:22px;line-height:1.5;margin-top:11px}
+.v7-learning-feedback{position:absolute;left:699px;top:247px;font-size:21px;line-height:1.5}
+.v7-test-flow{display:grid;grid-template-columns:1.12fr 60px .95fr 60px 1fr;gap:20px;align-items:center}
+.figure.v7-test-image{height:250px}.v7-test-image button{height:215px}.v7-test-image img{max-height:215px}.v7-test-image figcaption{font-size:16px}
+.v7-test-model,.v7-test-prediction{min-height:173px;border:2px solid #111;padding:24px 12px;text-align:center}.v7-test-model b,.v7-test-prediction b{font-size:30px;line-height:1.4}.v7-test-model p,.v7-test-prediction p{font-size:25px;line-height:1.5;margin-top:14px}
+.v7-test-compare{border-top:2px solid #111;padding-top:23px}.v7-test-compare>div{display:flex;align-items:center;justify-content:center;gap:35px;font-size:29px;line-height:1.4}.v7-test-compare>div>span{font-size:35px;font-weight:400}.v7-test-compare p{font-size:25px;line-height:1.5;text-align:center;margin-top:12px}
+.v7-test-report{font-size:25px;line-height:1.5;border-top:1px solid #c9c9c2;padding-top:18px}
+
+/* Revision v7: cover, author profile, publication list and AI examples. */
+.cover .h1{font-size:50px;line-height:1.12;max-width:1380px;margin-bottom:16px}
+.cover .slide-body{gap:14px}
+.cover .authors{font-size:21px;line-height:1.45}
+.cover .cover-description{font-size:27px;line-height:1.4;margin-top:10px}
+.cover .presenter{width:calc(100% - 255px);font-size:23px;line-height:1.45;padding-top:16px}
+.cover .presenter b{font-size:28px}
+.v7-cover-logo{position:absolute;right:95px;bottom:90px;width:190px;height:190px;object-fit:contain}
+.v7-author-layout{display:grid;grid-template-columns:330px minmax(0,1fr);gap:85px;align-items:center;width:100%;min-height:0}
+.v7-author-portrait{min-width:0}
+.figure.v7-profile-figure{width:320px;gap:12px}
+.figure.v7-profile-figure button{height:405px}
+.figure.v7-profile-figure img{max-height:405px;object-fit:contain}
+.figure.v7-profile-figure figcaption{font-size:16px;line-height:1.4}
+.v7-author-layout .profile-lines{gap:18px}
+.v7-author-layout .profile-lines .author-name{font-size:52px;line-height:1.12;margin-bottom:5px!important}
+.v7-author-layout .profile-lines p{font-size:26px;line-height:1.42;word-break:keep-all}
+.v7-author-layout .profile-lines small{font-size:19px;line-height:1.45}
+.v7-paper-list{gap:10px}
+.v7-paper-list .paper-item{grid-template-columns:180px minmax(0,1fr);gap:24px;padding-top:10px}
+.v7-paper-list .paper-item .field{font-size:21px;line-height:1.4;word-break:keep-all;padding-top:1px}
+.v7-paper-list .paper-item p{font-size:21px;line-height:1.3;letter-spacing:-.012em}
+.v7-paper-list .paper-item small{font-size:17px;line-height:1.35;margin-top:5px}
+.v7-ai-showcase{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;align-items:start;width:100%;min-height:0}
+.v7-ai-example{min-width:0;border-bottom:1px solid var(--rule);padding-bottom:20px;transition:opacity .5s,transform .5s,border-color .5s}
+.v7-ai-visual{height:215px;width:100%;display:flex;align-items:center;justify-content:center;margin-bottom:19px;overflow:hidden}
+.v7-ai-visual>img{display:block;max-width:100%;width:100%;height:100%;object-fit:contain}
+.v7-ai-visual.v7-llm-logos{flex-direction:column;gap:25px}
+.v7-llm-logos>img:first-child{width:74px;height:74px}
+.v7-llm-logos>img:last-child{width:248px;height:58px}
+.v7-ai-example h3{font-size:25px;line-height:1.3;letter-spacing:-.025em;margin:0 0 13px;white-space:nowrap}
+.v7-ai-example p{font-size:22px;line-height:1.5;letter-spacing:-.02em;word-break:keep-all}
+.v7-deep-focus{display:flex;align-items:center;gap:35px;width:100%;min-height:105px;padding:20px 24px;border:0;border-left:4px solid var(--ink);background:var(--white);color:var(--ink);font-family:var(--font-sans);text-align:left;cursor:pointer}
+.v7-deep-focus>b{display:block;min-width:290px;font-size:37px;line-height:1.15;letter-spacing:-.035em;transition:font-size .5s,color .5s}
+.v7-deep-focus>span{font-size:25px;line-height:1.4}
+.taxonomy-v7 .slide-body{gap:31px}
+.taxonomy-v7[data-stage="1"] .v7-ai-example:not(.v7-ai-cv){opacity:.22}
+.taxonomy-v7[data-stage="1"] .v7-ai-cv{border-bottom:3px solid var(--focus);transform:translateY(-4px) scale(1.035)}
+.taxonomy-v7[data-stage="1"] .v7-deep-focus{border-left-color:var(--focus)}
+.taxonomy-v7[data-stage="1"] .v7-deep-focus>b{font-size:47px;color:var(--focus)}
+.v7-cv-tasks{gap:34px;align-items:start}
+.v7-cv-tasks .sample{height:295px;padding-bottom:13px;align-items:stretch}
+.v7-cv-tasks .sample>.figure{height:100%;width:100%;gap:10px}
+.v7-cv-tasks .sample>.figure button{flex:1;min-height:0}
+.v7-cv-tasks .sample img{height:100%;width:100%;max-height:238px;object-fit:contain}
+.v7-cv-tasks .sample figcaption{font-size:15px;line-height:1.4;min-height:42px}
+.v7-cv-tasks h3{font-size:28px;line-height:1.3;margin:20px 0 12px}
+.v7-cv-tasks p{font-size:25px;line-height:1.5;word-break:keep-all}

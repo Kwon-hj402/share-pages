@@ -1,0 +1,39 @@
+/* Annotation split, supervised learning and held-out inference. */
+.m16-method-slide .slide-body{gap:20px;justify-content:center}
+.m16-method-lead{font-size:29px;line-height:1.45;margin:0;word-break:keep-all}
+.m16-dataset-arena{position:relative;width:1424px;height:510px;flex:none}
+.m16-merged-label{position:absolute;top:0;left:432px;width:560px;text-align:center;transition:opacity .45s ease}
+.m16-merged-label h3,.m16-split-region h3{font-size:29px;line-height:1.3;margin:0}
+.m16-sample-tile{position:absolute;left:0;top:0;width:174px;height:104px;padding:7px;box-sizing:border-box;border:1px solid #c1c7ca;background:#fff;box-shadow:0 3px 9px #0001;transform:translate(var(--merged-x),var(--merged-y));transition:transform .9s cubic-bezier(.2,.7,.2,1),box-shadow .7s ease;will-change:transform}
+.m16-sample-tile img{display:block;width:100%;height:65px;object-fit:contain;background:#111}
+.m16-sample-tile span{display:block;text-align:center;font-size:17px;line-height:24px;color:#333}
+.m16-annotation-note{position:absolute;bottom:0;left:0;width:100%;font-size:23px;line-height:1.45;text-align:center;color:var(--text-2);transition:opacity .45s ease}
+.m16-split-region{position:absolute;top:0;height:510px;border-top:2px solid #111;box-sizing:border-box;padding-top:14px;opacity:0;transform:translateY(8px);transition:opacity .55s ease .12s,transform .55s ease .12s}
+.m16-development-region{left:0;width:880px}.m16-test-region{left:968px;width:456px}
+.m16-split-region p{position:absolute;bottom:0;left:0;font-size:23px;line-height:1.4;color:var(--text-2)}
+.m16-dataset-slide[data-stage="1"] .m16-merged-label,.m16-dataset-slide[data-stage="1"] .m16-annotation-note{opacity:0;pointer-events:none}
+.m16-dataset-slide[data-stage="1"] .m16-split-region{opacity:1;transform:none}
+.m16-dataset-slide[data-stage="1"] .m16-sample-tile{transform:translate(var(--split-x),var(--split-y));box-shadow:none}
+.m16-training-diagram{position:relative;width:1424px;height:520px;flex:none}
+.m16-model-flow{display:grid;grid-template-columns:360px 70px 440px 70px 484px;gap:0;align-items:start;width:1424px;height:315px;flex:none}
+.m16-training-diagram>.m16-model-flow{position:absolute;left:0;top:0}
+.m16-io-node{width:100%;height:315px;min-width:0}
+.figure.m16-io-figure{height:315px;gap:10px}
+.figure.m16-io-figure button{height:280px;flex:none}
+.figure.m16-io-figure img{height:280px;max-height:280px;object-fit:contain}
+.figure.m16-io-figure figcaption{font-size:20px;line-height:25px;text-align:center;height:25px;color:var(--text-2)}
+.m16-flow-arrow{height:280px;display:flex;align-items:center;justify-content:center}
+.m16-flow-arrow svg{width:62px;height:24px;overflow:visible}.m16-flow-arrow path{fill:none;stroke:#666;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.m16-model-box,.m16-prediction-box{height:280px;box-sizing:border-box;border:2px solid #111;padding:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:#fff}
+.m16-model-box>b,.m16-prediction-box>b{font-size:30px;line-height:1.25}.m16-model-box>p{font-size:22px;line-height:1.4;white-space:nowrap}.m16-prediction-box>p{font-size:26px;line-height:1.5}
+.m16-network-image{display:block;width:400px;height:160px;object-fit:contain}
+.m16-learning-connections{position:absolute;inset:0;width:1424px;height:520px;pointer-events:none}
+.m16-learning-connections>path{fill:none;stroke:#666;stroke-width:2.5;marker-end:url(#m16-learning-arrow)}.m16-learning-connections marker path{fill:#666}
+.m16-reference-box,.m16-comparison-box{position:absolute;top:385px;height:110px;box-sizing:border-box;border-top:2px solid #111;padding:17px 12px;text-align:center;background:#fff}
+.m16-reference-box{left:0;width:360px}.m16-comparison-box{left:460px;width:380px}
+.m16-reference-box b,.m16-comparison-box b{font-size:26px;line-height:1.3}.m16-reference-box p,.m16-comparison-box p{font-size:22px;line-height:1.4;margin-top:10px}
+.m16-parameter-feedback{position:absolute;left:683px;top:320px;font-size:22px;line-height:1.4;color:var(--text-2)}
+.m16-test-comparison{border-top:1px solid var(--rule);padding-top:18px;text-align:center;width:100%}
+.m16-test-comparison>div{display:flex;align-items:center;justify-content:center;gap:32px;font-size:27px;line-height:1.4}.m16-test-comparison>p{margin-top:12px;font-size:24px;line-height:1.4;color:var(--text-2)}
+.m16-test-report{font-size:24px;line-height:1.4;text-align:center;color:var(--text-2)}
+@media(prefers-reduced-motion:reduce){.m16-sample-tile,.m16-split-region,.m16-annotation-note,.m16-merged-label{transition:none}}

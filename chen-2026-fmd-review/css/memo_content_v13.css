@@ -1,0 +1,11 @@
+.v13-conclusion-slide .slide-body{justify-content:center}
+.v13-conclusion-copy{display:flex;flex-direction:column;gap:32px;max-width:1350px}
+.v13-conclusion-copy p{font-size:33px;line-height:1.55;letter-spacing:-.02em;word-break:keep-all;padding-bottom:28px;border-bottom:1px solid var(--rule)}
+.v13-conclusion-copy p:last-child{padding-bottom:0;border-bottom:0}
+.v13-conclusion-copy b{font-weight:700}
+.v13-patent-layout{display:grid;grid-template-columns:1fr 1fr;gap:86px;align-items:center;width:100%}
+.v13-patent-layout h3{font-size:29px;line-height:1.35;margin:0 0 22px;letter-spacing:-.015em}
+.v13-patent-table{font-size:26px;line-height:1.5;margin:0}
+.v13-patent-table td{padding:20px 12px}
+.v13-patent-table td:first-child{width:38%;font-size:23px;white-space:nowrap}
+.v13-patent-statement{font-size:35px;line-height:1.7;letter-spacing:-.025em;word-break:keep-all}

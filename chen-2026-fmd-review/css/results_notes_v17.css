@@ -1,0 +1,27 @@
+/* The English abbreviations below each table follow the source footnote only. */
+#deck > .v16-participants-notes .v17-source-legend,
+#deck > .v16-outcomes-notes .v17-source-legend {
+  font-size: 16.5px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+#deck > .v16-participants-notes .v17-source-legend {
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+  margin-top: 12px;
+  padding-top: 9px;
+}
+#deck > .v16-outcomes-notes .v17-source-legend {
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4px 26px;
+  margin-top: 4px;
+  padding-top: 7px;
+}
+#deck > .v16-outcomes-notes .v17-source-legend > div {
+  gap: 3px;
+}
+#deck > .v17-source-legend b {
+  font-weight: 650;
+}
