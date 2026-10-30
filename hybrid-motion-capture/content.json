@@ -1,21 +1,7 @@
 [
   {
-    "id": "rationale",
-    "title": "1. 기존 Markerless의 한계와 Hybrid의 필요성",
-    "summary": "일반 RGB 영상 기반 전신 자세 추정에 선택적 해부학적 표면 마커 관측을 결합함. 발·무릎의 표지점 위치와 분절 회전을 대상으로 추가 관측의 효과를 검증하는 연구.",
-    "blocks": [
-      {
-        "id": "opencap-context",
-        "title": "Markerless의 접근성과 해부학적 관측 요구",
-        "body": "<div class=\"media-explain figure-heavy\"><figure><img src=\"media/project/opencap_fig1.png\" alt=\"스마트폰을 이용한 OpenCap 촬영 환경과 기존 실험실 환경\"><figcaption>Uhlrich et al. (2023), OpenCap Figure 1 · CC BY</figcaption></figure><div><ul class=\"explain\"><li><b>일반 RGB 카메라 + 자세 추정 모델</b>: 전신 움직임을 영상에서 추정</li><li><b>해부학적 운동학 분석</b>: 표지점 정의·분절 좌표계·개인별 형상 정보 적용</li><li><b>본 프로젝트의 접근</b>: RGB 방식의 접근성을 유지하며 필요한 부위의 표면 마커 관측 추가</li></ul></div></div>",
-        "explanation": "<ul><li><b>기본 처리</b>: 영상의 신체 keypoint 또는 표지점 추정 → 다중시점 기하학과 생체역학 모델을 통한 3차원 움직임 계산</li><li><b>선행 사례</b>: OpenCap은 두 대 이상의 스마트폰 영상으로 운동학·동역학을 추정하는 공개 플랫폼</li><li><b>분석 대상</b>: 발·하퇴·대퇴의 해부학적 축에 대한 회전각. 관측점의 정의와 분절 좌표계를 연결하여 산출</li><li><b>그림 조건</b>: 비용·시간은 Uhlrich et al. (2023)의 당시 촬영·분석 조건</li></ul>",
-        "source": "<a href=\"https://doi.org/10.1371/journal.pcbi.1011462\" target=\"_blank\" rel=\"noopener\">Uhlrich et al., 2023 · OpenCap Fig. 1 · CC BY</a>"
-      }
-    ]
-  },
-  {
     "id": "workpackages",
-    "title": "2. 프로젝트의 구성",
+    "title": "1. 프로젝트의 구성",
     "summary": "카메라 보정·Markerless 추정·표면 마커 추적의 세 과제로 구성. 보정값·시간 기준·좌표 단위·관측 상태를 공유하여 과제 간 결과 연계.",
     "blocks": [
       {
@@ -29,7 +15,7 @@
   },
   {
     "id": "project1",
-    "title": "3. Project 1: 카메라 보정 및 3차원 복원",
+    "title": "2. Project 1: 카메라 보정 및 3차원 복원",
     "summary": "내부 파라미터로 픽셀–시선 관계, 외부 파라미터로 카메라 간 위치·방향 관계 정의. 시간 정합과 동일점 대응 후 삼각측량을 통한 공통 좌표계의 3D 위치 산출.",
     "blocks": [
       {
@@ -64,7 +50,7 @@
   },
   {
     "id": "project2",
-    "title": "4. Project 2: RGB 기반 전신 Markerless Motion Capture",
+    "title": "3. Project 2: RGB 기반 전신 Markerless Motion Capture",
     "summary": "추가 마커 관측의 효과 비교를 위한 COCO 17점 markerless 기준선 구축. 입력·3D 복원 방법, 전신 출력, 내부 품질 평가 및 관찰 오류 제시.",
     "blocks": [
       {
@@ -113,14 +99,14 @@
   },
   {
     "id": "project3",
-    "title": "5. Project 3: 표면 마커 검출과 3차원 추적",
-    "summary": "해부학적 표면 위치에 부착한 색상 마커·스티커의 영상 관측. 마커 검출과 22개 anatomical ID 대응을 분리하고, 다중시점 관측으로 3차원 궤적 구성.",
+    "title": "4. Project 3: 표면 마커 검출과 3차원 추적",
+    "summary": "반사 마커를 이용한 검출·해부학적 ID 대응·3차원 복원 및 비교 검증. 후속 단계에서 스티커와 대비 색상 표적의 검출 학습으로 확장.",
     "blocks": [
       {
         "id": "marker-anatomy",
         "title": "발·발목·하퇴·무릎의 22개 표면 마커",
         "body": "<div class=\"media-explain\"><figure class=\"\" style=\"\"><img src=\"media/project/marker_detection_clean_20261030.png\" alt=\"YOLO11s를 이용한 하지 표면 마커 검출 결과 · Cam2, frame 1642\" loading=\"eager\"><figcaption>YOLO11s를 이용한 하지 표면 마커 검출 결과 · Cam2, frame 1642</figcaption></figure><table class=\"evidence-table compact\"><thead><tr><th>영역</th><th>좌우 각 마커 예시</th></tr></thead><tbody><tr><td>Foot</td><td>D1M / D5M / P1M<br>NAV / HEE</td></tr><tr><td>Ankle / Shank</td><td>MMA / LMA<br>TIB_MID_LAT</td></tr><tr><td>Knee</td><td>MEPI / LEPI / PAT_INF</td></tr></tbody></table></div><p class=\"takeaway\">마커 구성: <b>좌우 각 11개 · 총 22개 ID</b></p>",
-        "explanation": "<ul><li><b>부착 기준:</b> 연구자 정의 프로토콜·static template·배치 사진으로 위치 기록. 약어와 세부 정의는 6장 참조.</li><li><b>관측 범위:</b> 발의 내·외측·뒤꿈치, 발목·하퇴·무릎의 표면 위치.</li><li><b>검출 조건:</b> 마커 크기·색상·조명·노출·시야각·가림.</li><li><b>위치 오차 요인:</b> 피부와 뼈의 상대 움직임, 마커 부착 편차.</li></ul>",
+        "explanation": "<ul><li><b>부착 기준:</b> 연구자 정의 프로토콜·static template·배치 사진으로 위치 기록. 약어와 세부 정의는 5장 참조.</li><li><b>관측 범위:</b> 발의 내·외측·뒤꿈치, 발목·하퇴·무릎의 표면 위치.</li><li><b>검출 조건:</b> 마커 크기·색상·조명·노출·시야각·가림.</li><li><b>위치 오차 요인:</b> 피부와 뼈의 상대 움직임, 마커 부착 편차.</li></ul>",
         "source": "8.28demo/experiment_video/cam2/middle20_conf010 · Cam2 frame 1642 · YOLO11s 기존 검출 결과"
       },
       {
@@ -190,7 +176,7 @@
   },
   {
     "id": "details",
-    "title": "6. 마커·모델 정의와 학습 조건",
+    "title": "5. 마커·모델 정의와 학습 조건",
     "summary": "마커 부착 기준, 모델별 입력·출력, 학습 조건과 선행연구의 검증 범위.",
     "blocks": [
       {
@@ -225,7 +211,7 @@
   },
   {
     "id": "references",
-    "title": "7. 참고문헌과 프로젝트 근거",
+    "title": "6. 참고문헌과 프로젝트 근거",
     "summary": "원논문, 카메라 보정 파일, 학습 설정·로그, 승인 주석 및 결과 보고서 목록.",
     "blocks": [
       {

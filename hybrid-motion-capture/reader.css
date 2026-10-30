@@ -7,6 +7,8 @@
 /* Formal project document */
 .document-scope{display:grid;grid-template-columns:130px 1fr;gap:12px 24px;font-size:18px;line-height:1.75;margin:20px 0 0}
 .document-scope dt{font-weight:700}.document-scope dd{margin:0}
+.cover-purpose h2{margin:0;font-size:23px;line-height:1.5;letter-spacing:-.025em}.cover-purpose .purpose-summary{font-size:20px;line-height:1.75;margin:12px 0 23px}.cover-purpose .document-scope{margin-top:0;gap:15px 24px}
+@media print{.cover-purpose h2{font-size:14pt}.cover-purpose .purpose-summary{font-size:11pt;line-height:1.8;margin:3mm 0 5mm}.cover-purpose .document-scope{gap:3mm 4mm}}
 .document-points{margin:16px 0;padding-left:24px;line-height:1.75}
 .document-points li{margin:10px 0}
 .explanation .document-points{font-size:17px;color:#37434a}
@@ -44,3 +46,5 @@ html.image-viewer-open{overflow:hidden}
 .image-viewer-notice{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:24px;font-size:15px;color:#555;pointer-events:none}
 @media(max-width:600px){.image-viewer{width:calc(100vw - 16px);height:calc(100dvh - 24px)}.image-viewer-header{padding:12px;gap:12px}.image-viewer-header h2{font-size:15px}.image-viewer-toolbar{padding:0 12px 10px;gap:6px}.image-viewer-help{margin:0;width:100%;font-size:12px}.image-viewer-canvas{padding:12px}}
 @media print{.image-viewer,.image-viewer::backdrop{display:none!important}html.image-viewer-open{overflow:visible!important}.image-zoom-trigger{cursor:default;outline:none!important}}
+
+@media print{.document-cover .logo{position:absolute;right:0;bottom:10mm}}

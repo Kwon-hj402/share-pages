@@ -133,14 +133,6 @@
       "delivered_path": "media/project/reconstruction_3d.mp4"
     },
     {
-      "file": "opencap_fig1.png",
-      "delivered_as": "opencap_fig1.png",
-      "source": "https://journals.plos.org/ploscompbiol/article/figure/image?download=&id=10.1371%2Fjournal.pcbi.1011462.g001&size=large",
-      "license": "CC BY; credit Uhlrich et al. 2023, DOI 10.1371/journal.pcbi.1011462, Fig. 1; indicate cropping/adaptation.",
-      "caption": "Laboratory marker-based capture versus smartphone OpenCap setup",
-      "delivered_path": "media/project/opencap_fig1.png"
-    },
-    {
       "file": "assets/project2_01_six_camera_2d_pose.jpg",
       "source": "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_2d_detections.npz 및 take_video_manifest.csv가 가리키는 원본 6개 영상",
       "operation": "원본 frame 145에 저장된 2D keypoint/confidence를 overlay, threshold 0.35, 6개 카메라 3×2 배치. 새 모델 추론 없음.",
