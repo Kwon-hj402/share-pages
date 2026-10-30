@@ -1,0 +1,62 @@
+{
+  "root": "C:/Users/user/miniconda3/envs/yun/",
+  "checked_date": "2026-10-29",
+  "sections": [
+    {
+      "id": "project2-baseline",
+      "title": "Project 2. 사전학습 포즈 모델을 이용한 다중 시점 3D markerless 기준선",
+      "implementation_sources": [
+        "july/intrinsic_cali_7.30/extrinsic/run_extrinsic_yolo_3d_html.py:247",
+        "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/run_extrinsic_yolo_3d_html.log",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:42"
+      ]
+    },
+    {
+      "id": "project2-input-2d",
+      "title": "다중 카메라 입력과 2D keypoint 추정",
+      "implementation_sources": [
+        "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_01/take_01_3d_reconstruction.log",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:312",
+        "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_2d_detections.npz"
+      ]
+    },
+    {
+      "id": "project2-triangulation",
+      "title": "2D 관측에서 3D 좌표로: 보정·삼각측량·후처리",
+      "implementation_sources": [
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:353",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:431",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:546",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:1052"
+      ]
+    },
+    {
+      "id": "project2-output",
+      "title": "구현 결과: 전신 3D 궤적과 다시 검토할 수 있는 출력",
+      "implementation_sources": [
+        "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_3d_reconstruction.log",
+        "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_3d_keypoints.csv",
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:607"
+      ]
+    },
+    {
+      "id": "project2-quality",
+      "title": "현재 품질 평가는 복원률과 내부 일관성을 중심으로 수행",
+      "implementation_sources": [
+        "july/intrinsic_cali_7.30/extrinsic/best_marker_segments/best_marker_segments.csv",
+        "july/intrinsic_cali_7.30/extrinsic/best_marker_segments/validation/skeleton_quality_summary.csv",
+        "july/intrinsic_cali_7.30/extrinsic/best_marker_segments/validation/validation_report.md"
+      ]
+    },
+    {
+      "id": "project2-foot-knee",
+      "title": "발·무릎 분석으로 확장할 때 필요한 해부학적 정보",
+      "implementation_sources": [
+        "july/first_in_extrinsic_cali/extrinsic cali/reconstruct_gait_3d.py:42",
+        "july/intrinsic_cali_7.30/extrinsic/analyze_sagittal_gait_knee_rom.py:94",
+        "july/intrinsic_cali_7.30/extrinsic/analyze_sagittal_gait_knee_rom.py:136",
+        "july/intrinsic_cali_7.30/extrinsic/analyze_sagittal_gait_knee_rom.py:592"
+      ]
+    }
+  ]
+}

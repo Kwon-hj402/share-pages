@@ -1,0 +1,191 @@
+{
+  "checked_date": "2026-10-29",
+  "scope": "Primary-source evidence for a hybrid RGB markerless + visible anatomical marker motion-capture presentation. All reported performance belongs to published studies, not the current project.",
+  "recommended_positioning_ko": "다중 RGB 카메라 기반 markerless pose estimation에 선택적 가시광 해부학적 표면 마커 관측을 결합하여, 분절 자세와 관절 운동학 추정의 정확도 및 강건성 향상을 검증한다.",
+  "research_question_ko": "동일한 RGB 영상과 보정 조건에서, sparse pose keypoints에 해부학적 표면 마커 관측을 추가하면 발·무릎 주변의 3차원 위치 및 분절 방향 추정이 개선되는가?",
+  "terminology_and_caveats": [
+    "Use marker-assisted markerless motion capture, hybrid optical motion capture, visible-light anatomical marker tracking, or RGB-based hybrid motion capture; define hybrid explicitly because commercial systems also use this word.",
+    "Do not say all pose estimation models detect only joint centres or cannot detect anatomical landmarks. Keypoint definitions depend on the training dataset and model; dense biomechanical landmark models already exist.",
+    "Preferred claim: Sparse, general-purpose pose keypoints may insufficiently constrain segment axial rotation and task-specific anatomical coordinate systems.",
+    "An anatomical surface landmark, an estimated joint centre, and the centre of a visible sticker are different quantities. State the palpation/placement protocol and any geometric offsets explicitly.",
+    "A single point does not determine full 3D orientation. Two endpoints specify a segment axis but not rotation about that axis; additional non-collinear landmarks, constraints, or model cues are required.",
+    "Visible markers can add subject-specific anatomical observations. Improved accuracy is a hypothesis to test, not an established result of this project.",
+    "Skin-mounted stickers remain affected by soft-tissue artefact (STA), placement error, occlusion, illumination, and motion blur. Infrared marker-based comparison is a reference-system comparison, not direct bone-motion ground truth.",
+    "Use concurrent validity, agreement, systematic bias, limits of agreement, repeatability, and robustness. Correlation alone is insufficient to establish accuracy.",
+    "Qualisys Miqus is a family: M1/M3/M5 use infrared marker tracking; Miqus Video records RGB; Miqus Hybrid switches between RGB and marker modes. Verify the actual laboratory model before naming the benchmark.",
+    "Do not compare MAE, RMSE, and RMSD as if interchangeable, and do not pool study values across different tasks, cameras, joint definitions, or filtering conditions."
+  ],
+  "papers": [
+    {
+      "id": "uhlrich2023",
+      "citation": "Uhlrich SD, Falisse A, Kidzinski L, et al. (2023). OpenCap: Human movement dynamics from smartphone videos. PLoS Computational Biology 19(10): e1011462.",
+      "doi": "10.1371/journal.pcbi.1011462",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011462",
+      "status": "Peer-reviewed original study; open access CC BY",
+      "conditions": "10 healthy adults; walking, squatting, sit-to-stand, drop jumps; two iPhones versus marker-based optical motion capture and force plates.",
+      "results": "Joint-angle MAE 4.5 degrees across 18 rotational degrees of freedom and activities; degree-of-freedom range 1.7-10.3 degrees. Predicted anatomical markers improved mean kinematic accuracy by 3.4 degrees relative to using video keypoints directly.",
+      "slide_use": "Accessible RGB/smartphone workflow is feasible. Sparse keypoints are commonly supplemented by anatomical marker prediction and biomechanical constraints.",
+      "avoid": "Do not label these values as project results. OpenCap predicts virtual anatomical markers; it does not observe the proposed colored physical stickers."
+    },
+    {
+      "id": "kanko2021",
+      "citation": "Kanko RM, Laende EK, Davis EM, Selbie WS, Deluzio KJ. (2021). Concurrent assessment of gait kinematics using marker-based and markerless motion capture. Journal of Biomechanics 127:110665.",
+      "doi": "10.1016/j.jbiomech.2021.110665",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34380101/",
+      "status": "Peer-reviewed original study; publisher copyright",
+      "conditions": "30 healthy adults, treadmill walking; eight video cameras and seven infrared cameras; simultaneous recording.",
+      "results": "Joint-centre RMSD below 2.5 cm except hip (3.6 cm). Global segment-angle RMSD below 5.5 degrees except rotations about the long axis of a segment.",
+      "slide_use": "A balanced evidence example: markerless gait measurements can agree well while long-axis rotations remain challenging.",
+      "avoid": "Do not state that every joint angle has error below 5.5 degrees; the paper describes global segment angles and explicitly excludes long-axis rotations."
+    },
+    {
+      "id": "needham2021",
+      "citation": "Needham L, Evans M, Cosker DP, et al. (2021). The accuracy of several pose estimation methods for 3D joint centre localisation. Scientific Reports 11:20673.",
+      "doi": "10.1038/s41598-021-00212-x",
+      "url": "https://www.nature.com/articles/s41598-021-00212-x",
+      "open_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8526586/",
+      "status": "Peer-reviewed original study; CC BY 4.0",
+      "conditions": "15 healthy adults; walking, running, countermovement jumps; synchronized nine-camera RGB system and 15-camera Qualisys Oqus system at 200 Hz; pretrained OpenPose, AlphaPose, DeepLabCut human models.",
+      "results": "Hip and knee joint-centre estimates showed systematic differences of approximately 30-50 mm. Ankle differences were 1-15 mm depending on activity. Authors suggested training-label semantics/errors as a likely contributor.",
+      "slide_use": "Dataset keypoint semantics and anatomical joint-centre definitions matter in addition to camera reconstruction accuracy.",
+      "avoid": "Results concern the tested older pretrained model versions; they do not establish the error of every contemporary pose model."
+    },
+    {
+      "id": "wren2023",
+      "citation": "Wren TAL, Isakov P, Rethlefsen SA. (2023). Comparison of kinematics between Theia markerless and conventional marker-based gait analysis in clinical patients. Gait & Posture 104:9-14.",
+      "doi": "10.1016/j.gaitpost.2023.05.029",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37285635/",
+      "status": "Peer-reviewed original study; publisher copyright",
+      "conditions": "36 clinical gait patients aged 2-25 years; concurrent Theia3D and Vicon; subgroups included foot deformities (25), orthoses (9), and assisted gait (6).",
+      "results": "RMSD below 6 degrees except pelvic tilt, hip flexion, ankle inversion, foot progression, and transverse hip/knee/ankle rotations. After offset removal, all RMSD_offset below 6 degrees; subgroup RMSD_offset below 8 degrees.",
+      "slide_use": "Foot geometry, knee-axis identification, assistive devices, and model offsets warrant task-specific validation.",
+      "avoid": "Offset-corrected agreement is not the same as absolute angular accuracy."
+    },
+    {
+      "id": "turner2024",
+      "citation": "Turner JA, Chaaban CR, Padua DA. (2024). Validation of OpenCap: A low-cost markerless motion capture system for lower-extremity kinematics during return-to-sport tasks. Journal of Biomechanics 171:112200.",
+      "doi": "10.1016/j.jbiomech.2024.112200",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38905926/",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0021929024002781",
+      "status": "Peer-reviewed original validation study",
+      "conditions": "Athletes 12-18 months after ACL reconstruction; 437 trials of jump-landing-rebound, single-leg hop, lateral-vertical hop; two smartphones versus 10-camera marker-based system.",
+      "results": "Pooled MAE 3.85 degrees and RMSE 4.34 degrees. Sagittal hip/knee CMC above 0.94; ankle CMC 0.84-0.93. Frontal CMC 0.47-0.78 and transverse CMC 0.51-0.60.",
+      "slide_use": "Agreement depends on movement plane: sagittal flexion can appear strong while frontal/transverse waveform agreement is weaker.",
+      "avoid": "CMC is a waveform agreement measure, not a position error in millimetres. The preprint used different correlation terminology; cite final published CMC values."
+    },
+    {
+      "id": "falisse2025",
+      "citation": "Falisse A, Uhlrich SD, Chaudhari AS, Hicks JL, Delp SL. (2025). Marker Data Enhancement for Markerless Motion Capture. IEEE Transactions on Biomedical Engineering 72(6):2013-2022.",
+      "doi": "10.1109/TBME.2025.3530848",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40031222/",
+      "open_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12198419/",
+      "status": "Peer-reviewed original study; CC BY 4.0 verified from full-text XML",
+      "conditions": "Marker enhancer trained from 1176 subjects and 1433 hours of synthesized keypoints/anatomical markers. Accuracy benchmark uses movement videos; generalizability evaluated separately with synthetic unseen movements.",
+      "results": "20 video keypoints mapped to 43 anatomical markers. Accuracy-task rotational RMSE: LSTM mean 4.1 degrees (maximum degree-of-freedom error 8.7) versus direct video-keypoint use mean 9.6 (maximum 43.1).",
+      "slide_use": "Anatomical information beyond sparse pose keypoints can improve biomechanical estimates. Distinguish inferred anatomical markers from physically observed landmarks.",
+      "avoid": "Do not imply that adding visible stickers has already produced this improvement; this paper evaluates learned marker enhancement."
+    },
+    {
+      "id": "ancillao2021",
+      "citation": "Ancillao A, Aertbelien E, De Schutter J. (2021). Effect of the soft tissue artifact on marker measurements and on the calculation of the helical axis of the knee during a gait cycle: A study on the CAMS-Knee data set. Human Movement Science 80:102866.",
+      "doi": "10.1016/j.humov.2021.102866",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34509901/",
+      "open_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8631460/",
+      "status": "Peer-reviewed original study; CC BY 4.0",
+      "conditions": "Six adults with total knee arthroplasty, gait trials; concurrent fluoroscopy and optoelectronic thigh/shank marker measurements.",
+      "results": "Largest rigid STA effect at thigh approximately 10 degrees and 18 mm; shank during swing approximately 7 degrees and 17 mm. Results varied substantially between subjects.",
+      "slide_use": "Visible stickers and infrared skin markers both track skin-relative observations; neither directly removes soft-tissue artefact or establishes true bone kinematics.",
+      "avoid": "Do not apply these numerical maxima to healthy subjects or to the current system without measuring them."
+    },
+    {
+      "id": "liang2026",
+      "citation": "Liang H, Grant CJ, Bolgarskaya Y, et al. (2026). Validity of using a smartphone-based markerless motion capture system for quantitative analysis of human dynamic movements. Sports Biomechanics. Published online 19 June 2026.",
+      "doi": "10.1080/14763141.2026.2689518",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42318929/",
+      "status": "Peer-reviewed original study, 2026 update",
+      "conditions": "41 participants; eight dynamic tasks including walking, running, jumping, cutting; simultaneous OpenCap and marker-based capture.",
+      "results": "Sagittal RMSE 7.0-13.4 degrees with r 0.70-0.99; systematic flexion/dorsiflexion overestimation 5-15 degrees. Out-of-plane RMSE 3.5-16.6 degrees, normalized RMSE 29.0-136.3%, r -0.09 to 0.80.",
+      "slide_use": "Contemporary validation also reports task, plane, and translation-dependent limits; a small absolute out-of-plane error can be large relative to its motion range.",
+      "avoid": "Do not collapse these task-specific ranges into one accuracy claim, and do not directly compare their RMSE to another paper's MAE."
+    },
+    {
+      "id": "shin2026_optional",
+      "citation": "Shin S, Li S, Li Z, et al. (2026). DeepGaitLab: Accurate and Flexible Markerless Motion Tracking Powered by Synthetic Data. Research Square, 24 July 2026.",
+      "doi": "10.21203/rs.3.rs-8998239/v1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42539015/",
+      "open_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13419581/",
+      "status": "Preprint, not peer reviewed; optional latest-research context; CC BY 4.0",
+      "conditions": "80 participants across healthy and mobility-limited cohorts; benchmark subset: 23 adults performing walking and physical-therapy tasks with multi-camera reference.",
+      "results": "In the 23-participant two-camera benchmark: RMSD 4.2 +/- 0.6 degrees for DeepGaitLab versus 5.9 +/- 1.3 for OpenCap across tasks/lower-limb degrees of freedom. Pipeline directly detects dense landmarks, triangulates them, and applies OpenSim.",
+      "slide_use": "Avoid claiming anatomical landmark estimation or multi-view RGB biomechanics is new in itself. Project contribution should be direct visible-marker observations and a measured hybrid-versus-markerless comparison.",
+      "avoid": "Label clearly as preprint if shown; keep separate from peer-reviewed evidence."
+    }
+  ],
+  "media_candidates": [
+    {
+      "id": "opencap_fig1",
+      "title": "Laboratory marker-based capture versus smartphone OpenCap setup",
+      "source_paper": "uhlrich2023",
+      "figure": "Figure 1",
+      "url": "https://journals.plos.org/ploscompbiol/article/figure/image?download=&id=10.1371%2Fjournal.pcbi.1011462.g001&size=large",
+      "verified": "HTTP 200, image/png, 550749 bytes on 2026-10-29",
+      "license": "CC BY; credit Uhlrich et al. 2023, DOI 10.1371/journal.pcbi.1011462, Fig. 1; indicate cropping/adaptation.",
+      "purpose": "Opening slide: access/space/technical burden. Historical article costs are examples from the paper, not present equipment quotes."
+    },
+    {
+      "id": "opencap_fig2",
+      "title": "OpenCap multi-view pose, triangulation, anatomical marker prediction and biomechanics workflow",
+      "source_paper": "uhlrich2023",
+      "figure": "Figure 2",
+      "url": "https://journals.plos.org/ploscompbiol/article/figure/image?download=&id=10.1371%2Fjournal.pcbi.1011462.g002&size=large",
+      "verified": "HTTP 200, image/png, 1062287 bytes on 2026-10-29",
+      "license": "CC BY; credit Uhlrich et al. 2023, DOI, Fig. 2; indicate adaptation.",
+      "purpose": "Related-work panel only. Label as OpenCap prior work, not the local project implementation."
+    },
+    {
+      "id": "needham_fig4",
+      "title": "OpenPose joint-centre difference distributions across shoulder, hip, knee, ankle and tasks",
+      "source_paper": "needham2021",
+      "figure": "Figure 4",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-00212-x/MediaObjects/41598_2021_212_Fig4_HTML.png",
+      "verified": "HTTP 200, image/png, 203407 bytes on 2026-10-29",
+      "license": "CC BY 4.0; credit Needham et al. 2021, Scientific Reports, DOI 10.1038/s41598-021-00212-x, Fig. 4.",
+      "purpose": "Evidence panel: anatomical definition and activity affect agreement. Requires readable task and joint labels."
+    },
+    {
+      "id": "needham_fig2",
+      "title": "Example hip joint-centre trajectories from marker-based and three markerless models",
+      "source_paper": "needham2021",
+      "figure": "Figure 2",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-00212-x/MediaObjects/41598_2021_212_Fig2_HTML.png",
+      "verified": "HTTP 200, image/png, 842327 bytes on 2026-10-29",
+      "license": "CC BY 4.0; credit Needham et al. 2021, DOI, Fig. 2.",
+      "purpose": "One-subject illustrative trajectory comparison, not a population average accuracy chart."
+    },
+    {
+      "id": "opencap_video",
+      "title": "OpenCap overview: motivation, collection, technology, validation",
+      "source_paper": "uhlrich2023",
+      "figure": "S1 Movie",
+      "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1011462.s006&type=supplementary",
+      "verified": "HTTP 200, video/mp4, 92185706 bytes on 2026-10-29",
+      "license": "Article supporting movie under CC BY, with source credit; use local project footage preferentially for implementation/results.",
+      "purpose": "Optional related-work clip; approximately 92 MB, link or embed a short credited excerpt only if useful."
+    }
+  ],
+  "source_verification": {
+    "primary_sources": "Journal publisher articles, PubMed abstracts of original papers, and original full-text XML from Europe PMC. Secondary reviews used only for discovery, not as the basis for reported quantitative results.",
+    "fulltext_xml_endpoint_example": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12198419/fullTextXML",
+    "qualisys_reference": "https://www.qualisys.com/cameras/miqus/",
+    "qualisys_hybrid_reference": "https://www.qualisys.com/cameras/miqus-hybrid/"
+  },
+  "proposed_validation_own_design_not_published_result": [
+    "Compare A: identical-camera markerless baseline; B: visible marker reconstruction; C: hybrid fusion. Keep calibration, synchronization, filtering and evaluation windows consistent.",
+    "First quantify 2D marker localization error and missed/false detections, then 3D marker position agreement, then segment orientation and joint kinematics. Detection mAP alone does not establish biomechanical accuracy.",
+    "Report 3D Euclidean trajectory error in mm, per-axis bias, RMSE/MAE and Bland-Altman limits of agreement. Report angle errors per joint and plane rather than only a grand average.",
+    "Use held-out subjects or recording sessions, not adjacent-frame random splits; stratify foot/knee visibility, view angle, motion speed, lighting and self-occlusion.",
+    "Evaluate controlled ankle/foot and knee motions first, then walking, squat, step-down and turning. This sequence is a proposed validation progression unless existing local data prove completion.",
+    "Align RGB and infrared systems in a shared metric coordinate frame and synchronize capture times. If separate stickers and reflective spheres are used, quantify their physical centre offset or use a shared dual-visible target.",
+    "Choose marker sets in consultation with the intended biomechanical model: medial/lateral femoral epicondyles, malleoli, calcaneus and metatarsal landmarks are candidates, not evidence that the present project already labeled those exact landmarks."
+  ]
+}

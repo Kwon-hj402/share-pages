@@ -1,0 +1,206 @@
+{
+  "created_date": "2026-10-29",
+  "revised_date": "2026-10-30",
+  "items": [
+    {
+      "file": "01_capture_setup.jpg",
+      "title_ko": "다중 RGB 카메라 실험 환경",
+      "caption_ko": "프로젝트에서 구성한 다중 RGB 카메라 실험 환경",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\presentation_work_20261029\\assets\\reference_ppt_media\\image4.png",
+      "provenance": "Existing proposal slide 3 embedded image4.png: photograph of actual lab setup.",
+      "caveat": "사진만으로 카메라 성능·프레임 손실·실시간 동작 보장 불가.",
+      "size_px": [
+        2200,
+        1239
+      ],
+      "delivered_as": "setup_multicamera.png",
+      "delivered_path": "media/project/setup_multicamera.png"
+    },
+    {
+      "file": "02_intrinsic_calibration_board.jpg",
+      "title_ko": "보정 보드 촬영",
+      "caption_ko": "렌즈 왜곡과 내부 파라미터 추정을 위한 보정 보드 촬영",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\presentation_work_20261029\\assets\\reference_ppt_media\\image5.png",
+      "provenance": "Existing proposal slide 4 embedded image5.png: project board photo.",
+      "caveat": "AprilTag/ArUco 계열 식별 패턴 보드 실사. 정확한 모드/격자 정의는 코드 근거를 별도 참조.",
+      "size_px": [
+        1453,
+        668
+      ],
+      "delivered_as": "calibration_board.png",
+      "delivered_path": "media/project/calibration_board.png"
+    },
+    {
+      "file": "03_extrinsic_calibration_board.jpg",
+      "title_ko": "공통 기준좌표계 설정",
+      "caption_ko": "다중 카메라 외부보정에 사용한 보드 촬영 예시",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\presentation_work_20261029\\assets\\reference_ppt_media\\image7.png",
+      "provenance": "Existing proposal slide 5 embedded image7.png: project board photo.",
+      "caveat": "",
+      "size_px": [
+        1167,
+        676
+      ],
+      "delivered_as": "extrinsic_board.png",
+      "delivered_path": "media/project/extrinsic_board.png"
+    },
+    {
+      "file": "06_reviewed_bbox_labels.png",
+      "title_ko": "검수한 마커 박스 라벨",
+      "caption_ko": "라벨링 도구에서 검수한 마커 bounding boxes",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\model\\exports\\BAT_bbox_reviewed_frame_004425.png",
+      "provenance": "tmp_export_bat_bbox_figure.py uses exact source 7.31_labledata/frames/DJI_20260731153115_0054_D/frame_004425.png and projects/DJI_20260731153115_0054_D_marker_boxes/labels/frame_004425.txt; numbered for presentation.",
+      "caveat": "박스의 번호는 이 그림의 순번이며 해부학적 marker ID가 아님.",
+      "size_px": [
+        1920,
+        1080
+      ],
+      "delivered_as": "annotation_reviewed.png",
+      "delivered_path": "media/project/annotation_reviewed.png"
+    },
+    {
+      "file": "09_early_15_landmark_annotation.jpg",
+      "title_ko": "발–무릎 15점 초기 라벨",
+      "caption_ko": "발과 무릎 주변 15개 landmark를 대상으로 시작한 keypoint annotation",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\july\\foot_marker_dataset\\previews\\frame_0000181.jpg",
+      "provenance": "july/foot_marker_dataset/previews/frame_0000181.jpg; july/foot_marker_dataset/data.yaml kpt_shape[15,3].",
+      "caveat": "기존 라벨 preview이며 22마커 양측 pipeline과 별도 개발 단계. 실제 해부학적 촉진/정확성 검증 근거로 단정하지 않음.",
+      "size_px": [
+        2200,
+        1238
+      ],
+      "delivered_as": "foot_pilot.png",
+      "delivered_path": "media/project/foot_pilot.png"
+    },
+    {
+      "file": "10_2d_direct_marker_observations.jpg",
+      "title_ko": "카메라별 직접 관측",
+      "caption_ko": "Cam3의 실제 2D 관측과 자동 부여한 마커 ID",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\tmp_overlay_preview.jpg",
+      "provenance": "tmp_overlay_preview.py: REF140, actual_observations camera3 only, predictions.json legacy_plus_neural; source cam03 raw frame146.",
+      "caveat": "보간·재투영 좌표는 그리지 않음. 자동 ID 오류 가능성은 유지.",
+      "size_px": [
+        1920,
+        1080
+      ],
+      "delivered_as": "observed_markers_poster.png",
+      "delivered_path": "media/project/observed_markers_poster.png"
+    },
+    {
+      "file": "11_3d_markers_postprocessed.jpg",
+      "title_ko": "22마커 3D 복원 시각화",
+      "caption_ko": "다중 시점 보정좌표계의 22마커 3D 복원 예시",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\model\\exports\\YGT_gait1_ppt_sagittal_step_20261012\\02_Oblique_3D_Interpolated_poster.png",
+      "provenance": "model/exports/YGT_gait1_ppt_sagittal_step_20261012/interpolated_2d_3d_video_metadata.json; REF140 poster.",
+      "caveat": "시간 보간, 강체 잔차 기반 이상치 교정, 고속 구간 평활화 포함. 순수 검출 결과나 정확도 검증 그림이 아님.",
+      "size_px": [
+        1920,
+        1080
+      ],
+      "delivered_as": "reconstruction_3d_poster.png",
+      "delivered_path": "media/project/reconstruction_3d_poster.png"
+    },
+    {
+      "file": "13_2d_direct_observations_1p5s.mp4",
+      "title_ko": "Cam3 직접 2D 관측",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\model\\exports\\YGT_gait1_ppt_sagittal_step_20261012\\Markerless_YGT_gait1_sagittal_step_REF115-159.mp4",
+      "fps": 30.0,
+      "frame_count": 45,
+      "duration_s": 1.5,
+      "size_px": [
+        1920,
+        1080
+      ],
+      "caveat": "실제 카메라 관측만 표시; 보간·재투영 없음. 자동 marker ID 포함.",
+      "caption_ko": "REF115–159, 45 frames, 1.5 s; 발표에서 반복 재생 가능. 원본 파일명 Markerless는 기존 명칭이고 실제 내용은 학습한 마커 검출·추적 결과.",
+      "delivered_as": "observed_markers.mp4",
+      "delivered_path": "media/project/observed_markers.mp4"
+    },
+    {
+      "file": "14_3d_postprocessed_skeleton_1p5s.mp4",
+      "title_ko": "후처리한 22마커 3D",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\model\\exports\\YGT_gait1_ppt_sagittal_step_20261012\\02_Oblique_3D_Clean_Skeleton_22IDs_REF115-159.mp4",
+      "fps": 30.0,
+      "frame_count": 45,
+      "duration_s": 1.5,
+      "size_px": [
+        1920,
+        1080
+      ],
+      "caveat": "시간 보간·이상치 교정·평활화 포함. Skeleton 동영상은 3D 구현 예시.",
+      "caption_ko": "REF115–159, 45 frames, 1.5 s; 발표에서 반복 재생 가능. 원본 파일명 Markerless는 기존 명칭이고 실제 내용은 학습한 마커 검출·추적 결과.",
+      "delivered_as": "reconstruction_3d.mp4",
+      "delivered_path": "media/project/reconstruction_3d.mp4"
+    },
+    {
+      "file": "opencap_fig1.png",
+      "delivered_as": "opencap_fig1.png",
+      "source": "https://journals.plos.org/ploscompbiol/article/figure/image?download=&id=10.1371%2Fjournal.pcbi.1011462.g001&size=large",
+      "license": "CC BY; credit Uhlrich et al. 2023, DOI 10.1371/journal.pcbi.1011462, Fig. 1; indicate cropping/adaptation.",
+      "caption": "Laboratory marker-based capture versus smartphone OpenCap setup",
+      "delivered_path": "media/project/opencap_fig1.png"
+    },
+    {
+      "file": "assets/project2_01_six_camera_2d_pose.jpg",
+      "source": "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_2d_detections.npz 및 take_video_manifest.csv가 가리키는 원본 6개 영상",
+      "operation": "원본 frame 145에 저장된 2D keypoint/confidence를 overlay, threshold 0.35, 6개 카메라 3×2 배치. 새 모델 추론 없음.",
+      "observed": "camera6은 foreground 피험자 대신 background 사람을 선택함. 실제 알고리즘 출력이며 오류를 지우지 않았음.",
+      "limitation": "zero-offset 실행 자료의 같은 frame 번호, 물리적 동시성을 검증하지 않음. RGB에는 마커가 보이지만 추론은 marker detector를 사용하지 않음."
+    },
+    {
+      "file": "assets/project2_03_full_body_sequence.jpg",
+      "source": "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_3d_skeleton.mp4",
+      "operation": "frames55,145,245의 실제 영상 캡처를 가로배치",
+      "limitation": "3개의 프레임은 동작 출력의 시각적 설명을 위한 예시, 유효한 프레임만으로 전체 성능을 산출하지 않음."
+    },
+    {
+      "file": "assets/observed_markers.webm",
+      "source": "media/project/observed_markers.mp4",
+      "operation": "VP9 WebM 변환 · 원본 45프레임·30fps 유지",
+      "purpose": "브라우저 재생용 대체 형식"
+    },
+    {
+      "file": "assets/reconstruction_3d.webm",
+      "source": "media/project/reconstruction_3d.mp4",
+      "operation": "VP9 WebM 변환 · 원본 45프레임·30fps 유지",
+      "purpose": "브라우저 재생용 대체 형식"
+    },
+    {
+      "file": "media/project/marker_detection_clean_20261030.png",
+      "title_ko": "하지 표면 마커 검출 결과",
+      "source": "C:\\Users\\user\\miniconda3\\envs\\yun\\8.28demo\\experiment_video\\cam2\\middle20_conf010\\cam2_last_frame_001642_boxes_only.png",
+      "source_video": "C:\\Users\\user\\miniconda3\\envs\\yun\\8.28demo\\experiment_video\\cam2.MP4",
+      "camera": 2,
+      "frame_index_0based": 1642,
+      "time_s": 27.394033333333333,
+      "size_px": [
+        3840,
+        2160
+      ],
+      "model": "C:\\Users\\user\\miniconda3\\envs\\yun\\8.20_data\\experiment_video\\Model_pt\\marker_detector_yolo11s_fresh_20260819_090501.pt",
+      "inference": {
+        "imgsz": 4000,
+        "conf": 0.1,
+        "iou": 0.45,
+        "max_det": 100,
+        "agnostic_nms": true,
+        "device": "0"
+      },
+      "detections": 14,
+      "operation": "기존 저장 검출 결과 파일 복사",
+      "sha256": "025db79345912f92864abe2d572efc524a52dcf2f79eec05a7e2a821986742e2"
+    },
+    {
+      "file": "assets/project2_02_full_body_3d_20261030.mp4",
+      "fallback": "assets/project2_02_full_body_3d_20261030.webm",
+      "poster": "assets/project2_02_full_body_3d_poster.jpg",
+      "source": "july/intrinsic_cali_7.30/extrinsic/yolo_3d_results/take_08/take_08_3d_skeleton.mp4",
+      "operation": "시작 구간 3초의 H264 MP4·VP9 WebM 출력",
+      "frames": 180,
+      "fps": 59.94005994005994,
+      "duration_s": 3.003003,
+      "width": 1280,
+      "height": 720
+    }
+  ]
+}

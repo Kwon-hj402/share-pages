@@ -1,0 +1,227 @@
+{
+  "markerless_file": "C:\\Users\\user\\Desktop\\YGT_gait1_REF1-344_external_calibrated.trc",
+  "mocap_file": "C:\\Users\\user\\Desktop\\walking_1.tsv",
+  "status_source": "C:\\Users\\user\\miniconda3\\envs\\yun\\model\\exports\\YGT_gait1_REF1-344_current_gapfill3\\YGT_gait1_REF1-344_external_calibrated_gapfill3.csv",
+  "markerless_nominal_rate_hz": 59.0,
+  "mocap_rate_hz": 100.0,
+  "common_markers": [
+    "R_P1M",
+    "R_D5M",
+    "R_PAT_INF",
+    "L_PAT_INF",
+    "R_MEPI",
+    "R_D1M",
+    "R_HEE",
+    "R_LMA",
+    "R_MMA",
+    "R_LEPI",
+    "L_D5M",
+    "L_LMA",
+    "L_TIB_MID_LAT",
+    "L_LEPI",
+    "R_TIB_MID_LAT",
+    "L_P1M",
+    "L_MMA",
+    "L_HEE",
+    "L_NAV",
+    "L_MEPI",
+    "L_D1M"
+  ],
+  "excluded_markerless_markers": [
+    "R_NAV"
+  ],
+  "status_frame_shift": -1,
+  "status_mask_agreement": 0.9809725158562368,
+  "time_mapping": "mocap_time_s = offset_s + scale * markerless_TRC_time_s",
+  "time_offset_s": 1.4968622370497187,
+  "time_scale": 1.0083701825127638,
+  "effective_markerless_rate_hz_in_mocap_time": 58.51025845783891,
+  "spatial_transform_markerless_to_mocap": {
+    "rotation": [
+      [
+        -0.9993402144725663,
+        -0.034901846477260974,
+        0.010049718921562614
+      ],
+      [
+        0.030898767384382093,
+        -0.9624140347553638,
+        -0.26982307514374687
+      ],
+      [
+        0.019089314080147975,
+        -0.2693345258565637,
+        0.9628574719394195
+      ]
+    ],
+    "translation_mm": [
+      242.3256433407227,
+      2444.3672597054237,
+      744.8452354318335
+    ],
+    "scale": 1.0,
+    "reflection": false
+  },
+  "spatial_fit_inlier_pairs": 2519,
+  "spatial_fit_total_pairs": 2751,
+  "evaluation_policy": "Only OBSERVED_AUTO_ID markerless samples; interpolated and missing markerless samples excluded. Mocap values linearly sampled at aligned times; mocap gaps >30 ms excluded.",
+  "observed_pair_count": 2751,
+  "frames_with_pairs": 331,
+  "mpjpe_mm": 32.905600620356054,
+  "median_error_mm": 26.287201759916808,
+  "p95_error_mm": 81.25968807551202,
+  "rmse_mm": 40.40241702896491,
+  "frame_balanced_mean_error_mm": 44.762869410468596,
+  "frame_balanced_median_error_mm": 44.83514439978097,
+  "marker_balanced_mean_mpjpe_mm": 30.54688050018721,
+  "alternating_frame_crossfit_spatial_mpjpe_mm": 32.91359778096076,
+  "alternating_frame_crossfit_folds": [
+    {
+      "fit_frame_parity": 0,
+      "fit_pairs": 1374,
+      "fit_inliers": 1254,
+      "test_pairs": 1377,
+      "test_mpjpe_mm": 32.94002471559028
+    },
+    {
+      "fit_frame_parity": 1,
+      "fit_pairs": 1377,
+      "fit_inliers": 1263,
+      "test_pairs": 1374,
+      "test_mpjpe_mm": 32.887113145600594
+    }
+  ],
+  "marker_stats": {
+    "R_P1M": {
+      "n": 55,
+      "mpjpe_mm": 19.104443393126484,
+      "median_mm": 11.115558091163393,
+      "p95_mm": 53.000456325987734
+    },
+    "R_D5M": {
+      "n": 216,
+      "mpjpe_mm": 38.9521200695057,
+      "median_mm": 26.99966854198765,
+      "p95_mm": 92.44860730810734
+    },
+    "R_PAT_INF": {
+      "n": 162,
+      "mpjpe_mm": 28.021862088286042,
+      "median_mm": 22.12250178266474,
+      "p95_mm": 56.32350632833362
+    },
+    "L_PAT_INF": {
+      "n": 165,
+      "mpjpe_mm": 30.437112130762486,
+      "median_mm": 26.57361383948712,
+      "p95_mm": 58.01534325430024
+    },
+    "R_MEPI": {
+      "n": 70,
+      "mpjpe_mm": 17.23270371183476,
+      "median_mm": 14.070132063927744,
+      "p95_mm": 33.969215301984505
+    },
+    "R_D1M": {
+      "n": 66,
+      "mpjpe_mm": 21.04419206981325,
+      "median_mm": 9.96466560179502,
+      "p95_mm": 62.243557044577884
+    },
+    "R_HEE": {
+      "n": 191,
+      "mpjpe_mm": 32.438917639042366,
+      "median_mm": 29.58690603614053,
+      "p95_mm": 69.67504684817594
+    },
+    "R_LMA": {
+      "n": 179,
+      "mpjpe_mm": 36.75179043537509,
+      "median_mm": 30.288616075359055,
+      "p95_mm": 85.56066814671321
+    },
+    "R_MMA": {
+      "n": 116,
+      "mpjpe_mm": 28.6359094229501,
+      "median_mm": 24.479223205319883,
+      "p95_mm": 58.91167924729901
+    },
+    "R_LEPI": {
+      "n": 105,
+      "mpjpe_mm": 22.359684347334177,
+      "median_mm": 20.016990913376137,
+      "p95_mm": 42.72198609104621
+    },
+    "L_D5M": {
+      "n": 140,
+      "mpjpe_mm": 42.305699211682665,
+      "median_mm": 32.29241998444124,
+      "p95_mm": 119.84223386102641
+    },
+    "L_LMA": {
+      "n": 129,
+      "mpjpe_mm": 30.196693909327585,
+      "median_mm": 28.531936099322987,
+      "p95_mm": 55.806770588929155
+    },
+    "L_TIB_MID_LAT": {
+      "n": 131,
+      "mpjpe_mm": 26.21489600937866,
+      "median_mm": 23.976188112098328,
+      "p95_mm": 55.0367746611079
+    },
+    "L_LEPI": {
+      "n": 128,
+      "mpjpe_mm": 26.198095128486273,
+      "median_mm": 23.73177712527732,
+      "p95_mm": 53.38784568694261
+    },
+    "R_TIB_MID_LAT": {
+      "n": 103,
+      "mpjpe_mm": 18.878149699252038,
+      "median_mm": 18.502706068177915,
+      "p95_mm": 44.6688048136722
+    },
+    "L_P1M": {
+      "n": 108,
+      "mpjpe_mm": 26.87653913739941,
+      "median_mm": 25.331580139009727,
+      "p95_mm": 40.3066583233435
+    },
+    "L_MMA": {
+      "n": 200,
+      "mpjpe_mm": 31.801654281098582,
+      "median_mm": 30.10931753888262,
+      "p95_mm": 50.52077253874343
+    },
+    "L_HEE": {
+      "n": 258,
+      "mpjpe_mm": 53.9657687998549,
+      "median_mm": 60.20297543890347,
+      "p95_mm": 89.76838876801068
+    },
+    "L_NAV": {
+      "n": 108,
+      "mpjpe_mm": 44.255150742046375,
+      "median_mm": 25.50417767402268,
+      "p95_mm": 114.43510410281075
+    },
+    "L_MEPI": {
+      "n": 63,
+      "mpjpe_mm": 25.017482368350954,
+      "median_mm": 24.742091708399386,
+      "p95_mm": 43.8471063654396
+    },
+    "L_D1M": {
+      "n": 58,
+      "mpjpe_mm": 40.795625909023435,
+      "median_mm": 28.711410236244916,
+      "p95_mm": 109.55532303240835
+    }
+  },
+  "limitations": [
+    "Time and rigid spatial alignment were estimated from the same automatic/mocap correspondences used for MPJPE.",
+    "Robust trimming was used only to estimate alignment; final MPJPE includes every valid observed ID pair, including potential ID swaps.",
+    "No spatial scale factor was fitted."
+  ]
+}
