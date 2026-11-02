@@ -36,10 +36,6 @@
     "sha256": "de7fe6ea409b62fcc8397b705faec7587b7f00e6a3b00b3f08fa1052a782a973"
   },
   {
-    "path": "media/project/foot_pilot.png",
-    "sha256": "bc47cb38b3612702a5a4952b8bf367a1b7f33c874ef6e8c44a26526bd3bdd536"
-  },
-  {
     "path": "media/project/annotation_reviewed.png",
     "sha256": "712ac47352626542166b6cd27fce1e2b6233733d6ad1005cda3a5ec93fe83982"
   },
