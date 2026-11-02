@@ -155,3 +155,6 @@ document.querySelectorAll('.film').forEach(figure => {
     trigger.addEventListener('click', () => openPicture(source, trigger));
   });
 })();
+
+// Play one clip at a time in the continuous document.
+document.querySelectorAll('.film video').forEach(active=>active.addEventListener('play',()=>{document.querySelectorAll('.film video').forEach(other=>{if(other!==active&&!other.paused)other.pause();});}));

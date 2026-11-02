@@ -8,32 +8,24 @@
     "sha256": "d48c1da09d0e9f47d4621a90d45f5355f43ace72537df628ea94de9a23371af5"
   },
   {
-    "path": "media/project/marker_detection_clean_20261030.png",
-    "sha256": "025db79345912f92864abe2d572efc524a52dcf2f79eec05a7e2a821986742e2"
+    "path": "media/project/calibration_board.png",
+    "sha256": "1ddfe11222390f9995df776c71dba459825de97ca5d378826ea1020ce5c2d73d"
   },
   {
-    "path": "media/project/observed_markers_poster.png",
-    "sha256": "3eac6c5f9f1cfb0cea5a8131614f81633ffe8b1173b03bdcbb45f4ea588b5739"
+    "path": "media/project/extrinsic_board.png",
+    "sha256": "131fc97146dee751cf5e61155db60b0e9b310b2cc7f0ae219a1741d0ad66f1db"
   },
   {
-    "path": "media/project/observed_markers.mp4",
-    "sha256": "9e08658d44bd7f89838f87a0bd55223c3f42a3d3464293615df26c843309e4ea"
+    "path": "assets/project2_01_six_camera_2d_pose.jpg",
+    "sha256": "336ea6307a2333065ab33dcc8802e2677a215954fcf419ce9fca262ad86b75b9"
   },
   {
-    "path": "media/project/reconstruction_3d_poster.png",
-    "sha256": "e6ea82a91741101e624518931360fdb12e6d9c493e81efcd6b9dea96527529a1"
+    "path": "assets/project2_03_full_body_sequence.jpg",
+    "sha256": "0e871a26e603267ae898cc40a76db276b7021bbca7b5d6b5a1f2ce642fbbf427"
   },
   {
-    "path": "media/project/reconstruction_3d.mp4",
-    "sha256": "204216a0d46fd2d107cf5748131350ded1eff4b95821db887c98a560f68fcc01"
-  },
-  {
-    "path": "assets/observed_markers.webm",
-    "sha256": "fd68a3ab3ab8827c5c717d4c09bb3f9ec533cf7d03f5b71c930563b1ba1126d8"
-  },
-  {
-    "path": "assets/reconstruction_3d.webm",
-    "sha256": "648b643e576f789ef9f3a5f57a277aeb9e5465378cbedec456c8a7857f039452"
+    "path": "assets/project2_02_full_body_3d_poster.jpg",
+    "sha256": "add541015a20a28f5b2a69f878d377ba48d2ee80100c511abd6a6cafaf3478e4"
   },
   {
     "path": "assets/project2_02_full_body_3d_20261030.mp4",
@@ -44,7 +36,67 @@
     "sha256": "de7fe6ea409b62fcc8397b705faec7587b7f00e6a3b00b3f08fa1052a782a973"
   },
   {
-    "path": "assets/project2_02_full_body_3d_poster.jpg",
-    "sha256": "add541015a20a28f5b2a69f878d377ba48d2ee80100c511abd6a6cafaf3478e4"
+    "path": "media/project/foot_pilot.png",
+    "sha256": "bc47cb38b3612702a5a4952b8bf367a1b7f33c874ef6e8c44a26526bd3bdd536"
+  },
+  {
+    "path": "media/project/annotation_reviewed.png",
+    "sha256": "712ac47352626542166b6cd27fce1e2b6233733d6ad1005cda3a5ec93fe83982"
+  },
+  {
+    "path": "media/project/marker_detection_clean_20261030.png",
+    "sha256": "025db79345912f92864abe2d572efc524a52dcf2f79eec05a7e2a821986742e2"
+  },
+  {
+    "path": "media/project/observed_markers.mp4",
+    "sha256": "9e08658d44bd7f89838f87a0bd55223c3f42a3d3464293615df26c843309e4ea"
+  },
+  {
+    "path": "media/project/observed_markers_poster.png",
+    "sha256": "3eac6c5f9f1cfb0cea5a8131614f81633ffe8b1173b03bdcbb45f4ea588b5739"
+  },
+  {
+    "path": "assets/observed_markers.webm",
+    "sha256": "fd68a3ab3ab8827c5c717d4c09bb3f9ec533cf7d03f5b71c930563b1ba1126d8"
+  },
+  {
+    "path": "media/project/reconstruction_3d.mp4",
+    "sha256": "204216a0d46fd2d107cf5748131350ded1eff4b95821db887c98a560f68fcc01"
+  },
+  {
+    "path": "media/project/reconstruction_3d_poster.png",
+    "sha256": "e6ea82a91741101e624518931360fdb12e6d9c493e81efcd6b9dea96527529a1"
+  },
+  {
+    "path": "assets/reconstruction_3d.webm",
+    "sha256": "648b643e576f789ef9f3a5f57a277aeb9e5465378cbedec456c8a7857f039452"
+  },
+  {
+    "path": "assets/marker_training_batch.jpg",
+    "sha256": "e188437d6d52fa759e8e5cbc0a54907495ba9587b7196ff33cc538d02fe38246"
+  },
+  {
+    "path": "assets/marker_position_error.png",
+    "sha256": "0733a6d711809e8253173b3b436ad94ffca8a97bd5290735fbb8e6784bfbbb92"
+  },
+  {
+    "path": "assets/marker_position_error.svg",
+    "sha256": "9aea41188be47523f4a30497f1b40cef58f9e0c915da2df845e50b28dde125cd"
+  },
+  {
+    "path": "assets/marker_position_error.csv",
+    "sha256": "417780b20e19640e01d93df42ad722155172f812b3a0c013e86bed692eb4fdbe"
+  },
+  {
+    "path": "assets/reference_comparison.mp4",
+    "sha256": "07aa452957960d01cc725a2e67f303d0cf5f0a1a71e877aa99f15e8e590ea264"
+  },
+  {
+    "path": "assets/reference_comparison.webm",
+    "sha256": "44d103b5fe8415fda2cb13723bcc80116cec6569af42a13e1edd657b1ea90480"
+  },
+  {
+    "path": "assets/reference_comparison_poster.png",
+    "sha256": "4489cc42e2ed11c4a1c2117934d6f54ce49201f08d149c732b10d0342d46e5dc"
   }
 ]
