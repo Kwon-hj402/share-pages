@@ -1,0 +1,78 @@
+{
+  "title": "Hybrid Motion Capture · 연구 개요",
+  "date": "2026-11-02",
+  "pages": [
+    {
+      "id": "purpose",
+      "title": "Hybrid Motion Capture",
+      "category": "연구 목적",
+      "body": "\n<div class=\"cover-layout\">\n <div class=\"cover-text\"><p class=\"cover-kicker\">RGB 기반 하이브리드 모션캡처</p><h1 data-editable>Hybrid<br>Motion Capture</h1>\n <p class=\"purpose\" data-editable>전신 Markerless 동작 추정에<br>해부학적 landmark 관측을 결합</p>\n <p class=\"cover-description\" data-editable>일반 RGB 카메라를 활용한 전신 동작 추정과 <br>필요 부위의 추가 관측을 통한 운동학적 분석</p>\n <div class=\"phase-lines\"><p><strong>현재</strong> 마커를 이용한 검출·추적 및 비교 검증</p><p><strong>향후</strong> 스티커·색 대비 부착물로 관측 대상 확장</p></div>\n <p class=\"presenter\" data-editable>권혁진 · Applied Biomechanics Lab<br>Incheon National University · 2026. 11. 02.</p></div>\n <div class=\"cover-visual\"><figure class=\"photo \"><img src=\"assets/project2_02_full_body_3d_poster.jpg\" alt=\"전신 Markerless 3차원 복원 결과\"><figcaption>현재 구현된 전신 Markerless 복원 예시</figcaption></figure><img class=\"logo\" src=\"media/branding/abl-logo.png\" alt=\"Applied Biomechanics Lab\"></div>\n</div>",
+      "notes": "연구 목표는 RGB 영상의 전신 pose estimation과 선택적인 해부학적 landmark 관측을 결합하는 Hybrid Motion Capture이다. 현재는 반사 마커를 RGB 영상에서 검출하는 방식으로 관측·추적과 기준 장비 비교를 진행한다. 스티커 및 색 대비가 뚜렷한 부착물은 후속 학습 대상이다. 전신 영상과 마커 추적의 결합 효과는 향후 공통 조건 비교로 평가한다.",
+      "cls": "cover"
+    },
+    {
+      "id": "project",
+      "title": "프로젝트의 구성",
+      "category": "연구 개요",
+      "body": "\n<p class=\"lead\" data-editable>다중 RGB 카메라 기반의 3차원 동작 분석 시스템 구축</p>\n<div class=\"split setup\"><div><figure class=\"photo \"><img src=\"media/project/setup_multicamera.png\" alt=\"다중 RGB 카메라 촬영 환경\"><figcaption>프로젝트의 실제 다중 카메라 촬영 환경</figcaption></figure></div>\n<div class=\"work-list\"><div><span>01</span><h3 data-editable>카메라 보정·3차원 복원</h3><p data-editable>여러 카메라 영상을 공통 공간에서<br>결합하는 분석 기반 구축</p></div><div><span>02</span><h3 data-editable>전신 Markerless</h3><p data-editable>영상에서 추정한 전신 keypoint의<br>3차원 동작 복원</p></div><div><span>03</span><h3 data-editable>landmark 관측·비교 검증</h3><p data-editable>하지 표면 마커 검출·추적과<br>기준 광학식 모션캡처 비교</p></div></div></div>",
+      "notes": "세 작업은 카메라 보정·복원 기반, 전신 Markerless, 마커 기반 landmark 관측 및 기준 장비 비교로 구성한다. 현재 전신 Markerless 결과는 6-camera COCO 17점 결과이며, 마커 측정 파이프라인은 별도 촬영 및 구현 기록에 기반한다. ",
+      "cls": ""
+    },
+    {
+      "id": "markerless",
+      "title": "전신 Markerless 동작 복원",
+      "category": "현재 진행",
+      "body": "\n<p class=\"lead\" data-editable>다중 RGB 영상으로 전신 keypoint를 추정하고 3차원 동작으로 복원</p>\n<div class=\"split media-main\"><div><figure class=\"film\" id=\"film-markerless\"><video controls playsinline loop preload=\"metadata\" poster=\"assets/project2_02_full_body_3d_poster.jpg\" aria-label=\"전신 Markerless 복원 예시 · 시간 보간·평활화 적용\"><source src=\"assets/project2_02_full_body_3d_20261030.webm\" type=\"video/webm\"><source src=\"assets/project2_02_full_body_3d_20261030.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"assets/project2_02_full_body_3d_poster.jpg\" alt=\"전신 Markerless 복원 예시 · 시간 보간·평활화 적용\"><figcaption>전신 Markerless 복원 예시 · 시간 보간·평활화 적용</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"전신 Markerless 복원 예시 · 시간 보간·평활화 적용 영상 재생\">영상 재생</button><a href=\"assets/project2_02_full_body_3d_20261030.mp4\">영상 파일 열기</a><a href=\"assets/project2_02_full_body_3d_20261030.webm\">WebM</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><a class=\"print-link\" href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-markerless\">온라인 자료에서 영상 보기 ↗</a></figure></div>\n<div class=\"side-copy\"><h3 data-editable>구현 내용</h3><p data-editable>공개 pose estimation 모델을 활용한 전신 동작 추정</p><p data-editable>다중 시점 정보를 결합한 3차원 시각화</p><h3 data-editable>검토 항목</h3><p data-editable>동작·촬영 조건에 따른 keypoint 추적과 분절 운동의 일관성</p></div></div>",
+      "notes": "Take 08의 6-camera COCO 17점 전신 복원 영상이다. 시간 보간·평활화를 포함한다. 유효 keypoint 수나 재투영 오차만으로 해부학적 운동학 타당도를 확정하지 않으며, 공통 조건에서의 비교 검증을 계획한다.",
+      "cls": ""
+    },
+    {
+      "id": "landmark",
+      "title": "하지 landmark 관측",
+      "category": "현재 진행",
+      "body": "\n<p class=\"lead\" data-editable>발·발목·하퇴·무릎의 표면 마커를 RGB 영상에서 검출·추적</p>\n<div class=\"two-media\"><div><h3 data-editable>마커 검출</h3><figure class=\"photo \"><img src=\"media/project/marker_detection_clean_20261030.png\" alt=\"하지 표면 마커 검출 결과\"><figcaption>RGB 영상에서 검출한 하지 표면 마커</figcaption></figure></div><div><h3 data-editable>관측 위치·식별 정보 추적</h3><figure class=\"film\" id=\"film-observed\"><video controls playsinline loop preload=\"metadata\" poster=\"media/project/observed_markers_poster.png\" aria-label=\"영상에서 직접 관측된 마커 위치와 식별 정보\"><source src=\"assets/observed_markers.webm\" type=\"video/webm\"><source src=\"media/project/observed_markers.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"media/project/observed_markers_poster.png\" alt=\"영상에서 직접 관측된 마커 위치와 식별 정보\"><figcaption>영상에서 직접 관측된 마커 위치와 식별 정보</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"영상에서 직접 관측된 마커 위치와 식별 정보 영상 재생\">영상 재생</button><a href=\"media/project/observed_markers.mp4\">영상 파일 열기</a><a href=\"assets/observed_markers.webm\">WebM</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><a class=\"print-link\" href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-observed\">온라인 자료에서 영상 보기 ↗</a></figure></div></div>\n",
+      "notes": "검출 이미지는 기존 자료에서 선정한 깨끗한 실제 검출 결과(Cam2 frame 1642)이다. 화면에 보이지 않는 마커를 검출했다고 해석하지 않는다. 2차원 영상은 실제 관측된 마커와 자동 부여된 식별 정보를 표시하며 보간·재투영으로 생성한 관측점은 포함하지 않는다. 표면 마커의 위치와 해부학적 landmark의 대응은 부착 절차 및 피부 움직임의 영향을 함께 평가해야 한다.",
+      "cls": ""
+    },
+    {
+      "id": "tracking",
+      "title": "발·무릎 중심의 3차원 추적",
+      "category": "현재 진행",
+      "body": "\n<p class=\"lead\" data-editable>여러 영상에서 관측한 마커를 결합하여 하지의 3차원 움직임 추적</p>\n<div class=\"split media-main\"><div><figure class=\"film\" id=\"film-tracking\"><video controls playsinline loop preload=\"metadata\" poster=\"media/project/reconstruction_3d_poster.png\" aria-label=\"하지 마커의 3차원 추적 예시 · 보간·이상치 보정·평활화 적용\"><source src=\"assets/reconstruction_3d.webm\" type=\"video/webm\"><source src=\"media/project/reconstruction_3d.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"media/project/reconstruction_3d_poster.png\" alt=\"하지 마커의 3차원 추적 예시 · 보간·이상치 보정·평활화 적용\"><figcaption>하지 마커의 3차원 추적 예시 · 보간·이상치 보정·평활화 적용</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"하지 마커의 3차원 추적 예시 · 보간·이상치 보정·평활화 적용 영상 재생\">영상 재생</button><a href=\"media/project/reconstruction_3d.mp4\">영상 파일 열기</a><a href=\"assets/reconstruction_3d.webm\">WebM</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><a class=\"print-link\" href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-tracking\">온라인 자료에서 영상 보기 ↗</a></figure></div>\n<div class=\"side-copy\"><h3 data-editable>진행 범위</h3><p data-editable>하지 표면 마커의 3차원 궤적 복원과 시각화</p><p data-editable>기준 광학식 모션캡처와의 예비 비교 진행</p><h3 data-editable>후속 평가</h3><p data-editable>3D 위치, 관절각, 분절 방향의 일치도 검토</p></div></div>",
+      "notes": "22개 표면 마커를 대상으로 생성한 3차원 시각화이다. 보간·이상치 보정·평활화를 포함한다. 해당 영상은 처리 결과의 시각화이며 실시간 처리 성능 지표를 제시하지 않는다. 기준 장비 비교는 제한된 촬영의 예비 단계이므로 대상자·동작·세션 확장을 계획한다.",
+      "cls": ""
+    },
+    {
+      "id": "limitations",
+      "title": "현재 한계와 검증 과제",
+      "category": "검토 사항",
+      "body": "\n<p class=\"lead\" data-editable>관측 안정성, 해부학적 해석, 비교 검증 범위를 단계적으로 평가</p>\n<table class=\"wide-table\"><thead><tr><th>검토 영역</th><th>현재 한계·영향 요인</th><th>후속 검증</th></tr></thead><tbody>\n<tr><th scope=\"row\" data-editable>영상 관측</th><td data-editable>가림, 시점 변화, 빠른 움직임에 따른<br>keypoint·마커 관측 변화</td><td data-editable>동작별 누락·식별 오류 및<br>궤적 연속성 평가</td></tr>\n<tr><th scope=\"row\" data-editable>해부학적 계측</th><td data-editable>관절 중심 추정과 landmark 정의의 차이<br>마커 부착 위치·피부 움직임의 영향</td><td data-editable>해부학적 정의·부착 절차 정립<br>관절각·분절 방향 일치도 평가</td></tr>\n<tr><th scope=\"row\" data-editable>비교 검증</th><td data-editable>제한된 동작·촬영 조건의 예비 비교<br>Hybrid 결합 효과의 평가 필요</td><td data-editable>독립된 대상자·동작·세션 확장<br>세 방식의 공통 조건 비교</td></tr>\n</tbody></table>\n<p class=\"closing-line\" data-editable>검증 목표: Markerless에 landmark 관측을 추가했을 때의 운동학적 측정 일치도 평가</p>",
+      "notes": "일반적인 관측 취약 조건과 프로젝트에서 앞으로 확인할 항목을 구분하였다. 빠른 동작에서의 실제 성능 저하 규모는 아직 제시하지 않는다. COCO keypoint의 관측 정의와 해부학적 좌표계 정의가 서로 다를 수 있어, 추가 landmark의 역할을 관절·분절별로 정의한다. 향후 동일 촬영 조건의 Markerless, 마커 기반, Hybrid 결과를 기준 광학식 모션캡처와 비교한다.",
+      "cls": ""
+    },
+    {
+      "id": "research",
+      "title": "후속 연구 계획",
+      "category": "연구 확장",
+      "body": "\n<p class=\"lead\" data-editable>기본 동작의 비교 검증을 바탕으로 관측 대상과 적용 동작 확장</p>\n<div class=\"research-rows\"><div><span>01</span><div><h3 data-editable>Hybrid 결합 효과 검증</h3><p data-editable>Markerless / 마커 기반 / Hybrid를 동일 조건에서 비교<br>기준 장비 대비 3D 위치·관절각·분절 방향의 일치도 평가</p></div></div>\n<div><span>02</span><div><h3 data-editable>부착물·학습 데이터 확장</h3><p data-editable>스티커 및 피부·배경과 색 대비가 뚜렷한 부착물 학습<br>대상자, 조명, 촬영 시점 변화에 따른 검출 성능 평가</p></div></div>\n<div><span>03</span><div><h3 data-editable>빠른 동작으로 적용 범위 확장</h3><p data-editable>골프 스윙 등 고속 동작을 후속 연구 후보로 검토<br>촬영 조건과 동작 구간에 따른 관측 안정성 평가</p></div></div></div>",
+      "notes": "스티커·색 대비 부착물은 현재 검증용 반사 마커 다음 단계의 학습 대상으로 제안한다. 골프 스윙은 후속 연구의 후보 과제이며 현재 구현·검증 완료 결과로 제시하지 않는다. 비교 시 대상자 대응, 기준 장비와의 동기화, 해부학적 정의 및 관절 좌표계 일치를 먼저 정립한다.",
+      "cls": ""
+    },
+    {
+      "id": "support",
+      "title": "고속 동작 연구를 위한 지원",
+      "category": "기술·장비 협의",
+      "body": "\n<div class=\"request-band\"><p class=\"label\">우선 협의 항목</p><h2 data-editable>고속 비디오 카메라 대여 또는 공동 촬영</h2><p data-editable>골프 스윙 등 빠른 동작의 관측 조건을 확인하는 파일럿 연구</p></div>\n<table class=\"support-table\"><thead><tr><th>지원·협의 항목</th><th>확인할 내용</th></tr></thead><tbody>\n<tr><th scope=\"row\" data-editable>카메라·촬영 범위</th><td data-editable>사용 가능한 frame rate·해상도·촬영 범위 / 대여 기간·동시 사용 대수</td></tr>\n<tr><th scope=\"row\" data-editable>노출·조명</th><td data-editable>짧은 노출 시간에서의 영상 밝기 / 움직임 중 마커 가시성</td></tr>\n<tr><th scope=\"row\" data-editable>동기화·기준 측정</th><td data-editable>카메라 간 촬영 시점 정렬 / 기존 RGB·기준 장비와 동시 측정</td></tr>\n</tbody></table>\n<p class=\"source\">장비 협의 참고: <a href=\"https://whitepapers.axis.com/en-us/global-shutter-vs-rolling-shutter\">Axis · 노출·셔터 방식</a> / <a href=\"https://docs.baslerweb.com/image-roi\">Basler · 촬영 영역과 frame rate</a> / <a href=\"https://www.teledynevisionsolutions.com/en-ca/support/support-center/application-note/iis/configuring-synchronized-capture-with-multiple-cameras/\">Teledyne · 다중 카메라 동기화</a></p>",
+      "notes": "고속 카메라는 구매를 전제하지 않고 대여 또는 공동 촬영 가능성을 우선 협의한다. 사양은 촬영 범위·목표 동작·조명·동기화 조건과 함께 결정한다. 고정된 목표 fps는 현재 자료에 근거가 없어 제시하지 않는다. Axis 자료는 움직임 흐림과 rolling-shutter 왜곡의 구분 및 노출·조명 조건을 설명한다. Basler 공식 문서는 촬영 영역(ROI) 축소와 frame rate의 관계를 설명한다. Teledyne 공식 자료는 다중 카메라 동기 촬영 구성을 설명한다.",
+      "cls": ""
+    },
+    {
+      "id": "discussion",
+      "title": "협력 논의와 다음 단계",
+      "category": "첫 미팅 논의",
+      "body": "\n<p class=\"lead\" data-editable>현재 구현 범위를 공유하고, 장비 활용과 공동 검증의 실행 범위 협의</p>\n<div class=\"discussion-rows\"><div><h3 data-editable>기술 협력</h3><p data-editable>협력기관의 현재 지원 동작·측정 항목·출력 형식 확인<br>고속 동작 분석과 landmark 활용의 공동 연구 범위 논의</p></div>\n<div><h3 data-editable>장비 협력</h3><p data-editable>고속 카메라 대여·공동 촬영 가능 여부 확인<br>촬영 공간, 조명, 동기화 및 기준 장비 활용 조건 협의</p></div>\n<div><h3 data-editable>검증 계획</h3><p data-editable>파일럿 동작과 촬영 조건 선정<br>동시 측정·데이터 공유 범위와 평가 지표 합의</p></div></div>\n<div class=\"next-line\"><span>협의 범위 확정</span><span aria-hidden=\"true\">→</span><span>파일럿 촬영</span><span aria-hidden=\"true\">→</span><span>비교 검증·후속 연구 설계</span></div>",
+      "notes": "협력기관이 기본 보행 또는 골프 스윙을 이미 구현했는지는 확인 전 사항이다. 현재 시스템의 우열이나 상대 기관의 부족한 점을 단정하지 않고 지원 동작·출력·측정 범위를 확인하는 안건으로 제시한다.",
+      "cls": ""
+    }
+  ]
+}

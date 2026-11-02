@@ -1,0 +1,50 @@
+[
+  {
+    "path": "media/branding/abl-logo.png",
+    "sha256": "8ec2fb62ea56c6bebc37731e0aa43256d48c32ee9b31bcdc14bf262816b61899"
+  },
+  {
+    "path": "media/project/setup_multicamera.png",
+    "sha256": "d48c1da09d0e9f47d4621a90d45f5355f43ace72537df628ea94de9a23371af5"
+  },
+  {
+    "path": "media/project/marker_detection_clean_20261030.png",
+    "sha256": "025db79345912f92864abe2d572efc524a52dcf2f79eec05a7e2a821986742e2"
+  },
+  {
+    "path": "media/project/observed_markers_poster.png",
+    "sha256": "3eac6c5f9f1cfb0cea5a8131614f81633ffe8b1173b03bdcbb45f4ea588b5739"
+  },
+  {
+    "path": "media/project/observed_markers.mp4",
+    "sha256": "9e08658d44bd7f89838f87a0bd55223c3f42a3d3464293615df26c843309e4ea"
+  },
+  {
+    "path": "media/project/reconstruction_3d_poster.png",
+    "sha256": "e6ea82a91741101e624518931360fdb12e6d9c493e81efcd6b9dea96527529a1"
+  },
+  {
+    "path": "media/project/reconstruction_3d.mp4",
+    "sha256": "204216a0d46fd2d107cf5748131350ded1eff4b95821db887c98a560f68fcc01"
+  },
+  {
+    "path": "assets/observed_markers.webm",
+    "sha256": "fd68a3ab3ab8827c5c717d4c09bb3f9ec533cf7d03f5b71c930563b1ba1126d8"
+  },
+  {
+    "path": "assets/reconstruction_3d.webm",
+    "sha256": "648b643e576f789ef9f3a5f57a277aeb9e5465378cbedec456c8a7857f039452"
+  },
+  {
+    "path": "assets/project2_02_full_body_3d_20261030.mp4",
+    "sha256": "9aab395581f65eab5cd374eed999623259fb91b94c5a1083c97f14de042564ff"
+  },
+  {
+    "path": "assets/project2_02_full_body_3d_20261030.webm",
+    "sha256": "de7fe6ea409b62fcc8397b705faec7587b7f00e6a3b00b3f08fa1052a782a973"
+  },
+  {
+    "path": "assets/project2_02_full_body_3d_poster.jpg",
+    "sha256": "add541015a20a28f5b2a69f878d377ba48d2ee80100c511abd6a6cafaf3478e4"
+  }
+]
