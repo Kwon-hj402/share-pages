@@ -4,12 +4,12 @@
   "chapters": [
     {
       "id": "project",
-      "title": "프로젝트의 구성",
+      "title": "Project overview",
       "summary": "RGB 영상의 전신 pose 추정과 부위별 landmark 관측을 공통 3D reconstruction 구조에서 연계.",
       "blocks": [
         {
           "id": "workpackages",
-          "title": "세 과제의 역할과 현재 진행 범위",
+          "title": "Project components",
           "body": "<figure class=\"photo \"><img src=\"media/project/setup_multicamera.png\" alt=\"다중 RGB 카메라 촬영 환경\" loading=\"eager\"><figcaption>실제 다중 RGB 카메라 촬영 환경</figcaption></figure><table class=\"\"><thead><tr><th scope=\"col\">과제</th><th scope=\"col\">현재 구현</th><th scope=\"col\">연계 방향</th></tr></thead><tbody><tr><td><b>Camera calibration<br>+ 3D reconstruction</b></td><td>Intrinsic·Extrinsic calibration<br>다중 시점 3D 위치 복원</td><td>공통 좌표·시간 기준과<br>관측 품질 정보 관리</td></tr><tr><td><b>Markerless Motion Capture</b></td><td>6대 카메라·공개 pose 모델<br>전신 17개 keypoint 복원</td><td>추가 landmark 관측의<br>비교 기준선 구성</td></tr><tr><td><b>Visible-marker tracking</b></td><td>8대 카메라·하지 22개 ID<br>검출·추적·3D 궤적 생성</td><td>기준 광학식 모션캡처와<br>예비 위치 비교</td></tr></tbody></table><p class=\"takeaway\">후속 목표: 전신 Markerless에 선택적 landmark 관측을 결합하고, 위치·joint angles·segment orientation의 변화를 평가.</p>",
           "notes": "전신 Markerless는 7월 6-camera 자료이며 현재 하지 마커 추적은 8-camera 자료에 기반한다. 각각 구현한 파이프라인을 공통 조건 비교로 연결하는 단계이다. 통합 Hybrid의 개선 효과는 후속 평가 대상으로 구분한다.",
           "source": "프로젝트 구현·촬영 기록"
@@ -18,7 +18,7 @@
     },
     {
       "id": "calibration",
-      "title": "카메라 보정과 3D reconstruction",
+      "title": "Camera calibration & 3D reconstruction",
       "summary": "여러 RGB 영상의 동일 위치를 공통 공간으로 복원하기 위한 카메라·시간 기준 구성.",
       "blocks": [
         {
@@ -30,7 +30,7 @@
         },
         {
           "id": "reconstruction",
-          "title": "2D 관측에서 3D 위치까지",
+          "title": "3D reconstruction",
           "body": "<ol class=\"pipeline\"><li><b>2D 관측</b><span>Keypoint·마커 위치 검출</span></li><li><b>다중 시점 대응</b><span>동일 대상·동일 위치 연결</span></li><li><b>Triangulation</b><span>두 시점 이상으로 3D 계산</span></li><li><b>관측 품질 검사</b><span>재투영·기하·시간 조건 확인</span></li></ol><ul class=\"document-points\"><li><b>공간 기준:</b> 렌즈 왜곡 보정 후 카메라 간 기하 관계를 이용하여 3D 위치 산출.</li><li><b>시간 기준:</b> 카메라별 frame offset과 공통 구간을 관리하고 시점 간 대응 상태 확인.</li><li><b>출력 구분:</b> 직접 관측 기반 좌표와 보간·평활화 좌표를 나누어 저장.</li></ul>",
           "notes": "Triangulation은 여러 카메라에서 관측한 동일 위치를 결합한다. 재투영 오차, 관측 광선의 교차각, 양의 깊이, 시간 연속성 등을 확인한다. 현재 8-camera 마커 파이프라인의 영상 offset 처리와 6-camera 전신 예시의 시간 정합 검증 범위는 별도로 관리한다.",
           "source": "프로젝트 구현·촬영 기록"
@@ -39,19 +39,19 @@
     },
     {
       "id": "markerless",
-      "title": "전신 Markerless 구현",
+      "title": "Markerless Motion Capture",
       "summary": "공개 pose estimation 모델과 다중 RGB 영상을 이용한 전신 3D baseline 구축.",
       "blocks": [
         {
           "id": "pose-input",
-          "title": "다중 시점 2D pose estimation",
+          "title": "Multi-view 2D pose estimation",
           "body": "<table class=\"\"><thead><tr><th scope=\"col\">항목</th><th scope=\"col\">구현 내용</th></tr></thead><tbody><tr><td><b>입력 자료</b></td><td>6대 RGB 카메라·8개 take / 3840 × 2160·59.94 fps 촬영 자료</td></tr><tr><td><b>사용 모델</b></td><td>사전학습 YOLO11m-pose / COCO 형식 17개 신체 keypoint</td></tr><tr><td><b>저장 정보</b></td><td>카메라별 2D 좌표와 confidence / 대상자·신체 부위의 시점 간 대응</td></tr><tr><td><b>확인 항목</b></td><td>가림·배경 인물·촬영 시점에 따른 keypoint 및 대상자 선택 변화</td></tr></tbody></table><figure class=\"photo \"><img src=\"assets/project2_01_six_camera_2d_pose.jpg\" alt=\"6개 시점의 실제 2D pose 출력\" loading=\"eager\"><figcaption>6-camera 2D pose 출력 예시 · Take 08, frame 145. Cam6의 배경 인물 선택 사례 포함.</figcaption></figure><p class=\"caption-note\">원출력의 동일 frame 번호를 표시한 예시. 시점 간 시간 정합과 동일 대상자 대응을 후속 검증 항목으로 관리.</p>",
           "notes": "이 화면은 6개 원본 영상에 저장된 2D keypoint를 표시한 자료이다. 해당 실행 예시의 카메라 시간 offset은 0이다. camera 6에서 배경 인물이 선택되어 있어 동일인 대응과 시간 정합의 검토 근거로 사용한다. 비교 촬영에는 마커가 부착되어 있으며 pose 모델의 입력은 RGB 영상 및 카메라 보정값이다.",
           "source": "전신 pose 실행 기록·6-camera 원출력"
         },
         {
           "id": "pose-output",
-          "title": "전신 3D 복원과 출력",
+          "title": "Full-body 3D reconstruction",
           "body": "<ul class=\"document-points\"><li><b>3D 계산:</b> confidence 기준을 충족한 두 시점 이상을 weighted triangulation으로 결합.</li><li><b>품질 관리:</b> reprojection error와 관측 방향을 검사하고, 짧은 결측의 보간·시간 평활화 적용.</li><li><b>산출물:</b> 전신 skeleton 영상, 원시·후처리 3D 좌표, 사용 카메라 수와 관측 품질 정보.</li></ul><figure class=\"film\" id=\"film-markerless\"><video controls playsinline loop preload=\"metadata\" poster=\"assets/project2_02_full_body_3d_poster.jpg\" aria-label=\"Take 08 · COCO 17점 전신 복원. 좌측 파랑 / 우측 주황. 시간 보간·평활화 적용.\"><source src=\"assets/project2_02_full_body_3d_20261030.webm\" type=\"video/webm\"><source src=\"assets/project2_02_full_body_3d_20261030.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"assets/project2_02_full_body_3d_poster.jpg\" alt=\"Take 08 · COCO 17점 전신 복원. 좌측 파랑 / 우측 주황. 시간 보간·평활화 적용.\"><figcaption>Take 08 · COCO 17점 전신 복원. 좌측 파랑 / 우측 주황. 시간 보간·평활화 적용.</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"film-markerless 영상 재생\">영상 재생</button><a href=\"assets/project2_02_full_body_3d_20261030.mp4\">영상 파일 열기 (MP4)</a><a href=\"assets/project2_02_full_body_3d_20261030.webm\">WebM 열기</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><p class=\"print-media\"><a href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-markerless\">온라인 자료에서 영상 보기 ↗</a></p></figure><figure class=\"photo \"><img src=\"assets/project2_03_full_body_sequence.jpg\" alt=\"전신 복원 결과의 연속 자세\" loading=\"eager\"><figcaption>전신 3D 출력의 시간에 따른 자세 변화 · Take 08. 보간·평활화 적용.</figcaption></figure><p class=\"takeaway\">전신 baseline에서 관측 누락·대상자 대응·segment 길이 변화를 확인하고, 추가 landmark의 효과를 비교할 기준 마련.</p>",
           "notes": "실제 구현은 confidence 가중 DLT 기반 복원이다. 영상 예시와 연속 장면은 같은 take의 처리 결과이다. 좌표가 존재하는 비율과 재투영 잔차는 내부 복원 상태를 나타내며, joint angles와 segment orientation의 기준 장비 일치도는 후속 비교에 포함한다.",
           "source": "전신 pose 복원 코드·Take 08 결과"
@@ -60,40 +60,33 @@
     },
     {
       "id": "landmark",
-      "title": "하지 landmark 관측과 마커 추적",
+      "title": "Landmark detection & tracking",
       "summary": "발·발목·하퇴·무릎을 시작으로 마커 검출, anatomical ID 대응, 3D tracking 구현.",
       "blocks": [
         {
           "id": "marker-pilot",
-          "title": "발·무릎 Pilot과 현재 마커 구성",
+          "title": "Pilot study & marker configuration",
           "body": "<figure class=\"photo \"><img src=\"media/project/foot_pilot.png\" alt=\"발·무릎 주변 초기 주석 예시\" loading=\"eager\"><figcaption>초기 Pilot · 발·무릎 주변 15점 주석 예시</figcaption></figure><p>초기 Pilot의 색상 마커 탐지·수동 검수를 바탕으로, 현재는 좌우 각 11개·총 22개 anatomical ID를 정의하여 하지 추적 진행.</p><table class=\"\"><thead><tr><th scope=\"col\">관측 영역</th><th scope=\"col\">현재 landmark 구성</th></tr></thead><tbody><tr><td><b>Foot</b></td><td>제1·5 metatarsal 부위, navicular, heel</td></tr><tr><td><b>Ankle·Shank</b></td><td>Medial / lateral malleolus, 하퇴 외측 중간 위치</td></tr><tr><td><b>Knee</b></td><td>Medial / lateral epicondyle, patella inferior</td></tr></tbody></table><p class=\"takeaway\">현재는 validation을 위해 반사 마커를 활용하고, 후속 단계에서 스티커·색 대비 부착물로 학습 대상 확장.</p>",
           "notes": "초기 Pilot은 foot bounding box와 15점 keypoint 주석을 포함한다. 현재 반사 마커 파이프라인의 좌우 22개 ID 체계와 구분한다. 표면 부착 위치, joint center의 계산 규칙, segment 좌표계는 각각 기록하며, 피부 움직임과 부착 편차를 검증 조건에 포함한다.",
           "source": "프로젝트 구현·촬영 기록"
         },
         {
           "id": "marker-annotation",
-          "title": "마커 라벨링과 검수",
+          "title": "Marker annotation",
           "body": "<figure class=\"photo \"><img src=\"media/project/annotation_reviewed.png\" alt=\"사람이 검수한 마커 박스 주석\" loading=\"eager\"><figcaption>사람이 검수한 마커 bounding box · 초록 번호는 박스 순번</figcaption></figure><ul class=\"document-points\"><li><b>위치 라벨:</b> 영상에 보이는 마커를 bounding box로 표시하고 단일 마커 클래스로 학습.</li><li><b>검수 절차:</b> 모델 제안 → 누락·오검출 수정 → 승인 → 추가 학습을 반복.</li><li><b>ID 라벨:</b> 검수 프레임에서 좌우·부착 위치를 별도로 대응시켜 anatomical ID 모델의 학습 자료로 사용.</li><li><b>배경 자료:</b> 유효 마커가 없는 음성 프레임도 포함하여 배경 오검출 학습에 활용.</li></ul>",
           "notes": "Detection annotation과 anatomical ID annotation은 별도 자료이다. 검출기는 단일 마커 클래스의 위치를 찾고, 별도 ID 모델이 22개 ID를 구분한다. 검수 이미지에 표시된 번호는 박스 순번으로 anatomical ID 번호가 아니다.",
           "source": "마커 bounding box 학습·승인 주석 자료"
         },
         {
-          "id": "marker-learning",
-          "title": "YOLO 마커 검출기 학습",
-          "body": "<figure class=\"photo \"><img src=\"assets/marker_training_batch.jpg\" alt=\"검출기 학습 영상과 박스 주석 배치\" loading=\"eager\"><figcaption>YOLO 학습 입력 배치 · 영상과 마커 박스 주석</figcaption></figure><table class=\"\"><thead><tr><th scope=\"col\">구분</th><th scope=\"col\">현재 기록</th></tr></thead><tbody><tr><td><b>학습 모델</b></td><td>COCO 사전학습 YOLO11s를 마커 검출용으로 fine-tuning</td></tr><tr><td><b>자료 규모</b></td><td>8개 주석 프로젝트 병합 / 46,144장·483,259개 마커 박스</td></tr><tr><td><b>Train / Validation</b></td><td>36,913 / 9,231장 / 15프레임 temporal block 단위 분할</td></tr><tr><td><b>학습 구성</b></td><td>입력 크기 1600 / 밝기·색상·크기·회전 변화 적용</td></tr><tr><td><b>내부 박스 검증</b></td><td>mAP@.50: 0.966 / mAP@.50:.95: 0.608</td></tr></tbody></table><p class=\"caption-note\">mAP는 마커 박스 검출 지표. ID 대응과 3D 위치는 별도 평가하며, 독립 대상자·촬영일 자료로 검증 범위를 확장.</p>",
-          "notes": "배포 검출기와 가중치 해시가 일치하는 20260818_223225 학습 기록에 기반한다. 23 epoch가 기록되었고, 표의 mAP는 최고 mAP50-95를 기록한 epoch 8의 동일 행이다. 양성 이미지 37,903장과 음성 이미지 8,241장이 포함된다. 프로젝트 수는 대상자 수와 다르다. mAP50과 mAP50-95는 박스 중첩 기준을 달리한 Average Precision 집계이다.",
-          "source": "YOLO11s 배포 모델과 연결된 학습 설정·데이터 집계·검증 로그"
-        },
-        {
           "id": "marker-detection",
-          "title": "마커 위치 검출과 anatomical ID 대응",
+          "title": "Marker detection & anatomical ID assignment",
           "body": "<ul class=\"document-points\"><li><b>YOLO11s:</b> 영상에서 보이는 마커 위치와 박스 검출.</li><li><b>ID 모델:</b> 상대 위치·주변 마커 배치·움직임·카메라 정보를 이용하여 22개 ID 대응.</li><li><b>대응 보완:</b> 다중 시점 기하 관계, 정적 마커 배치, 시간 연속성을 함께 적용.</li></ul><figure class=\"photo \"><img src=\"media/project/marker_detection_clean_20261030.png\" alt=\"하지 표면 마커 실제 검출\" loading=\"eager\"><figcaption>RGB 영상의 하지 표면 마커 검출 예시</figcaption></figure><figure class=\"film\" id=\"film-observed\"><video controls playsinline loop preload=\"metadata\" poster=\"media/project/observed_markers_poster.png\" aria-label=\"직접 관측한 마커 위치·ID. 보간·재투영 미적용. 약 0.5배속 시각화.\"><source src=\"assets/observed_markers.webm\" type=\"video/webm\"><source src=\"media/project/observed_markers.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"media/project/observed_markers_poster.png\" alt=\"직접 관측한 마커 위치·ID. 보간·재투영 미적용. 약 0.5배속 시각화.\"><figcaption>직접 관측한 마커 위치·ID. 보간·재투영 미적용. 약 0.5배속 시각화.</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"film-observed 영상 재생\">영상 재생</button><a href=\"media/project/observed_markers.mp4\">영상 파일 열기 (MP4)</a><a href=\"assets/observed_markers.webm\">WebM 열기</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><p class=\"print-media\"><a href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-observed\">온라인 자료에서 영상 보기 ↗</a></p></figure>",
           "notes": "검출 영상은 Cam3 REF115–159의 45개 원본 프레임을 30fps로 출력한 자료이다. 실제 관측된 ID만 표시하며 보간점이나 3D 재투영점은 포함하지 않는다. ID 모델은 별도 MLP이며 검출기의 클래스 분류와 구분된다.",
           "source": "프로젝트 구현·촬영 기록"
         },
         {
           "id": "tracking",
-          "title": "하지 마커의 3D tracking",
+          "title": "3D marker tracking",
           "body": "<p>여러 카메라에서 대응된 마커 관측을 결합하여 3D 궤적 생성. 관측이 끊긴 구간의 보간·이상치 보정·평활화 결과를 함께 검토.</p><figure class=\"film\" id=\"film-tracking\"><video controls playsinline loop preload=\"metadata\" poster=\"media/project/reconstruction_3d_poster.png\" aria-label=\"발·무릎 22개 마커의 3D 시각화. 보간·이상치 보정·평활화 포함. 약 0.5배속.\"><source src=\"assets/reconstruction_3d.webm\" type=\"video/webm\"><source src=\"media/project/reconstruction_3d.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"media/project/reconstruction_3d_poster.png\" alt=\"발·무릎 22개 마커의 3D 시각화. 보간·이상치 보정·평활화 포함. 약 0.5배속.\"><figcaption>발·무릎 22개 마커의 3D 시각화. 보간·이상치 보정·평활화 포함. 약 0.5배속.</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"film-tracking 영상 재생\">영상 재생</button><a href=\"media/project/reconstruction_3d.mp4\">영상 파일 열기 (MP4)</a><a href=\"assets/reconstruction_3d.webm\">WebM 열기</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><p class=\"print-media\"><a href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-tracking\">온라인 자료에서 영상 보기 ↗</a></p></figure><ul class=\"document-points\"><li><b>현재 출력:</b> 마커별 3D 위치·ID와 궤적, 관측·보간 상태.</li><li><b>검토 항목:</b> 가림과 좌우 혼동에 따른 추적 누락·ID 변화, 마커 간 상대 위치의 연속성.</li></ul>",
           "notes": "시연은 장기 결측 보간과 rigid outlier correction 및 smoothing을 포함한다. 실제 관측 좌표와 후처리 좌표의 coverage·위치 차이는 각각 집계한다. 영상은 파이프라인 처리 결과의 시각화이다.",
           "source": "프로젝트 구현·촬영 기록"
@@ -102,27 +95,27 @@
     },
     {
       "id": "research",
-      "title": "현재 검증 범위와 후속 연구",
+      "title": "Validation & future work",
       "summary": "현재 구현 결과를 바탕으로 Hybrid 결합 효과, 표적 일반화, 고속 동작의 평가 범위 확장.",
       "blocks": [
         {
           "id": "reference-comparison",
-          "title": "기준 광학식 모션캡처와의 예비 비교",
-          "body": "<p>하지 마커 추적 결과를 기준 광학식 모션캡처 좌표와 대응시켜, 마커별 3D 위치 차이 확인.</p><figure class=\"film\" id=\"film-reference\"><video controls playsinline loop preload=\"metadata\" poster=\"assets/reference_comparison_poster.png\" aria-label=\"동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.\"><source src=\"assets/reference_comparison.webm\" type=\"video/webm\"><source src=\"assets/reference_comparison.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"assets/reference_comparison_poster.png\" alt=\"동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.\"><figcaption>동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"film-reference 영상 재생\">영상 재생</button><a href=\"assets/reference_comparison.mp4\">영상 파일 열기 (MP4)</a><a href=\"assets/reference_comparison.webm\">WebM 열기</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><p class=\"print-media\"><a href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-reference\">온라인 자료에서 영상 보기 ↗</a></p></figure><table class=\"\"><thead><tr><th scope=\"col\">비교 조건</th><th scope=\"col\">현재 결과</th></tr></thead><tbody><tr><td><b>자료 범위</b></td><td>단일 보행 시행 / 공통 21개 마커 / 직접 관측 2,751쌍</td></tr><tr><td><b>비교 처리</b></td><td>시간 정합 + 강체 정합 / 보간·결측 좌표 제외</td></tr><tr><td><b>정합 후 위치 차이</b></td><td>관측쌍별 평균: 32.91 mm / 중앙값: 26.29 mm</td></tr></tbody></table><figure class=\"photo \"><img src=\"assets/marker_position_error.png\" alt=\"마커별 광학 기준 위치 차이\" loading=\"eager\"><figcaption>단일 보행 시행 · 직접 관측 마커의 정합 후 위치 차이. 막대: 평균 / 점: 95백분위.</figcaption></figure><p class=\"caption-note\">현재 수치는 동일 시행에서 추정한 시간·공간 정합을 적용한 예비 비교 결과. 다음 단계에서 독립된 대상자·세션과 사전 정의한 정합 조건으로 평가.</p>",
+          "title": "Optical reference comparison",
+          "body": "<p>하지 마커 추적 결과를 기준 광학식 모션캡처 좌표와 대응시켜, 마커별 3D 위치 차이 확인.</p><figure class=\"film\" id=\"film-reference\"><video controls playsinline loop preload=\"metadata\" poster=\"assets/reference_comparison_poster.png\" aria-label=\"동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.\"><source src=\"assets/reference_comparison.webm\" type=\"video/webm\"><source src=\"assets/reference_comparison.mp4\" type=\"video/mp4\"></video><img class=\"print-still\" src=\"assets/reference_comparison_poster.png\" alt=\"동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.\"><figcaption>동일 보행 시행의 3D 좌표 비교. RGB 관측 좌표를 optical reference에 시간·강체 정합한 예비 비교. 약 0.5배속.</figcaption><div class=\"video-actions\"><button type=\"button\" class=\"play-control\" aria-label=\"film-reference 영상 재생\">영상 재생</button><a href=\"assets/reference_comparison.mp4\">영상 파일 열기 (MP4)</a><a href=\"assets/reference_comparison.webm\">WebM 열기</a></div><p class=\"media-status\" role=\"status\" aria-live=\"polite\"></p><p class=\"print-media\"><a href=\"https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/#film-reference\">온라인 자료에서 영상 보기 ↗</a></p></figure><table class=\"\"><thead><tr><th scope=\"col\">비교 조건</th><th scope=\"col\">현재 결과</th></tr></thead><tbody><tr><td><b>자료 범위</b></td><td>단일 보행 시행 / 공통 21개 마커 / 직접 관측 2,751쌍</td></tr><tr><td><b>비교 처리</b></td><td>동일 시행에서 추정한 시간·강체 정합 / 보간·결측 좌표 제외</td></tr><tr><td><b>정합 후 위치 차이</b></td><td>관측쌍별 평균: 32.91 mm / 중앙값: 26.29 mm</td></tr></tbody></table>",
           "notes": "22개 ID에서 reference에 없는 R_NAV를 제외하여 공통 21개 마커를 비교한다. OBSERVED_AUTO_ID 좌표 2,751쌍·331개 프레임을 집계했으며 보간·결측 좌표는 제외한다. reference는 정합된 시각에서 선형 표본화하고 30ms를 초과한 결측 구간은 제외한다. 평균 32.91mm는 유효 관측쌍을 동일 가중 평균한 rigid-aligned MPJPE이다. 시간과 공간 정합 파라미터는 같은 비교 자료에서 추정했다. 독립 좌표 변환을 사전에 고정한 절대 위치 평가와 구분한다. 기존 파일명에 markerless가 포함되어 있으나 이 비교의 대상은 RGB visible-marker 3D tracking이다.",
           "source": "하지 마커 추적·광학식 기준 좌표의 예비 비교 보고서"
         },
         {
           "id": "limitations",
-          "title": "현재 한계와 보완 과제",
+          "title": "Limitations",
           "body": "<table class=\"\"><thead><tr><th scope=\"col\">영역</th><th scope=\"col\">확인된 범위·영향 요인</th><th scope=\"col\">다음 평가</th></tr></thead><tbody><tr><td><b>전신 pose</b></td><td>가림·배경 인물·시점 변화에 따른<br>대상자 선택과 keypoint 변화</td><td>동일인·동일 부위 대응,<br>누락·segment 길이 변동 평가</td></tr><tr><td><b>landmark 관측</b></td><td>부착 위치 편차·피부 움직임,<br>마커 누락·ID 혼동</td><td>부착 프로토콜·정적 자세 기준과<br>joint angles·segment orientation 비교</td></tr><tr><td><b>검증 자료</b></td><td>내부 자료와 단일 보행 시행의<br>예비 위치 비교 중심</td><td>대상자·촬영일·동작을 분리한<br>독립 시험자료 확보</td></tr></tbody></table>",
           "notes": "관측 품질, 좌표 일치도, joint kinematics를 구분하여 평가한다. 전신 pose baseline, visible-marker tracking, 통합 Hybrid는 각각 평가 조건을 정의한다.",
           "source": "프로젝트 구현·촬영 기록"
         },
         {
           "id": "future",
-          "title": "Hybrid와 스포츠 동작으로의 확장",
-          "body": "<table class=\"\"><thead><tr><th scope=\"col\">연구 방향</th><th scope=\"col\">진행 내용과 추가 조건</th></tr></thead><tbody><tr><td><b>Hybrid 결합 평가</b></td><td>동일 조건의 Markerless / 마커 기반 / Hybrid 비교<br>발·무릎부터 landmark의 위치·수에 따른 추가 관측 효과 검토</td></tr><tr><td><b>스티커·색 대비 표적</b></td><td>스티커와 피부·배경 대비가 뚜렷한 부착물의 학습 자료 구축<br>색상·크기·조명·가림 변화에 따른 검출 및 추적 평가</td></tr><tr><td><b>빠른 스포츠 동작</b></td><td>골프 스윙 등을 후속 적용 후보로 검토<br>동작 속도와 구간에 맞춘 frame rate·노출·카메라 배치 설계</td></tr></tbody></table><div class=\"research-basis\"><h4>고속 동작을 위한 촬영·검증 기반</h4><p>현재 보행 자료와 59.94 fps RGB 촬영을 바탕으로, 빠른 동작을 관측할 수 있는 <b>고속 비디오 촬영 자료</b>로 확장 계획.</p><ul class=\"document-points\"><li><b>영상 조건:</b> 고속 카메라의 frame rate·해상도·촬영 범위를 고려하고, 짧은 노출에 맞춘 조명 환경 구성.</li><li><b>비교 조건:</b> 다중 카메라 동기화와 기준 장비의 동시 측정 자료 확보.</li><li><b>추가 확보 과제:</b> 고속 다중 시점 촬영 환경과 스포츠 동작별 학습·검증 데이터.</li></ul></div><p class=\"takeaway\">기본 동작의 비교 검증 → 표적·대상자 조건 확장 → 고속 스포츠 동작의 Kinematic analysis.</p>",
+          "title": "Hybrid validation & sports applications",
+          "body": "<table class=\"\"><thead><tr><th scope=\"col\">연구 방향</th><th scope=\"col\">진행 내용과 추가 조건</th></tr></thead><tbody><tr><td><b>Hybrid 결합 평가</b></td><td>동일 조건의 Markerless / 마커 기반 / Hybrid 비교<br>발·무릎부터 landmark의 위치·수에 따른 추가 관측 효과 검토</td></tr><tr><td><b>스티커·색 대비 표적</b></td><td>스티커와 피부·배경 대비가 뚜렷한 부착물의 학습 자료 구축<br>색상·크기·조명·가림 변화에 따른 검출 및 추적 평가</td></tr><tr><td><b>빠른 스포츠 동작</b></td><td>골프 스윙 등을 후속 적용 후보로 검토<br>동작 속도와 구간에 맞춘 frame rate·노출·카메라 배치 설계</td></tr></tbody></table><div class=\"research-basis\"><h4>고속 동작 촬영·검증 조건</h4><p>현재 보행 자료와 59.94 fps RGB 촬영을 바탕으로, 빠른 동작을 관측할 수 있는 <b>고속 비디오 촬영 자료</b>로 확장 계획.</p><ul class=\"document-points\"><li><b>영상 조건:</b> 고속 카메라의 frame rate·해상도·촬영 범위를 고려하고, 짧은 노출에 맞춘 조명 환경 구성.</li><li><b>비교 조건:</b> 다중 카메라 동기화와 기준 장비의 동시 측정 자료 확보.</li><li><b>추가 확보 과제:</b> 고속 다중 시점 촬영 환경과 스포츠 동작별 학습·검증 데이터.</li></ul></div><p class=\"takeaway\">기본 동작의 비교 검증 → 표적·대상자 조건 확장 → 고속 스포츠 동작의 Kinematic analysis.</p>",
           "notes": "골프 스윙은 후속 적용 후보이다. 고속 촬영의 목표 frame rate는 목표 동작의 속도, 촬영 범위·해상도·노출 및 동기화 조건과 함께 결정한다. 현재 고속 스포츠 동작 자료와 통합 Hybrid의 비교 검증 자료는 추가 확보 단계이다. 특정 업체의 현재 구현 범위나 성능은 본 자료에서 단정하지 않는다.",
           "source": "프로젝트 구현·촬영 기록"
         }

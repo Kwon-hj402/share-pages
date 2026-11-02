@@ -72,22 +72,6 @@
     "sha256": "648b643e576f789ef9f3a5f57a277aeb9e5465378cbedec456c8a7857f039452"
   },
   {
-    "path": "assets/marker_training_batch.jpg",
-    "sha256": "e188437d6d52fa759e8e5cbc0a54907495ba9587b7196ff33cc538d02fe38246"
-  },
-  {
-    "path": "assets/marker_position_error.png",
-    "sha256": "0733a6d711809e8253173b3b436ad94ffca8a97bd5290735fbb8e6784bfbbb92"
-  },
-  {
-    "path": "assets/marker_position_error.svg",
-    "sha256": "9aea41188be47523f4a30497f1b40cef58f9e0c915da2df845e50b28dde125cd"
-  },
-  {
-    "path": "assets/marker_position_error.csv",
-    "sha256": "417780b20e19640e01d93df42ad722155172f812b3a0c013e86bed692eb4fdbe"
-  },
-  {
     "path": "assets/reference_comparison.mp4",
     "sha256": "07aa452957960d01cc725a2e67f303d0cf5f0a1a71e877aa99f15e8e590ea264"
   },
