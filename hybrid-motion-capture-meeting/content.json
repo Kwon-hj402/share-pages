@@ -89,7 +89,7 @@
     {
       "id": "research",
       "title": "Validation & future work",
-      "summary": "현재 결과: 단일 보행 시행의 RGB 마커 3D 위치와 광학식 모션캡처 결과 비교. 후속 과제: Hybrid 비교 실험, 스티커 학습, 고속 동작 촬영",
+      "summary": "현재 결과: 단일 보행 시행의 RGB 마커 3D 위치와 광학식 모션캡처 결과 비교. 후속 과제: Hybrid 비교 실험, 스티커·색 대비 부착물 학습",
       "blocks": [
         {
           "id": "reference-comparison",
@@ -107,9 +107,9 @@
         },
         {
           "id": "future",
-          "title": "Hybrid validation & sports applications",
-          "body": "<table class=\"\"><thead><tr><th scope=\"col\">연구 방향</th><th scope=\"col\">계획</th></tr></thead><tbody><tr><td><b>Hybrid 비교 실험</b></td><td>같은 사람의 같은 동작 영상에 Markerless·마커 추적·Hybrid를 각각 적용<br>동시에 측정한 광학식 결과와 3D 위치·joint angles·segment orientation 비교</td></tr><tr><td><b>스티커·색 대비 부착물</b></td><td>스티커와 피부·배경 대비가 뚜렷한 부착물을 촬영해 box·ID 라벨 작성<br>색상·크기·조명·가림 조건을 달리해 검출과 추적 결과 비교</td></tr><tr><td><b>빠른 스포츠 동작</b></td><td>골프 스윙에서 신체와 마커 위치를 추적하는 실험 계획<br>목표 동작에 맞는 frame rate·노출시간·해상도·카메라 배치 결정</td></tr></tbody></table><div class=\"research-basis\"><h4>고속 동작 촬영·검증 조건</h4><p>현재 보행 비교: 59.94 fps RGB 영상 사용. 후속 연구: 골프 스윙 등 빠른 동작의 촬영·추적 평가 예정</p><ul class=\"document-points\"><li><b>촬영 설정:</b> 빠르게 움직이는 마커의 선명도 확보를 위한 frame rate·노출시간·조명 조건 확인</li><li><b>동시 측정:</b> RGB 카메라 간 촬영 시각 동기화 및 광학식 모션캡처의 동일 동작 동시 기록</li><li><b>실험 준비:</b> 여러 방향의 동시 촬영이 가능한 고속 카메라 환경 및 스포츠 동작별 학습·검증 영상 확보 필요</li></ul></div><p class=\"takeaway\">보행에서 Hybrid 적용에 따른 결과 차이 평가 후 스티커와 고속 스포츠 동작으로 실험 범위 확대 예정</p>",
-          "notes": "후속 실험 동작: 골프 스윙. 동작 속도, 촬영 범위·해상도·노출 및 동기화 조건을 고려한 목표 frame rate 결정. 고속 스포츠 동작 자료와 통합 Hybrid 비교 검증 자료의 추가 확보 예정.",
+          "title": "Hybrid validation & marker learning",
+          "body": "<table class=\"\"><thead><tr><th scope=\"col\">연구 방향</th><th scope=\"col\">계획</th></tr></thead><tbody><tr><td><b>Hybrid 비교 실험</b></td><td>같은 사람의 같은 동작 영상에 Markerless·마커 추적·Hybrid를 각각 적용<br>동시에 측정한 광학식 결과와 3D 위치·joint angles·segment orientation 비교</td></tr><tr><td><b>스티커·색 대비 부착물</b></td><td>스티커와 피부·배경 대비가 뚜렷한 부착물을 촬영해 box·ID 라벨 작성<br>색상·크기·조명·가림 조건을 달리해 검출과 추적 결과 비교</td></tr></tbody></table>",
+          "notes": "동일 촬영 자료에 Markerless·마커 추적·Hybrid를 각각 적용한 비교 검증 예정. 후속 학습 대상: 스티커와 색 대비가 뚜렷한 부착물.",
           "source": "프로젝트 구현·촬영 기록"
         }
       ]
