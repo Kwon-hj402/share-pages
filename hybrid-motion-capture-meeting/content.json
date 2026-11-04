@@ -101,8 +101,8 @@
         {
           "id": "limitations",
           "title": "Limitations",
-          "body": "<table class=\"\"><thead><tr><th scope=\"col\">영역</th><th scope=\"col\">현재 한계</th><th scope=\"col\">확인·보완할 항목</th></tr></thead><tbody><tr><td><b>전신 pose</b></td><td>가림·배경 인물로 인한<br>대상자 오선택과 keypoint 누락</td><td>같은 사람·신체 부위의 대응 확인<br>3D 좌표 누락과 팔·다리 길이 변화 검사</td></tr><tr><td><b>마커 추적</b></td><td>부착 위치 차이·피부 움직임<br>가림에 따른 마커 누락과 ID 혼동</td><td>부착 절차와 정적 자세 통일<br>기준 장비와 joint angles·segment orientation 비교</td></tr><tr><td><b>검증 자료</b></td><td>내부 자료 및 단일 보행 시행의<br>3D 위치 비교</td><td>새로운 대상자·촬영일·동작으로<br>독립 시험자료 확보</td></tr></tbody></table>",
-          "notes": "관측 품질, 좌표 일치도, joint kinematics의 개별 평가. 전신 pose baseline, visible-marker tracking, 통합 Hybrid의 평가 조건 각각 정의.",
+          "body": "<table class=\"\"><thead><tr><th scope=\"col\">영역</th><th scope=\"col\">현재 한계</th><th scope=\"col\">확인·보완할 항목</th></tr></thead><tbody><tr><td><b>전신 pose</b></td><td>가림·배경 인물로 인한<br>대상자 오선택과 keypoint 누락</td><td>같은 사람·신체 부위의 대응 확인<br>3D 좌표 누락과 팔·다리 길이 변화 검사</td></tr><tr><td><b>마커 추적</b></td><td>부착 위치 차이·피부 움직임<br>가림에 따른 마커 누락과 ID 혼동</td><td>부착 절차와 정적 자세 통일<br>기준 장비와 joint angles·segment orientation 비교</td></tr><tr><td><b>Frame rate</b></td><td>현재 RGB 영상: 59.94 fps<br>빠른 동작 시 프레임 간 마커 이동량 증가로<br>동일 마커 대응·연속 추적의 어려움</td><td>High-speed camera를 이용한 재촬영 필요<br>Frame rate에 따른 마커 대응·추적 연속성 비교</td></tr><tr><td><b>검증 자료</b></td><td>내부 자료 및 단일 보행 시행의<br>3D 위치 비교</td><td>새로운 대상자·촬영일·동작으로<br>독립 시험자료 확보</td></tr></tbody></table>",
+          "notes": "관측 품질, 좌표 일치도, joint kinematics의 개별 평가. 전신 pose baseline, visible-marker tracking, 통합 Hybrid의 평가 조건 각각 정의. 현재 RGB 촬영 frame rate: 59.94 fps. 프레임 간 마커 이동량이 큰 동작에서 동일 마커 대응과 연속 추적의 안정성 평가 필요. High-speed camera 재촬영 및 frame rate별 추적 연속성 비교 필요.",
           "source": "프로젝트 구현·촬영 기록"
         },
         {
