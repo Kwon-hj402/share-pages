@@ -6,4 +6,3 @@ content.json: 본문·설명·출처
 media-manifest.json: 수록 미디어 목록
 
 공개 주소: https://kwon-hj402.github.io/share-pages/hybrid-motion-capture-meeting/
-상세 자료: https://kwon-hj402.github.io/share-pages/hybrid-motion-capture/
