@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "errors": [],
+  "checked_video_count": 17,
+  "decoded_sample_count": 51,
+  "all_frames_135": true,
+  "all_h264_yuv420p_faststart": true,
+  "source_reference_frames": [
+    60,
+    194
+  ],
+  "all_files_under_100MB": true
+}

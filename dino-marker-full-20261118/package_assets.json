@@ -1,0 +1,296 @@
+{
+  "status": "complete",
+  "manifest_excludes_itself": true,
+  "listed_asset_files": 72,
+  "total_bytes_excluding_manifest": 71607689,
+  "assets": [
+    {
+      "file": ".nojekyll",
+      "bytes": 0
+    },
+    {
+      "file": "application_selection.json",
+      "bytes": 12962
+    },
+    {
+      "file": "best_model_reconstruction_preview.png",
+      "bytes": 178011
+    },
+    {
+      "file": "coverage_summary.json",
+      "bytes": 1031
+    },
+    {
+      "file": "data_quality.json",
+      "bytes": 415
+    },
+    {
+      "file": "final_training_audit.json",
+      "bytes": 13346
+    },
+    {
+      "file": "fullrun_audit.json",
+      "bytes": 893
+    },
+    {
+      "file": "head_benchmarks.json",
+      "bytes": 2826
+    },
+    {
+      "file": "index.html",
+      "bytes": 24321
+    },
+    {
+      "file": "operating_comparison.png",
+      "bytes": 42157
+    },
+    {
+      "file": "package_ready.json",
+      "bytes": 740
+    },
+    {
+      "file": "report.html",
+      "bytes": 24321
+    },
+    {
+      "file": "report.json",
+      "bytes": 117840
+    },
+    {
+      "file": "training_comparison.png",
+      "bytes": 113121
+    },
+    {
+      "file": "baseline_full/full_heldout_evaluation.json",
+      "bytes": 417
+    },
+    {
+      "file": "baseline_full/training_complete.json",
+      "bytes": 892
+    },
+    {
+      "file": "baseline_full/validation.json",
+      "bytes": 2150
+    },
+    {
+      "file": "external_baseline_fixed045/evaluation.json",
+      "bytes": 1872
+    },
+    {
+      "file": "external_baseline_fixed045/examples.jpg",
+      "bytes": 366561
+    },
+    {
+      "file": "external_pilot_fixed045/evaluation.json",
+      "bytes": 1873
+    },
+    {
+      "file": "external_pilot_fixed045/examples.jpg",
+      "bytes": 366426
+    },
+    {
+      "file": "external_residual_fixed045/evaluation.json",
+      "bytes": 1871
+    },
+    {
+      "file": "external_residual_fixed045/examples.jpg",
+      "bytes": 366425
+    },
+    {
+      "file": "external_selected/evaluation.json",
+      "bytes": 1883
+    },
+    {
+      "file": "external_selected/examples.jpg",
+      "bytes": 366477
+    },
+    {
+      "file": "gait2_3d_best_model/reconstruction_3d.csv",
+      "bytes": 426496
+    },
+    {
+      "file": "gait2_3d_best_model/reconstruction_3d.html",
+      "bytes": 6577204
+    },
+    {
+      "file": "gait2_3d_best_model/reconstruction_3d.json",
+      "bytes": 6572523
+    },
+    {
+      "file": "gait2_3d_best_model/scientific_quality.json",
+      "bytes": 6313
+    },
+    {
+      "file": "pilot_reference/external_july22/evaluation.json",
+      "bytes": 2573
+    },
+    {
+      "file": "residual_refine_v2_full/full_heldout_evaluation.json",
+      "bytes": 419
+    },
+    {
+      "file": "residual_refine_v2_full/training_complete.json",
+      "bytes": 905
+    },
+    {
+      "file": "residual_refine_v2_full/validation.json",
+      "bytes": 2153
+    },
+    {
+      "file": "videos_best_model/camera01_points_heatmap.mp4",
+      "bytes": 1469243
+    },
+    {
+      "file": "videos_best_model/camera01_points_heatmap_zoom.mp4",
+      "bytes": 2099140
+    },
+    {
+      "file": "videos_best_model/camera01_preview.jpg",
+      "bytes": 958649
+    },
+    {
+      "file": "videos_best_model/camera01_zoom_preview.jpg",
+      "bytes": 672219
+    },
+    {
+      "file": "videos_best_model/camera02_points_heatmap.mp4",
+      "bytes": 2626812
+    },
+    {
+      "file": "videos_best_model/camera02_points_heatmap_zoom.mp4",
+      "bytes": 3217469
+    },
+    {
+      "file": "videos_best_model/camera02_preview.jpg",
+      "bytes": 1146071
+    },
+    {
+      "file": "videos_best_model/camera02_zoom_preview.jpg",
+      "bytes": 837645
+    },
+    {
+      "file": "videos_best_model/camera03_points_heatmap.mp4",
+      "bytes": 2236806
+    },
+    {
+      "file": "videos_best_model/camera03_points_heatmap_zoom.mp4",
+      "bytes": 2932608
+    },
+    {
+      "file": "videos_best_model/camera03_preview.jpg",
+      "bytes": 880199
+    },
+    {
+      "file": "videos_best_model/camera03_zoom_preview.jpg",
+      "bytes": 632494
+    },
+    {
+      "file": "videos_best_model/camera04_points_heatmap.mp4",
+      "bytes": 2422225
+    },
+    {
+      "file": "videos_best_model/camera04_points_heatmap_zoom.mp4",
+      "bytes": 3016298
+    },
+    {
+      "file": "videos_best_model/camera04_preview.jpg",
+      "bytes": 984062
+    },
+    {
+      "file": "videos_best_model/camera04_zoom_preview.jpg",
+      "bytes": 697769
+    },
+    {
+      "file": "videos_best_model/camera05_points_heatmap.mp4",
+      "bytes": 2590321
+    },
+    {
+      "file": "videos_best_model/camera05_points_heatmap_zoom.mp4",
+      "bytes": 3039586
+    },
+    {
+      "file": "videos_best_model/camera05_preview.jpg",
+      "bytes": 994799
+    },
+    {
+      "file": "videos_best_model/camera05_zoom_preview.jpg",
+      "bytes": 678754
+    },
+    {
+      "file": "videos_best_model/camera06_points_heatmap.mp4",
+      "bytes": 2153793
+    },
+    {
+      "file": "videos_best_model/camera06_points_heatmap_zoom.mp4",
+      "bytes": 2735481
+    },
+    {
+      "file": "videos_best_model/camera06_preview.jpg",
+      "bytes": 883013
+    },
+    {
+      "file": "videos_best_model/camera06_zoom_preview.jpg",
+      "bytes": 626610
+    },
+    {
+      "file": "videos_best_model/camera07_points_heatmap.mp4",
+      "bytes": 2199038
+    },
+    {
+      "file": "videos_best_model/camera07_points_heatmap_zoom.mp4",
+      "bytes": 2826605
+    },
+    {
+      "file": "videos_best_model/camera07_preview.jpg",
+      "bytes": 871902
+    },
+    {
+      "file": "videos_best_model/camera07_zoom_preview.jpg",
+      "bytes": 610516
+    },
+    {
+      "file": "videos_best_model/camera08_points_heatmap.mp4",
+      "bytes": 2369304
+    },
+    {
+      "file": "videos_best_model/camera08_points_heatmap_zoom.mp4",
+      "bytes": 3058829
+    },
+    {
+      "file": "videos_best_model/camera08_preview.jpg",
+      "bytes": 1015938
+    },
+    {
+      "file": "videos_best_model/camera08_zoom_preview.jpg",
+      "bytes": 734224
+    },
+    {
+      "file": "videos_best_model/clip_metadata.json",
+      "bytes": 24479
+    },
+    {
+      "file": "videos_best_model/clip_quality.json",
+      "bytes": 262
+    },
+    {
+      "file": "videos_best_model/full_video_quality.json",
+      "bytes": 23752
+    },
+    {
+      "file": "videos_best_model/gallery.html",
+      "bytes": 25832
+    },
+    {
+      "file": "videos_best_model/overview_8cam_points_heatmap.mp4",
+      "bytes": 1161087
+    },
+    {
+      "file": "videos_best_model/overview_preview.jpg",
+      "bytes": 547960
+    },
+    {
+      "file": "videos_best_model/stats.json",
+      "bytes": 8478
+    }
+  ]
+}

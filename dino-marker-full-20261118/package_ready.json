@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "entry_pages": [
+    "index.html",
+    "report.html",
+    "videos_best_model/gallery.html",
+    "gait2_3d_best_model/reconstruction_3d.html"
+  ],
+  "video_clip_metadata": "videos_best_model/clip_metadata.json",
+  "video_clip_quality": "videos_best_model/clip_quality.json",
+  "published_video_frames": 135,
+  "published_reference_frame_range": [
+    60,
+    194
+  ],
+  "clip_detection_events": 17101,
+  "full_analysis_reference_frame_range": [
+    0,
+    329
+  ],
+  "full_analysis_frames": 330,
+  "local_asset_references_checked": 141,
+  "missing_assets": [],
+  "private_absolute_path_scan_passed": true,
+  "inline_javascript_syntax_passed": true,
+  "no_external_runtime_assets": true
+}

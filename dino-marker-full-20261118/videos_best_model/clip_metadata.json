@@ -1,0 +1,822 @@
+{
+  "status": "complete",
+  "source_run": "20261118_full_v2/videos_best_model",
+  "requested_playback_window_seconds": [
+    2.0,
+    6.5
+  ],
+  "requested_source_time_window_seconds": [
+    1.0,
+    3.25
+  ],
+  "output_fps": 29.97002997002997,
+  "output_fps_rational": "30000/1001",
+  "playback_speed_vs_source": 0.5,
+  "original_source_fps": 59.94005994005994,
+  "source_reference_frame_range": [
+    60,
+    194
+  ],
+  "reference_frames": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194
+  ],
+  "frame_count": 135,
+  "actual_duration_seconds": 4.5045,
+  "first_original_playback_timestamp_seconds": 2.0020000000000002,
+  "last_original_playback_timestamp_seconds": 6.473133333333333,
+  "first_original_source_timestamp_seconds": 1.0010000000000001,
+  "last_original_source_timestamp_seconds": 3.2365666666666666,
+  "filter": "trim=start=2:end=6.5,setpts=PTS-STARTPTS",
+  "alignment_basis": "CFR frame timestamps selected by exact trim interval; output starts at source encoded index60 and preserves135consecutive frames",
+  "preview_reference_frame": 145,
+  "preview_clip_index": 85,
+  "preview_clip_time_seconds": 2.8361666666666667,
+  "on_video_reference_label": "Original source REF numbering and /329 timeline retained; clip contains REF60..194",
+  "camera_source_frame_ranges": {
+    "1": [
+      60,
+      194
+    ],
+    "2": [
+      68,
+      202
+    ],
+    "3": [
+      66,
+      200
+    ],
+    "4": [
+      61,
+      195
+    ],
+    "5": [
+      66,
+      200
+    ],
+    "6": [
+      74,
+      208
+    ],
+    "7": [
+      71,
+      205
+    ],
+    "8": [
+      68,
+      202
+    ]
+  },
+  "videos": {
+    "camera01_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera01_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 1469243,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 2604 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 50.48551566107323
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 50.32621933352852
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 48.59110505386093
+        }
+      ],
+      "sha256": "60a8fc9a91419b50b45642ff8cc1789e1e1e923056d794e0a8dfe533c5fdae6f",
+      "elapsed_seconds": 2.1391069889068604
+    },
+    "camera01_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera01_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2099140,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 3723 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 53.91072739102427
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 53.645867937746154
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 51.31075980497062
+        }
+      ],
+      "sha256": "9adea60df11c1a76a165038121a476186de82da2a1799320644a42000765f777",
+      "elapsed_seconds": 2.911033868789673
+    },
+    "camera02_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera02_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2626812,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 4660 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 50.72532318950436
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 50.443657541723326
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 49.081066860695664
+        }
+      ],
+      "sha256": "26bf5a9fa5a96aa693cd5c6a635df54a9c5b508cdbf6ea2d9233a5120a2724dd",
+      "elapsed_seconds": 2.5350632667541504
+    },
+    "camera02_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera02_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 3217469,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5709 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 58.19192835553841
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 57.4639351570239
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 55.26649634042388
+        }
+      ],
+      "sha256": "f1989ba28e108ed89f4f7d77743c023eaf60eb0ea334c8db7e19f9a4f497a474",
+      "elapsed_seconds": 3.099792242050171
+    },
+    "camera03_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera03_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2236806,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 3968 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 49.76773689237729
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 49.04031533690792
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 49.103790187459936
+        }
+      ],
+      "sha256": "c96cbf22f59d831bfbaa091ec3690f43e5a973f1083b3c82ecedfcebd805b509",
+      "elapsed_seconds": 2.441668748855591
+    },
+    "camera03_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera03_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2932608,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5203 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 57.629350153229346
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 56.70729494243544
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 55.609618512809234
+        }
+      ],
+      "sha256": "ef45056d3d0605d7b4b5ca18f820310c87183d536c153f615f15639fe64e8a7d",
+      "elapsed_seconds": 3.0813074111938477
+    },
+    "camera04_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera04_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2422225,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 4297 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 52.18213709859002
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 50.03969583778629
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 51.29023572367495
+        }
+      ],
+      "sha256": "14cee73df9bb9aac5f589d3e2b6c43fe975c2f2c382b81752228be394fe38272",
+      "elapsed_seconds": 2.506476640701294
+    },
+    "camera04_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera04_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 3016298,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5352 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 59.98602501802924
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 54.38290219586177
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 56.784367370875124
+        }
+      ],
+      "sha256": "efc5d7ba22761050a260e4683ab96417292ba9f175cef2fba5759fed1ca26fd8",
+      "elapsed_seconds": 3.199475049972534
+    },
+    "camera05_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera05_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2590321,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 4595 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 42.64594774682371
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 52.54371222134086
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 54.133484962333
+        }
+      ],
+      "sha256": "3aaae4b2c2cbdafe0e388392b3c51f0d70a9fe660003914cd3b9f3907a8bb7a5",
+      "elapsed_seconds": 2.6697864532470703
+    },
+    "camera06_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera06_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2153793,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 3820 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 48.50050209338892
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 47.19037657117002
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 47.33582046262596
+        }
+      ],
+      "sha256": "88fe8b54fb941fcd49de9c11f11f3b38f4630a949a6b33047db9adb89baa8dd2",
+      "elapsed_seconds": 2.3065736293792725
+    },
+    "camera05_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera05_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 3039586,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5393 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 43.75885489401451
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 56.81187990447739
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 58.76657382886709
+        }
+      ],
+      "sha256": "25b8f0ad4fd4239c64af50c874c2eb9d06fc40c32e2842bcf86d594b81210fd3",
+      "elapsed_seconds": 3.063917398452759
+    },
+    "camera06_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera06_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2735481,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 4853 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 52.00271708247663
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 49.46889872396518
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 49.651101989674984
+        }
+      ],
+      "sha256": "136bb02523b1ecd4948fec721df0853b7a3c07714b82b0b42fc3fa349004f6eb",
+      "elapsed_seconds": 3.103318452835083
+    },
+    "camera07_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera07_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2199038,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 3901 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 50.064861299149236
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 49.28275301667751
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 49.10495216105906
+        }
+      ],
+      "sha256": "17ee540ae40f924bc06bca482d079ec84b4a6da97333e2e328be7294ab4ca996",
+      "elapsed_seconds": 2.4484338760375977
+    },
+    "camera08_points_heatmap.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera08_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2369304,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 4203 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 52.88613679545994
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 52.20936537324385
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 50.137534478078
+        }
+      ],
+      "sha256": "69ea0a56369bffb5d673a7e1b7c885cdd80c522d46264890c1ac3cd83093da95",
+      "elapsed_seconds": 2.2928428649902344
+    },
+    "camera07_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera07_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 2826605,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5015 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 52.92461077165484
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 52.386715038278055
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 52.66390269444197
+        }
+      ],
+      "sha256": "6d2e954deda22e7ab95c9a5acc5c756e4a25cffa8d09ff6e9d55fc5849769f3c",
+      "elapsed_seconds": 3.026405096054077
+    },
+    "overview_8cam_points_heatmap.mp4": {
+      "width": 2560,
+      "height": 864,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "overview_8cam_points_heatmap.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 1161087,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 2560x864, 2057 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 25.800441279466362
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 25.914538686877663
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 25.5990884191756
+        }
+      ],
+      "sha256": "5ee60a19a81619bf65e220abbb8ef6b68a7e5302b0f833326a0c699bc9f65ade",
+      "elapsed_seconds": 1.1012310981750488
+    },
+    "camera08_points_heatmap_zoom.mp4": {
+      "width": 3840,
+      "height": 1200,
+      "frames": 135,
+      "fps": 29.97002997002997,
+      "filename": "camera08_points_heatmap_zoom.mp4",
+      "duration_seconds": 4.5045,
+      "bytes": 3058829,
+      "codec": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x1200, 5428 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)",
+      "faststart": true,
+      "first_source_encoded_index": 60,
+      "last_source_encoded_index": 194,
+      "decoded_samples": [
+        {
+          "clip_index": 0,
+          "source_encoded_index": 60,
+          "source_reference_frame": 60,
+          "pixel_std": 57.93740845962707
+        },
+        {
+          "clip_index": 67,
+          "source_encoded_index": 127,
+          "source_reference_frame": 127,
+          "pixel_std": 56.83721917149755
+        },
+        {
+          "clip_index": 134,
+          "source_encoded_index": 194,
+          "source_reference_frame": 194,
+          "pixel_std": 53.15392184581965
+        }
+      ],
+      "sha256": "e985f603308444ae4af0e75cc058e26889da7667672b8cee7d0df3a9d658a9af",
+      "elapsed_seconds": 2.935232400894165
+    }
+  },
+  "previews": [
+    "camera01_preview.jpg",
+    "camera01_zoom_preview.jpg",
+    "camera02_preview.jpg",
+    "camera02_zoom_preview.jpg",
+    "camera03_preview.jpg",
+    "camera03_zoom_preview.jpg",
+    "camera04_preview.jpg",
+    "camera04_zoom_preview.jpg",
+    "camera05_preview.jpg",
+    "camera05_zoom_preview.jpg",
+    "camera06_preview.jpg",
+    "camera06_zoom_preview.jpg",
+    "camera07_preview.jpg",
+    "camera07_zoom_preview.jpg",
+    "camera08_preview.jpg",
+    "camera08_zoom_preview.jpg",
+    "overview_preview.jpg"
+  ],
+  "elapsed_seconds": 23.080040216445923,
+  "checked_video_count": 17,
+  "decoded_sample_count": 51
+}
