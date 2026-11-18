@@ -1,0 +1,278 @@
+{
+  "status": "complete",
+  "figure": "correspondence_example.png",
+  "scope": "One actual geometry-consistent anonymous candidate, not an anatomical identity ground-truth proof",
+  "selection_rule": "Among REF125..145, highest support-camera count, then lowest reprojection RMS",
+  "selection_is_favorable_example": true,
+  "reference_frame": 141,
+  "current_published_clip_time_seconds": 2.7027,
+  "fresh_subclip_time_seconds": 1.7017,
+  "world_xyz_m": [
+    -0.1723750190722232,
+    0.12331011153735211,
+    2.254007526206459
+  ],
+  "coordinate_system": "Original calibration common frame; no display transform applied",
+  "anonymous_track_id_in_fresh_reconstruction": 134,
+  "view_count": 8,
+  "reprojection_rms_px": 3.932680329781465,
+  "observed_reprojection_rms_independently_recomputed_px": 3.932680329781465,
+  "native_images_used": true,
+  "synthesized_observations": false,
+  "anatomical_identity_confirmed": false,
+  "legend": {
+    "green_circle": "Actual detected DINO peak center",
+    "red_cross": "Same reconstructed 3D point reprojected with camera calibration",
+    "inset": "5x nearest-neighbor magnification of native image pixels"
+  },
+  "cameras": {
+    "1": {
+      "reference_frame": 141,
+      "source_frame": 141,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        1800.234375,
+        1162.15625
+      ],
+      "projected_center_native_xy_px": [
+        1794.7999990263386,
+        1163.7974233514342
+      ],
+      "confidence": 0.6297746300697327,
+      "reprojection_error_px": 5.676785374890107,
+      "support_camera_depth_m": 2.254007526206459,
+      "context_crop_native_xyxy_px": [
+        1350,
+        802,
+        2250,
+        1522
+      ],
+      "detail_crop_native_xyxy_px": [
+        1780,
+        1142,
+        1820,
+        1182
+      ]
+    },
+    "2": {
+      "reference_frame": 141,
+      "source_frame": 149,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        2237.546875,
+        1059.25
+      ],
+      "projected_center_native_xy_px": [
+        2236.862687494088,
+        1058.0142068426505
+      ],
+      "confidence": 0.7981867790222168,
+      "reprojection_error_px": 1.4125499180553158,
+      "support_camera_depth_m": 1.8758040726845628,
+      "context_crop_native_xyxy_px": [
+        1788,
+        699,
+        2688,
+        1419
+      ],
+      "detail_crop_native_xyxy_px": [
+        2218,
+        1039,
+        2258,
+        1079
+      ]
+    },
+    "3": {
+      "reference_frame": 141,
+      "source_frame": 147,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        2225.28125,
+        1266.53125
+      ],
+      "projected_center_native_xy_px": [
+        2226.939841778609,
+        1269.8283166397994
+      ],
+      "confidence": 0.8289388418197632,
+      "reprojection_error_px": 3.690741810984338,
+      "support_camera_depth_m": 1.5013779104718203,
+      "context_crop_native_xyxy_px": [
+        1775,
+        907,
+        2675,
+        1627
+      ],
+      "detail_crop_native_xyxy_px": [
+        2205,
+        1247,
+        2245,
+        1287
+      ]
+    },
+    "4": {
+      "reference_frame": 141,
+      "source_frame": 142,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        2179.046875,
+        1370.84375
+      ],
+      "projected_center_native_xy_px": [
+        2174.9802680088483,
+        1372.7739504686601
+      ],
+      "confidence": 0.8418256044387817,
+      "reprojection_error_px": 4.501440466084153,
+      "support_camera_depth_m": 1.4305989697955128,
+      "context_crop_native_xyxy_px": [
+        1729,
+        1011,
+        2629,
+        1731
+      ],
+      "detail_crop_native_xyxy_px": [
+        2159,
+        1351,
+        2199,
+        1391
+      ]
+    },
+    "5": {
+      "reference_frame": 141,
+      "source_frame": 147,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        2029.03125,
+        1295.8359375
+      ],
+      "projected_center_native_xy_px": [
+        2024.7039685520003,
+        1296.96348128025
+      ],
+      "confidence": 0.6757646203041077,
+      "reprojection_error_px": 4.471769192006985,
+      "support_camera_depth_m": 1.6866988929503324,
+      "context_crop_native_xyxy_px": [
+        1579,
+        936,
+        2479,
+        1656
+      ],
+      "detail_crop_native_xyxy_px": [
+        2009,
+        1276,
+        2049,
+        1316
+      ]
+    },
+    "6": {
+      "reference_frame": 141,
+      "source_frame": 155,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        1880.1875,
+        1587.875
+      ],
+      "projected_center_native_xy_px": [
+        1882.512947561163,
+        1586.4539578680533
+      ],
+      "confidence": 0.8633915781974792,
+      "reprojection_error_px": 2.725264592748075,
+      "support_camera_depth_m": 1.2482961870540077,
+      "context_crop_native_xyxy_px": [
+        1430,
+        1228,
+        2330,
+        1948
+      ],
+      "detail_crop_native_xyxy_px": [
+        1860,
+        1568,
+        1900,
+        1608
+      ]
+    },
+    "7": {
+      "reference_frame": 141,
+      "source_frame": 152,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        1570.17578125,
+        1386.3125
+      ],
+      "projected_center_native_xy_px": [
+        1568.1292023757035,
+        1384.370114066343
+      ],
+      "confidence": 0.7520125508308411,
+      "reprojection_error_px": 2.8215861149335364,
+      "support_camera_depth_m": 1.2154455574549248,
+      "context_crop_native_xyxy_px": [
+        1120,
+        1026,
+        2020,
+        1746
+      ],
+      "detail_crop_native_xyxy_px": [
+        1550,
+        1366,
+        1590,
+        1406
+      ]
+    },
+    "8": {
+      "reference_frame": 141,
+      "source_frame": 149,
+      "native_frame_size_wh": [
+        3840,
+        2160
+      ],
+      "observed_center_native_xy_px": [
+        1228.625,
+        1205.59375
+      ],
+      "projected_center_native_xy_px": [
+        1226.601314390832,
+        1201.576085590722
+      ],
+      "confidence": 0.8354835510253906,
+      "reprojection_error_px": 4.498547626771712,
+      "support_camera_depth_m": 1.5485029143643498,
+      "context_crop_native_xyxy_px": [
+        779,
+        846,
+        1679,
+        1566
+      ],
+      "detail_crop_native_xyxy_px": [
+        1209,
+        1186,
+        1249,
+        1226
+      ]
+    }
+  }
+}

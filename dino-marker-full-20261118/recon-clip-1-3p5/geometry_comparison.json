@@ -1,0 +1,469 @@
+{
+  "scope": "Freshly reconstructed subset versus original full reconstruction at identical reference frames; anonymous IDs intentionally ignored",
+  "reference_frame_range": [
+    90,
+    164
+  ],
+  "frame_count": 75,
+  "matching_method": "Independent minimum-total-Euclidean-distance bipartite assignment within each frame",
+  "all_per_frame_counts_identical": true,
+  "matched_point_observations": 1346,
+  "maximum_xyz_difference_m": 0.0,
+  "maximum_support_observed_pixel_difference_px": 0.0,
+  "maximum_support_reprojection_error_difference_px": 0.0,
+  "changed_support_camera_sets": 0,
+  "numeric_geometry_identical_within_1e_12_m": true,
+  "tracking_note": "2D and 3D anonymous track IDs are initialized from the new start frame, so IDs and temporal fragments may change; this check does not establish anatomical identity.",
+  "per_frame": [
+    {
+      "reference_frame": 90,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 91,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 92,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 93,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 94,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 95,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 96,
+      "fresh_count": 13,
+      "original_same_frame_count": 13,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 97,
+      "fresh_count": 13,
+      "original_same_frame_count": 13,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 98,
+      "fresh_count": 12,
+      "original_same_frame_count": 12,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 99,
+      "fresh_count": 14,
+      "original_same_frame_count": 14,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 100,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 101,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 102,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 103,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 104,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 105,
+      "fresh_count": 14,
+      "original_same_frame_count": 14,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 106,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 107,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 108,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 109,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 110,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 111,
+      "fresh_count": 21,
+      "original_same_frame_count": 21,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 112,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 113,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 114,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 115,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 116,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 117,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 118,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 119,
+      "fresh_count": 16,
+      "original_same_frame_count": 16,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 120,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 121,
+      "fresh_count": 21,
+      "original_same_frame_count": 21,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 122,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 123,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 124,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 125,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 126,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 127,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 128,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 129,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 130,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 131,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 132,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 133,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 134,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 135,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 136,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 137,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 138,
+      "fresh_count": 21,
+      "original_same_frame_count": 21,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 139,
+      "fresh_count": 24,
+      "original_same_frame_count": 24,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 140,
+      "fresh_count": 25,
+      "original_same_frame_count": 25,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 141,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 142,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 143,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 144,
+      "fresh_count": 24,
+      "original_same_frame_count": 24,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 145,
+      "fresh_count": 21,
+      "original_same_frame_count": 21,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 146,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 147,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 148,
+      "fresh_count": 21,
+      "original_same_frame_count": 21,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 149,
+      "fresh_count": 22,
+      "original_same_frame_count": 22,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 150,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 151,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 152,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 153,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 154,
+      "fresh_count": 20,
+      "original_same_frame_count": 20,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 155,
+      "fresh_count": 15,
+      "original_same_frame_count": 15,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 156,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 157,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 158,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 159,
+      "fresh_count": 17,
+      "original_same_frame_count": 17,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 160,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 161,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 162,
+      "fresh_count": 19,
+      "original_same_frame_count": 19,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 163,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    },
+    {
+      "reference_frame": 164,
+      "fresh_count": 18,
+      "original_same_frame_count": 18,
+      "maximum_assignment_distance_m": 0.0
+    }
+  ]
+}

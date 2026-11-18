@@ -1,0 +1,320 @@
+{
+  "status": "complete",
+  "language": "ko",
+  "identity_status": "anonymous_geometry_correspondence_only",
+  "headline_ko": "현재 대응은 카메라 보정과 재투영 오차로 고른 익명 후보입니다. 같은 해부학적 마커라고 확정한 ID는 아닙니다.",
+  "independent_anatomical_identity_ground_truth": false,
+  "anatomical_marker_assignment_performed": false,
+  "clip_scope": {
+    "current_published_clip_time_window_seconds": [
+      1,
+      3.5
+    ],
+    "interval_convention": "1 <= t < 3.5; choose output samples whose presentation time lies in this half-open interval",
+    "reference_frames": [
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
+    "frame_count": 75,
+    "published_clip_first_reference_frame": 60,
+    "playback_fps_numerator": 30000,
+    "playback_fps_denominator": 1001,
+    "first_sample_time_in_published_clip_seconds": 1.001,
+    "last_sample_time_in_published_clip_seconds": 3.4701333333333335,
+    "fresh_output_duration_seconds": 2.5025,
+    "playback_speed_vs_source": 0.5
+  },
+  "synchronization": {
+    "mapping": "source_frame = reference_frame + camera_offset",
+    "offset_source": "Previously established audio synchronization offsets, reused without estimating new offsets",
+    "camera_frame_offsets": {
+      "1": 0,
+      "2": 8,
+      "3": 6,
+      "4": 1,
+      "5": 6,
+      "6": 14,
+      "7": 11,
+      "8": 8
+    },
+    "calibration": "Existing per-camera intrinsics/distortion and common-frame camera extrinsics; no new calibration or floor alignment"
+  },
+  "steps_ko": [
+    "동기화한 8개 카메라에서 실제 DINO 히트맵 중심을 가져옵니다. 신뢰도 0.425 이상을 사용하며 카메라당 최대 60개입니다.",
+    "보정값으로 왜곡을 제거한 영상 좌표에서 카메라 쌍의 대칭 에피폴라 거리가 8 px 이내인 후보를 찾고, 첫 카메라 후보별로 오차가 작은 2개만 시도합니다.",
+    "쌍으로 만든 3D 가설을 다른 카메라에 투영해 가까운 관측을 모읍니다. 이때 10 px는 제안 단계이며, 최종 관측별 재투영 허용치는 8 px입니다.",
+    "카메라 쌍 가설을 반복 검사하고 일치하는 관측으로 다시 삼각측량합니다. 최종 지지 카메라 3개 이상, 각 관측 오차 8 px 이하, 각 지지 카메라 깊이 5 cm 초과를 모두 요구합니다.",
+    "지지 카메라 수, 낮은 RMS, 높은 평균 신뢰도 순으로 선택합니다. 같은 2D 관측은 두 3D 점에 재사용하지 않고, 1.8 cm 이내의 중복 3D 가설은 하나만 남깁니다.",
+    "시간 방향에서는 2D 20 px 예측 관문과 3D 이동 예측을 이용해 익명 궤적을 잇습니다. 해부학적 이름, 좌우 ID, 관측이 없는 프레임은 자동 생성하지 않습니다."
+  ],
+  "spatial_correspondence": {
+    "native_image_coordinates": true,
+    "confidence_threshold": 0.425,
+    "maximum_candidates_per_camera_frame": 60,
+    "epipolar_distance": "Mean of the two point-to-epipolar-line distances in distortion-corrected ideal pixel coordinates",
+    "pair_epipolar_gate_px": 8,
+    "pair_candidates_per_first_observation_per_camera_pair": 2,
+    "additional_camera_support_proposal_gate_px": 10,
+    "robust_fit": "Enumerate observation pairs, retain maximal inlier support (median normalized error breaks ties), refit DLT/SVD to inliers, reject final outliers",
+    "minimum_supporting_views": 3,
+    "final_reprojection_gate_each_support_camera_px": 8,
+    "minimum_support_camera_depth_m_exclusive": 0.05,
+    "hypothesis_ranking": [
+      "more supporting views",
+      "lower reprojection RMS",
+      "higher mean heatmap confidence"
+    ],
+    "same_2d_observation_reuse_allowed": false,
+    "same_frame_duplicate_exclusion_radius_m": 0.018,
+    "duplicate_handling": "Suppress lower-ranked nearby hypotheses; do not average their coordinates",
+    "anatomical_or_body_bounds_filter": false
+  },
+  "temporal_links": {
+    "anonymous_2d": {
+      "prediction": "Last observed center plus constant velocity from the previous two observations when available",
+      "prediction_distance_gate_px_at_gap1": 20,
+      "maximum_frame_gap": 1,
+      "assignment": "Greedy minimum prediction-distance/gap; each track and detection used at most once per frame",
+      "source": "reconstruct.py::link_centers default gate_px=20; max_gap=stride=1 passed explicitly"
+    },
+    "anonymous_3d": {
+      "prediction": "Last position plus velocity from the last two observations; prediction velocity capped at 0.075 m/frame",
+      "maximum_frame_gap": 1,
+      "prediction_distance_gate_m_at_gap1": 0.055,
+      "strict_support": "At least one same-camera 2D track ID persists, OR both adjacent observations have >=4 views and prediction error <=0.025 m",
+      "maximum_change_in_velocity_m_per_frame2": 0.03,
+      "assignment": "Greedy prediction-distance/quality/shared-2D-ID cost; one detection per track and one track per detection",
+      "fragment_reconnection": false,
+      "interpolation_or_gap_fill": false
+    }
+  },
+  "implementation_evidence": {
+    "files_and_functions": {
+      "dino_marker_heatmap/reconstruct.py": [
+        "link_centers",
+        "main"
+      ],
+      "8.28demo/multicam_3d_tracklet_reconnector.py": [
+        "ideal_pixels",
+        "epipolar_error_matrix",
+        "robust_triangulate_variable",
+        "make_hypothesis",
+        "triangulate_frame",
+        "link_consecutive_detections"
+      ],
+      "8.28demo/seeded_multicam_marker_tracker.py": [
+        "load_calibration",
+        "source_frame_number",
+        "triangulate",
+        "project",
+        "positive_depth"
+      ]
+    },
+    "applied_adapter_overrides": {
+      "tracklet_minimum_confidence": 0.425,
+      "tracklet_use_pixel_range": false,
+      "tracklet_require_body_accepted": false,
+      "tracklet_max_candidates_per_camera_frame": 60,
+      "tracklet_minimum_views": 3,
+      "tracklet_new_track_minimum_views": 3,
+      "tracklet_epipolar_gate_px": 8.0,
+      "tracklet_reprojection_inlier_px": 8.0,
+      "tracklet_camera_reprojection_gate_px": {
+        "1": 8.0,
+        "2": 8.0,
+        "3": 8.0,
+        "4": 8.0,
+        "5": 8.0,
+        "6": 8.0,
+        "7": 8.0,
+        "8": 8.0
+      },
+      "tracklet_projection_support_margin_px": 2.0,
+      "tracklet_pair_seed_cameras": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "tracklet_strict_continuous_mode": true,
+      "tracklet_strict_minimum_shared_2d_tracks": 1,
+      "tracklet_consecutive_link_max_gap_frames": 1,
+      "tracklet_enable_fragment_reconnection": false
+    },
+    "defaults_verified_against_applied_config": {
+      "tracklet_pair_matches_per_candidate": {
+        "value": 2,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_same_frame_merge_radius_m": {
+        "value": 0.018,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_max_3d_detections_per_frame": {
+        "value": 60,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_consecutive_link_base_m": {
+        "value": 0.055,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_consecutive_link_growth_m": {
+        "value": 0.025,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_strict_high_view_override": {
+        "value": 4,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_strict_high_view_gate_m": {
+        "value": 0.025,
+        "source": "implementation default (key absent from applied config)"
+      },
+      "tracklet_strict_maximum_acceleration_m_per_frame2": {
+        "value": 0.03,
+        "source": "implementation default (key absent from applied config)"
+      }
+    },
+    "hardcoded_rules": {
+      "2d_motion_gate_px": 20,
+      "support_camera_near_plane_m": 0.05,
+      "3d_velocity_cap_m_per_frame": 0.075
+    }
+  },
+  "results": {
+    "processed_frame_count": 75,
+    "frames_with_3d_points": 75,
+    "camera_count": 8,
+    "two_d_center_count": 10412,
+    "two_d_center_count_by_camera": {
+      "1": 1584,
+      "2": 1466,
+      "3": 1412,
+      "4": 989,
+      "5": 1237,
+      "6": 992,
+      "7": 1261,
+      "8": 1471
+    },
+    "two_d_center_track_count_by_camera": {
+      "1": 166,
+      "2": 256,
+      "3": 540,
+      "4": 316,
+      "5": 212,
+      "6": 348,
+      "7": 510,
+      "8": 252
+    },
+    "triangulated_point_count": 1346,
+    "median_reprojection_rms_px": 3.619515468492259,
+    "p95_reprojection_rms_px": 5.11262145535097,
+    "median_support_views": 4.0,
+    "track_count": 364,
+    "tracks_at_least_3_observations": 98,
+    "longest_track_observations": 53,
+    "minimum_support_views": 3,
+    "reprojection_gate_px": 8.0,
+    "confidence_threshold": 0.425
+  },
+  "geometry_comparison": {
+    "scope": "Freshly reconstructed subset versus original full reconstruction at identical reference frames; anonymous IDs intentionally ignored",
+    "reference_frame_range": [
+      90,
+      164
+    ],
+    "frame_count": 75,
+    "matching_method": "Independent minimum-total-Euclidean-distance bipartite assignment within each frame",
+    "all_per_frame_counts_identical": true,
+    "matched_point_observations": 1346,
+    "maximum_xyz_difference_m": 0.0,
+    "maximum_support_observed_pixel_difference_px": 0.0,
+    "maximum_support_reprojection_error_difference_px": 0.0,
+    "changed_support_camera_sets": 0,
+    "numeric_geometry_identical_within_1e_12_m": true,
+    "tracking_note": "2D and 3D anonymous track IDs are initialized from the new start frame, so IDs and temporal fragments may change; this check does not establish anatomical identity."
+  },
+  "limitations_ko": [
+    "잘못된 조합도 여러 시점에서 비슷한 투영을 만들 수 있습니다. 낮은 재투영 오차는 정합성 검사이지 동일 마커 ID의 정답 검증이 아닙니다.",
+    "가림, 가까운 마커, 보정·동기화 오차로 대응 오류와 ID 교체가 남을 수 있습니다.",
+    "관측 지지 카메라가 3개 미만이거나 관문을 통과하지 못한 점은 출력하지 않습니다. 모든 실제 마커를 복원했다는 뜻은 아닙니다.",
+    "해부학적 stick figure에는 마커 이름/좌우 지정이나 별도의 관절 추정이 필요합니다. 익명 점을 임의의 뼈대로 확정해서 연결할 수 없습니다."
+  ]
+}

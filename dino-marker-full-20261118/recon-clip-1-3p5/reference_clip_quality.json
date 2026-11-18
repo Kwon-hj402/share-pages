@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "filename": "camera01_points_heatmap_zoom_1_3p5.mp4",
+  "frame_count": 75,
+  "fps": 29.97002997002997,
+  "duration_seconds": 2.5025,
+  "current_public_clip_time_window": [
+    1,
+    3.5
+  ],
+  "reference_frames": [
+    90,
+    164
+  ],
+  "source_file": "videos_best_model/camera01_points_heatmap_zoom.mp4",
+  "samples": [
+    {
+      "clip_index": 0,
+      "reference_frame": 90,
+      "pixel_std": 53.69592337320822
+    },
+    {
+      "clip_index": 37,
+      "reference_frame": 127,
+      "pixel_std": 53.650110097944044
+    },
+    {
+      "clip_index": 74,
+      "reference_frame": 164,
+      "pixel_std": 53.16785685937524
+    }
+  ]
+}
