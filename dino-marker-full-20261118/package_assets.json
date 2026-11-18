@@ -74,12 +74,20 @@
       "bytes": 893
     },
     {
+      "file": "gait2_3d_best_model/marker_connections_full_3d.json",
+      "bytes": 4722108
+    },
+    {
+      "file": "gait2_3d_best_model/marker_graph_full.json",
+      "bytes": 1464705
+    },
+    {
       "file": "gait2_3d_best_model/reconstruction_3d.csv",
       "bytes": 426496
     },
     {
       "file": "gait2_3d_best_model/reconstruction_3d.html",
-      "bytes": 5244552
+      "bytes": 4733371
     },
     {
       "file": "gait2_3d_best_model/reconstruction_3d.json",
@@ -91,7 +99,7 @@
     },
     {
       "file": "gait2_3d_best_model/stick_figure_full_3d.json",
-      "bytes": 5232371
+      "bytes": 4722108
     },
     {
       "file": "head_benchmarks.json",
@@ -99,7 +107,7 @@
     },
     {
       "file": "index.html",
-      "bytes": 24715
+      "bytes": 24718
     },
     {
       "file": "operating_comparison.png",
@@ -107,7 +115,7 @@
     },
     {
       "file": "package_ready.json",
-      "bytes": 1096
+      "bytes": 1214
     },
     {
       "file": "pilot_reference/external_july22/evaluation.json",
@@ -135,7 +143,19 @@
     },
     {
       "file": "recon-clip-1-3p5/index.html",
-      "bytes": 1518387
+      "bytes": 1526746
+    },
+    {
+      "file": "recon-clip-1-3p5/marker_connections_3d.json",
+      "bytes": 1515009
+    },
+    {
+      "file": "recon-clip-1-3p5/marker_connections_overview.mp4",
+      "bytes": 372458
+    },
+    {
+      "file": "recon-clip-1-3p5/marker_graph_subset.json",
+      "bytes": 456873
     },
     {
       "file": "recon-clip-1-3p5/reference_clip_quality.json",
@@ -143,35 +163,35 @@
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_3d.json",
-      "bytes": 1505800
+      "bytes": 1515009
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_frame_090.png",
-      "bytes": 52277
+      "bytes": 55218
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_frame_127.png",
-      "bytes": 54133
+      "bytes": 55756
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_frame_164.png",
-      "bytes": 54268
+      "bytes": 55867
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_overview.mp4",
-      "bytes": 361349
+      "bytes": 372458
     },
     {
       "file": "recon-clip-1-3p5/stick_figure_quality.json",
-      "bytes": 1048
+      "bytes": 1085
     },
     {
       "file": "report.html",
-      "bytes": 24715
+      "bytes": 24718
     },
     {
       "file": "report.json",
-      "bytes": 118328
+      "bytes": 118446
     },
     {
       "file": "residual_refine_v2_full/full_heldout_evaluation.json",
@@ -331,7 +351,7 @@
     },
     {
       "file": "videos_best_model/gallery.html",
-      "bytes": 26232
+      "bytes": 26235
     },
     {
       "file": "videos_best_model/overview_8cam_points_heatmap.mp4",
@@ -358,9 +378,10 @@
     ],
     "duration_seconds": 2.5025,
     "subset_viewer": "recon-clip-1-3p5/index.html",
-    "subset_video": "recon-clip-1-3p5/stick_figure_overview.mp4",
+    "subset_video": "recon-clip-1-3p5/marker_connections_overview.mp4",
     "full_viewer": "gait2_3d_best_model/reconstruction_3d.html",
     "marker_identity": "Anonymous geometric correspondence; anatomical IDs unverified",
-    "stick_figure": "Separate model-estimated pose-joint guide; unavailable joints omitted"
+    "stick_figure": "Connections between actual same-frame reconstructed marker points; no pose estimation",
+    "connection_interpretation": "Geometric neighboring marker graph, not verified anatomical bones"
   }
 }

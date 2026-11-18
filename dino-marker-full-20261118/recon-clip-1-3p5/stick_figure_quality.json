@@ -1,16 +1,15 @@
 {
   "status": "complete",
+  "visualization_type": "observed_marker_neighbor_connections",
   "frame_count": 75,
   "fps": 29.97002997002997,
   "duration_seconds": 2.5025,
-  "input_pose_sha256": "58903b1c41bbe8d9612eb4977ce5b9615bc98b9513036aaa584f3f891e602f2f",
-  "input_marker_sha256": "4a0e0f613c3fde124ca4f2dfb6d123894f0b67652a285ec90211e59f6f744290",
   "reference_range": [
     90,
     164
   ],
   "observed_marker_points": 1346,
-  "observed_pose_joints": 704,
+  "full_observed_marker_points": 4343,
   "decoded_samples": [
     {
       "frame": 0,
@@ -28,12 +27,13 @@
       "decoded": true
     }
   ],
-  "bytes": 361349,
-  "sha256": "b4537095540d4f2d2a440b23c512283e0bcee7178d14646d9be6b4f6cca10e5c",
   "numeric_xyz_unchanged": true,
+  "missing_marker_interpolation": false,
+  "bytes": 372458,
+  "sha256": "c9e1ddb795282d226e4988dceaa3809d1a0e785f545505a3cec0d7507bbe2a3b",
+  "graph_input_sha256": "790c3954531f243ff850367290e2afc74da28c9994e8e8279b5a7158aefdc9fc",
+  "source_marker_graph_sha256": "790c3954531f243ff850367290e2afc74da28c9994e8e8279b5a7158aefdc9fc",
+  "pose_estimation_used": false,
   "public_payload_private_path_scan": "passed",
-  "minimum_marker_support_views": 3,
-  "minimum_pose_support_views": 3,
-  "missing_joint_interpolation": false,
-  "anatomical_marker_ids_inferred": false
+  "anatomical_identity_claim": false
 }
