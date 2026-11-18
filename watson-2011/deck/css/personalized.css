@@ -1,0 +1,88 @@
+/* Personal cover and material-led academic layout patterns. Core editor/runtime remain shared. */
+.cover-slide .h1{max-width:1250px;font-size:62px;line-height:1.23}
+.personal-presenter{max-width:1080px;width:calc(100% - 260px);margin-top:38px;padding-top:19px}
+.personal-presenter .presenter-name{font-size:29px;font-weight:700}
+.presenter-korean{font-size:21px;font-weight:400;color:#5c5c56;margin-left:13px}
+.personal-presenter .presenter-role{font-size:22px;margin-top:7px}
+.personal-presenter .affiliation{font-size:22px;line-height:1.5;margin-top:5px;color:#33332f}
+.affiliation-korean{display:block;font-size:17px;color:#77776e;margin-top:5px}
+.personal-cover-logo{position:absolute;right:87px;bottom:78px;width:230px;height:230px;object-fit:contain}
+.source-figure-layout{display:grid;grid-template-columns:1.7fr .8fr;gap:44px;align-items:center}
+.source-figure-layout figure{height:100%;max-height:590px}
+.source-figure-layout img{max-height:535px}
+.figure-reading{border-top:2px solid #111;padding-top:24px}
+.reading-tag{font-size:14px;line-height:1.5;letter-spacing:.12em;color:#74746c;margin:0 0 20px;font-weight:600}
+.reading-main{font-size:32px;line-height:1.55;margin:0;letter-spacing:-.02em}
+.reading-detail{font-size:22px;line-height:1.65;margin:28px 0 0;color:#5c5c54}
+.paired-annotation{display:grid;grid-template-columns:1fr 46px 1fr;gap:20px;min-height:0;flex:1;align-items:center}
+.paired-annotation figure{height:100%;min-height:0;max-height:440px}
+.paired-annotation img{max-height:390px}
+.paired-arrow{text-align:center;font-size:32px;color:#555}
+.annotation-figure{position:relative}
+.annotation-key{position:absolute;top:25px;left:25px;padding:12px 16px;border:1px solid #23576a;background:rgba(255,255,255,.94);font-size:18px;line-height:1.5;color:#23576a}
+.annotation-procedure{display:grid;grid-template-columns:1fr 1fr 1fr;gap:25px;border-top:1px solid #bbb;padding-top:19px}
+.annotation-procedure p{font-size:21px;line-height:1.5;margin:0;color:#555}
+.annotation-procedure b{color:#111}
+.branch-source{border-bottom:2px solid #111;padding:0 0 20px}
+.branch-source .reading-tag{margin-bottom:10px}
+.branch-source p{font-size:29px;line-height:1.5;margin:0}
+.quiet{color:#77776e;font-size:.74em}
+.data-branch{display:grid;grid-template-columns:1fr 1fr;gap:48px;position:relative;padding-top:24px}
+.branch-path{border-top:1px solid #999;padding-top:22px;position:relative}
+.branch-path::before{content:"";position:absolute;height:24px;left:50%;top:-25px;border-left:1px solid #999}
+.branch-label{font-size:13px;line-height:1.5;letter-spacing:.1em;color:#74746c;margin:0 0 16px}
+.branch-path h3{font-size:32px;margin:0 0 27px;line-height:1.35}
+.mini-flow{display:grid;grid-template-columns:auto 22px auto 22px auto;align-items:center;gap:8px;padding:18px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:22px;line-height:1.55}
+.mini-flow>span:nth-child(even){color:#888;text-align:center}
+.branch-explain{font-size:22px;line-height:1.5;margin:20px 0 0;color:#5c5c54}
+.data-branch .evaluation{border-top-color:#23576a}
+.data-branch .evaluation .branch-label{color:#23576a}
+.protocol-line{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding:0 0 18px}
+.protocol-event{position:relative;padding-top:57px;border-top:2px solid #111}
+.protocol-event::before{content:"";position:absolute;left:0;top:-7px;width:12px;height:12px;background:#111;border-radius:50%}
+.time-label{position:absolute;left:0;top:15px;color:#77776e;font-size:18px}
+.protocol-event b{font-size:29px;line-height:1.4}
+.protocol-event p{font-size:20px;color:#66665e;line-height:1.5;margin:13px 0 0}
+.protocol-table{font-size:22px}
+.protocol-table td{padding:19px 18px}
+.protocol-table th{padding:14px 18px;font-size:20px}
+.formula-layout{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center}
+.formula-display{border-top:2px solid #111;padding:25px 0 30px}
+.formula-display .reading-tag{margin:0 0 40px}
+.main-equation{font-size:45px;line-height:1.6;letter-spacing:-.015em;white-space:nowrap}
+.main-equation sub{font-size:.46em}
+.equation-caption{font-size:27px;line-height:1.5;margin:30px 0 0}
+.equation-scope{font-size:18px;color:#77776e;margin:28px 0 0}
+.variable-table{font-size:23px}
+.variable-table th:first-child{width:28%}
+.variable-table th{font-size:21px;padding:17px 18px}
+.variable-table td{padding:24px 18px}
+.variable-table small{font-size:17px;color:#77776e;line-height:1.5}
+.full-comparison{font-size:22px}
+.full-comparison th{font-size:19px;line-height:1.45;padding:17px 14px}
+.full-comparison td{padding:23px 14px}
+.full-comparison th:first-child{width:18%}
+.full-comparison th:nth-child(2){width:19%}
+.full-comparison th:nth-child(3){width:21%}
+.full-comparison th:nth-child(4){width:21%}
+.table-legend{display:flex;justify-content:space-between;gap:30px;color:#5c5c54;font-size:18px;line-height:1.5}
+.table-legend p{margin:0}
+.result-figure-layout{display:grid;grid-template-columns:1.55fr .8fr;gap:50px;align-items:center}
+.plot-replacement{height:465px;position:relative;padding:20px 15px 45px 65px}
+.plot-grid{height:100%;border-left:2px solid #777;border-bottom:2px solid #777;background:repeating-linear-gradient(to top,transparent,transparent calc(25% - 1px),#e0e0da calc(25% - 1px),#e0e0da 25%);display:grid;place-items:center}
+.plot-message{text-align:center;max-width:90%;font-size:28px;line-height:1.65;color:#66665e;background:#fff;padding:20px}
+.plot-message small{font-size:18px;color:#77776e}
+.plot-y{position:absolute;left:0;top:50%;writing-mode:vertical-rl;transform:translateY(-50%) rotate(180deg);font-size:18px;color:#666}
+.plot-x{position:absolute;bottom:0;left:65px;right:15px;text-align:center;font-size:18px;color:#666}
+.conditions-block{border-top:2px solid #111;padding-top:23px}
+.conditions-block h3{font-size:26px;line-height:1.4;margin:0 0 23px}
+.conditions-block dl{margin:0;display:grid;gap:7px}
+.conditions-block dt{font-size:14px;line-height:1.4;color:#77776e;margin-top:13px}
+.conditions-block dd{font-size:22px;line-height:1.5;margin:0}
+.condition-summary{border-top:1px solid #ccc;padding-top:19px;font-size:25px;line-height:1.55;margin:23px 0 0}
+.paired-video-layout{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.paired-video-layout .video-figure{max-height:470px}
+.paired-video-layout video{max-height:420px;min-height:250px;background:#14181d}
+.paired-video-layout figcaption{font-size:19px}
+.paired-video-layout + .takeaway{font-size:24px;margin-top:6px;padding-top:15px}
+@media print{.personal-cover-logo{width:230px;height:230px}.source-figure-layout,.result-figure-layout,.paired-video-layout{break-inside:avoid}}

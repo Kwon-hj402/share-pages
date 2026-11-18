@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="607.5pt" height="412.2pt" viewBox="0 0 607.5 412.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T20:30:00.929569</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 412.2 
+L 607.5 412.2 
+L 607.5 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 22.518 131.1048 
+L 584.982 131.1048 
+" clip-path="url(#pe2b9305b00)" style="fill: none; stroke: #d5d5d5; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 22.518 244.53504 
+L 584.982 244.53504 
+" clip-path="url(#pe2b9305b00)" style="fill: none; stroke: #d5d5d5; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="22.518" y="82.315239" transform="rotate(-0 22.518 82.315239)">① 측정값</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 29px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="204.147" y="60.926344" transform="rotate(-0 204.147 60.926344)">팔 140 mmHg</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 26px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="204.147" y="108.669553" transform="rotate(-0 204.147 108.669553)">오른발목 112 / 왼발목 126</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="22.518" y="195.595948" transform="rotate(-0 22.518 195.595948)">② 비율</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 28px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="204.147" y="174.268616" transform="rotate(-0 204.147 174.268616)">오른쪽 112 ÷ 140 = 0.80</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 28px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="204.147" y="222.753661" transform="rotate(-0 204.147 222.753661)">왼쪽 126 ÷ 140 = 0.90</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 29px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="22.518" y="305.575314" transform="rotate(-0 22.518 305.575314)">③ 낮은 값</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 29px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start" x="204.147" y="294.476736" transform="rotate(-0 204.147 294.476736)">AAI 0.80 &lt; 0.9 → PAD</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 24px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: start; fill: #777777" x="204.147" y="334.876166" transform="rotate(-0 204.147 334.876166)">이 연구의 분류 기준 적용</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <g id="patch_2">
+    <path d="M 79.641563 406.34 
+L 508.958438 406.34 
+L 508.958438 376.280664 
+L 79.641563 376.280664 
+z
+" style="fill: #ffffff; stroke: #999999; stroke-linejoin: miter"/>
+   </g>
+   <text style="font-size: 19px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="294.3" y="397.596289" transform="rotate(-0 294.3 397.596289)">개념 설명용 가상 예시 · 실제 관측값/예측선 아님</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe2b9305b00">
+   <rect x="10.8" y="10.8" width="585.9" height="343.728"/>
+  </clipPath>
+ </defs>
+</svg>

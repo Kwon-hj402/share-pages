@@ -1,0 +1,8 @@
+.memo4-clinical .v2-body{justify-content:flex-start;gap:18px}
+.memo4-clinical .clinical-cohort{font-size:30px;line-height:1.45;color:#111;padding:12px 0 16px;border-bottom:2px solid #23576a;flex:none}
+.memo4-clinical .clinical-cohort strong{font-size:36px;font-weight:700;color:#173f50;white-space:nowrap}
+.memo4-clinical .clinical-static-table-zone{display:flex;align-items:center;flex:1;min-height:0}
+.memo4-clinical .clinical-summary-table{table-layout:fixed;width:100%;font-size:26px;line-height:1.45}
+.memo4-clinical .clinical-summary-table th{font-size:23px;line-height:1.4;padding:12px 16px}
+.memo4-clinical .clinical-summary-table td{font-size:26px;line-height:1.45;padding:16px}
+.memo4-clinical .clinical-summary-table th:first-child{width:25%}.memo4-clinical .clinical-summary-table th:nth-child(2){width:27%}

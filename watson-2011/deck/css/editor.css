@@ -1,0 +1,80 @@
+.blank-slide-body { min-height: 430px; margin-top: 24px; padding: 34px 38px; border: 2px solid #111; font-size: 26px; line-height: 1.65; color: var(--text-2); }
+.blank-slide-body p { margin: 0 0 18px; }
+.blank-slide-body ul { margin: 0; padding-left: 1.25em; }
+.blank-slide-body li + li { margin-top: 12px; }
+.new-slide-badge { position: absolute; z-index: 8; top: 30px; right: 60px; padding: 7px 12px; border: 1px solid #111; background: #fff; color: #111; font-size: 13px; font-weight: 800; letter-spacing: .08em; }
+body.edit-mode .new-slide-badge { top: 112px; }
+
+.canvas-layer { position: absolute; inset: 0; z-index: 7; pointer-events: none; }
+.ppt-shape { position: absolute; min-width: 30px; min-height: 24px; pointer-events: auto; cursor: move; --shape-stroke: #111111; --shape-stroke-width: 3px; }
+.ppt-shape.shape-rectangle, .ppt-shape.shape-ellipse { border: var(--shape-stroke-width) solid var(--shape-stroke); background: transparent; }
+.ppt-shape.shape-ellipse { border-radius: 50%; }
+.ppt-shape.shape-arrow svg { width: 100%; height: 100%; overflow: visible; transform: rotate(var(--shape-rotation, 0deg)); transform-origin: center; transform-box: fill-box; }
+.ppt-shape.shape-arrow line { stroke: var(--shape-stroke); stroke-width: var(--shape-stroke-width); vector-effect: non-scaling-stroke; }
+.ppt-shape.shape-arrow polygon { fill: var(--shape-stroke); }
+.ppt-shape.memo-pin { width: 34px !important; height: 34px !important; min-width: 34px; min-height: 34px; border-radius: 50%; background: #ffe978; color: #111; display: grid; place-items: center; font-weight: 850; border: 2px solid #111; cursor: pointer; }
+.ppt-shape.media-frame { min-width: 120px; min-height: 80px; background: #fff; border: 1px solid rgba(17,17,17,.22); overflow: visible; }
+.ppt-shape.media-frame.shape-video { background: #050505; }
+.media-frame img, .media-frame video { display: block; width: 100%; height: 100%; max-width: none; object-fit: contain; background: transparent; }
+.media-frame video { background: #050505; }
+.media-placeholder { position: absolute; inset: 0; display: grid; place-items: center; padding: 18px; color: #555; background: #f3f3f0; text-align: center; font: 13px/1.45 var(--font-sans); }
+.media-frame.has-media .media-placeholder { display: none; }
+body.edit-mode .media-frame img, body.edit-mode .media-frame video { pointer-events: none; }
+body:not(.edit-mode) .media-frame { cursor: default; }
+.resize-handle { display: none; position: absolute; right: -8px; bottom: -8px; width: 16px; height: 16px; border: 2px solid #fff; background: #111; cursor: nwse-resize; }
+.rotate-handle { display: none; position: absolute; z-index: 25; left: 50%; top: -44px; width: 26px; height: 26px; margin-left: -13px; border: 2px solid #fff; border-radius: 50%; background: #2f63ff; box-shadow: 0 0 0 1px #2f63ff; cursor: grab; pointer-events: auto; touch-action: none; }
+.rotate-handle::after { content: ""; position: absolute; left: 11px; top: 24px; width: 2px; height: 19px; background: #2f63ff; }
+.rotate-handle:active { cursor: grabbing; }
+body.edit-mode .ppt-shape.is-selected { outline: 2px dashed #2f63ff; outline-offset: 5px; }
+body.edit-mode .ppt-shape.is-selected .resize-handle { display: block; }
+body.edit-mode .shape-arrow.is-selected .rotate-handle { display: block; }
+body:not(.edit-mode) .memo-pin { display: none; }
+
+[data-editable] { outline: none; }
+body.edit-mode [data-editable] { cursor: text; }
+body.edit-mode [data-editable]:hover { outline: 1px dashed rgba(47, 99, 255, .5); outline-offset: 4px; }
+body.edit-mode [data-editable].is-selected { outline: 2px solid #2f63ff; outline-offset: 5px; }
+/* Keep the transparent drawing layer click-through so slide text remains selectable.
+   Individual shapes opt back in with pointer-events:auto. */
+body.edit-mode .canvas-layer { pointer-events: none; }
+
+.edit-toggle { position: fixed; top: 16px; right: 16px; z-index: 120; border: 1px solid #111; background: #fff; color: #111; padding: 8px 13px; font-weight: 750; cursor: pointer; }
+.edit-toolbar { position: fixed; z-index: 110; top: 10px; left: 10px; right: 76px; min-height: 54px; display: none; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 10px; border: 1px solid #111; background: rgba(255, 255, 255, .97); box-shadow: 0 8px 28px rgba(0, 0, 0, .11); font: 13px/1.2 var(--font-sans); }
+body.edit-mode .edit-toolbar { display: flex; }
+body.edit-mode .edit-toggle { background: #111; color: #fff; }
+.tool-group { display: flex; align-items: center; gap: 5px; padding-right: 8px; border-right: 1px solid #ddd; }
+.tool-group:last-child { border-right: 0; }
+.brand-group { display: grid; gap: 1px; min-width: 122px; }
+.brand-group strong { font-size: 11px; letter-spacing: .08em; }
+.brand-group span { font-size: 10px; color: #777; }
+.edit-toolbar button, .file-button { min-height: 32px; border: 1px solid #bbb; background: #fff; padding: 6px 9px; font: inherit; cursor: pointer; }
+.edit-toolbar button:hover, .file-button:hover { border-color: #111; }
+.edit-toolbar .new-slide-button { background: #111; color: #fff; border-color: #111; }
+.edit-toolbar .new-slide-button:hover { background: #333; }
+.edit-toolbar button.danger { color: #9a2929; }
+.edit-toolbar label { display: flex; align-items: center; gap: 4px; color: #555; white-space: nowrap; }
+.edit-toolbar input[type="number"] { width: 54px; height: 32px; border: 1px solid #bbb; padding: 3px 5px; }
+.edit-toolbar input[type="color"] { width: 32px; height: 32px; padding: 2px; border: 1px solid #bbb; background: #fff; }
+.file-button input { display: none; }
+
+.memo-panel { position: fixed; top: 76px; right: 16px; bottom: 16px; z-index: 115; width: min(380px, calc(100vw - 32px)); display: none; flex-direction: column; border: 1px solid #111; background: #fff; box-shadow: 0 14px 44px rgba(0,0,0,.18); }
+.memo-panel.open { display: flex; }
+.memo-panel-head { display: flex; justify-content: space-between; align-items: flex-start; padding: 16px; border-bottom: 1px solid #ddd; }
+.memo-panel-head div { display: grid; gap: 3px; }
+.memo-panel-head small { color: #777; }
+.memo-panel-head button { border: 0; background: transparent; font-size: 24px; cursor: pointer; }
+.memo-list { flex: 1; overflow: auto; padding: 12px; }
+.memo-empty { color: #777; padding: 18px 4px; }
+.memo-item { padding: 12px; border: 1px solid #ddd; margin-bottom: 10px; }
+.memo-item.is-active { border: 2px solid #111; }
+.memo-item-head { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 8px; font-size: 12px; color: #666; }
+.memo-item textarea { width: 100%; min-height: 92px; resize: vertical; border: 1px solid #bbb; padding: 9px; font: 14px/1.45 var(--font-sans); }
+.memo-anchor { margin: -2px 0 9px; padding: 7px 8px; background: #f4f4f1; color: #444; font-size: 12px; line-height: 1.4; }
+.memo-panel > .wide { margin: 12px; min-height: 38px; border: 1px solid #111; background: #111; color: #fff; cursor: pointer; }
+.edit-hint { position: fixed; left: 18px; bottom: 12px; z-index: 100; padding: 6px 10px; background: rgba(255,255,255,.86); color: #666; font: 11px/1.2 var(--font-sans); opacity: .7; }
+body.edit-mode .edit-hint { display: none; }
+
+.toast { position: fixed; left: 50%; bottom: 28px; z-index: 200; transform: translateX(-50%); padding: 10px 15px; background: #111; color: #fff; font: 13px/1.2 var(--font-sans); }
+
+
+@media print{.edit-toggle,.edit-toolbar,.memo-panel,.edit-hint,.resize-handle,.rotate-handle,.memo-pin{display:none!important}}

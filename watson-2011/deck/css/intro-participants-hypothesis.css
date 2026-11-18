@@ -1,0 +1,16 @@
+/* Put the source cohort beside its mortality figure; keep the figure large. */
+.ref01-participants-added .quartile-explanation{gap:16px;justify-content:center}
+.ref01-participants{display:flex;flex-direction:column;gap:6px;padding-bottom:14px;border-bottom:1px solid #aaa;flex:none}
+.ref01-participants-added .ref01-participants h3{font-size:25px;line-height:1.4;color:var(--focus)}
+.ref01-participants-added .ref01-participants p{font-size:23px;line-height:1.4;white-space:normal}
+.ref01-participants-added .ref01-participants .ref01-function{font-size:22px}
+.ref01-quartiles{display:flex;flex-direction:column;gap:8px;flex:none}
+.ref01-participants-added .ref01-quartiles h3{font-size:26px;line-height:1.4}
+.ref01-participants-added .ref01-quartiles p{font-size:22px;line-height:1.4;white-space:normal}
+.ref01-participants-added .ref01-quartiles .quartile-band span{font-size:25px;line-height:1.3;padding:8px 0}
+.ref01-participants-added .ref01-quartiles .quartile-direction{font-size:22px;margin:0}
+/* PAD identifies the clinical setting; PWV is the predictor and gait the outcome. */
+.memo2-ace.intro-hypothesis-linked .memo6-hypothesis-box{gap:8px}
+.memo2-ace.intro-hypothesis-linked .memo6-hypothesis-label{font-size:23px;line-height:1.4}
+.memo2-ace.intro-hypothesis-linked .memo6-hypothesis-flow{font-size:27px;line-height:1.45}
+.memo2-ace.intro-hypothesis-linked .intro-analysis-link{font-size:25px;line-height:1.4;padding-top:8px;border-top:1px solid #bbcdd4}

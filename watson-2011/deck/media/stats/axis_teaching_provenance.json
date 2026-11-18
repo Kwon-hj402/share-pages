@@ -1,0 +1,46 @@
+[
+  {
+    "chart_id": "axis_pwv_beta",
+    "files": [
+      "media/stats/axis_pwv_beta.svg",
+      "media/stats/axis_pwv_beta.png"
+    ],
+    "classification": "hypothetical_teaching_with_reported_coefficient",
+    "visible_example_label": "개념 설명용 가상 예시 · 실제 관측값/예측선 아님",
+    "source": "Watson et al. 2011, Table 3, printed p93 / PDF p4",
+    "reported_coefficient": {
+      "term": "PAD Model 3 PWV",
+      "beta": -0.028,
+      "PWV_unit_cm_s": 396
+    },
+    "equation": "y = 1.30 − 0.028 × (PWV − 898) / 396",
+    "assumptions": [
+      "1.30 m/s is an assumed intercept at PWV 898 cm/s, not a reported model intercept.",
+      "898 cm/s is the reported overall mean but is chosen here as an illustrative reference; the original model centering constant is not established.",
+      "X is baseline PWV across differing levels, not within-person PWV change.",
+      "No observations, fitted participant trajectories or CI bands are fabricated."
+    ]
+  },
+  {
+    "chart_id": "axis_time_beta",
+    "files": [
+      "media/stats/axis_time_beta.svg",
+      "media/stats/axis_time_beta.png"
+    ],
+    "classification": "hypothetical_teaching_with_reported_coefficient",
+    "visible_example_label": "개념 설명용 가상 예시 · 실제 관측값/예측선 아님",
+    "source": "Watson et al. 2011, Table 3, printed p93 / PDF p4",
+    "reported_coefficient": {
+      "term": "PAD Model 3 Time",
+      "beta": -0.048,
+      "unit": "m/s/year"
+    },
+    "equation": "y = 1.30 − 0.048 × t",
+    "assumptions": [
+      "1.30 m/s at t=0 is assumed and is not a reported model intercept.",
+      "The Time coefficient is conditional on PWV/covariate reference values, not the observed mean change for every PAD participant.",
+      "The line illustrates the Time coefficient and is not a reconstructed model prediction.",
+      "No observations, group mean trajectories or CI bands are fabricated."
+    ]
+  }
+]

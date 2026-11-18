@@ -1,0 +1,67 @@
+/* Watson 2011: restrained, source-led 16:9 academic layout. */
+.watson-slide{padding-top:48px;padding-bottom:64px}
+.watson-slide .section-label{margin-bottom:10px}
+.watson-slide .h2{font-size:43px;line-height:1.22;margin-bottom:16px;flex:none}
+.watson-slide.long-title .h2{font-size:39px}
+.watson-slide .slide-claim{font-size:27px;line-height:1.45;margin:0 0 18px;flex:none;font-weight:600;letter-spacing:-.025em}
+.watson-body{gap:18px;justify-content:center;overflow:visible;min-height:0}
+.watson-slide .body-copy{display:flex;flex-direction:column;gap:20px;min-height:0}
+.watson-slide .body-line{font-size:28px;line-height:1.55;margin:0;letter-spacing:-.02em}
+.watson-slide .body-line strong{font-weight:700}
+.watson-slide.text-slide .body-copy{gap:28px;max-width:1350px}
+.watson-slide.text-slide .body-line{font-size:31px;line-height:1.6;padding-top:18px;border-top:1px solid #d0d0cb}
+.watson-slide .figure-composition{display:flex;justify-content:center;align-items:stretch;gap:32px;min-height:0;flex:1}
+.watson-slide .source-figure{flex:1;min-width:0;min-height:0;gap:9px;justify-content:center}
+.watson-slide .source-figure img{display:block;object-fit:contain;max-height:465px;min-height:0;background:#fff;width:100%;height:100%;flex:1}
+.watson-slide .source-figure figcaption{font-size:18px;line-height:1.4;color:#52524e;max-height:76px;overflow:hidden;flex:none}
+.watson-slide .below-media{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 32px;flex:none}
+.watson-slide .below-media .body-line{font-size:23px;line-height:1.45}
+.watson-slide .below-media .body-line:only-child{grid-column:1/-1;font-size:25px}
+.watson-slide .source-line{font-size:14px;line-height:1.45;margin-top:14px;flex:none;max-height:43px;overflow:hidden}
+.watson-slide .source-line a{font-size:14px;white-space:nowrap}
+.watson-slide .reference-warning{font-size:23px;line-height:1.4;font-weight:700;border-left:5px solid #111;padding:10px 18px;margin:0 0 12px;background:#f3f3ef;flex:none}
+.watson-slide .side-composition{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:42px;min-height:0;flex:1;align-items:stretch}
+.watson-slide .side-composition .source-figure img{max-height:590px}
+.watson-slide .side-copy{display:flex;flex-direction:column;justify-content:center;gap:25px;min-height:0}
+.watson-slide .side-claim{font-size:29px;line-height:1.5;margin:0;font-weight:650;padding-top:18px;border-top:2px solid #111}
+.watson-slide .side-line{font-size:25px;line-height:1.6;margin:0;letter-spacing:-.02em}
+.watson-slide.large-source .side-composition{grid-template-columns:minmax(0,2fr) minmax(0,.9fr)}
+.watson-slide.large-source .side-line{font-size:23px;line-height:1.5}
+.watson-slide .watson-table{width:100%;border-collapse:collapse;table-layout:auto;font-size:24px;line-height:1.45}
+.watson-slide .watson-table th,.watson-slide .watson-table td{padding:15px 14px;border-bottom:1px solid #c9c9c3;vertical-align:middle}
+.watson-slide .watson-table th{font-size:22px;text-align:left;border-top:2px solid #151515;border-bottom:1px solid #6a6a63;background:#f7f7f4;font-weight:650}
+.watson-slide .watson-table td:first-child{font-weight:600}
+.watson-slide .watson-table.dense-table{font-size:21px}
+.watson-slide .watson-table.dense-table th{font-size:19px}
+.watson-slide .watson-table.dense-table td,.watson-slide .watson-table.dense-table th{padding:12px 10px}
+.watson-slide .watson-table.many-rows td{padding-top:8px;padding-bottom:8px;font-size:20px}
+.watson-slide .watson-table .group-row th{background:#f1f1ed;font-size:21px;padding-top:9px;padding-bottom:9px}
+.watson-slide .table-caption{font-size:23px;font-weight:650;line-height:1.4;margin:0}
+.watson-slide .table-note{font-size:18px;line-height:1.45;margin:0;color:#555}
+.watson-slide.table-slide .body-copy{gap:9px;flex:none}
+.watson-slide.table-slide .body-line{font-size:23px;line-height:1.45}
+.watson-slide.table-slide.has-media .source-figure img{max-height:300px}
+.watson-slide .equation-block{border-top:2px solid #171717;border-bottom:1px solid #aaa;padding:19px 0;display:flex;flex-direction:column;gap:12px;flex:none}
+.watson-slide .equation{font-family:Cambria,'Cambria Math','Times New Roman','Malgun Gothic',serif;font-size:38px;line-height:1.5;margin:0;overflow-wrap:anywhere;word-break:normal}
+.watson-slide .equation.compact-equation{font-size:29px;line-height:1.6}
+.watson-slide.equation-slide .body-line{font-size:25px;line-height:1.5}
+.watson-slide.equation-slide.has-media .source-figure img{max-height:465px}
+.watson-slide .equation sub{font-size:.62em;vertical-align:sub;line-height:0}
+.watson-slide .equation sup{font-size:.62em;vertical-align:super;line-height:0}
+.watson-slide .html-equation{font-size:34px}
+.watson-slide[data-slide-id="watson-results-full-cohort"] .watson-table,.watson-slide[data-slide-id="watson-results-pad"] .watson-table,.watson-slide[data-slide-id="watson-results-nonpad"] .watson-table{font-size:26px}
+.watson-slide[data-slide-id="watson-results-full-cohort"] .watson-table td,.watson-slide[data-slide-id="watson-results-pad"] .watson-table td,.watson-slide[data-slide-id="watson-results-nonpad"] .watson-table td{padding-top:24px;padding-bottom:24px}
+.watson-cover .h1{font-size:58px;line-height:1.2;max-width:1390px}
+.watson-cover .subtitle{font-size:27px;line-height:1.5;max-width:1290px;margin-top:25px}
+.watson-cover .presenter{margin-top:34px}
+.watson-cover .personal-cover-logo{width:205px;height:205px;bottom:83px}
+.section-profile .source-figure img{max-height:380px}
+.section-appendix .watson-table{font-size:19px;line-height:1.5}
+.section-appendix .watson-table th{font-size:20px}
+.section-appendix .watson-table td{padding:12px 13px}
+.section-appendix .watson-table td:first-child{width:22%}
+.section-appendix[data-slide-id^="appendix-references"] .watson-table td:first-child,.section-appendix[data-slide-id^="appendix-references"] .watson-table th:first-child{width:80px;white-space:nowrap}
+.section-appendix .body-line{font-size:22px}
+body.edit-mode .watson-slide .source-line,body.edit-mode .watson-slide figcaption{max-height:none;overflow:visible}
+.watson-slide.is-focused .source-figure img{max-height:none}
+@media print{.watson-slide{break-after:page}.watson-slide .figure-composition{break-inside:avoid}.watson-slide .watson-table{break-inside:avoid}}

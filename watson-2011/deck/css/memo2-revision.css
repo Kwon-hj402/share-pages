@@ -1,0 +1,18 @@
+.memo2-mechanisms .v2-body{justify-content:flex-start;gap:22px}
+.memo2-mechanisms .pwv-definition-strip{font-size:28px;line-height:1.45;padding-bottom:16px;border-bottom:1px solid #aaa;flex:none}
+.mechanism-bullets{margin:0;padding-left:36px;display:flex;flex-direction:column;justify-content:center;gap:28px;flex:1;min-height:0}
+.mechanism-bullets li{font-size:30px;line-height:1.55;padding-left:8px;word-break:keep-all}
+.memo2-ace .v2-body{justify-content:flex-start;gap:18px}
+.memo2-ace .ace-definition{font-size:27px;line-height:1.4;padding-bottom:12px;border-bottom:1px solid #bbb;flex:none}
+.ace-mechanisms{padding-left:34px;margin:0;display:flex;flex-direction:column;gap:18px;flex:none}
+.ace-mechanisms li{font-size:29px;line-height:1.5;padding-left:7px;word-break:keep-all}
+.memo2-ace .historical-report{font-size:27px;line-height:1.5;border-top:1px solid #bbb;padding-top:18px;flex:none}
+.memo2-retraction{border-left:4px solid #8b4b36;background:#faf5f2;padding:14px 20px;display:flex;flex-direction:column;gap:9px;flex:none}
+.memo2-retraction strong{font-size:28px;line-height:1.35;color:#75402e}.memo2-retraction p{font-size:26px;line-height:1.45}
+.aai-method-restored .aai-anatomic-numerator{border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:8px}
+.aai-method-restored .aai-anatomic-numerator .aai-numerator{border:0;padding:0;margin:0}
+.aai-method-restored .aai-fraction .aai-artery-label{font-size:23px;line-height:1.35;color:#555;margin-top:5px;white-space:nowrap}
+.memo2-clinical .v2-body{gap:14px}.memo2-clinical .clinical-cohort{font-size:25px;line-height:1.4;color:#555;flex:none}
+.memo2-clinical .evidence-screen .watson-table td{padding:15px 13px;font-size:25px;line-height:1.4}
+.memo2-clinical .evidence-screen .watson-table th{font-size:22px;padding:11px 13px}
+.memo2-clinical .evidence-screen .watson-table th:first-child{width:25%}.memo2-clinical .evidence-screen .watson-table th:nth-child(2){width:26%}

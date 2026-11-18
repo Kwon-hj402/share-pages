@@ -1,0 +1,14 @@
+.adjustment-explanation .english-mixed-name{font-size:24px;font-weight:400;letter-spacing:-.02em;margin-left:12px;white-space:nowrap;display:inline-block;vertical-align:baseline}
+.baseline-table-plain .watson-table tr,.baseline-table-plain .watson-table td,.baseline-table-plain .watson-table th{outline:none!important;box-shadow:none!important}
+.coefficient-example .v2-body{justify-content:flex-start;gap:16px}
+.coefficient-example .memo-keyline{font-size:30px;line-height:1.4}
+.coefficient-example-layout{display:grid;grid-template-columns:minmax(0,2.3fr) minmax(320px,.85fr);gap:35px;flex:1;min-height:0}
+.coefficient-example .v2-figure{height:100%;gap:7px;min-height:0}
+.coefficient-example .figure-open{flex:1;min-height:0;height:auto}
+.coefficient-example img{height:100%;width:100%;max-height:none;object-fit:contain}
+.coefficient-example figcaption{font-size:18px;line-height:1.4;color:#555}
+.coefficient-example-copy{display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:0}
+.coefficient-example-copy h3{font-size:31px;line-height:1.4;margin:0}
+.coefficient-example-copy p{font-size:27px;line-height:1.5;white-space:pre-line}
+.coefficient-example-copy .coefficient-example-result{font-size:30px;line-height:1.5;border-top:2px solid #23576a;border-bottom:1px solid #aaa;padding:16px 0;color:#173f50}
+.coefficient-example .example-scope{font-size:23px;line-height:1.45;color:#555;flex:none}

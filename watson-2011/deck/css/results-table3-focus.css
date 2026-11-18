@@ -1,0 +1,12 @@
+/* Complete original coefficients, with compact interpretation on the same slide. */
+.table3-primary .v2-body{justify-content:flex-start;gap:10px}
+.table3-primary .grouped-table{flex:none}
+.table3-primary .grouped-table td{padding:9px 10px}
+.table3-primary .grouped-table-foot{flex:none}
+.table3-primary .grouped-table-foot .copy-line{font-size:24px;line-height:1.4}
+.table3-primary .table3-key{flex:none;min-height:35px}
+.table3-primary .table3-key .memo-support{font-size:24px;line-height:1.42;border-left:3px solid #23576a;padding-left:15px;color:#173f50}
+.table3-primary .table3-interactions{font-size:22px;line-height:1.4;color:#555;flex:none}
+.table3-primary .grouped-table{table-layout:fixed;width:100%}
+.table3-primary .grouped-table tbody{outline:none}
+.table3-primary .table3-coefficient-box{display:inline-block;border:2px solid #23576a;padding:0 6px;line-height:1.15;font-weight:600;color:#173f50}

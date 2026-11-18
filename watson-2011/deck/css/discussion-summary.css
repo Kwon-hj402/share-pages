@@ -1,0 +1,23 @@
+/* Seven concise headings, with one inline explanation open at a time. */
+.summary-review-slide .v2-body{justify-content:flex-start;gap:16px}
+.summary-review-slide .memo-keyline{font-size:28px;line-height:1.4}
+.summary-review-slide .summary-review{flex:none;width:100%;min-height:0}
+.summary-review-slide .summary-review .review-open{grid-template-columns:54px 1fr 30px;gap:14px;padding:11px 14px;font-size:28px;line-height:1.35;min-height:60px}
+.summary-review-slide .summary-review .review-number{font-size:20px}
+.summary-review-slide .summary-review .review-symbol{font-size:27px}
+.summary-review-slide .summary-review.has-selection [data-review-item]:not(.is-open) .review-open{font-size:23px;line-height:1.35;padding:7px 14px;min-height:45px}
+.summary-review-slide .summary-review .is-open .review-open{font-size:28px;font-weight:650;padding:11px 14px}
+.summary-review-slide .summary-review .review-panel{padding:0 42px 16px 82px}
+.summary-review-slide .summary-review .panel-finding{font-size:26px;line-height:1.45;margin:0 0 9px;letter-spacing:-.02em}
+.summary-review-slide .summary-review .panel-meaning{font-size:23px;line-height:1.45;margin:0;color:#555;letter-spacing:-.02em}
+.summary-review-slide .source-line{margin-top:12px}
+body.edit-mode .summary-review-slide .summary-review{overflow-y:auto;flex:1;min-height:0;padding-right:6px}
+.critical-primary-only .v2-body{justify-content:center;gap:28px}
+.critical-primary-only .memo-keyline{font-size:28px;line-height:1.45}
+.critical-primary-content{display:flex;flex-direction:column;gap:30px;flex:none}
+.critical-primary-content .critical-primary-heading{font-size:35px;line-height:1.4;font-weight:650;margin:0;letter-spacing:-.025em}
+.critical-primary-content .critical-primary-finding{font-size:31px;line-height:1.65;letter-spacing:-.02em}
+.critical-primary-content .critical-primary-meaning{font-size:29px;line-height:1.65;border-left:4px solid var(--focus);padding-left:22px;letter-spacing:-.02em}
+.healthabc-profile .healthabc-followup p:first-child{font-size:29px}
+.healthabc-profile .healthabc-period{color:var(--focus);font-weight:650}
+@media print{.summary-review-slide .review-panel{padding-bottom:8px}.summary-review-slide .summary-review .review-open{font-size:23px;padding:6px 14px;min-height:0}.summary-review-slide .summary-review .panel-finding,.summary-review-slide .summary-review .panel-meaning{font-size:18px;line-height:1.25}}

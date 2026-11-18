@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="831.631212pt" height="282.168pt" viewBox="0 0 831.631212 282.168" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T20:30:01.067736</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 282.168 
+L 831.631212 282.168 
+L 831.631212 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 39.631212 162.798 
+L 820.831212 162.798 
+" clip-path="url(#p635fa6326f)" style="fill: none; stroke: #151515; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <defs>
+     <path id="m03c229c991" d="M 0 6 
+C 1.591219 6 3.117479 5.367802 4.242641 4.242641 
+C 5.367802 3.117479 6 1.591219 6 0 
+C 6 -1.591219 5.367802 -3.117479 4.242641 -4.242641 
+C 3.117479 -5.367802 1.591219 -6 0 -6 
+C -1.591219 -6 -3.117479 -5.367802 -4.242641 -4.242641 
+C -5.367802 -3.117479 -6 -1.591219 -6 0 
+C -6 1.591219 -5.367802 3.117479 -4.242641 4.242641 
+C -3.117479 5.367802 -1.591219 6 0 6 
+z
+" style="stroke: #151515"/>
+    </defs>
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="96.792187" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="192.06048" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="287.328773" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="382.597066" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_6">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="477.865358" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_7">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="573.133651" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="line2d_8">
+    <defs>
+     <path id="m3b482ee834" d="M -8 8 
+L 8 -8 
+M -8 -8 
+L 8 8 
+" style="stroke: #777777; stroke-width: 3"/>
+    </defs>
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m3b482ee834" x="668.401944" y="162.798" style="fill: #777777; stroke: #777777; stroke-width: 3"/>
+    </g>
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#p635fa6326f)">
+     <use xlink:href="#m03c229c991" x="763.670236" y="162.798" style="fill: #151515; stroke: #151515"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="96.792187" y="128.869875" transform="rotate(-0 96.792187 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="96.792187" y="215.363438" transform="rotate(-0 96.792187 215.363438)">1차</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="96.792187" y="246.650344" transform="rotate(-0 96.792187 246.650344)">t = 0</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="192.06048" y="128.869875" transform="rotate(-0 192.06048 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="192.06048" y="215.363438" transform="rotate(-0 192.06048 215.363438)">2차</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="192.06048" y="246.650344" transform="rotate(-0 192.06048 246.650344)">t = 1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="287.328773" y="128.869875" transform="rotate(-0 287.328773 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="287.328773" y="215.363438" transform="rotate(-0 287.328773 215.363438)">3차</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="287.328773" y="246.650344" transform="rotate(-0 287.328773 246.650344)">t = 2</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="382.597066" y="128.869875" transform="rotate(-0 382.597066 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="382.597066" y="215.363438" transform="rotate(-0 382.597066 215.363438)">4차</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="382.597066" y="246.650344" transform="rotate(-0 382.597066 246.650344)">t = 3</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="477.865358" y="128.869875" transform="rotate(-0 477.865358 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="477.865358" y="215.363438" transform="rotate(-0 477.865358 215.363438)">5차</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="477.865358" y="246.650344" transform="rotate(-0 477.865358 246.650344)">t = 4</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="573.133651" y="128.869875" transform="rotate(-0 573.133651 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="573.133651" y="215.363438" transform="rotate(-0 573.133651 215.363438)">6차</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="573.133651" y="246.650344" transform="rotate(-0 573.133651 246.650344)">t = 5</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 18px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle; fill: #777777" x="668.401944" y="128.869875" transform="rotate(-0 668.401944 128.869875)">검사 없음</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="668.401944" y="215.363438" transform="rotate(-0 668.401944 215.363438)">7차</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="668.401944" y="246.650344" transform="rotate(-0 668.401944 246.650344)">t = 6</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 17px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="763.670236" y="128.869875" transform="rotate(-0 763.670236 128.869875)">20 m 보행</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 25px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="763.670236" y="215.363438" transform="rotate(-0 763.670236 215.363438)">8차</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="763.670236" y="246.650344" transform="rotate(-0 763.670236 246.650344)">t = 7</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 18px; font-family: 'Malgun Gothic', 'DejaVu Sans'" transform="translate(10.8 47.465484)">기저 PWV·AAI·공변량</text>
+    <text style="font-size: 18px; font-family: 'Malgun Gothic', 'DejaVu Sans'" transform="translate(48.158437 66.442125)">+ 보행 속도</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 21px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="477.865358" y="66.442125" transform="rotate(-0 477.865358 66.442125)">같은 사람의 보행 속도를 반복 측정</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p635fa6326f">
+   <rect x="39.631212" y="10.8" width="781.2" height="260.568"/>
+  </clipPath>
+ </defs>
+</svg>

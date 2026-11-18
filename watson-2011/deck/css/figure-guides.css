@@ -1,0 +1,35 @@
+/* Small, persistent abbreviation legends; extended preparation explanations. */
+.page-abbreviations{position:absolute;left:88px;right:88px;bottom:44px;margin:0;font:17px/1.25 var(--font-sans);letter-spacing:-.015em;color:#555;z-index:15;pointer-events:auto}
+.page-abbreviations[hidden],.guide-reading[hidden]{display:none!important}
+.guide-reading{min-height:var(--guide-reading-height,34px)}
+.deck-tools{top:7px;bottom:auto}
+body.study-visible.study-side .deck-tools,body.study-visible.study-below .deck-tools{top:48px;bottom:auto}
+body.study-visible.study-below.study-reading-panel .deck-tools{top:auto;bottom:8px}
+body.edit-mode .deck-tools{display:none}
+.page-abbreviations abbr{border:0;text-decoration:underline dotted #999;text-underline-offset:3px;cursor:help;font-weight:550}
+.slide.has-page-abbreviations .deck-footer{bottom:15px}
+.slide[data-abbreviation-lines="2"]{padding-bottom:88px}
+.slide[data-abbreviation-lines="3"]{padding-bottom:108px}
+.slide.has-focus .memo-evidence-zone [data-focus-active]{inset:115px 65px 112px}
+.slide.has-focus .memo-evidence-zone [data-focus-active] img{max-height:620px}
+.study-quick-links{display:flex;gap:8px;margin:0 0 20px;position:sticky;top:-25px;background:#fff;z-index:3;padding:10px 0;border-bottom:1px solid #ddd}
+.study-quick-links button{border:1px solid #abbfc5;background:#fff;color:#23576a;font:14px/1.4 var(--font-sans);padding:6px 13px;cursor:pointer}
+.figure-guide-section{padding-bottom:24px;margin-bottom:26px;border-bottom:2px solid #c4d0d4;scroll-margin-top:60px}
+.figure-guide-section h3{font-size:20px;line-height:1.4;margin:0 0 18px;color:#173f50}
+.figure-guide-context{font-size:15px;line-height:1.7;color:#555;margin-bottom:17px!important}
+.figure-guide-block{margin:0 0 18px}
+.figure-guide-block h4{font-size:13px;line-height:1.4;margin:0 0 5px;color:#23576a;font-weight:650}
+.figure-guide-block p{font-size:17px;line-height:1.8;letter-spacing:-.015em;color:#222}
+.figure-guide-result{border-left:3px solid #23576a;padding-left:13px}
+.figure-guide-limits{padding:12px 14px;background:#f7f7f3;font-size:14px!important;color:#555!important;line-height:1.7!important}
+.figure-guide-glossary{border-top:1px solid #ddd;padding-top:14px;scroll-margin-top:60px}
+.figure-guide-glossary h4{font-size:14px;line-height:1.4;margin:0 0 12px;color:#23576a}
+.figure-guide-glossary dl{display:grid;grid-template-columns:74px 1fr;gap:9px 12px;margin:0;font-size:14px;line-height:1.6}
+.figure-guide-glossary dt{font-weight:650;color:#222}.figure-guide-glossary dd{margin:0;color:#444;word-break:keep-all}
+.figure-guide-glossary .english-term{display:block;font-size:13px;line-height:1.5;color:#666}
+.paper-passage-heading{font-size:20px;line-height:1.4;color:#173f50;margin:0 0 15px;scroll-margin-top:60px}
+body.study-below .study-quick-links{top:44px}
+body.study-below .figure-guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 32px}
+body.study-below .figure-guide-glossary dl{grid-template-columns:90px 1fr 90px 1fr}
+@media(max-width:980px){body.study-below .figure-guide-grid{grid-template-columns:1fr}body.study-below .figure-guide-glossary dl{grid-template-columns:74px 1fr}}
+@media print{.study-quick-links{display:none}.page-abbreviations{font-size:17px}}

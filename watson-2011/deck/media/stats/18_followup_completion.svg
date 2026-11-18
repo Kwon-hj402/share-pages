@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="869.080898pt" height="362.281838pt" viewBox="0 0 869.080898 362.281838" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T20:26:07.335109</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 362.281838 
+L 869.080898 362.281838 
+L 869.080898 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 77.080898 268.774908 
+L 858.280898 268.774908 
+L 858.280898 12.166908 
+L 77.080898 12.166908 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m5869934252" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5869934252" x="189.178225" y="268.774908" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'" transform="translate(157.178225 289.439908)">기저시점</text>
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'" transform="translate(139.146975 306.308033)">연구 1차 연도</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m5869934252" x="467.680898" y="268.774908" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="467.680898" y="289.439908" transform="rotate(-0 467.680898 289.439908)">연구 5차 연도</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m5869934252" x="746.183572" y="268.774908" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="746.183572" y="289.439908" transform="rotate(-0 746.183572 289.439908)">연구 8차 연도</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <path d="M 77.080898 268.774908 
+L 858.280898 268.774908 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_5">
+      <defs>
+       <path id="m4d33a63d23" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="268.774908" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="275.173346" transform="rotate(-0 70.080898 275.173346)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <path d="M 77.080898 218.459614 
+L 858.280898 218.459614 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="218.459614" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="224.858051" transform="rotate(-0 70.080898 224.858051)">500</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <path d="M 77.080898 168.14432 
+L 858.280898 168.14432 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="168.14432" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="174.542757" transform="rotate(-0 70.080898 174.542757)">1000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <path d="M 77.080898 117.829026 
+L 858.280898 117.829026 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="117.829026" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="124.227463" transform="rotate(-0 70.080898 124.227463)">1500</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <path d="M 77.080898 67.513732 
+L 858.280898 67.513732 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="67.513732" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="73.912169" transform="rotate(-0 70.080898 73.912169)">2000</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_14">
+      <path d="M 77.080898 17.198437 
+L 858.280898 17.198437 
+" clip-path="url(#p6828b2f05e)" style="fill: none; stroke: #eeeeee; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m4d33a63d23" x="77.080898" y="17.198437" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 16px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: end" x="70.080898" y="23.596875" transform="rotate(-0 70.080898 23.596875)">2500</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 19px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="27.027188" y="140.470908" transform="rotate(-90 27.027188 140.470908)">보행 속도 검사 완료 인원</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 112.589989 268.774908 
+L 265.76646 268.774908 
+L 265.76646 50.20527 
+L 112.589989 50.20527 
+z
+" clip-path="url(#p6828b2f05e)" style="fill: #151515"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 391.092663 268.774908 
+L 544.269134 268.774908 
+L 544.269134 100.419934 
+L 391.092663 100.419934 
+z
+" clip-path="url(#p6828b2f05e)" style="fill: #777777"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 669.595337 268.774908 
+L 822.771808 268.774908 
+L 822.771808 146.106221 
+L 669.595337 146.106221 
+z
+" clip-path="url(#p6828b2f05e)" style="fill: #b7b7b7"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 77.080898 268.774908 
+L 77.080898 12.166908 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 77.080898 268.774908 
+L 858.280898 268.774908 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="189.178225" y="43.161129" transform="rotate(-0 189.178225 43.161129)">2,172명 (100%)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="467.680898" y="93.375793" transform="rotate(-0 467.680898 93.375793)">1,673명 (77%)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 20px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="746.183572" y="139.06208" transform="rotate(-0 746.183572 139.06208)">1,219명 (56%)</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 15px; font-family: 'Malgun Gothic', 'DejaVu Sans'; text-anchor: middle" x="455.080898" y="348.478908" transform="rotate(-0 455.080898 348.478908)">보고된 완료 인원 · 모든 누락의 사유나 누락 기전은 제시되지 않음</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6828b2f05e">
+   <rect x="77.080898" y="12.166908" width="781.2" height="256.608"/>
+  </clipPath>
+ </defs>
+</svg>

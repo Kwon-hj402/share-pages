@@ -1,0 +1,23 @@
+/* First-use AAI identity and the study's actual classification, without hypothetical BP values. */
+.aai-intro-diagram{display:grid;grid-template-columns:90px 45px 400px 1fr;align-items:center;gap:24px;border:1px solid #b9c9ce;background:#f8fbfb;padding:8px 18px;height:110px;flex:none}
+.aai-symbol{display:flex;align-items:center;justify-content:center;border:3px solid #23576a;border-radius:50%;width:90px;height:90px;font-size:31px;font-weight:650;color:#23576a}
+.aai-equals{font-size:37px;text-align:center}
+.aai-fraction{display:flex;flex-direction:column;align-items:stretch;text-align:center}
+.aai-fraction p{font-size:26px;line-height:1.3;white-space:nowrap}
+.aai-fraction .aai-numerator{border-bottom:2px solid #333;padding-bottom:5px;margin-bottom:5px}
+.aai-intro-threshold{border-left:1px solid #b9c9ce;padding-left:25px;display:flex;flex-direction:column;gap:7px}
+.aai-intro-threshold .aai-intro-criterion{font-size:27px;line-height:1.35;font-weight:600}
+.aai-intro-threshold .aai-intro-meaning{font-size:22px;line-height:1.35;color:#555}
+.aai-method-restored .v2-body{justify-content:flex-start;gap:18px}
+.aai-method-restored .memo-keyline{font-size:30px;line-height:1.4}
+.aai-method-definition{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;border-top:2px solid #111;border-bottom:1px solid #aaa;padding:22px 20px}
+.aai-method-identity{display:grid;grid-template-columns:126px 45px 440px;align-items:center;gap:30px}
+.aai-method-identity .aai-symbol{width:126px;height:126px;font-size:42px}
+.aai-method-identity .aai-equals{font-size:44px}
+.aai-method-identity .aai-fraction p{font-size:34px;line-height:1.35}
+.aai-method-identity .aai-numerator{padding-bottom:8px;margin-bottom:8px}
+.aai-method-definition .aai-ratio-meaning{font-size:28px;line-height:1.45;text-align:center}
+.aai-method-restored .aai-protocol-line{font-size:26px;line-height:1.45;color:#444;flex:none}
+.aai-study-groups{display:flex;align-items:center;justify-content:space-between;gap:30px;border-left:4px solid #23576a;background:#f0f5f6;padding:15px 22px;flex:none}
+.aai-study-groups h3{font-size:32px;line-height:1.4;margin:0;color:#173f50}
+.aai-study-groups p{font-size:25px;line-height:1.4;color:#444;white-space:nowrap}
