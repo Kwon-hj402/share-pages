@@ -1,0 +1,12 @@
+{
+  "final_2d_approval_pinned": true,
+  "complete_chain_independent_audit_status": "passed",
+  "removed_chain_proposals": 37,
+  "new_human_ground_truth_claimed": false,
+  "named_viewer_status": "complete",
+  "independent_final_audit_status": "PASS",
+  "strict_same_name_minimum_views": 3,
+  "maximum_each_view_reprojection_px": 8,
+  "minimum_support_depth_m": 0.05,
+  "missing_observations_interpolated": false
+}

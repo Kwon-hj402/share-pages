@@ -1,0 +1,3698 @@
+{
+  "frames": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164
+  ],
+  "cameras": {
+    "1": {
+      "90": {
+        "detections": 16,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "91": {
+        "detections": 13,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "92": {
+        "detections": 21,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "93": {
+        "detections": 19,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "94": {
+        "detections": 21,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "95": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "96": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "97": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 21,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 17,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 23,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "105": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "106": {
+        "detections": 17,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "108": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "109": {
+        "detections": 21,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "110": {
+        "detections": 21,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "111": {
+        "detections": 23,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "112": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "113": {
+        "detections": 22,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "114": {
+        "detections": 23,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "115": {
+        "detections": 22,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 21,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 19,
+        "labeled": 13,
+        "direct": 12,
+        "inferred": 1
+      },
+      "118": {
+        "detections": 22,
+        "labeled": 16,
+        "direct": 13,
+        "inferred": 3
+      },
+      "119": {
+        "detections": 22,
+        "labeled": 14,
+        "direct": 12,
+        "inferred": 2
+      },
+      "120": {
+        "detections": 22,
+        "labeled": 15,
+        "direct": 14,
+        "inferred": 1
+      },
+      "121": {
+        "detections": 23,
+        "labeled": 10,
+        "direct": 0,
+        "inferred": 10
+      },
+      "122": {
+        "detections": 19,
+        "labeled": 10,
+        "direct": 0,
+        "inferred": 10
+      },
+      "123": {
+        "detections": 20,
+        "labeled": 10,
+        "direct": 0,
+        "inferred": 10
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 14,
+        "direct": 12,
+        "inferred": 2
+      },
+      "125": {
+        "detections": 21,
+        "labeled": 13,
+        "direct": 11,
+        "inferred": 2
+      },
+      "126": {
+        "detections": 20,
+        "labeled": 13,
+        "direct": 11,
+        "inferred": 2
+      },
+      "127": {
+        "detections": 23,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "128": {
+        "detections": 23,
+        "labeled": 14,
+        "direct": 11,
+        "inferred": 3
+      },
+      "129": {
+        "detections": 21,
+        "labeled": 12,
+        "direct": 9,
+        "inferred": 3
+      },
+      "130": {
+        "detections": 19,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "131": {
+        "detections": 20,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 20,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "133": {
+        "detections": 18,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 17,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 21,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 21,
+        "labeled": 17,
+        "direct": 17,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 19,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 20,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "139": {
+        "detections": 22,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "140": {
+        "detections": 24,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "141": {
+        "detections": 24,
+        "labeled": 14,
+        "direct": 13,
+        "inferred": 1
+      },
+      "142": {
+        "detections": 24,
+        "labeled": 14,
+        "direct": 13,
+        "inferred": 1
+      },
+      "143": {
+        "detections": 22,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 23,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "145": {
+        "detections": 26,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 24,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 22,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "148": {
+        "detections": 23,
+        "labeled": 16,
+        "direct": 15,
+        "inferred": 1
+      },
+      "149": {
+        "detections": 23,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "150": {
+        "detections": 25,
+        "labeled": 18,
+        "direct": 16,
+        "inferred": 2
+      },
+      "151": {
+        "detections": 25,
+        "labeled": 17,
+        "direct": 16,
+        "inferred": 1
+      },
+      "152": {
+        "detections": 24,
+        "labeled": 20,
+        "direct": 20,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 25,
+        "labeled": 20,
+        "direct": 20,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 24,
+        "labeled": 20,
+        "direct": 20,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 22,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 23,
+        "labeled": 14,
+        "direct": 13,
+        "inferred": 1
+      },
+      "157": {
+        "detections": 23,
+        "labeled": 14,
+        "direct": 11,
+        "inferred": 3
+      },
+      "158": {
+        "detections": 24,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 23,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 24,
+        "labeled": 13,
+        "direct": 12,
+        "inferred": 1
+      },
+      "161": {
+        "detections": 24,
+        "labeled": 14,
+        "direct": 13,
+        "inferred": 1
+      },
+      "162": {
+        "detections": 23,
+        "labeled": 13,
+        "direct": 12,
+        "inferred": 1
+      },
+      "163": {
+        "detections": 22,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "164": {
+        "detections": 22,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      }
+    },
+    "2": {
+      "90": {
+        "detections": 14,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "91": {
+        "detections": 14,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "92": {
+        "detections": 14,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "93": {
+        "detections": 13,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "94": {
+        "detections": 16,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "95": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "96": {
+        "detections": 21,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "97": {
+        "detections": 20,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 17,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 17,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 18,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 22,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "105": {
+        "detections": 20,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "106": {
+        "detections": 19,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "107": {
+        "detections": 21,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "108": {
+        "detections": 20,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "109": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "110": {
+        "detections": 17,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "112": {
+        "detections": 19,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "113": {
+        "detections": 19,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "114": {
+        "detections": 23,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "115": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 23,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 23,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 22,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 22,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 25,
+        "labeled": 18,
+        "direct": 18,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "122": {
+        "detections": 24,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "123": {
+        "detections": 25,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "124": {
+        "detections": 25,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "125": {
+        "detections": 26,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "126": {
+        "detections": 25,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "127": {
+        "detections": 23,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "128": {
+        "detections": 21,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 17,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "130": {
+        "detections": 17,
+        "labeled": 3,
+        "direct": 3,
+        "inferred": 0
+      },
+      "131": {
+        "detections": 14,
+        "labeled": 2,
+        "direct": 2,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 15,
+        "labeled": 2,
+        "direct": 2,
+        "inferred": 0
+      },
+      "133": {
+        "detections": 15,
+        "labeled": 3,
+        "direct": 3,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 18,
+        "labeled": 3,
+        "direct": 3,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 16,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 21,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 18,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "139": {
+        "detections": 18,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "140": {
+        "detections": 18,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "143": {
+        "detections": 23,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 20,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "145": {
+        "detections": 19,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 20,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 23,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "148": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "149": {
+        "detections": 21,
+        "labeled": 11,
+        "direct": 9,
+        "inferred": 2
+      },
+      "150": {
+        "detections": 21,
+        "labeled": 11,
+        "direct": 8,
+        "inferred": 3
+      },
+      "151": {
+        "detections": 23,
+        "labeled": 11,
+        "direct": 9,
+        "inferred": 2
+      },
+      "152": {
+        "detections": 26,
+        "labeled": 17,
+        "direct": 17,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 21,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 21,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 17,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "157": {
+        "detections": 17,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "158": {
+        "detections": 15,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 21,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 20,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 22,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "163": {
+        "detections": 20,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "164": {
+        "detections": 20,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      }
+    },
+    "3": {
+      "90": {
+        "detections": 19,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "91": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "92": {
+        "detections": 20,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "93": {
+        "detections": 20,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "94": {
+        "detections": 19,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "95": {
+        "detections": 19,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "96": {
+        "detections": 16,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "97": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 16,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 20,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 19,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 22,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 23,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "105": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "106": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "107": {
+        "detections": 21,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "108": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "109": {
+        "detections": 20,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "110": {
+        "detections": 26,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "111": {
+        "detections": 21,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "112": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "113": {
+        "detections": 20,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "114": {
+        "detections": 22,
+        "labeled": 4,
+        "direct": 0,
+        "inferred": 4
+      },
+      "115": {
+        "detections": 21,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 20,
+        "labeled": 13,
+        "direct": 7,
+        "inferred": 6
+      },
+      "118": {
+        "detections": 21,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 20,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 8,
+        "direct": 0,
+        "inferred": 8
+      },
+      "122": {
+        "detections": 20,
+        "labeled": 8,
+        "direct": 0,
+        "inferred": 8
+      },
+      "123": {
+        "detections": 21,
+        "labeled": 8,
+        "direct": 0,
+        "inferred": 8
+      },
+      "124": {
+        "detections": 25,
+        "labeled": 11,
+        "direct": 9,
+        "inferred": 2
+      },
+      "125": {
+        "detections": 21,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "126": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "127": {
+        "detections": 17,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "128": {
+        "detections": 19,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 18,
+        "labeled": 4,
+        "direct": 3,
+        "inferred": 1
+      },
+      "130": {
+        "detections": 18,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "131": {
+        "detections": 17,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 15,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "133": {
+        "detections": 12,
+        "labeled": 3,
+        "direct": 3,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 19,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 21,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 21,
+        "labeled": 10,
+        "direct": 8,
+        "inferred": 2
+      },
+      "139": {
+        "detections": 21,
+        "labeled": 9,
+        "direct": 7,
+        "inferred": 2
+      },
+      "140": {
+        "detections": 19,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 7,
+        "inferred": 2
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "143": {
+        "detections": 19,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 20,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "145": {
+        "detections": 22,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 20,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "148": {
+        "detections": 18,
+        "labeled": 9,
+        "direct": 6,
+        "inferred": 3
+      },
+      "149": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "150": {
+        "detections": 20,
+        "labeled": 11,
+        "direct": 9,
+        "inferred": 2
+      },
+      "151": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "152": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 18,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 16,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 15,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 13,
+        "direct": 11,
+        "inferred": 2
+      },
+      "157": {
+        "detections": 15,
+        "labeled": 13,
+        "direct": 11,
+        "inferred": 2
+      },
+      "158": {
+        "detections": 14,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 14,
+        "labeled": 13,
+        "direct": 11,
+        "inferred": 2
+      },
+      "160": {
+        "detections": 15,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 15,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 13,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "163": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      }
+    },
+    "4": {
+      "90": {
+        "detections": 5,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "91": {
+        "detections": 5,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "92": {
+        "detections": 8,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "93": {
+        "detections": 5,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "94": {
+        "detections": 7,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "95": {
+        "detections": 7,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "96": {
+        "detections": 9,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "97": {
+        "detections": 8,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 7,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 10,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 13,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 11,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 15,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 12,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 11,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "105": {
+        "detections": 14,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "106": {
+        "detections": 13,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "107": {
+        "detections": 14,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "108": {
+        "detections": 13,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "109": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "110": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "111": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "112": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "113": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "114": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "115": {
+        "detections": 14,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 17,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 17,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 14,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 13,
+        "labeled": 3,
+        "direct": 0,
+        "inferred": 3
+      },
+      "122": {
+        "detections": 12,
+        "labeled": 3,
+        "direct": 0,
+        "inferred": 3
+      },
+      "123": {
+        "detections": 13,
+        "labeled": 3,
+        "direct": 0,
+        "inferred": 3
+      },
+      "124": {
+        "detections": 15,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "125": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "127": {
+        "detections": 18,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 14,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "130": {
+        "detections": 10,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "131": {
+        "detections": 12,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 13,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "133": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 16,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 18,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 16,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "139": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "141": {
+        "detections": 16,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "142": {
+        "detections": 14,
+        "labeled": 10,
+        "direct": 7,
+        "inferred": 3
+      },
+      "143": {
+        "detections": 14,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "144": {
+        "detections": 16,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "145": {
+        "detections": 15,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 16,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 16,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "148": {
+        "detections": 15,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "149": {
+        "detections": 15,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "150": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "152": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 12,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 13,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "157": {
+        "detections": 13,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "158": {
+        "detections": 11,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 11,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 11,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "163": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "164": {
+        "detections": 13,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      }
+    },
+    "5": {
+      "90": {
+        "detections": 13,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "91": {
+        "detections": 13,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "92": {
+        "detections": 12,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "93": {
+        "detections": 17,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "94": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "95": {
+        "detections": 17,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "96": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "97": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 17,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 20,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "105": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "106": {
+        "detections": 18,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "109": {
+        "detections": 18,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "110": {
+        "detections": 17,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "111": {
+        "detections": 17,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "112": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "113": {
+        "detections": 16,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "114": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "115": {
+        "detections": 20,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 18,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 17,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "122": {
+        "detections": 18,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "123": {
+        "detections": 19,
+        "labeled": 3,
+        "direct": 0,
+        "inferred": 3
+      },
+      "124": {
+        "detections": 19,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "125": {
+        "detections": 19,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "126": {
+        "detections": 17,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "127": {
+        "detections": 17,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "128": {
+        "detections": 16,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "129": {
+        "detections": 17,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "130": {
+        "detections": 17,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "131": {
+        "detections": 19,
+        "labeled": 5,
+        "direct": 3,
+        "inferred": 2
+      },
+      "132": {
+        "detections": 22,
+        "labeled": 7,
+        "direct": 5,
+        "inferred": 2
+      },
+      "133": {
+        "detections": 18,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 2,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 18,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 15,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "139": {
+        "detections": 16,
+        "labeled": 6,
+        "direct": 5,
+        "inferred": 1
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "141": {
+        "detections": 17,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "143": {
+        "detections": 16,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 17,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "145": {
+        "detections": 15,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 18,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 15,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "148": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "149": {
+        "detections": 15,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "150": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "152": {
+        "detections": 17,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 13,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 12,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "157": {
+        "detections": 10,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "158": {
+        "detections": 11,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 13,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 13,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 14,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 4,
+        "direct": 4,
+        "inferred": 0
+      },
+      "163": {
+        "detections": 12,
+        "labeled": 4,
+        "direct": 4,
+        "inferred": 0
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 4,
+        "direct": 4,
+        "inferred": 0
+      }
+    },
+    "6": {
+      "90": {
+        "detections": 6,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "91": {
+        "detections": 6,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "92": {
+        "detections": 7,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "93": {
+        "detections": 8,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "94": {
+        "detections": 7,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "95": {
+        "detections": 11,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "96": {
+        "detections": 9,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "97": {
+        "detections": 8,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 7,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 8,
+        "labeled": 3,
+        "direct": 3,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 8,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 12,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 13,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "105": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "106": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "108": {
+        "detections": 18,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "109": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "110": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "112": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "113": {
+        "detections": 18,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "114": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "115": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 18,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 15,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "120": {
+        "detections": 13,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "121": {
+        "detections": 14,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "122": {
+        "detections": 13,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "123": {
+        "detections": 15,
+        "labeled": 5,
+        "direct": 0,
+        "inferred": 5
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "125": {
+        "detections": 12,
+        "labeled": 4,
+        "direct": 4,
+        "inferred": 0
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "127": {
+        "detections": 12,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 13,
+        "labeled": 7,
+        "direct": 5,
+        "inferred": 2
+      },
+      "130": {
+        "detections": 10,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "131": {
+        "detections": 12,
+        "labeled": 6,
+        "direct": 6,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 11,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "133": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 14,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 15,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 14,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 15,
+        "labeled": 8,
+        "direct": 6,
+        "inferred": 2
+      },
+      "139": {
+        "detections": 13,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "140": {
+        "detections": 14,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "141": {
+        "detections": 14,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "142": {
+        "detections": 12,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "143": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      },
+      "145": {
+        "detections": 12,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 13,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "148": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "149": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "150": {
+        "detections": 16,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "152": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 15,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 13,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 12,
+        "labeled": 7,
+        "direct": 5,
+        "inferred": 2
+      },
+      "157": {
+        "detections": 11,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "158": {
+        "detections": 14,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 10,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 11,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "163": {
+        "detections": 13,
+        "labeled": 9,
+        "direct": 7,
+        "inferred": 2
+      },
+      "164": {
+        "detections": 15,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      }
+    },
+    "7": {
+      "90": {
+        "detections": 19,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "91": {
+        "detections": 18,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "92": {
+        "detections": 21,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "93": {
+        "detections": 21,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "94": {
+        "detections": 20,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "95": {
+        "detections": 18,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "96": {
+        "detections": 16,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "97": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 20,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 12,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 14,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "101": {
+        "detections": 14,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "102": {
+        "detections": 11,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 16,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "105": {
+        "detections": 17,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "106": {
+        "detections": 20,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "107": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "109": {
+        "detections": 17,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "110": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "112": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "113": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "114": {
+        "detections": 18,
+        "labeled": 1,
+        "direct": 0,
+        "inferred": 1
+      },
+      "115": {
+        "detections": 18,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 20,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 19,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 18,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 19,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 19,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "122": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "123": {
+        "detections": 17,
+        "labeled": 9,
+        "direct": 0,
+        "inferred": 9
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "125": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "126": {
+        "detections": 16,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "127": {
+        "detections": 19,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "128": {
+        "detections": 16,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "130": {
+        "detections": 16,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "131": {
+        "detections": 16,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 17,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "133": {
+        "detections": 16,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 17,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "135": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 16,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 18,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "139": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "141": {
+        "detections": 18,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "142": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "143": {
+        "detections": 19,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "145": {
+        "detections": 18,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 18,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 20,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "148": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "149": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "150": {
+        "detections": 15,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "151": {
+        "detections": 17,
+        "labeled": 9,
+        "direct": 7,
+        "inferred": 2
+      },
+      "152": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 13,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 15,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 16,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "157": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "158": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "160": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "162": {
+        "detections": 13,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "163": {
+        "detections": 10,
+        "labeled": 5,
+        "direct": 5,
+        "inferred": 0
+      },
+      "164": {
+        "detections": 13,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      }
+    },
+    "8": {
+      "90": {
+        "detections": 22,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "91": {
+        "detections": 23,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "92": {
+        "detections": 22,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "93": {
+        "detections": 24,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "94": {
+        "detections": 23,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "95": {
+        "detections": 22,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "96": {
+        "detections": 24,
+        "labeled": 6,
+        "direct": 0,
+        "inferred": 6
+      },
+      "97": {
+        "detections": 24,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "98": {
+        "detections": 21,
+        "labeled": 17,
+        "direct": 17,
+        "inferred": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "100": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 14,
+        "inferred": 1
+      },
+      "101": {
+        "detections": 17,
+        "labeled": 13,
+        "direct": 12,
+        "inferred": 1
+      },
+      "102": {
+        "detections": 14,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "103": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "104": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "105": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "106": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "107": {
+        "detections": 15,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "109": {
+        "detections": 19,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "110": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "111": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "112": {
+        "detections": 16,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "113": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "114": {
+        "detections": 17,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "115": {
+        "detections": 20,
+        "labeled": 0,
+        "direct": 0,
+        "inferred": 0
+      },
+      "116": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "117": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "118": {
+        "detections": 20,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "119": {
+        "detections": 21,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "120": {
+        "detections": 19,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "122": {
+        "detections": 19,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "123": {
+        "detections": 20,
+        "labeled": 2,
+        "direct": 0,
+        "inferred": 2
+      },
+      "124": {
+        "detections": 16,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "125": {
+        "detections": 15,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "127": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "129": {
+        "detections": 18,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "130": {
+        "detections": 18,
+        "labeled": 8,
+        "direct": 8,
+        "inferred": 0
+      },
+      "131": {
+        "detections": 19,
+        "labeled": 7,
+        "direct": 7,
+        "inferred": 0
+      },
+      "132": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "133": {
+        "detections": 20,
+        "labeled": 9,
+        "direct": 9,
+        "inferred": 0
+      },
+      "134": {
+        "detections": 23,
+        "labeled": 8,
+        "direct": 7,
+        "inferred": 1
+      },
+      "135": {
+        "detections": 22,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "136": {
+        "detections": 20,
+        "labeled": 17,
+        "direct": 17,
+        "inferred": 0
+      },
+      "137": {
+        "detections": 24,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "138": {
+        "detections": 25,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "139": {
+        "detections": 22,
+        "labeled": 12,
+        "direct": 10,
+        "inferred": 2
+      },
+      "140": {
+        "detections": 24,
+        "labeled": 13,
+        "direct": 12,
+        "inferred": 1
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "142": {
+        "detections": 22,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "143": {
+        "detections": 20,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "144": {
+        "detections": 21,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "145": {
+        "detections": 19,
+        "labeled": 13,
+        "direct": 13,
+        "inferred": 0
+      },
+      "146": {
+        "detections": 21,
+        "labeled": 11,
+        "direct": 11,
+        "inferred": 0
+      },
+      "147": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "148": {
+        "detections": 25,
+        "labeled": 14,
+        "direct": 14,
+        "inferred": 0
+      },
+      "149": {
+        "detections": 22,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "150": {
+        "detections": 26,
+        "labeled": 15,
+        "direct": 14,
+        "inferred": 1
+      },
+      "151": {
+        "detections": 24,
+        "labeled": 14,
+        "direct": 13,
+        "inferred": 1
+      },
+      "152": {
+        "detections": 21,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "153": {
+        "detections": 23,
+        "labeled": 17,
+        "direct": 17,
+        "inferred": 0
+      },
+      "154": {
+        "detections": 24,
+        "labeled": 16,
+        "direct": 16,
+        "inferred": 0
+      },
+      "155": {
+        "detections": 18,
+        "labeled": 15,
+        "direct": 15,
+        "inferred": 0
+      },
+      "156": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "157": {
+        "detections": 20,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "158": {
+        "detections": 19,
+        "labeled": 12,
+        "direct": 12,
+        "inferred": 0
+      },
+      "159": {
+        "detections": 20,
+        "labeled": 12,
+        "direct": 11,
+        "inferred": 1
+      },
+      "160": {
+        "detections": 23,
+        "labeled": 10,
+        "direct": 10,
+        "inferred": 0
+      },
+      "161": {
+        "detections": 20,
+        "labeled": 11,
+        "direct": 10,
+        "inferred": 1
+      },
+      "162": {
+        "detections": 19,
+        "labeled": 10,
+        "direct": 9,
+        "inferred": 1
+      },
+      "163": {
+        "detections": 13,
+        "labeled": 9,
+        "direct": 8,
+        "inferred": 1
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 7,
+        "direct": 6,
+        "inferred": 1
+      }
+    }
+  },
+  "preview_only": false
+}

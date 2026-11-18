@@ -1,0 +1,3443 @@
+{
+  "status": "complete",
+  "title": "기존 마커 ID를 적용한2D·3D 결과",
+  "recording_scope": "Same synchronized eight-camera gait trial,22 lower-limb marker names",
+  "timeline": {
+    "reference_frames": [
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
+    "frame_count": 75,
+    "fps": 29.97002997002997,
+    "duration_seconds": 2.5025,
+    "requested_previous_clip_window_seconds": [
+      1,
+      3.5
+    ],
+    "playback_speed_vs_source": 0.5
+  },
+  "historical_explicit_human_anchor_count": 6595,
+  "coverage": {
+    "full": {
+      "reference_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329
+      ],
+      "frame_count": 330,
+      "raw_dino_2d_observations": 30780,
+      "direct_2d_id_observations": 6012,
+      "inferred_2d_id_observations": 1295,
+      "named_2d_observations": 7307,
+      "unassigned_2d_observations": 23473,
+      "frames_with_any_2d_id": 121,
+      "named_3d_observations": 1197,
+      "frames_with_named_3d": 119,
+      "empty_3d_reference_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        85,
+        97,
+        103,
+        110,
+        115,
+        179,
+        192,
+        204,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329
+      ],
+      "median_reprojection_rms_px": 3.5261005893602904,
+      "points_with_inferred_id_support": 208
+    },
+    "focus": {
+      "reference_frames": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "frame_count": 75,
+      "raw_dino_2d_observations": 10412,
+      "direct_2d_id_observations": 4070,
+      "inferred_2d_id_observations": 665,
+      "named_2d_observations": 4735,
+      "unassigned_2d_observations": 5677,
+      "frames_with_any_2d_id": 72,
+      "named_3d_observations": 807,
+      "frames_with_named_3d": 71,
+      "empty_3d_reference_frames": [
+        97,
+        103,
+        110,
+        115
+      ],
+      "median_reprojection_rms_px": 3.4607739664297132,
+      "points_with_inferred_id_support": 126
+    },
+    "direct_baseline": {
+      "named_3d_observations": 1050,
+      "frames_with_named_3d": 75
+    },
+    "final_comparison": {
+      "baseline_marker_frame_keys_preserved": 1050,
+      "new_marker_frame_keys": 147,
+      "lost_baseline_marker_frame_keys": 0
+    },
+    "per_frame": [
+      {
+        "reference_frame": 0,
+        "dino_2d": 68,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 1,
+        "dino_2d": 67,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 2,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 3,
+        "dino_2d": 70,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 4,
+        "dino_2d": 70,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 5,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 6,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 7,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 8,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 9,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 10,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 11,
+        "dino_2d": 70,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 12,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 13,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 14,
+        "dino_2d": 70,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 15,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 16,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 17,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 18,
+        "dino_2d": 65,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 19,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 20,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 21,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 22,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 23,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 24,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 25,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 26,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 27,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 28,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 29,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 30,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 31,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 32,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 33,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 34,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 35,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 36,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 37,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 38,
+        "dino_2d": 79,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 39,
+        "dino_2d": 77,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 40,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 41,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 42,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 43,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 44,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 45,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 46,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 47,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 48,
+        "dino_2d": 77,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 49,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 50,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 51,
+        "dino_2d": 72,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 52,
+        "dino_2d": 78,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 53,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 54,
+        "dino_2d": 78,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 55,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 56,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 57,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 58,
+        "dino_2d": 84,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 59,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 60,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 61,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 62,
+        "dino_2d": 71,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 63,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 64,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 65,
+        "dino_2d": 75,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 66,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 67,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 68,
+        "dino_2d": 84,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 69,
+        "dino_2d": 85,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 70,
+        "dino_2d": 91,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 71,
+        "dino_2d": 94,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 72,
+        "dino_2d": 97,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 73,
+        "dino_2d": 100,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 74,
+        "dino_2d": 98,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 75,
+        "dino_2d": 96,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 76,
+        "dino_2d": 93,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 77,
+        "dino_2d": 101,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 78,
+        "dino_2d": 94,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 79,
+        "dino_2d": 99,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 80,
+        "dino_2d": 103,
+        "direct_2d": 77,
+        "inferred_2d": 0,
+        "named_3d": 11,
+        "baseline_3d": 11
+      },
+      {
+        "reference_frame": 81,
+        "dino_2d": 101,
+        "direct_2d": 77,
+        "inferred_2d": 0,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 82,
+        "dino_2d": 111,
+        "direct_2d": 84,
+        "inferred_2d": 1,
+        "named_3d": 14,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 83,
+        "dino_2d": 109,
+        "direct_2d": 80,
+        "inferred_2d": 0,
+        "named_3d": 11,
+        "baseline_3d": 11
+      },
+      {
+        "reference_frame": 84,
+        "dino_2d": 113,
+        "direct_2d": 83,
+        "inferred_2d": 0,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 85,
+        "dino_2d": 112,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 86,
+        "dino_2d": 115,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 4,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 87,
+        "dino_2d": 114,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 4,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 88,
+        "dino_2d": 107,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 89,
+        "dino_2d": 112,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 90,
+        "dino_2d": 114,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 91,
+        "dino_2d": 114,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 92,
+        "dino_2d": 125,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 93,
+        "dino_2d": 127,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 94,
+        "dino_2d": 132,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 95,
+        "dino_2d": 131,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 5,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 96,
+        "dino_2d": 132,
+        "direct_2d": 0,
+        "inferred_2d": 28,
+        "named_3d": 4,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 97,
+        "dino_2d": 125,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 98,
+        "dino_2d": 125,
+        "direct_2d": 100,
+        "inferred_2d": 0,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 99,
+        "dino_2d": 117,
+        "direct_2d": 90,
+        "inferred_2d": 0,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 100,
+        "dino_2d": 125,
+        "direct_2d": 97,
+        "inferred_2d": 1,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 101,
+        "dino_2d": 129,
+        "direct_2d": 102,
+        "inferred_2d": 1,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 102,
+        "dino_2d": 128,
+        "direct_2d": 104,
+        "inferred_2d": 0,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 103,
+        "dino_2d": 139,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 104,
+        "dino_2d": 145,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 105,
+        "dino_2d": 142,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 106,
+        "dino_2d": 142,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 107,
+        "dino_2d": 146,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 108,
+        "dino_2d": 150,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 109,
+        "dino_2d": 143,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 110,
+        "dino_2d": 149,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 111,
+        "dino_2d": 148,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 112,
+        "dino_2d": 149,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 113,
+        "dino_2d": 145,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 114,
+        "dino_2d": 154,
+        "direct_2d": 0,
+        "inferred_2d": 14,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 115,
+        "dino_2d": 149,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 116,
+        "dino_2d": 156,
+        "direct_2d": 116,
+        "inferred_2d": 0,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 117,
+        "dino_2d": 150,
+        "direct_2d": 106,
+        "inferred_2d": 7,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 118,
+        "dino_2d": 156,
+        "direct_2d": 113,
+        "inferred_2d": 3,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 119,
+        "dino_2d": 150,
+        "direct_2d": 110,
+        "inferred_2d": 3,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 120,
+        "dino_2d": 149,
+        "direct_2d": 111,
+        "inferred_2d": 2,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 121,
+        "dino_2d": 148,
+        "direct_2d": 0,
+        "inferred_2d": 48,
+        "named_3d": 8,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 122,
+        "dino_2d": 140,
+        "direct_2d": 0,
+        "inferred_2d": 48,
+        "named_3d": 9,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 123,
+        "dino_2d": 150,
+        "direct_2d": 0,
+        "inferred_2d": 49,
+        "named_3d": 8,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 124,
+        "dino_2d": 154,
+        "direct_2d": 65,
+        "inferred_2d": 8,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 125,
+        "dino_2d": 144,
+        "direct_2d": 63,
+        "inferred_2d": 7,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 126,
+        "dino_2d": 140,
+        "direct_2d": 65,
+        "inferred_2d": 4,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 127,
+        "dino_2d": 143,
+        "direct_2d": 62,
+        "inferred_2d": 5,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 128,
+        "dino_2d": 137,
+        "direct_2d": 64,
+        "inferred_2d": 4,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 129,
+        "dino_2d": 133,
+        "direct_2d": 51,
+        "inferred_2d": 8,
+        "named_3d": 10,
+        "baseline_3d": 8
+      },
+      {
+        "reference_frame": 130,
+        "dino_2d": 125,
+        "direct_2d": 54,
+        "inferred_2d": 3,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 131,
+        "dino_2d": 129,
+        "direct_2d": 51,
+        "inferred_2d": 2,
+        "named_3d": 11,
+        "baseline_3d": 11
+      },
+      {
+        "reference_frame": 132,
+        "dino_2d": 133,
+        "direct_2d": 54,
+        "inferred_2d": 4,
+        "named_3d": 11,
+        "baseline_3d": 11
+      },
+      {
+        "reference_frame": 133,
+        "dino_2d": 124,
+        "direct_2d": 51,
+        "inferred_2d": 0,
+        "named_3d": 10,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 134,
+        "dino_2d": 142,
+        "direct_2d": 49,
+        "inferred_2d": 1,
+        "named_3d": 11,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 135,
+        "dino_2d": 142,
+        "direct_2d": 102,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 136,
+        "dino_2d": 144,
+        "direct_2d": 111,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 137,
+        "dino_2d": 147,
+        "direct_2d": 108,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 138,
+        "dino_2d": 148,
+        "direct_2d": 65,
+        "inferred_2d": 10,
+        "named_3d": 14,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 139,
+        "dino_2d": 147,
+        "direct_2d": 67,
+        "inferred_2d": 10,
+        "named_3d": 16,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 140,
+        "dino_2d": 147,
+        "direct_2d": 79,
+        "inferred_2d": 6,
+        "named_3d": 20,
+        "baseline_3d": 20
+      },
+      {
+        "reference_frame": 141,
+        "dino_2d": 149,
+        "direct_2d": 74,
+        "inferred_2d": 8,
+        "named_3d": 18,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 142,
+        "dino_2d": 145,
+        "direct_2d": 78,
+        "inferred_2d": 6,
+        "named_3d": 19,
+        "baseline_3d": 19
+      },
+      {
+        "reference_frame": 143,
+        "dino_2d": 146,
+        "direct_2d": 77,
+        "inferred_2d": 1,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 144,
+        "dino_2d": 148,
+        "direct_2d": 77,
+        "inferred_2d": 3,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 145,
+        "dino_2d": 146,
+        "direct_2d": 77,
+        "inferred_2d": 0,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 146,
+        "dino_2d": 150,
+        "direct_2d": 76,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 147,
+        "dino_2d": 148,
+        "direct_2d": 75,
+        "inferred_2d": 3,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 148,
+        "dino_2d": 144,
+        "direct_2d": 79,
+        "inferred_2d": 7,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 149,
+        "dino_2d": 146,
+        "direct_2d": 85,
+        "inferred_2d": 6,
+        "named_3d": 20,
+        "baseline_3d": 20
+      },
+      {
+        "reference_frame": 150,
+        "dino_2d": 152,
+        "direct_2d": 78,
+        "inferred_2d": 10,
+        "named_3d": 19,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 151,
+        "dino_2d": 153,
+        "direct_2d": 81,
+        "inferred_2d": 6,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 152,
+        "dino_2d": 150,
+        "direct_2d": 112,
+        "inferred_2d": 0,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 153,
+        "dino_2d": 141,
+        "direct_2d": 111,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 154,
+        "dino_2d": 139,
+        "direct_2d": 105,
+        "inferred_2d": 0,
+        "named_3d": 19,
+        "baseline_3d": 19
+      },
+      {
+        "reference_frame": 155,
+        "dino_2d": 128,
+        "direct_2d": 104,
+        "inferred_2d": 0,
+        "named_3d": 16,
+        "baseline_3d": 16
+      },
+      {
+        "reference_frame": 156,
+        "dino_2d": 122,
+        "direct_2d": 69,
+        "inferred_2d": 6,
+        "named_3d": 14,
+        "baseline_3d": 14
+      },
+      {
+        "reference_frame": 157,
+        "dino_2d": 123,
+        "direct_2d": 68,
+        "inferred_2d": 6,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 158,
+        "dino_2d": 123,
+        "direct_2d": 73,
+        "inferred_2d": 0,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 159,
+        "dino_2d": 123,
+        "direct_2d": 67,
+        "inferred_2d": 3,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 160,
+        "dino_2d": 132,
+        "direct_2d": 60,
+        "inferred_2d": 1,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 161,
+        "dino_2d": 132,
+        "direct_2d": 65,
+        "inferred_2d": 2,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 162,
+        "dino_2d": 126,
+        "direct_2d": 59,
+        "inferred_2d": 3,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 163,
+        "dino_2d": 118,
+        "direct_2d": 52,
+        "inferred_2d": 6,
+        "named_3d": 10,
+        "baseline_3d": 9
+      },
+      {
+        "reference_frame": 164,
+        "dino_2d": 125,
+        "direct_2d": 58,
+        "inferred_2d": 4,
+        "named_3d": 11,
+        "baseline_3d": 10
+      },
+      {
+        "reference_frame": 165,
+        "dino_2d": 131,
+        "direct_2d": 63,
+        "inferred_2d": 3,
+        "named_3d": 14,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 166,
+        "dino_2d": 134,
+        "direct_2d": 62,
+        "inferred_2d": 5,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 167,
+        "dino_2d": 134,
+        "direct_2d": 62,
+        "inferred_2d": 5,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 168,
+        "dino_2d": 135,
+        "direct_2d": 64,
+        "inferred_2d": 4,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 169,
+        "dino_2d": 138,
+        "direct_2d": 66,
+        "inferred_2d": 3,
+        "named_3d": 11,
+        "baseline_3d": 11
+      },
+      {
+        "reference_frame": 170,
+        "dino_2d": 138,
+        "direct_2d": 62,
+        "inferred_2d": 3,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 171,
+        "dino_2d": 137,
+        "direct_2d": 103,
+        "inferred_2d": 0,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 172,
+        "dino_2d": 134,
+        "direct_2d": 100,
+        "inferred_2d": 0,
+        "named_3d": 17,
+        "baseline_3d": 17
+      },
+      {
+        "reference_frame": 173,
+        "dino_2d": 130,
+        "direct_2d": 103,
+        "inferred_2d": 0,
+        "named_3d": 18,
+        "baseline_3d": 18
+      },
+      {
+        "reference_frame": 174,
+        "dino_2d": 136,
+        "direct_2d": 67,
+        "inferred_2d": 1,
+        "named_3d": 14,
+        "baseline_3d": 14
+      },
+      {
+        "reference_frame": 175,
+        "dino_2d": 139,
+        "direct_2d": 64,
+        "inferred_2d": 11,
+        "named_3d": 14,
+        "baseline_3d": 14
+      },
+      {
+        "reference_frame": 176,
+        "dino_2d": 129,
+        "direct_2d": 61,
+        "inferred_2d": 12,
+        "named_3d": 14,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 177,
+        "dino_2d": 127,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 178,
+        "dino_2d": 133,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 179,
+        "dino_2d": 134,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 180,
+        "dino_2d": 129,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 181,
+        "dino_2d": 129,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 182,
+        "dino_2d": 131,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 183,
+        "dino_2d": 125,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 184,
+        "dino_2d": 124,
+        "direct_2d": 0,
+        "inferred_2d": 26,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 185,
+        "dino_2d": 124,
+        "direct_2d": 0,
+        "inferred_2d": 25,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 186,
+        "dino_2d": 126,
+        "direct_2d": 0,
+        "inferred_2d": 15,
+        "named_3d": 1,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 187,
+        "dino_2d": 125,
+        "direct_2d": 100,
+        "inferred_2d": 0,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 188,
+        "dino_2d": 124,
+        "direct_2d": 99,
+        "inferred_2d": 0,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 189,
+        "dino_2d": 118,
+        "direct_2d": 95,
+        "inferred_2d": 1,
+        "named_3d": 14,
+        "baseline_3d": 14
+      },
+      {
+        "reference_frame": 190,
+        "dino_2d": 120,
+        "direct_2d": 98,
+        "inferred_2d": 2,
+        "named_3d": 15,
+        "baseline_3d": 15
+      },
+      {
+        "reference_frame": 191,
+        "dino_2d": 119,
+        "direct_2d": 92,
+        "inferred_2d": 0,
+        "named_3d": 13,
+        "baseline_3d": 13
+      },
+      {
+        "reference_frame": 192,
+        "dino_2d": 122,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 193,
+        "dino_2d": 119,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 194,
+        "dino_2d": 118,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 195,
+        "dino_2d": 111,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 2,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 196,
+        "dino_2d": 109,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 197,
+        "dino_2d": 111,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 198,
+        "dino_2d": 113,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 199,
+        "dino_2d": 108,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 200,
+        "dino_2d": 113,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 201,
+        "dino_2d": 109,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 202,
+        "dino_2d": 111,
+        "direct_2d": 0,
+        "inferred_2d": 20,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 203,
+        "dino_2d": 114,
+        "direct_2d": 0,
+        "inferred_2d": 19,
+        "named_3d": 3,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 204,
+        "dino_2d": 111,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 205,
+        "dino_2d": 106,
+        "direct_2d": 90,
+        "inferred_2d": 0,
+        "named_3d": 12,
+        "baseline_3d": 12
+      },
+      {
+        "reference_frame": 206,
+        "dino_2d": 111,
+        "direct_2d": 90,
+        "inferred_2d": 0,
+        "named_3d": 14,
+        "baseline_3d": 14
+      },
+      {
+        "reference_frame": 207,
+        "dino_2d": 108,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 208,
+        "dino_2d": 112,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 209,
+        "dino_2d": 109,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 210,
+        "dino_2d": 110,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 211,
+        "dino_2d": 110,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 212,
+        "dino_2d": 104,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 213,
+        "dino_2d": 105,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 214,
+        "dino_2d": 97,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 215,
+        "dino_2d": 99,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 216,
+        "dino_2d": 91,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 217,
+        "dino_2d": 92,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 218,
+        "dino_2d": 90,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 219,
+        "dino_2d": 92,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 220,
+        "dino_2d": 94,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 221,
+        "dino_2d": 85,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 222,
+        "dino_2d": 90,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 223,
+        "dino_2d": 93,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 224,
+        "dino_2d": 99,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 225,
+        "dino_2d": 89,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 226,
+        "dino_2d": 73,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 227,
+        "dino_2d": 76,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 228,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 229,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 230,
+        "dino_2d": 74,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 231,
+        "dino_2d": 69,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 232,
+        "dino_2d": 68,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 233,
+        "dino_2d": 68,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 234,
+        "dino_2d": 65,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 235,
+        "dino_2d": 66,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 236,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 237,
+        "dino_2d": 66,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 238,
+        "dino_2d": 66,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 239,
+        "dino_2d": 61,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 240,
+        "dino_2d": 64,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 241,
+        "dino_2d": 59,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 242,
+        "dino_2d": 64,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 243,
+        "dino_2d": 62,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 244,
+        "dino_2d": 59,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 245,
+        "dino_2d": 61,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 246,
+        "dino_2d": 63,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 247,
+        "dino_2d": 64,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 248,
+        "dino_2d": 62,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 249,
+        "dino_2d": 62,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 250,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 251,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 252,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 253,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 254,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 255,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 256,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 257,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 258,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 259,
+        "dino_2d": 52,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 260,
+        "dino_2d": 52,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 261,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 262,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 263,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 264,
+        "dino_2d": 51,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 265,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 266,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 267,
+        "dino_2d": 53,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 268,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 269,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 270,
+        "dino_2d": 50,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 271,
+        "dino_2d": 50,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 272,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 273,
+        "dino_2d": 59,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 274,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 275,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 276,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 277,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 278,
+        "dino_2d": 58,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 279,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 280,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 281,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 282,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 283,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 284,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 285,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 286,
+        "dino_2d": 53,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 287,
+        "dino_2d": 52,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 288,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 289,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 290,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 291,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 292,
+        "dino_2d": 61,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 293,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 294,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 295,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 296,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 297,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 298,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 299,
+        "dino_2d": 50,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 300,
+        "dino_2d": 56,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 301,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 302,
+        "dino_2d": 51,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 303,
+        "dino_2d": 52,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 304,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 305,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 306,
+        "dino_2d": 55,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 307,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 308,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 309,
+        "dino_2d": 54,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 310,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 311,
+        "dino_2d": 58,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 312,
+        "dino_2d": 57,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 313,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 314,
+        "dino_2d": 61,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 315,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 316,
+        "dino_2d": 59,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 317,
+        "dino_2d": 59,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 318,
+        "dino_2d": 63,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 319,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 320,
+        "dino_2d": 63,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 321,
+        "dino_2d": 63,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 322,
+        "dino_2d": 68,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 323,
+        "dino_2d": 65,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 324,
+        "dino_2d": 63,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 325,
+        "dino_2d": 64,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 326,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 327,
+        "dino_2d": 60,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 328,
+        "dino_2d": 65,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      },
+      {
+        "reference_frame": 329,
+        "dino_2d": 68,
+        "direct_2d": 0,
+        "inferred_2d": 0,
+        "named_3d": 0,
+        "baseline_3d": 0
+      }
+    ]
+  },
+  "temporal_validation": {
+    "known_withheld_labeled_peaks": 1703,
+    "predicted_on_known_withheld_peaks": 441,
+    "correct": 441,
+    "predicted_on_independently_unlabeled_peak": 10,
+    "withheld_known_peak_coverage": 0.2589547856723429,
+    "accuracy_on_predicted_known_peaks": 1.0,
+    "wrong": 0
+  },
+  "chain_rejected_proposal_count": 37,
+  "new_DINO_assignments_are_human_ground_truth": false,
+  "three_d_rules": {
+    "minimum_views": 3,
+    "maximum_per_view_reprojection_px": 8.0,
+    "minimum_positive_depth_m": 0.05,
+    "geometry_assigns_marker_names": false,
+    "anonymous_pair_matching": false,
+    "gap_fill": false,
+    "synthetic_observations": false
+  },
+  "source_artifact_hashes": {
+    "final_labels": "72a9d8bb0707b25ca2157db74613e55845adab9bd4df4ef0a3c343a253c750f7",
+    "named_reconstruction": "21d721d277c429867d83f84e118a2272a08fa9694579c29cf38192916c6cf904"
+  },
+  "independent_geometry_verification": {
+    "status": "PASS",
+    "named_point_observations": 1197,
+    "support_camera_observations": 4737,
+    "frames_with_named_3d": 119,
+    "subset_REF90_164_point_observations": 807,
+    "maximum_support_reprojection_px": 7.993648284240612,
+    "median_point_rms_px": 3.5261005893602904,
+    "minimum_support_depth_m": 0.6559219972927994,
+    "maximum_independent_eigen_DLT_difference_m": 2.4809885127658914e-14,
+    "no_actual_dino_detection_reused": true,
+    "source_named_reconstruction_sha256": "21d721d277c429867d83f84e118a2272a08fa9694579c29cf38192916c6cf904",
+    "source_2d_labels_sha256": "72a9d8bb0707b25ca2157db74613e55845adab9bd4df4ef0a3c343a253c750f7"
+  },
+  "interpretation": [
+    "Historical explicitly approved2D records are separated from new direct transfers and assistant-inferred assignments.",
+    "No interpolation or synthetic observations. Geometry rejects observations and never creates marker names.",
+    "Conditional heldout correctness and reprojection agreement do not establish overall anatomical accuracy."
+  ]
+}
