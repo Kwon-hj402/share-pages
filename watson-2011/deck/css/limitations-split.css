@@ -1,0 +1,61 @@
+/* Four static source pages; visible copy contains only the requested bullets. */
+.limitations-split-slide .limitations-split-body{
+  justify-content:center;
+  gap:0;
+  min-height:0;
+  overflow:visible;
+}
+.limitations-split-slide .limitations-split-list{
+  display:flex;
+  flex-direction:column;
+  flex:none;
+  gap:34px;
+  width:100%;
+  margin:0;
+  padding:0 0 0 35px;
+  list-style:disc outside;
+}
+.limitations-split-slide .limitations-split-item{
+  margin:0;
+  padding:0 0 0 10px;
+  color:#111;
+  font-size:39px;
+  line-height:1.58;
+  font-weight:400;
+  letter-spacing:-.025em;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.limitations-split-slide .limitations-split-item::marker{
+  font-size:.65em;
+  color:#111;
+}
+.limitations-split-slide .limitations-split-item p{
+  margin:0;
+  font:inherit;
+  color:inherit;
+}
+.limitations-split-slide .limitations-split-item strong{
+  font-weight:700;
+}
+.limitations-split-slide .limitations-split-list[data-bullet-count="1"]{
+  padding-left:35px;
+  max-width:1360px;
+}
+.limitations-split-slide .limitations-split-list[data-bullet-count="1"] .limitations-split-item{
+  font-size:45px;
+  line-height:1.7;
+}
+.limitations-split-slide .source-line{
+  margin-top:18px;
+}
+body.edit-mode .limitations-split-slide .limitations-split-body{
+  overflow:visible;
+}
+@media print{
+  .limitations-split-slide .limitations-split-list{gap:24px}
+  .limitations-split-slide .limitations-split-item{font-size:32px;line-height:1.5}
+  .limitations-split-slide .limitations-split-list[data-bullet-count="1"] .limitations-split-item{
+    font-size:37px;line-height:1.6;
+  }
+}

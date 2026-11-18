@@ -1,0 +1,23 @@
+/* Fullscreen hides preparation/editor chrome temporarily, preserving preferences. */
+@media screen{
+  html.presentation-fullscreen,html:fullscreen,
+  html.presentation-fullscreen body,html:fullscreen body{
+    height:100%!important;min-height:0!important;overflow:hidden!important;
+  }
+  html.presentation-fullscreen .deck-tools,html:fullscreen .deck-tools,
+  html.presentation-fullscreen .edit-toggle,html:fullscreen .edit-toggle,
+  html.presentation-fullscreen .edit-toolbar,html:fullscreen .edit-toolbar,
+  html.presentation-fullscreen .study-bar,html:fullscreen .study-bar,
+  html.presentation-fullscreen .study-panel,html:fullscreen .study-panel,
+  html.presentation-fullscreen .study-spacer,html:fullscreen .study-spacer,
+  html.presentation-fullscreen .memo-panel,html:fullscreen .memo-panel,
+  html.presentation-fullscreen .edit-hint,html:fullscreen .edit-hint,
+  html.presentation-fullscreen .progress-bar,html:fullscreen .progress-bar{
+    display:none!important;
+  }
+  html.presentation-fullscreen body #deck,html.presentation-fullscreen body.study-visible #deck,
+  html:fullscreen body #deck,html:fullscreen body.study-visible #deck{
+    left:50%!important;top:50%!important;
+    transform:translate(-50%,-50%) scale(var(--presentation-fullscreen-scale,1))!important;
+  }
+}

@@ -438,32 +438,43 @@ window.WatsonStudyPassages = {
     },
     {
       "id": "watson-limitations-summary",
-      "locator": "Study limitations / conclusion p.94",
+      "kind": "limitations",
+      "locator": "인쇄 94쪽 · PDF 5/6쪽 · Study limitations",
       "passages": [
         {
           "en": "Gait speed and other lower-extremity performance measures may not capture subtle functional changes in healthier older adults; rather, extended walking tests[41,42] may be more sensitive to diastolic dysfunction associated with aortic stiffness.",
           "ko": "보행속도와 기타 하지 수행능력 측정치는 더 건강한 노인들의 미세한 기능 변화를 포착하지 못할 수 있다. 오히려 장거리 보행검사[41,42]가 대동맥 경직과 관련된 이완기 기능장애에 더 민감할 수 있다."
         },
         {
-          "en": "Usual gait speed was assessed over a 20 m straight course at baseline and annually through year 8, except year 7.",
-          "ko": "평소 보행속도는 기초 시점과 이후 8년차까지 매년 20 m 직선 코스에서 평가하였으며, 7년차에는 평가하지 않았다."
+          "en": "Measures of brain integrity were not available to evaluate the hypothesis that cerebrovascular abnormalities may mediate the association of arterial stiffness with gait speed in PAD.",
+          "ko": "뇌의 건전성을 평가하는 측정자료가 없어, 뇌혈관 이상이 PAD에서 동맥 경직도와 보행속도 간의 연관성을 매개할 수 있다는 가설을 평가하지 못했다."
         },
+        {
+          "en": "Finally, it is important to acknowledge that the subgroup analysis was performed following the a priori evaluation of arterial stiffness and gait speed in the full Health ABC cohort; the association identified among participants with PAD warrants replication in other older adult populations.",
+          "ko": "마지막으로, 하위집단 분석은 전체 Health ABC 코호트에서 동맥 경직도와 보행속도를 사전에 계획하여 평가한 이후에 수행되었다는 점에 유의해야 한다. PAD 참여자들에서 확인된 연관성은 다른 노인 집단에서도 재현될 필요가 있다."
+        }
+      ],
+      "bridge": "Study limitations의 검사 민감도·뇌 관련 자료·하위집단 재현이라는 세 한계를 정적 본문으로 구분한다.",
+      "caution": "뇌 자료의 제한을 DSST 부재로 확대하지 않으며, 하위집단 연관성과 군 간 상호작용을 구분한다."
+    },
+    {
+      "id": "watson-strengths-summary",
+      "kind": "strengths",
+      "locator": "인쇄 94쪽 · PDF 5/6쪽 · Study strengths",
+      "passages": [
         {
           "en": "Strengths of this study include the large, community-based population, ability to account for several potential confounders, and repeated assessment of gait speed, a reliable, valid measure of physical function that predicts incident disability in older adults.[43]",
           "ko": "이 연구의 강점으로는 대규모 지역사회 기반 연구집단, 여러 잠재적 교란요인을 고려할 수 있었다는 점, 그리고 보행속도를 반복해서 평가했다는 점이 있다. 보행속도는 신뢰도와 타당도를 갖춘 신체 기능 측정치로서 노인의 새로운 장애 발생을 예측한다.[43]"
-        },
-        {
-          "en": "Although the interaction of PWV with PAD was not statistically significant (P = 0.21), in analyses restricted to participants with PAD (n = 261; 12.7%), each s.d. higher PWV was associated with 0.028 (s.e. 0.010) m/s slower gait speed at baseline and through the study period after adjustment for demographics, risk factors, and chronic conditions (P < 0.01) (Table 3).",
-          "ko": "PWV와 PAD의 상호작용은 통계적으로 유의하지 않았지만(P=0.21), PAD가 있는 참여자(n=261; 12.7%)만을 대상으로 한 분석에서는 인구학적 특성, 위험요인 및 만성질환을 보정한 뒤 PWV가 1표준편차 높을 때 기초 시점 및 연구기간 전반의 보행속도가 0.028(표준오차 0.010) m/s 더 느렸다(P<0.01)(표 3)."
-        },
-        {
-          "en": "No significant interaction was identified for PWV with time (β (s.e.) = 0.000 (0.001); P = 0.66), indicating no significant contribution of PWV to the longitudinal decrease in gait speed.",
-          "ko": "PWV와 시간의 유의한 상호작용은 확인되지 않았으며(β(표준오차)=0.000(0.001); P=0.66), 이는 PWV가 보행속도의 종단적 감소에 유의하게 기여하지 않았음을 나타낸다."
-        },
-        {
-          "en": "As in the full cohort, the interaction of PWV with time was nonsignificant (β (s.e.) = 0.000 (0.002); P = 0.96).",
-          "ko": "전체 코호트에서와 마찬가지로 PWV와 시간의 상호작용은 유의하지 않았다(β(표준오차)=0.000(0.002); P=0.96)."
-        },
+        }
+      ],
+      "bridge": "원문의 단일 강점 문장을 표본·공변량 보정·보행속도 반복 측정이라는 세 불릿으로 나누었다.",
+      "caution": "여러 교란요인을 보정했다는 사실은 잔여 교란이나 인과 추론의 한계가 사라졌다는 뜻이 아니다."
+    },
+    {
+      "id": "watson-conclusion-summary",
+      "kind": "conclusion",
+      "locator": "인쇄 94쪽 · PDF 5/6쪽 · Discussion conclusion",
+      "passages": [
         {
           "en": "In summary, arterial stiffness was inversely related to gait speed in participants with PAD, but was not independently associated with gait speed or the rate of gait speed decline in the full cohort.",
           "ko": "요약하면, PAD 참여자들에서 동맥 경직도는 보행속도와 음의 관계를 보였지만, 전체 코호트에서는 보행속도 또는 보행속도의 저하속도와 독립적으로 관련되지 않았다."
@@ -471,14 +482,27 @@ window.WatsonStudyPassages = {
         {
           "en": "The association of hypertension with accelerated gait speed decline in this cohort reinforces the value of blood pressure control in maintaining function in aging.",
           "ko": "이 코호트에서 고혈압이 보행속도 저하의 가속화와 관련되었다는 결과는 노화 과정에서 기능을 유지하는 데 혈압 조절이 중요함을 뒷받침한다."
+        }
+      ],
+      "bridge": "원문 마지막 결론 문단의 PAD·전체 코호트·고혈압에 관한 관찰 결과와 임상적 시사점을 세 불릿으로 구분한다.",
+      "caution": "연관성의 수준·감소율·군 간 차이를 분리하며, 관찰 결과를 치료 효과로 바꾸어 말하지 않는다."
+    },
+    {
+      "id": "watson-future-summary",
+      "kind": "future-research",
+      "locator": "인쇄 94쪽 · PDF 5/6쪽 · Discussion conclusion",
+      "passages": [
+        {
+          "en": "Current evidence implicates arterial stiffness as a potential target of interventions to improve peripheral perfusion and walking performance in PAD.",
+          "ko": "현재의 근거는 동맥 경직도가 PAD 환자의 말초 관류와 보행 수행능력을 개선하기 위한 중재의 잠재적 표적임을 시사한다."
         },
         {
           "en": "More work is needed to evaluate whether reduction of aortic stiffness may reduce risk of functional decline and disability in PAD independent of blood pressure lowering.",
           "ko": "대동맥 경직도를 낮추는 것이 혈압 강하와 독립적으로 PAD 환자의 기능 저하 및 장애 위험을 줄일 수 있는지 평가하기 위해서는 추가 연구가 필요하다."
         }
       ],
-      "bridge": "검사 민감도·뇌자료·하위집단 재현의 제한과 연구강점·결론·향후 과제를 구분한다.",
-      "caution": "혈압 관리의 시사점과 동맥 경직도 중재 가능성은 본 관찰연구에서 입증된 치료효과가 아니다."
+      "bridge": "원문 마지막 두 문장의 잠재적 중재 표적과 추가 검증 요구를 한 문장으로 연결했다.",
+      "caution": "혈압 감소와 독립적인 경직도 중재 효과는 이 논문의 관찰 분석에서 검증된 결과가 아니다."
     },
     {
       "id": "discussion-clinical-size",

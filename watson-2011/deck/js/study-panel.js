@@ -83,7 +83,7 @@
     for(const button of bar.querySelectorAll('[data-study-layout]'))button.addEventListener('click',()=>{preferences.layout=button.dataset.studyLayout;save();layout();window.scrollTo(0,0);});
     panel.addEventListener('keydown',event=>{if(['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key))event.stopPropagation();});
     document.addEventListener('academic:slidechange',()=>{
-      const readingBelow=document.body.classList.contains('study-below')&&scrollY>innerHeight/2;
+      const readingBelow=!document.documentElement.classList.contains('presentation-fullscreen')&&document.body.classList.contains('study-below')&&scrollY>innerHeight/2;
       render();layout();
       if(readingBelow)panel.scrollIntoView({block:'start',behavior:'instant'});
     });
