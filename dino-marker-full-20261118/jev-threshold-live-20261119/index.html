@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>카메라별 확률 조절 · 실시간 3D</title><link rel="stylesheet" href="style.css"></head>
+<body><main><header><span class="eyebrow">JEV · 2D MARKERS</span><h1>카메라별 확률 조절 · 실시간 3D</h1>
+<p id="scope">판정 자료를 불러오고 있습니다.</p></header>
+<div id="progress" class="progress" hidden></div><div id="error" role="alert" hidden></div>
+<section class="controls"><div class="control-top"><strong>카메라마다 이름 판정의 채택 문턱을 조절하세요.</strong><span>문턱을 낮추면 채택되는 이름이 늘고, 3D도 즉시 다시 계산됩니다.</span></div>
+<div class="presets"><span>8대에 같이 적용</span><button data-preset="30">0.30</button><button data-preset="20">0.20</button><button data-preset="10">0.10</button><button data-preset="0">0.00</button></div>
+<div id="camera-controls" class="camera-controls"></div>
+<label class="candidate-option"><input id="force-unknown" type="checkbox" checked> 보류 대신 가장 높은 마커 이름 후보 표시</label>
+<p class="muted">보류했던 점에도 이름 후보와 원래 이름 확률을 표시합니다. 문턱 미달 후보는 회색이며, 3D에는 문턱을 통과한 점만 사용합니다. 확률은 다시 정규화하지 않습니다.</p>
+<details><summary>다른 표시 조건 · 확률의 의미</summary><div class="advanced">
+<label>판정 자료 <select id="answer-source"><option value="raw">첫 이름 판정 · 확률 비교</option><option value="effective">양성 재검토 9건 반영</option></select></label>
+<label>검출 확률 하한 <input id="detector" type="range" min="0.425" max="1" step="0.005" value="0.425"><output id="detector-value">42.5%</output></label>
+<label>Jev 별도 confidence 하한 <input id="confidence" type="range" min="0" max="1" step="0.01" value="0"><output id="confidence-value">0%</output></label>
+<label><input id="exclude-noise" type="checkbox"> 이전 검사에서 불일치한 관측의 이름표 제외</label>
+<p>Jev 선택확률, Jev confidence, 영상 검출 확률은 서로 다른 값입니다. 저장된 검출점의 최저 문턱은 42.5%이며, 그 아래 점은 이 화면에 없습니다. 보류 대신 표시한 이름은 ‘후보’로 구분하며, 원래 unknown 확률도 점을 눌러 확인할 수 있습니다.</p>
+<p id="review-note" hidden>양성 재검토 9건의 확률은 ‘이 마커에 해당하는 점은 어느 것인가’를 고른 확률입니다. 첫 이름 판정과 질문이 다르며 †로 구분합니다.</p>
+<p>이전 불일치 검사 표시 옵션은 기록된 구간에만 적용됩니다. 오른쪽 3D는 현재 문턱을 통과한 점들로 카메라 대응을 새로 확인합니다.</p>
+</div></details></section>
+<section class="playback"><div class="transport"><button id="previous">← 이전</button><button id="play">재생</button><button id="next">다음 →</button>
+<select id="speed" aria-label="재생 속도"><option value="0.5">0.25배속</option><option value="1" selected>0.5배속</option><option value="2">원래 속도</option></select>
+<span id="frame-status" aria-live="off"></span></div><input id="frame" aria-label="영상 프레임" type="range" min="0" max="134" value="81" step="1"></section>
+<div class="views" id="views"><section class="view" id="two-d-view"><div class="view-heading"><h2 id="camera-title">CAM 01 · 2D 레이블과 확률</h2><label><input id="crop" type="checkbox" checked> 하체 확대</label><button id="enlarge-two">크게 보기</button></div>
+<label class="focus-threshold">이 카메라 이름 문턱 <input id="active-threshold" aria-label="현재 카메라 이름 확률 문턱" type="range" min="0" max="1" step="0.01" value="0.3"><output id="active-threshold-value">0.30</output></label>
+<canvas id="two-d" width="1600" height="1000" aria-label="선택한 카메라의 마커 이름과 확률"></canvas><p id="two-d-status"></p><p class="muted">점을 누르면 실제 확률과 다른 후보를 확인할 수 있습니다. 회색 이름은 문턱 미달·중복 등의 후보이며, ×는 현재 3D 계산에서 제외한 카메라 관측입니다. ?는 원래 보류했던 점의 이름 후보입니다.</p></section>
+<section class="view" id="three-d-view"><div class="view-heading"><h2>현재 조건의 3D</h2><button id="reset-view">시점 초기화</button><button id="enlarge-three">크게 보기</button></div>
+<canvas id="three-d" width="1200" height="1000" aria-label="카메라별 문턱을 반영해 즉시 계산한 3D 마커"></canvas><p id="three-d-status"></p>
+<div class="small-options"><label><input id="connections" type="checkbox" checked> 실제 마커 연결</label><label><input id="names" type="checkbox" checked> 이름</label></div>
+<p class="muted">드래그하여 회전 · 휠로 확대. *2는 두 카메라로 계산한 점입니다. 같은 이름의 2D 대응을 비교한 뒤 불일치 관측만 제외하며, 빈 점은 채우지 않습니다.</p></section></div>
+<section class="inspection"><h2>선택한 점의 실제 판정 값</h2><div id="point-details">영상의 점 또는 아래 표의 행을 선택하세요.</div>
+<div class="table-scroll"><table><thead><tr><th>점</th><th>표시 이름·후보</th><th>이름 확률</th><th>원응답 confidence</th><th>검출 확률</th><th>현재 상태</th></tr></thead><tbody id="point-table"></tbody></table></div></section>
+<section class="note"><h2>표시 기준</h2><p>같은 카메라·프레임에서 같은 이름이 겹치면 선택확률이 가장 높은 점을 사용합니다. 동률이면 Jev confidence, 그다음 점 번호 순으로 고릅니다. 재구성은 두 카메라 이상이 서로 일관될 때만 계산합니다.</p>
+<p>확률은 Jev 응답에 들어 있는 값이며, 실제 이름의 정답률을 검증한 수치는 아닙니다. threshold 조절은 저장된 판정과 좌표로 이 화면에서 계산하므로 새 API 호출이 발생하지 않습니다.</p>
+<button id="export-settings">현재 카메라별 설정 저장</button><span id="compute-time"></span></section>
+</main><video id="background" muted playsinline preload="auto" hidden></video>
+<script src="rules.js"></script><script src="reconstruction.js"></script><script src="app.js"></script></body></html>
