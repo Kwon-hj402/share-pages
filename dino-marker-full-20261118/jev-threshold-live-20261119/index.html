@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>카메라별 확률 조절 · 실시간 3D</title><link rel="stylesheet" href="style.css"></head>
+<title>카메라별 확률 조절 · 실시간 3D</title><link rel="stylesheet" href="style.css?v=d3426e50e5fc"></head>
 <body><main><header><span class="eyebrow">JEV · 2D MARKERS</span><h1>카메라별 확률 조절 · 실시간 3D</h1>
 <p id="scope">판정 자료를 불러오고 있습니다.</p></header>
 <div id="progress" class="progress" hidden></div><div id="error" role="alert" hidden></div>
@@ -9,6 +9,10 @@
 <div id="camera-controls" class="camera-controls"></div>
 <label class="candidate-option"><input id="force-unknown" type="checkbox" checked> 보류 대신 가장 높은 마커 이름 후보 표시</label>
 <p class="muted">보류했던 점에도 이름 후보와 원래 이름 확률을 표시합니다. 문턱 미달 후보는 회색이며, 3D에는 문턱을 통과한 점만 사용합니다. 확률은 다시 정규화하지 않습니다.</p>
+<div class="geometry-controls"><div class="geometry-sliders"><label for="camera-agreement">카메라 대응 허용오차 <input id="camera-agreement" aria-label="카메라 대응 허용오차" type="range" min="8" max="48" step="1" value="24"><output id="camera-agreement-value" for="camera-agreement">24 px</output></label>
+<label for="reprojection">3D 최종 오차 허용범위 <input id="reprojection" aria-label="3D 최종 오차 허용범위" type="range" min="4" max="32" step="1" value="16"><output id="reprojection-value" for="reprojection">16 px</output></label></div>
+<p>카메라 대응 허용오차를 크게 하면 카메라 사이의 위치 차이를 더 허용합니다. ×는 해당 카메라의 관측만 제외한다는 뜻이며, 다른 카메라 관측으로 같은 마커의 3D를 계산할 수 있습니다.</p>
+<p>3D 최종 오차는 계산한 3D 점을 각 카메라 영상에 다시 표시했을 때 원래 검출점과 떨어진 거리입니다. 대응 조건을 통과해도 이 오차가 허용범위를 넘으면 3D에 표시하지 않습니다. 두 픽셀 값은 원본 4K 영상 기준입니다.</p></div>
 <details><summary>다른 표시 조건 · 확률의 의미</summary><div class="advanced">
 <label>판정 자료 <select id="answer-source"><option value="raw">첫 이름 판정 · 확률 비교</option><option value="effective">양성 재검토 9건 반영</option></select></label>
 <label>검출 확률 하한 <input id="detector" type="range" min="0.425" max="1" step="0.005" value="0.425"><output id="detector-value">42.5%</output></label>
@@ -28,10 +32,13 @@
 <canvas id="three-d" width="1200" height="1000" aria-label="카메라별 문턱을 반영해 즉시 계산한 3D 마커"></canvas><p id="three-d-status"></p>
 <div class="small-options"><label><input id="connections" type="checkbox" checked> 실제 마커 연결</label><label><input id="names" type="checkbox" checked> 이름</label></div>
 <p class="muted">드래그하여 회전 · 휠로 확대. *2는 두 카메라로 계산한 점입니다. 같은 이름의 2D 대응을 비교한 뒤 불일치 관측만 제외하며, 빈 점은 채우지 않습니다.</p></section></div>
+<section class="inspection geometry-inspection"><h2>현재 프레임의 3D 계산 상태</h2><div id="geometry-summary" class="geometry-summary"></div>
+<p class="muted">같은 이름이 붙어도 두 카메라 이상에서 위치가 서로 맞아야 3D를 계산합니다. 이름 문턱을 통과한 관측과 실제 3D 계산에 사용한 관측을 아래에서 구분합니다.</p>
+<div class="table-scroll"><table><thead><tr><th>마커</th><th>이름 문턱을 통과한 카메라</th><th>대응검사에서 고른 카메라</th><th>계산 결과·제외 이유</th></tr></thead><tbody id="geometry-table"></tbody></table></div></section>
 <section class="inspection"><h2>선택한 점의 실제 판정 값</h2><div id="point-details">영상의 점 또는 아래 표의 행을 선택하세요.</div>
 <div class="table-scroll"><table><thead><tr><th>점</th><th>표시 이름·후보</th><th>이름 확률</th><th>원응답 confidence</th><th>검출 확률</th><th>현재 상태</th></tr></thead><tbody id="point-table"></tbody></table></div></section>
 <section class="note"><h2>표시 기준</h2><p>같은 카메라·프레임에서 같은 이름이 겹치면 선택확률이 가장 높은 점을 사용합니다. 동률이면 Jev confidence, 그다음 점 번호 순으로 고릅니다. 재구성은 두 카메라 이상이 서로 일관될 때만 계산합니다.</p>
 <p>확률은 Jev 응답에 들어 있는 값이며, 실제 이름의 정답률을 검증한 수치는 아닙니다. threshold 조절은 저장된 판정과 좌표로 이 화면에서 계산하므로 새 API 호출이 발생하지 않습니다.</p>
 <button id="export-settings">현재 카메라별 설정 저장</button><span id="compute-time"></span></section>
 </main><video id="background" muted playsinline preload="auto" hidden></video>
-<script src="rules.js"></script><script src="reconstruction.js"></script><script src="app.js"></script></body></html>
+<script src="rules.js?v=6f20491ba937"></script><script src="reconstruction.js?v=0479829133e1"></script><script src="app.js?v=c5405e022dea"></script></body></html>

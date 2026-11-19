@@ -11,6 +11,17 @@
   var SETTINGS = Object.freeze({epipolarGatePx:12, minimumViews:2,
     maximumReprojectionPx:8, minimumDepthM:0.05, minimumRayAngleDeg:2,
     xyzOutlierFilter:false, trajectoryFilter:false, gapFill:false});
+  function configuredSettings(options) {
+    var result=Object.assign({},SETTINGS);
+    ["epipolarGatePx","maximumReprojectionPx"].forEach(function(key){
+      if(options&&options[key]!==undefined){
+        var value=options[key];
+        if(typeof value!=="number"||!Number.isFinite(value)||value<1||value>96)throw new Error("Invalid camera tolerance: "+key);
+        result[key]=value;
+      }
+    });
+    return result;
+  }
   var SUFFIXES = ["D1M","D5M","P1M","NAV","HEE","MMA","LMA","TIB_MID_LAT","MEPI","LEPI","PAT_INF"];
   var NAMES = new Set(["R","L"].flatMap(function(s){return SUFFIXES.map(function(n){return s+"_"+n;});}));
   function finite(a) { return Array.isArray(a) && a.every(function(x){return typeof x === "number" && Number.isFinite(x);}); }
@@ -65,7 +76,7 @@
     if(finite(n)&&n.length===2){var q=mv(c.K,[n[0],n[1],1]);return [q[0]/q[2],q[1]/q[2]];}
     return null;
   }
-  function pairDistance(a,b,calibration) {
+  function pairDistance(a,b,calibration,settings) {
     var receipt={camera_a:a.camera,camera_b:b.camera,distance_a_px:null,distance_b_px:null,
       symmetric_distance_px:null,compatible:false,valid:false};
     try {
@@ -78,11 +89,12 @@
       var e=Math.abs(dot(xb,mv(f,xa))),da=e/na,db=e/nb,d=Math.sqrt((da*da+db*db)/2);
       if(!Number.isFinite(d))return receipt;
       receipt.distance_a_px=da;receipt.distance_b_px=db;receipt.symmetric_distance_px=d;
-      receipt.compatible=d<=SETTINGS.epipolarGatePx;receipt.valid=true;
+      receipt.compatible=d<=settings.epipolarGatePx;receipt.valid=true;
     } catch (_) { /* Invalid comparisons never count as evidence of noise. */ }
     return receipt;
   }
-  function selectConsensus(observations,calibration) {
+  function selectConsensus(observations,calibration,options) {
+    var settings=configuredSettings(options);
     var ids=Object.keys(observations).sort(function(a,b){return Number(a)-Number(b);});
     var receipt={status:"insufficient_views",reason:"fewer_than_two_observed_cameras",
       observed_cameras:ids,consensus_cameras:[],excluded_noise_cameras:[],unresolved_cameras:ids.slice(),
@@ -92,7 +104,7 @@
     var pairs={};
     function pk(a,b){return Number(a)<Number(b)?a+"-"+b:b+"-"+a;}
     for(var i=0;i<ids.length;i++)for(var j=i+1;j<ids.length;j++){
-      var a=ids[i],b=ids[j],row=pairDistance({camera:a,point:observations[a]},{camera:b,point:observations[b]},calibration);
+      var a=ids[i],b=ids[j],row=pairDistance({camera:a,point:observations[a]},{camera:b,point:observations[b]},calibration,settings);
       pairs[pk(a,b)]=row;receipt.pair_distances.push(row);receipt.pair_distances_px[pk(a,b)]=row.symmetric_distance_px;
     }
     var largest=[],size=0;
@@ -173,7 +185,7 @@
     var pixel=mv(c.K,[xd,yd,1]);
     return {xy:[pixel[0]/pixel[2],pixel[1]/pixel[2]],depth:z};
   }
-  function solveAndCheck(observations,calibration) {
+  function solveAndCheck(observations,calibration,settings) {
     var ids=Object.keys(observations).sort(function(a,b){return Number(a)-Number(b);}),xyz=linearDLT(observations,calibration);
     var errors={},depths=[],rays=[];
     ids.forEach(function(id){
@@ -189,11 +201,17 @@
     }
     var values=Object.values(errors),maximum=Math.max.apply(null,values),minimumDepth=Math.min.apply(null,depths);
     var rms=Math.sqrt(values.reduce(function(s,e){return s+e*e;},0)/values.length);
-    return {ok:values.every(Number.isFinite)&&minimumDepth>SETTINGS.minimumDepthM&&maximum<=SETTINGS.maximumReprojectionPx&&bestAngle>=SETTINGS.minimumRayAngleDeg,
+    var failures=[];
+    if(!values.every(Number.isFinite))failures.push("nonfinite_reprojection");
+    if(minimumDepth<=settings.minimumDepthM)failures.push("nonpositive_depth");
+    if(maximum>settings.maximumReprojectionPx)failures.push("reprojection_error_exceeds_limit");
+    if(bestAngle<settings.minimumRayAngleDeg)failures.push("insufficient_triangulation_angle");
+    return {ok:failures.length===0,failed_checks:failures,
       xyz:xyz,cameras:ids,view_count:ids.length,errors:errors,rms:rms,
       minimum_depth_m:minimumDepth,maximum_reprojection_px:maximum,maximum_triangulation_angle_deg:bestAngle};
   }
-  function reconstructFrame(camerasMap,calibration) {
+  function reconstructFrame(camerasMap,calibration,options) {
+    var settings=configuredSettings(options);
     var grouped={},inputCount=0;
     Object.keys(camerasMap).forEach(function(id){
       var rows=Array.isArray(camerasMap[id])?camerasMap[id]:(camerasMap[id].points||[]);
@@ -213,15 +231,16 @@
       if(duplicates.length){
         receipt={status:"ambiguous",reason:"duplicate_same_id_points_in_one_camera",observed_cameras:Object.keys(buckets),
           consensus_cameras:[],excluded_noise_cameras:[],unresolved_cameras:Object.keys(buckets),three_d_support_cameras:[],pair_distances:[],pair_distances_px:{}};
-      }else receipt=selectConsensus(observations,calibration);
+      }else receipt=selectConsensus(observations,calibration,settings);
       receipt.name=name;receipt.marker_name=name;receipt.reconstruction_status="withheld";
       receipt.observation_keys=Object.keys(observations).map(function(id){var p=observations[id];return {camera:id,index:pointIndex(p),key:p.key};});
       receipt.excluded_noise_cameras.forEach(function(id){var p=observations[id];noise.push({camera:id,name:name,marker_name:name,index:pointIndex(p),point_id:pointIndex(p),key:p.key,xy_px:getRaw(p)});});
       if(receipt.status!=="unique_consensus"){ambiguous++;groups.push(receipt);return;}
       var selected={};receipt.consensus_cameras.forEach(function(id){selected[id]=observations[id];});
       try{
-        var result=solveAndCheck(selected,calibration);
+        var result=solveAndCheck(selected,calibration,settings);
         receipt.reprojection_errors_px=result.errors;receipt.reprojection_rms_px=result.rms;
+        receipt.maximum_reprojection_px=result.maximum_reprojection_px;receipt.reconstruction_failed_checks=result.failed_checks;
         receipt.minimum_depth_m=result.minimum_depth_m;receipt.maximum_triangulation_angle_deg=result.maximum_triangulation_angle_deg;
         if(result.ok){
           receipt.reconstruction_status="reconstructed";
@@ -234,7 +253,7 @@
       }catch(error){withheld++;receipt.reconstruction_reason="degenerate_or_missing_numeric_geometry";}
       groups.push(receipt);
     });
-    return {points:points,groups:groups,noise_views:noise,summary:{input_points:inputCount,group_count:groups.length,
+    return {points:points,groups:groups,noise_views:noise,settings:settings,summary:{input_points:inputCount,group_count:groups.length,
       reconstructed_points:points.length,two_view_points:points.filter(function(p){return p.view_count===2;}).length,
       supporting_2d_observations:points.reduce(function(s,p){return s+p.view_count;},0),noise_view_count:noise.length,
       ambiguous_or_insufficient_groups:ambiguous,geometrically_withheld_groups:withheld,

@@ -9,7 +9,7 @@
   const pct=x=>Number.isFinite(x)?(100*x).toFixed(1)+'%':'—';
   const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let DATA,CAL,META,refs,fps,colors;
-  const state={camera:'1',index:0,probabilities:Object.fromEntries(CAMERA_IDS.map(c=>[c,.3])),confidence:0,detector:.425,source:'raw',excludeNoise:false,forceUnknown:true,selected:null,backgroundReady:false,pendingIndex:null,yaw:.5,pitch:.15,zoom:1,frameResults:{},reconstruction:null,hitPoints:[],totals:{}};
+  const state={camera:'1',index:0,probabilities:Object.fromEntries(CAMERA_IDS.map(c=>[c,.3])),confidence:0,detector:.425,source:'raw',excludeNoise:false,forceUnknown:true,cameraAgreementPx:24,reprojectionPx:16,selected:null,backgroundReady:false,pendingIndex:null,yaw:.5,pitch:.15,zoom:1,frameResults:{},reconstruction:null,hitPoints:[],totals:{}};
   try {
     const responses=await Promise.all([fetch('viewer_data.json'),fetch('calibration.json')]);
     if(responses.some(r=>!r.ok))throw new Error('판정 자료를 불러오지 못했습니다.');
@@ -39,8 +39,8 @@
   function refreshFrame(){
     const start=performance.now(),ref=refs[state.index];state.frameResults={};const inputs={};
     for(const c of CAMERA_IDS){const result=evaluate(c,ref);state.frameResults[c]=result;inputs[c]=result.accepted.map(p=>({...p,name:p.name,marker_name:p.name}));}
-    state.reconstruction=LiveMarkerReconstruction.reconstructFrame(inputs,CAL);
-    updateCameraCards();renderPointTable();draw2d();draw3d();
+    state.reconstruction=LiveMarkerReconstruction.reconstructFrame(inputs,CAL,{epipolarGatePx:state.cameraAgreementPx,maximumReprojectionPx:state.reprojectionPx});
+    updateCameraCards();renderPointTable();renderGeometryTable();draw2d();draw3d();
     $('frame').value=String(state.index);
     $('frame-status').textContent=`REF ${ref} · ${state.index+1}/${refs.length}프레임 · 재생 ${(state.index/fps).toFixed(2)} / ${(refs.length/fps).toFixed(2)}초 · 공유 영상 ${(refs[0]/fps+state.index/fps).toFixed(2)}초`;
     $('compute-time').textContent=`현재 프레임 다시 계산 ${(performance.now()-start).toFixed(1)}ms`;
@@ -52,6 +52,36 @@
   }
   function noiseFor(camera,index){return state.reconstruction.noise_views.some(p=>String(p.camera)===camera&&Number(p.index)===index);}
   function rowStatus(row){return row.reason==='accepted'&&noiseFor(state.camera,row.index)?'live_noise':row.reason;}
+  function renderGeometryTable(){
+    const groups=new Map(state.reconstruction.groups.map(group=>[group.name||group.marker_name,group]));
+    const counts={complete:0,support:0,matching:0,reprojection:0,geometry:0};
+    function cameras(ids){return ids&&ids.length?ids.map(c=>`CAM ${String(c).padStart(2,'0')}`).join(', '):'—';}
+    function reason(group){
+      if(!group)return {kind:'support',text:'이름 문턱을 통과한 관측 없음'};
+      const observed=group.observed_cameras||[];
+      if(group.reconstruction_status==='reconstructed')return {kind:'complete',text:`3D 계산 완료 · ${(group.consensus_cameras||[]).length}대 · RMS ${Number(group.reprojection_rms_px).toFixed(2)} px`};
+      if(observed.length<2)return {kind:'support',text:'같은 이름으로 관측한 카메라가 2대 미만'};
+      if(group.reason==='no_compatible_two_camera_clique'){
+        const distances=Object.values(group.pair_distances_px||{}).filter(Number.isFinite),closest=distances.length?Math.min(...distances):null;
+        return {kind:'matching',text:`서로 위치가 맞는 카메라 쌍 없음${closest===null?'':` · 최소 대응 오차 ${closest.toFixed(1)} px`}`};
+      }
+      if(group.reason==='largest_camera_clique_tie')return {kind:'matching',text:'맞는 카메라 조합이 여럿이라 한 조합을 고를 수 없음'};
+      if(group.reason==='duplicate_same_id_points_in_one_camera')return {kind:'matching',text:'한 카메라에서 같은 이름의 점이 중복됨'};
+      const errors=Object.values(group.reprojection_errors_px||{}).filter(Number.isFinite),maximum=errors.length?Math.max(...errors):null;
+      if(maximum!==null&&maximum>state.reprojectionPx)return {kind:'reprojection',text:`최종 오차 ${maximum.toFixed(2)} px > 허용 ${state.reprojectionPx} px`};
+      if(Number.isFinite(group.minimum_depth_m)&&group.minimum_depth_m<=.05)return {kind:'geometry',text:'카메라 앞쪽의 유효한 위치로 계산되지 않음'};
+      if(Number.isFinite(group.maximum_triangulation_angle_deg)&&group.maximum_triangulation_angle_deg<2)return {kind:'geometry',text:'두 카메라의 관측 방향이 너무 비슷함'};
+      return {kind:'geometry',text:'위치 계산 조건을 충족하지 못함'};
+    }
+    $('geometry-table').innerHTML=META.marker_names.map(name=>{
+      const group=groups.get(name),status=reason(group);counts[status.kind]++;
+      const excluded=group&&group.excluded_noise_cameras||[],detail=excluded.length?`<small>× ${cameras(excluded)} 관측만 제외</small>`:'';
+      return `<tr><td style="color:${colors[name]}">${esc(name)}</td><td>${cameras(group&&group.observed_cameras)}</td><td>${cameras(group&&group.consensus_cameras)}</td><td class="geometry-result-${status.kind}">${esc(status.text)}${detail}</td></tr>`;
+    }).join('');
+    $('geometry-summary').innerHTML=[['complete','3D 계산',counts.complete],['support','카메라 지원 부족',counts.support],['matching','카메라 대응 불일치·동률',counts.matching],['reprojection','최종 오차 초과',counts.reprojection],['geometry','기타 위치 계산 조건',counts.geometry]].map(([kind,label,count])=>`<span class="geometry-chip geometry-result-${kind}">${label} <b>${count}</b></span>`).join('');
+    $('camera-agreement').value=String(state.cameraAgreementPx);$('camera-agreement-value').textContent=`${state.cameraAgreementPx} px`;
+    $('reprojection').value=String(state.reprojectionPx);$('reprojection-value').textContent=`${state.reprojectionPx} px`;
+  }
   function draw2d(){
     ctx.fillStyle='#080f18';ctx.fillRect(0,0,canvas.width,canvas.height);state.hitPoints=[];
     const record=frameRecord(state.camera),result=state.frameResults[state.camera],ref=refs[state.index];
@@ -103,6 +133,8 @@
   function showPlaybackError(){video.pause();$('play').textContent='재생';}
   function onVideoFrame(now,metadata){const next=Math.max(0,Math.min(refs.length-1,Math.floor(metadata.mediaTime*fps+1e-4)));if(video.readyState>=2&&!video.seeking&&(state.pendingIndex===null||next===state.pendingIndex)){state.pendingIndex=null;state.backgroundReady=true;if(next!==state.index){state.index=next;refreshFrame();}else draw2d();}video.requestVideoFrameCallback(onVideoFrame);}
   function bindEvents(){
+    $('camera-agreement').oninput=()=>{state.cameraAgreementPx=Number($('camera-agreement').value);refreshFrame();};
+    $('reprojection').oninput=()=>{state.reprojectionPx=Number($('reprojection').value);refreshFrame();};
     $('force-unknown').onchange=()=>{state.forceUnknown=$('force-unknown').checked;thresholdChanged();};
     $('active-threshold').oninput=()=>{state.probabilities[state.camera]=Number($('active-threshold').value);thresholdChanged();};
     for(const [button,view] of [['enlarge-two','two'],['enlarge-three','three']])$(button).onclick=()=>{const selected=$('views').dataset.focus==view;delete $('views').dataset.focus;if(!selected)$('views').dataset.focus=view;$('enlarge-two').textContent=$('views').dataset.focus==='two'?'함께 보기':'크게 보기';$('enlarge-three').textContent=$('views').dataset.focus==='three'?'함께 보기':'크게 보기';};
@@ -122,6 +154,6 @@
     let drag=null;three.onpointerdown=e=>{drag=[e.clientX,e.clientY];three.setPointerCapture(e.pointerId);};three.onpointermove=e=>{if(!drag)return;state.yaw+=(e.clientX-drag[0])*.007;state.pitch=Math.max(-1.3,Math.min(1.3,state.pitch+(e.clientY-drag[1])*.007));drag=[e.clientX,e.clientY];draw3d();};three.onpointerup=()=>drag=null;three.onpointercancel=()=>drag=null;
     three.onwheel=e=>{e.preventDefault();state.zoom=Math.max(.35,Math.min(4,state.zoom*Math.exp(-e.deltaY*.001)));draw3d();};
     $('reset-view').onclick=()=>{state.yaw=.5;state.pitch=.15;state.zoom=1;draw3d();};
-    $('export-settings').onclick=()=>{const report={format:'jev_threshold_review_settings_v1',reference_frame:refs[state.index],reference_range:[refs[0],refs.at(-1)],jev_probability_threshold_by_camera:state.probabilities,additional_confidence_min:state.confidence,detector_min:state.detector,answer_source:state.source,unknown_policy:state.forceUnknown?'best_named_candidate':'preserve_unknown',recorded_noise_exclusion:state.excludeNoise,counts_by_camera:state.totals,current_frame_3d:state.reconstruction};const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='jev_threshold_settings.json';a.click();URL.revokeObjectURL(url);};
+    $('export-settings').onclick=()=>{const report={format:'jev_threshold_review_settings_v1',reference_frame:refs[state.index],reference_range:[refs[0],refs.at(-1)],jev_probability_threshold_by_camera:state.probabilities,additional_confidence_min:state.confidence,detector_min:state.detector,answer_source:state.source,unknown_policy:state.forceUnknown?'best_named_candidate':'preserve_unknown',recorded_noise_exclusion:state.excludeNoise,epipolar_gate_native_px:state.cameraAgreementPx,maximum_reprojection_native_px:state.reprojectionPx,counts_by_camera:state.totals,current_frame_3d:state.reconstruction};const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='jev_threshold_settings.json';a.click();URL.revokeObjectURL(url);};
   }
 })();
