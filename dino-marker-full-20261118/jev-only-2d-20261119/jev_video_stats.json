@@ -1,0 +1,3758 @@
+{
+  "reference_frames": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164
+  ],
+  "frame_count": 75,
+  "fps": 29.97002997002997,
+  "duration_seconds": 2.5025,
+  "playback_speed": 0.5,
+  "camera_frame_offsets": {
+    "1": 0,
+    "2": 8,
+    "3": 6,
+    "4": 1,
+    "5": 6,
+    "6": 14,
+    "7": 11,
+    "8": 8
+  },
+  "cameras": {
+    "1": {
+      "90": {
+        "detections": 16,
+        "labeled": 5,
+        "unknown": 11,
+        "jev": 5
+      },
+      "91": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "92": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "93": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "94": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "95": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "96": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "97": {
+        "detections": 16,
+        "labeled": 0,
+        "unknown": 16,
+        "jev": 0
+      },
+      "98": {
+        "detections": 21,
+        "labeled": 0,
+        "unknown": 21,
+        "jev": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "100": {
+        "detections": 17,
+        "labeled": 9,
+        "unknown": 8,
+        "jev": 9
+      },
+      "101": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "102": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "103": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "104": {
+        "detections": 23,
+        "labeled": 5,
+        "unknown": 18,
+        "jev": 5
+      },
+      "105": {
+        "detections": 19,
+        "labeled": 3,
+        "unknown": 16,
+        "jev": 3
+      },
+      "106": {
+        "detections": 17,
+        "labeled": 5,
+        "unknown": 12,
+        "jev": 5
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 4,
+        "unknown": 15,
+        "jev": 4
+      },
+      "108": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "109": {
+        "detections": 21,
+        "labeled": 4,
+        "unknown": 17,
+        "jev": 4
+      },
+      "110": {
+        "detections": 21,
+        "labeled": 3,
+        "unknown": 18,
+        "jev": 3
+      },
+      "111": {
+        "detections": 23,
+        "labeled": 4,
+        "unknown": 19,
+        "jev": 4
+      },
+      "112": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "113": {
+        "detections": 22,
+        "labeled": 5,
+        "unknown": 17,
+        "jev": 5
+      },
+      "114": {
+        "detections": 23,
+        "labeled": 5,
+        "unknown": 18,
+        "jev": 5
+      },
+      "115": {
+        "detections": 22,
+        "labeled": 0,
+        "unknown": 22,
+        "jev": 0
+      },
+      "116": {
+        "detections": 21,
+        "labeled": 0,
+        "unknown": 21,
+        "jev": 0
+      },
+      "117": {
+        "detections": 19,
+        "labeled": 9,
+        "unknown": 10,
+        "jev": 9
+      },
+      "118": {
+        "detections": 22,
+        "labeled": 11,
+        "unknown": 11,
+        "jev": 11
+      },
+      "119": {
+        "detections": 22,
+        "labeled": 10,
+        "unknown": 12,
+        "jev": 10
+      },
+      "120": {
+        "detections": 22,
+        "labeled": 8,
+        "unknown": 14,
+        "jev": 8
+      },
+      "121": {
+        "detections": 23,
+        "labeled": 8,
+        "unknown": 15,
+        "jev": 8
+      },
+      "122": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "123": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 8,
+        "unknown": 10,
+        "jev": 8
+      },
+      "125": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "126": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "127": {
+        "detections": 23,
+        "labeled": 8,
+        "unknown": 15,
+        "jev": 8
+      },
+      "128": {
+        "detections": 23,
+        "labeled": 8,
+        "unknown": 15,
+        "jev": 8
+      },
+      "129": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "130": {
+        "detections": 19,
+        "labeled": 7,
+        "unknown": 12,
+        "jev": 7
+      },
+      "131": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "132": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "133": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "134": {
+        "detections": 17,
+        "labeled": 7,
+        "unknown": 10,
+        "jev": 7
+      },
+      "135": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "136": {
+        "detections": 21,
+        "labeled": 11,
+        "unknown": 10,
+        "jev": 11
+      },
+      "137": {
+        "detections": 19,
+        "labeled": 10,
+        "unknown": 9,
+        "jev": 10
+      },
+      "138": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "139": {
+        "detections": 22,
+        "labeled": 8,
+        "unknown": 14,
+        "jev": 8
+      },
+      "140": {
+        "detections": 24,
+        "labeled": 12,
+        "unknown": 12,
+        "jev": 12
+      },
+      "141": {
+        "detections": 24,
+        "labeled": 12,
+        "unknown": 12,
+        "jev": 12
+      },
+      "142": {
+        "detections": 24,
+        "labeled": 12,
+        "unknown": 12,
+        "jev": 12
+      },
+      "143": {
+        "detections": 22,
+        "labeled": 14,
+        "unknown": 8,
+        "jev": 14
+      },
+      "144": {
+        "detections": 23,
+        "labeled": 15,
+        "unknown": 8,
+        "jev": 15
+      },
+      "145": {
+        "detections": 26,
+        "labeled": 14,
+        "unknown": 12,
+        "jev": 14
+      },
+      "146": {
+        "detections": 24,
+        "labeled": 14,
+        "unknown": 10,
+        "jev": 14
+      },
+      "147": {
+        "detections": 22,
+        "labeled": 14,
+        "unknown": 8,
+        "jev": 14
+      },
+      "148": {
+        "detections": 23,
+        "labeled": 15,
+        "unknown": 8,
+        "jev": 15
+      },
+      "149": {
+        "detections": 23,
+        "labeled": 16,
+        "unknown": 7,
+        "jev": 16
+      },
+      "150": {
+        "detections": 25,
+        "labeled": 17,
+        "unknown": 8,
+        "jev": 17
+      },
+      "151": {
+        "detections": 25,
+        "labeled": 16,
+        "unknown": 9,
+        "jev": 16
+      },
+      "152": {
+        "detections": 24,
+        "labeled": 14,
+        "unknown": 10,
+        "jev": 14
+      },
+      "153": {
+        "detections": 25,
+        "labeled": 14,
+        "unknown": 11,
+        "jev": 14
+      },
+      "154": {
+        "detections": 24,
+        "labeled": 14,
+        "unknown": 10,
+        "jev": 14
+      },
+      "155": {
+        "detections": 22,
+        "labeled": 14,
+        "unknown": 8,
+        "jev": 14
+      },
+      "156": {
+        "detections": 23,
+        "labeled": 12,
+        "unknown": 11,
+        "jev": 12
+      },
+      "157": {
+        "detections": 23,
+        "labeled": 11,
+        "unknown": 12,
+        "jev": 11
+      },
+      "158": {
+        "detections": 24,
+        "labeled": 12,
+        "unknown": 12,
+        "jev": 12
+      },
+      "159": {
+        "detections": 23,
+        "labeled": 11,
+        "unknown": 12,
+        "jev": 11
+      },
+      "160": {
+        "detections": 24,
+        "labeled": 12,
+        "unknown": 12,
+        "jev": 12
+      },
+      "161": {
+        "detections": 24,
+        "labeled": 11,
+        "unknown": 13,
+        "jev": 11
+      },
+      "162": {
+        "detections": 23,
+        "labeled": 10,
+        "unknown": 13,
+        "jev": 10
+      },
+      "163": {
+        "detections": 22,
+        "labeled": 8,
+        "unknown": 14,
+        "jev": 8
+      },
+      "164": {
+        "detections": 22,
+        "labeled": 8,
+        "unknown": 14,
+        "jev": 8
+      }
+    },
+    "2": {
+      "90": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      },
+      "91": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      },
+      "92": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      },
+      "93": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "94": {
+        "detections": 16,
+        "labeled": 4,
+        "unknown": 12,
+        "jev": 4
+      },
+      "95": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "96": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "97": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "98": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "100": {
+        "detections": 17,
+        "labeled": 7,
+        "unknown": 10,
+        "jev": 7
+      },
+      "101": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "102": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "103": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "104": {
+        "detections": 22,
+        "labeled": 6,
+        "unknown": 16,
+        "jev": 6
+      },
+      "105": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "106": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "107": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "108": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "109": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "110": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "112": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "113": {
+        "detections": 19,
+        "labeled": 6,
+        "unknown": 13,
+        "jev": 6
+      },
+      "114": {
+        "detections": 23,
+        "labeled": 6,
+        "unknown": 17,
+        "jev": 6
+      },
+      "115": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "116": {
+        "detections": 23,
+        "labeled": 0,
+        "unknown": 23,
+        "jev": 0
+      },
+      "117": {
+        "detections": 23,
+        "labeled": 12,
+        "unknown": 11,
+        "jev": 12
+      },
+      "118": {
+        "detections": 22,
+        "labeled": 11,
+        "unknown": 11,
+        "jev": 11
+      },
+      "119": {
+        "detections": 22,
+        "labeled": 9,
+        "unknown": 13,
+        "jev": 9
+      },
+      "120": {
+        "detections": 25,
+        "labeled": 8,
+        "unknown": 17,
+        "jev": 8
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "122": {
+        "detections": 24,
+        "labeled": 9,
+        "unknown": 15,
+        "jev": 9
+      },
+      "123": {
+        "detections": 25,
+        "labeled": 8,
+        "unknown": 17,
+        "jev": 8
+      },
+      "124": {
+        "detections": 25,
+        "labeled": 8,
+        "unknown": 17,
+        "jev": 8
+      },
+      "125": {
+        "detections": 26,
+        "labeled": 8,
+        "unknown": 18,
+        "jev": 8
+      },
+      "126": {
+        "detections": 25,
+        "labeled": 8,
+        "unknown": 17,
+        "jev": 8
+      },
+      "127": {
+        "detections": 23,
+        "labeled": 8,
+        "unknown": 15,
+        "jev": 8
+      },
+      "128": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "129": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "130": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "131": {
+        "detections": 14,
+        "labeled": 2,
+        "unknown": 12,
+        "jev": 2
+      },
+      "132": {
+        "detections": 15,
+        "labeled": 2,
+        "unknown": 13,
+        "jev": 2
+      },
+      "133": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "134": {
+        "detections": 18,
+        "labeled": 3,
+        "unknown": 15,
+        "jev": 3
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 4,
+        "unknown": 11,
+        "jev": 4
+      },
+      "136": {
+        "detections": 16,
+        "labeled": 4,
+        "unknown": 12,
+        "jev": 4
+      },
+      "137": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "138": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "139": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "140": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 6,
+        "unknown": 14,
+        "jev": 6
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "143": {
+        "detections": 23,
+        "labeled": 7,
+        "unknown": 16,
+        "jev": 7
+      },
+      "144": {
+        "detections": 20,
+        "labeled": 6,
+        "unknown": 14,
+        "jev": 6
+      },
+      "145": {
+        "detections": 19,
+        "labeled": 7,
+        "unknown": 12,
+        "jev": 7
+      },
+      "146": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "147": {
+        "detections": 23,
+        "labeled": 5,
+        "unknown": 18,
+        "jev": 5
+      },
+      "148": {
+        "detections": 19,
+        "labeled": 7,
+        "unknown": 12,
+        "jev": 7
+      },
+      "149": {
+        "detections": 21,
+        "labeled": 9,
+        "unknown": 12,
+        "jev": 9
+      },
+      "150": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "151": {
+        "detections": 23,
+        "labeled": 9,
+        "unknown": 14,
+        "jev": 9
+      },
+      "152": {
+        "detections": 26,
+        "labeled": 8,
+        "unknown": 18,
+        "jev": 8
+      },
+      "153": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "154": {
+        "detections": 21,
+        "labeled": 6,
+        "unknown": 15,
+        "jev": 6
+      },
+      "155": {
+        "detections": 19,
+        "labeled": 6,
+        "unknown": 13,
+        "jev": 6
+      },
+      "156": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "157": {
+        "detections": 17,
+        "labeled": 5,
+        "unknown": 12,
+        "jev": 5
+      },
+      "158": {
+        "detections": 15,
+        "labeled": 5,
+        "unknown": 10,
+        "jev": 5
+      },
+      "159": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "160": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "161": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "162": {
+        "detections": 22,
+        "labeled": 5,
+        "unknown": 17,
+        "jev": 5
+      },
+      "163": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "164": {
+        "detections": 20,
+        "labeled": 6,
+        "unknown": 14,
+        "jev": 6
+      }
+    },
+    "3": {
+      "90": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "91": {
+        "detections": 22,
+        "labeled": 5,
+        "unknown": 17,
+        "jev": 5
+      },
+      "92": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "93": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "94": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "95": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "96": {
+        "detections": 16,
+        "labeled": 4,
+        "unknown": 12,
+        "jev": 4
+      },
+      "97": {
+        "detections": 15,
+        "labeled": 0,
+        "unknown": 15,
+        "jev": 0
+      },
+      "98": {
+        "detections": 14,
+        "labeled": 0,
+        "unknown": 14,
+        "jev": 0
+      },
+      "99": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "100": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "101": {
+        "detections": 18,
+        "labeled": 4,
+        "unknown": 14,
+        "jev": 4
+      },
+      "102": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "103": {
+        "detections": 22,
+        "labeled": 0,
+        "unknown": 22,
+        "jev": 0
+      },
+      "104": {
+        "detections": 23,
+        "labeled": 3,
+        "unknown": 20,
+        "jev": 3
+      },
+      "105": {
+        "detections": 22,
+        "labeled": 4,
+        "unknown": 18,
+        "jev": 4
+      },
+      "106": {
+        "detections": 22,
+        "labeled": 4,
+        "unknown": 18,
+        "jev": 4
+      },
+      "107": {
+        "detections": 21,
+        "labeled": 4,
+        "unknown": 17,
+        "jev": 4
+      },
+      "108": {
+        "detections": 22,
+        "labeled": 4,
+        "unknown": 18,
+        "jev": 4
+      },
+      "109": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "110": {
+        "detections": 26,
+        "labeled": 4,
+        "unknown": 22,
+        "jev": 4
+      },
+      "111": {
+        "detections": 21,
+        "labeled": 5,
+        "unknown": 16,
+        "jev": 5
+      },
+      "112": {
+        "detections": 22,
+        "labeled": 5,
+        "unknown": 17,
+        "jev": 5
+      },
+      "113": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "114": {
+        "detections": 22,
+        "labeled": 5,
+        "unknown": 17,
+        "jev": 5
+      },
+      "115": {
+        "detections": 21,
+        "labeled": 0,
+        "unknown": 21,
+        "jev": 0
+      },
+      "116": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "117": {
+        "detections": 20,
+        "labeled": 10,
+        "unknown": 10,
+        "jev": 10
+      },
+      "118": {
+        "detections": 21,
+        "labeled": 10,
+        "unknown": 11,
+        "jev": 10
+      },
+      "119": {
+        "detections": 20,
+        "labeled": 10,
+        "unknown": 10,
+        "jev": 10
+      },
+      "120": {
+        "detections": 20,
+        "labeled": 6,
+        "unknown": 14,
+        "jev": 6
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "122": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "123": {
+        "detections": 21,
+        "labeled": 8,
+        "unknown": 13,
+        "jev": 8
+      },
+      "124": {
+        "detections": 25,
+        "labeled": 7,
+        "unknown": 18,
+        "jev": 7
+      },
+      "125": {
+        "detections": 21,
+        "labeled": 7,
+        "unknown": 14,
+        "jev": 7
+      },
+      "126": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "127": {
+        "detections": 17,
+        "labeled": 7,
+        "unknown": 10,
+        "jev": 7
+      },
+      "128": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "129": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "130": {
+        "detections": 18,
+        "labeled": 3,
+        "unknown": 15,
+        "jev": 3
+      },
+      "131": {
+        "detections": 17,
+        "labeled": 3,
+        "unknown": 14,
+        "jev": 3
+      },
+      "132": {
+        "detections": 15,
+        "labeled": 4,
+        "unknown": 11,
+        "jev": 4
+      },
+      "133": {
+        "detections": 12,
+        "labeled": 1,
+        "unknown": 11,
+        "jev": 1
+      },
+      "134": {
+        "detections": 18,
+        "labeled": 4,
+        "unknown": 14,
+        "jev": 4
+      },
+      "135": {
+        "detections": 19,
+        "labeled": 6,
+        "unknown": 13,
+        "jev": 6
+      },
+      "136": {
+        "detections": 20,
+        "labeled": 10,
+        "unknown": 10,
+        "jev": 10
+      },
+      "137": {
+        "detections": 21,
+        "labeled": 10,
+        "unknown": 11,
+        "jev": 10
+      },
+      "138": {
+        "detections": 21,
+        "labeled": 9,
+        "unknown": 12,
+        "jev": 9
+      },
+      "139": {
+        "detections": 21,
+        "labeled": 9,
+        "unknown": 12,
+        "jev": 9
+      },
+      "140": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 8,
+        "unknown": 10,
+        "jev": 8
+      },
+      "143": {
+        "detections": 19,
+        "labeled": 9,
+        "unknown": 10,
+        "jev": 9
+      },
+      "144": {
+        "detections": 20,
+        "labeled": 11,
+        "unknown": 9,
+        "jev": 11
+      },
+      "145": {
+        "detections": 22,
+        "labeled": 8,
+        "unknown": 14,
+        "jev": 8
+      },
+      "146": {
+        "detections": 20,
+        "labeled": 9,
+        "unknown": 11,
+        "jev": 9
+      },
+      "147": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "148": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "149": {
+        "detections": 19,
+        "labeled": 11,
+        "unknown": 8,
+        "jev": 11
+      },
+      "150": {
+        "detections": 20,
+        "labeled": 11,
+        "unknown": 9,
+        "jev": 11
+      },
+      "151": {
+        "detections": 19,
+        "labeled": 10,
+        "unknown": 9,
+        "jev": 10
+      },
+      "152": {
+        "detections": 17,
+        "labeled": 10,
+        "unknown": 7,
+        "jev": 10
+      },
+      "153": {
+        "detections": 18,
+        "labeled": 9,
+        "unknown": 9,
+        "jev": 9
+      },
+      "154": {
+        "detections": 16,
+        "labeled": 11,
+        "unknown": 5,
+        "jev": 11
+      },
+      "155": {
+        "detections": 15,
+        "labeled": 11,
+        "unknown": 4,
+        "jev": 11
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 10,
+        "unknown": 3,
+        "jev": 10
+      },
+      "157": {
+        "detections": 15,
+        "labeled": 10,
+        "unknown": 5,
+        "jev": 10
+      },
+      "158": {
+        "detections": 14,
+        "labeled": 10,
+        "unknown": 4,
+        "jev": 10
+      },
+      "159": {
+        "detections": 14,
+        "labeled": 10,
+        "unknown": 4,
+        "jev": 10
+      },
+      "160": {
+        "detections": 15,
+        "labeled": 10,
+        "unknown": 5,
+        "jev": 10
+      },
+      "161": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "162": {
+        "detections": 13,
+        "labeled": 6,
+        "unknown": 7,
+        "jev": 6
+      },
+      "163": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      }
+    },
+    "4": {
+      "90": {
+        "detections": 5,
+        "labeled": 4,
+        "unknown": 1,
+        "jev": 4
+      },
+      "91": {
+        "detections": 5,
+        "labeled": 4,
+        "unknown": 1,
+        "jev": 4
+      },
+      "92": {
+        "detections": 8,
+        "labeled": 4,
+        "unknown": 4,
+        "jev": 4
+      },
+      "93": {
+        "detections": 5,
+        "labeled": 4,
+        "unknown": 1,
+        "jev": 4
+      },
+      "94": {
+        "detections": 7,
+        "labeled": 3,
+        "unknown": 4,
+        "jev": 3
+      },
+      "95": {
+        "detections": 7,
+        "labeled": 2,
+        "unknown": 5,
+        "jev": 2
+      },
+      "96": {
+        "detections": 9,
+        "labeled": 3,
+        "unknown": 6,
+        "jev": 3
+      },
+      "97": {
+        "detections": 8,
+        "labeled": 0,
+        "unknown": 8,
+        "jev": 0
+      },
+      "98": {
+        "detections": 7,
+        "labeled": 0,
+        "unknown": 7,
+        "jev": 0
+      },
+      "99": {
+        "detections": 10,
+        "labeled": 3,
+        "unknown": 7,
+        "jev": 3
+      },
+      "100": {
+        "detections": 13,
+        "labeled": 3,
+        "unknown": 10,
+        "jev": 3
+      },
+      "101": {
+        "detections": 11,
+        "labeled": 2,
+        "unknown": 9,
+        "jev": 2
+      },
+      "102": {
+        "detections": 15,
+        "labeled": 0,
+        "unknown": 15,
+        "jev": 0
+      },
+      "103": {
+        "detections": 12,
+        "labeled": 0,
+        "unknown": 12,
+        "jev": 0
+      },
+      "104": {
+        "detections": 11,
+        "labeled": 3,
+        "unknown": 8,
+        "jev": 3
+      },
+      "105": {
+        "detections": 14,
+        "labeled": 3,
+        "unknown": 11,
+        "jev": 3
+      },
+      "106": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "107": {
+        "detections": 14,
+        "labeled": 3,
+        "unknown": 11,
+        "jev": 3
+      },
+      "108": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "109": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "110": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "111": {
+        "detections": 16,
+        "labeled": 1,
+        "unknown": 15,
+        "jev": 1
+      },
+      "112": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "113": {
+        "detections": 15,
+        "labeled": 2,
+        "unknown": 13,
+        "jev": 2
+      },
+      "114": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "115": {
+        "detections": 14,
+        "labeled": 0,
+        "unknown": 14,
+        "jev": 0
+      },
+      "116": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "117": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "118": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "119": {
+        "detections": 14,
+        "labeled": 4,
+        "unknown": 10,
+        "jev": 4
+      },
+      "120": {
+        "detections": 14,
+        "labeled": 3,
+        "unknown": 11,
+        "jev": 3
+      },
+      "121": {
+        "detections": 13,
+        "labeled": 3,
+        "unknown": 10,
+        "jev": 3
+      },
+      "122": {
+        "detections": 12,
+        "labeled": 4,
+        "unknown": 8,
+        "jev": 4
+      },
+      "123": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "124": {
+        "detections": 15,
+        "labeled": 3,
+        "unknown": 12,
+        "jev": 3
+      },
+      "125": {
+        "detections": 14,
+        "labeled": 3,
+        "unknown": 11,
+        "jev": 3
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      },
+      "127": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 1,
+        "unknown": 13,
+        "jev": 1
+      },
+      "129": {
+        "detections": 14,
+        "labeled": 2,
+        "unknown": 12,
+        "jev": 2
+      },
+      "130": {
+        "detections": 10,
+        "labeled": 1,
+        "unknown": 9,
+        "jev": 1
+      },
+      "131": {
+        "detections": 12,
+        "labeled": 1,
+        "unknown": 11,
+        "jev": 1
+      },
+      "132": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "133": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "134": {
+        "detections": 16,
+        "labeled": 5,
+        "unknown": 11,
+        "jev": 5
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 5,
+        "unknown": 10,
+        "jev": 5
+      },
+      "136": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "137": {
+        "detections": 16,
+        "labeled": 5,
+        "unknown": 11,
+        "jev": 5
+      },
+      "138": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "139": {
+        "detections": 16,
+        "labeled": 7,
+        "unknown": 9,
+        "jev": 7
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 7,
+        "unknown": 9,
+        "jev": 7
+      },
+      "141": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "142": {
+        "detections": 14,
+        "labeled": 8,
+        "unknown": 6,
+        "jev": 8
+      },
+      "143": {
+        "detections": 14,
+        "labeled": 8,
+        "unknown": 6,
+        "jev": 8
+      },
+      "144": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "145": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "146": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "147": {
+        "detections": 16,
+        "labeled": 7,
+        "unknown": 9,
+        "jev": 7
+      },
+      "148": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "149": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "150": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "152": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "153": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "154": {
+        "detections": 12,
+        "labeled": 7,
+        "unknown": 5,
+        "jev": 7
+      },
+      "155": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "157": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "158": {
+        "detections": 11,
+        "labeled": 5,
+        "unknown": 6,
+        "jev": 5
+      },
+      "159": {
+        "detections": 11,
+        "labeled": 6,
+        "unknown": 5,
+        "jev": 6
+      },
+      "160": {
+        "detections": 11,
+        "labeled": 5,
+        "unknown": 6,
+        "jev": 5
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 5,
+        "unknown": 7,
+        "jev": 5
+      },
+      "163": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "164": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      }
+    },
+    "5": {
+      "90": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "91": {
+        "detections": 13,
+        "labeled": 2,
+        "unknown": 11,
+        "jev": 2
+      },
+      "92": {
+        "detections": 12,
+        "labeled": 2,
+        "unknown": 10,
+        "jev": 2
+      },
+      "93": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "94": {
+        "detections": 19,
+        "labeled": 2,
+        "unknown": 17,
+        "jev": 2
+      },
+      "95": {
+        "detections": 17,
+        "labeled": 1,
+        "unknown": 16,
+        "jev": 1
+      },
+      "96": {
+        "detections": 19,
+        "labeled": 1,
+        "unknown": 18,
+        "jev": 1
+      },
+      "97": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "98": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "99": {
+        "detections": 17,
+        "labeled": 1,
+        "unknown": 16,
+        "jev": 1
+      },
+      "100": {
+        "detections": 16,
+        "labeled": 2,
+        "unknown": 14,
+        "jev": 2
+      },
+      "101": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "102": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "103": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "104": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "105": {
+        "detections": 20,
+        "labeled": 2,
+        "unknown": 18,
+        "jev": 2
+      },
+      "106": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "109": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "110": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "111": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "112": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "113": {
+        "detections": 16,
+        "labeled": 1,
+        "unknown": 15,
+        "jev": 1
+      },
+      "114": {
+        "detections": 20,
+        "labeled": 2,
+        "unknown": 18,
+        "jev": 2
+      },
+      "115": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "116": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "117": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "118": {
+        "detections": 19,
+        "labeled": 3,
+        "unknown": 16,
+        "jev": 3
+      },
+      "119": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "120": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "121": {
+        "detections": 19,
+        "labeled": 3,
+        "unknown": 16,
+        "jev": 3
+      },
+      "122": {
+        "detections": 18,
+        "labeled": 3,
+        "unknown": 15,
+        "jev": 3
+      },
+      "123": {
+        "detections": 19,
+        "labeled": 3,
+        "unknown": 16,
+        "jev": 3
+      },
+      "124": {
+        "detections": 19,
+        "labeled": 2,
+        "unknown": 17,
+        "jev": 2
+      },
+      "125": {
+        "detections": 19,
+        "labeled": 1,
+        "unknown": 18,
+        "jev": 1
+      },
+      "126": {
+        "detections": 17,
+        "labeled": 3,
+        "unknown": 14,
+        "jev": 3
+      },
+      "127": {
+        "detections": 17,
+        "labeled": 1,
+        "unknown": 16,
+        "jev": 1
+      },
+      "128": {
+        "detections": 16,
+        "labeled": 1,
+        "unknown": 15,
+        "jev": 1
+      },
+      "129": {
+        "detections": 17,
+        "labeled": 1,
+        "unknown": 16,
+        "jev": 1
+      },
+      "130": {
+        "detections": 17,
+        "labeled": 1,
+        "unknown": 16,
+        "jev": 1
+      },
+      "131": {
+        "detections": 19,
+        "labeled": 2,
+        "unknown": 17,
+        "jev": 2
+      },
+      "132": {
+        "detections": 22,
+        "labeled": 3,
+        "unknown": 19,
+        "jev": 3
+      },
+      "133": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "134": {
+        "detections": 19,
+        "labeled": 4,
+        "unknown": 15,
+        "jev": 4
+      },
+      "135": {
+        "detections": 16,
+        "labeled": 5,
+        "unknown": 11,
+        "jev": 5
+      },
+      "136": {
+        "detections": 18,
+        "labeled": 5,
+        "unknown": 13,
+        "jev": 5
+      },
+      "137": {
+        "detections": 15,
+        "labeled": 5,
+        "unknown": 10,
+        "jev": 5
+      },
+      "138": {
+        "detections": 15,
+        "labeled": 5,
+        "unknown": 10,
+        "jev": 5
+      },
+      "139": {
+        "detections": 16,
+        "labeled": 7,
+        "unknown": 9,
+        "jev": 7
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 10,
+        "unknown": 6,
+        "jev": 10
+      },
+      "141": {
+        "detections": 17,
+        "labeled": 12,
+        "unknown": 5,
+        "jev": 12
+      },
+      "142": {
+        "detections": 18,
+        "labeled": 10,
+        "unknown": 8,
+        "jev": 10
+      },
+      "143": {
+        "detections": 16,
+        "labeled": 10,
+        "unknown": 6,
+        "jev": 10
+      },
+      "144": {
+        "detections": 17,
+        "labeled": 10,
+        "unknown": 7,
+        "jev": 10
+      },
+      "145": {
+        "detections": 15,
+        "labeled": 11,
+        "unknown": 4,
+        "jev": 11
+      },
+      "146": {
+        "detections": 18,
+        "labeled": 11,
+        "unknown": 7,
+        "jev": 11
+      },
+      "147": {
+        "detections": 15,
+        "labeled": 9,
+        "unknown": 6,
+        "jev": 9
+      },
+      "148": {
+        "detections": 13,
+        "labeled": 8,
+        "unknown": 5,
+        "jev": 8
+      },
+      "149": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "150": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "152": {
+        "detections": 17,
+        "labeled": 8,
+        "unknown": 9,
+        "jev": 8
+      },
+      "153": {
+        "detections": 13,
+        "labeled": 9,
+        "unknown": 4,
+        "jev": 9
+      },
+      "154": {
+        "detections": 12,
+        "labeled": 8,
+        "unknown": 4,
+        "jev": 8
+      },
+      "155": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "156": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "157": {
+        "detections": 10,
+        "labeled": 5,
+        "unknown": 5,
+        "jev": 5
+      },
+      "158": {
+        "detections": 11,
+        "labeled": 4,
+        "unknown": 7,
+        "jev": 4
+      },
+      "159": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "160": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "161": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 5,
+        "unknown": 7,
+        "jev": 5
+      },
+      "163": {
+        "detections": 12,
+        "labeled": 5,
+        "unknown": 7,
+        "jev": 5
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      }
+    },
+    "6": {
+      "90": {
+        "detections": 6,
+        "labeled": 3,
+        "unknown": 3,
+        "jev": 3
+      },
+      "91": {
+        "detections": 6,
+        "labeled": 3,
+        "unknown": 3,
+        "jev": 3
+      },
+      "92": {
+        "detections": 7,
+        "labeled": 3,
+        "unknown": 4,
+        "jev": 3
+      },
+      "93": {
+        "detections": 8,
+        "labeled": 3,
+        "unknown": 5,
+        "jev": 3
+      },
+      "94": {
+        "detections": 7,
+        "labeled": 3,
+        "unknown": 4,
+        "jev": 3
+      },
+      "95": {
+        "detections": 11,
+        "labeled": 2,
+        "unknown": 9,
+        "jev": 2
+      },
+      "96": {
+        "detections": 9,
+        "labeled": 3,
+        "unknown": 6,
+        "jev": 3
+      },
+      "97": {
+        "detections": 8,
+        "labeled": 0,
+        "unknown": 8,
+        "jev": 0
+      },
+      "98": {
+        "detections": 7,
+        "labeled": 0,
+        "unknown": 7,
+        "jev": 0
+      },
+      "99": {
+        "detections": 8,
+        "labeled": 0,
+        "unknown": 8,
+        "jev": 0
+      },
+      "100": {
+        "detections": 8,
+        "labeled": 0,
+        "unknown": 8,
+        "jev": 0
+      },
+      "101": {
+        "detections": 12,
+        "labeled": 3,
+        "unknown": 9,
+        "jev": 3
+      },
+      "102": {
+        "detections": 13,
+        "labeled": 0,
+        "unknown": 13,
+        "jev": 0
+      },
+      "103": {
+        "detections": 16,
+        "labeled": 0,
+        "unknown": 16,
+        "jev": 0
+      },
+      "104": {
+        "detections": 15,
+        "labeled": 4,
+        "unknown": 11,
+        "jev": 4
+      },
+      "105": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "106": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "107": {
+        "detections": 19,
+        "labeled": 1,
+        "unknown": 18,
+        "jev": 1
+      },
+      "108": {
+        "detections": 18,
+        "labeled": 1,
+        "unknown": 17,
+        "jev": 1
+      },
+      "109": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "110": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "112": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "113": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "114": {
+        "detections": 16,
+        "labeled": 1,
+        "unknown": 15,
+        "jev": 1
+      },
+      "115": {
+        "detections": 15,
+        "labeled": 0,
+        "unknown": 15,
+        "jev": 0
+      },
+      "116": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "117": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "118": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "119": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "120": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "121": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "122": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "123": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "125": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "127": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "129": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "130": {
+        "detections": 10,
+        "labeled": 6,
+        "unknown": 4,
+        "jev": 6
+      },
+      "131": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "132": {
+        "detections": 11,
+        "labeled": 7,
+        "unknown": 4,
+        "jev": 7
+      },
+      "133": {
+        "detections": 12,
+        "labeled": 7,
+        "unknown": 5,
+        "jev": 7
+      },
+      "134": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "135": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "136": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "137": {
+        "detections": 14,
+        "labeled": 10,
+        "unknown": 4,
+        "jev": 10
+      },
+      "138": {
+        "detections": 15,
+        "labeled": 9,
+        "unknown": 6,
+        "jev": 9
+      },
+      "139": {
+        "detections": 13,
+        "labeled": 10,
+        "unknown": 3,
+        "jev": 10
+      },
+      "140": {
+        "detections": 14,
+        "labeled": 10,
+        "unknown": 4,
+        "jev": 10
+      },
+      "141": {
+        "detections": 14,
+        "labeled": 11,
+        "unknown": 3,
+        "jev": 11
+      },
+      "142": {
+        "detections": 12,
+        "labeled": 11,
+        "unknown": 1,
+        "jev": 11
+      },
+      "143": {
+        "detections": 13,
+        "labeled": 9,
+        "unknown": 4,
+        "jev": 9
+      },
+      "144": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "145": {
+        "detections": 12,
+        "labeled": 8,
+        "unknown": 4,
+        "jev": 8
+      },
+      "146": {
+        "detections": 13,
+        "labeled": 10,
+        "unknown": 3,
+        "jev": 10
+      },
+      "147": {
+        "detections": 13,
+        "labeled": 10,
+        "unknown": 3,
+        "jev": 10
+      },
+      "148": {
+        "detections": 12,
+        "labeled": 8,
+        "unknown": 4,
+        "jev": 8
+      },
+      "149": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "150": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "151": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "152": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      },
+      "153": {
+        "detections": 14,
+        "labeled": 8,
+        "unknown": 6,
+        "jev": 8
+      },
+      "154": {
+        "detections": 15,
+        "labeled": 10,
+        "unknown": 5,
+        "jev": 10
+      },
+      "155": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "156": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "157": {
+        "detections": 11,
+        "labeled": 7,
+        "unknown": 4,
+        "jev": 7
+      },
+      "158": {
+        "detections": 14,
+        "labeled": 10,
+        "unknown": 4,
+        "jev": 10
+      },
+      "159": {
+        "detections": 10,
+        "labeled": 8,
+        "unknown": 2,
+        "jev": 8
+      },
+      "160": {
+        "detections": 11,
+        "labeled": 5,
+        "unknown": 6,
+        "jev": 5
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 7,
+        "unknown": 6,
+        "jev": 7
+      },
+      "162": {
+        "detections": 12,
+        "labeled": 6,
+        "unknown": 6,
+        "jev": 6
+      },
+      "163": {
+        "detections": 13,
+        "labeled": 6,
+        "unknown": 7,
+        "jev": 6
+      },
+      "164": {
+        "detections": 15,
+        "labeled": 7,
+        "unknown": 8,
+        "jev": 7
+      }
+    },
+    "7": {
+      "90": {
+        "detections": 19,
+        "labeled": 6,
+        "unknown": 13,
+        "jev": 6
+      },
+      "91": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "92": {
+        "detections": 21,
+        "labeled": 6,
+        "unknown": 15,
+        "jev": 6
+      },
+      "93": {
+        "detections": 21,
+        "labeled": 6,
+        "unknown": 15,
+        "jev": 6
+      },
+      "94": {
+        "detections": 20,
+        "labeled": 6,
+        "unknown": 14,
+        "jev": 6
+      },
+      "95": {
+        "detections": 18,
+        "labeled": 6,
+        "unknown": 12,
+        "jev": 6
+      },
+      "96": {
+        "detections": 16,
+        "labeled": 5,
+        "unknown": 11,
+        "jev": 5
+      },
+      "97": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "98": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "99": {
+        "detections": 12,
+        "labeled": 4,
+        "unknown": 8,
+        "jev": 4
+      },
+      "100": {
+        "detections": 14,
+        "labeled": 3,
+        "unknown": 11,
+        "jev": 3
+      },
+      "101": {
+        "detections": 14,
+        "labeled": 1,
+        "unknown": 13,
+        "jev": 1
+      },
+      "102": {
+        "detections": 11,
+        "labeled": 0,
+        "unknown": 11,
+        "jev": 0
+      },
+      "103": {
+        "detections": 15,
+        "labeled": 0,
+        "unknown": 15,
+        "jev": 0
+      },
+      "104": {
+        "detections": 16,
+        "labeled": 4,
+        "unknown": 12,
+        "jev": 4
+      },
+      "105": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "106": {
+        "detections": 20,
+        "labeled": 5,
+        "unknown": 15,
+        "jev": 5
+      },
+      "107": {
+        "detections": 18,
+        "labeled": 4,
+        "unknown": 14,
+        "jev": 4
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 4,
+        "unknown": 15,
+        "jev": 4
+      },
+      "109": {
+        "detections": 17,
+        "labeled": 2,
+        "unknown": 15,
+        "jev": 2
+      },
+      "110": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "111": {
+        "detections": 18,
+        "labeled": 2,
+        "unknown": 16,
+        "jev": 2
+      },
+      "112": {
+        "detections": 18,
+        "labeled": 3,
+        "unknown": 15,
+        "jev": 3
+      },
+      "113": {
+        "detections": 18,
+        "labeled": 1,
+        "unknown": 17,
+        "jev": 1
+      },
+      "114": {
+        "detections": 18,
+        "labeled": 4,
+        "unknown": 14,
+        "jev": 4
+      },
+      "115": {
+        "detections": 18,
+        "labeled": 0,
+        "unknown": 18,
+        "jev": 0
+      },
+      "116": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "117": {
+        "detections": 18,
+        "labeled": 12,
+        "unknown": 6,
+        "jev": 12
+      },
+      "118": {
+        "detections": 19,
+        "labeled": 11,
+        "unknown": 8,
+        "jev": 11
+      },
+      "119": {
+        "detections": 18,
+        "labeled": 12,
+        "unknown": 6,
+        "jev": 12
+      },
+      "120": {
+        "detections": 19,
+        "labeled": 7,
+        "unknown": 12,
+        "jev": 7
+      },
+      "121": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "122": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "123": {
+        "detections": 17,
+        "labeled": 8,
+        "unknown": 9,
+        "jev": 8
+      },
+      "124": {
+        "detections": 18,
+        "labeled": 8,
+        "unknown": 10,
+        "jev": 8
+      },
+      "125": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "126": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "127": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "128": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "129": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "130": {
+        "detections": 16,
+        "labeled": 8,
+        "unknown": 8,
+        "jev": 8
+      },
+      "131": {
+        "detections": 16,
+        "labeled": 9,
+        "unknown": 7,
+        "jev": 9
+      },
+      "132": {
+        "detections": 17,
+        "labeled": 9,
+        "unknown": 8,
+        "jev": 9
+      },
+      "133": {
+        "detections": 16,
+        "labeled": 9,
+        "unknown": 7,
+        "jev": 9
+      },
+      "134": {
+        "detections": 17,
+        "labeled": 9,
+        "unknown": 8,
+        "jev": 9
+      },
+      "135": {
+        "detections": 19,
+        "labeled": 9,
+        "unknown": 10,
+        "jev": 9
+      },
+      "136": {
+        "detections": 16,
+        "labeled": 9,
+        "unknown": 7,
+        "jev": 9
+      },
+      "137": {
+        "detections": 17,
+        "labeled": 11,
+        "unknown": 6,
+        "jev": 11
+      },
+      "138": {
+        "detections": 18,
+        "labeled": 10,
+        "unknown": 8,
+        "jev": 10
+      },
+      "139": {
+        "detections": 19,
+        "labeled": 10,
+        "unknown": 9,
+        "jev": 10
+      },
+      "140": {
+        "detections": 16,
+        "labeled": 13,
+        "unknown": 3,
+        "jev": 13
+      },
+      "141": {
+        "detections": 18,
+        "labeled": 12,
+        "unknown": 6,
+        "jev": 12
+      },
+      "142": {
+        "detections": 19,
+        "labeled": 13,
+        "unknown": 6,
+        "jev": 13
+      },
+      "143": {
+        "detections": 19,
+        "labeled": 12,
+        "unknown": 7,
+        "jev": 12
+      },
+      "144": {
+        "detections": 17,
+        "labeled": 10,
+        "unknown": 7,
+        "jev": 10
+      },
+      "145": {
+        "detections": 18,
+        "labeled": 11,
+        "unknown": 7,
+        "jev": 11
+      },
+      "146": {
+        "detections": 18,
+        "labeled": 11,
+        "unknown": 7,
+        "jev": 11
+      },
+      "147": {
+        "detections": 20,
+        "labeled": 10,
+        "unknown": 10,
+        "jev": 10
+      },
+      "148": {
+        "detections": 19,
+        "labeled": 9,
+        "unknown": 10,
+        "jev": 9
+      },
+      "149": {
+        "detections": 19,
+        "labeled": 7,
+        "unknown": 12,
+        "jev": 7
+      },
+      "150": {
+        "detections": 15,
+        "labeled": 9,
+        "unknown": 6,
+        "jev": 9
+      },
+      "151": {
+        "detections": 17,
+        "labeled": 8,
+        "unknown": 9,
+        "jev": 8
+      },
+      "152": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "153": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "154": {
+        "detections": 15,
+        "labeled": 6,
+        "unknown": 9,
+        "jev": 6
+      },
+      "155": {
+        "detections": 16,
+        "labeled": 6,
+        "unknown": 10,
+        "jev": 6
+      },
+      "156": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "157": {
+        "detections": 14,
+        "labeled": 8,
+        "unknown": 6,
+        "jev": 8
+      },
+      "158": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "159": {
+        "detections": 14,
+        "labeled": 8,
+        "unknown": 6,
+        "jev": 8
+      },
+      "160": {
+        "detections": 14,
+        "labeled": 6,
+        "unknown": 8,
+        "jev": 6
+      },
+      "161": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      },
+      "162": {
+        "detections": 13,
+        "labeled": 6,
+        "unknown": 7,
+        "jev": 6
+      },
+      "163": {
+        "detections": 10,
+        "labeled": 4,
+        "unknown": 6,
+        "jev": 4
+      },
+      "164": {
+        "detections": 13,
+        "labeled": 5,
+        "unknown": 8,
+        "jev": 5
+      }
+    },
+    "8": {
+      "90": {
+        "detections": 22,
+        "labeled": 6,
+        "unknown": 16,
+        "jev": 6
+      },
+      "91": {
+        "detections": 23,
+        "labeled": 6,
+        "unknown": 17,
+        "jev": 6
+      },
+      "92": {
+        "detections": 22,
+        "labeled": 6,
+        "unknown": 16,
+        "jev": 6
+      },
+      "93": {
+        "detections": 24,
+        "labeled": 6,
+        "unknown": 18,
+        "jev": 6
+      },
+      "94": {
+        "detections": 23,
+        "labeled": 6,
+        "unknown": 17,
+        "jev": 6
+      },
+      "95": {
+        "detections": 22,
+        "labeled": 6,
+        "unknown": 16,
+        "jev": 6
+      },
+      "96": {
+        "detections": 24,
+        "labeled": 6,
+        "unknown": 18,
+        "jev": 6
+      },
+      "97": {
+        "detections": 24,
+        "labeled": 0,
+        "unknown": 24,
+        "jev": 0
+      },
+      "98": {
+        "detections": 21,
+        "labeled": 0,
+        "unknown": 21,
+        "jev": 0
+      },
+      "99": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "100": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "101": {
+        "detections": 17,
+        "labeled": 6,
+        "unknown": 11,
+        "jev": 6
+      },
+      "102": {
+        "detections": 14,
+        "labeled": 0,
+        "unknown": 14,
+        "jev": 0
+      },
+      "103": {
+        "detections": 17,
+        "labeled": 0,
+        "unknown": 17,
+        "jev": 0
+      },
+      "104": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "105": {
+        "detections": 15,
+        "labeled": 1,
+        "unknown": 14,
+        "jev": 1
+      },
+      "106": {
+        "detections": 16,
+        "labeled": 3,
+        "unknown": 13,
+        "jev": 3
+      },
+      "107": {
+        "detections": 15,
+        "labeled": 2,
+        "unknown": 13,
+        "jev": 2
+      },
+      "108": {
+        "detections": 19,
+        "labeled": 2,
+        "unknown": 17,
+        "jev": 2
+      },
+      "109": {
+        "detections": 19,
+        "labeled": 3,
+        "unknown": 16,
+        "jev": 3
+      },
+      "110": {
+        "detections": 16,
+        "labeled": 3,
+        "unknown": 13,
+        "jev": 3
+      },
+      "111": {
+        "detections": 17,
+        "labeled": 3,
+        "unknown": 14,
+        "jev": 3
+      },
+      "112": {
+        "detections": 16,
+        "labeled": 4,
+        "unknown": 12,
+        "jev": 4
+      },
+      "113": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "114": {
+        "detections": 17,
+        "labeled": 4,
+        "unknown": 13,
+        "jev": 4
+      },
+      "115": {
+        "detections": 20,
+        "labeled": 0,
+        "unknown": 20,
+        "jev": 0
+      },
+      "116": {
+        "detections": 19,
+        "labeled": 0,
+        "unknown": 19,
+        "jev": 0
+      },
+      "117": {
+        "detections": 20,
+        "labeled": 13,
+        "unknown": 7,
+        "jev": 13
+      },
+      "118": {
+        "detections": 20,
+        "labeled": 12,
+        "unknown": 8,
+        "jev": 12
+      },
+      "119": {
+        "detections": 21,
+        "labeled": 12,
+        "unknown": 9,
+        "jev": 12
+      },
+      "120": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "121": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "122": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "123": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "124": {
+        "detections": 16,
+        "labeled": 7,
+        "unknown": 9,
+        "jev": 7
+      },
+      "125": {
+        "detections": 15,
+        "labeled": 8,
+        "unknown": 7,
+        "jev": 8
+      },
+      "126": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "127": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "128": {
+        "detections": 14,
+        "labeled": 7,
+        "unknown": 7,
+        "jev": 7
+      },
+      "129": {
+        "detections": 18,
+        "labeled": 8,
+        "unknown": 10,
+        "jev": 8
+      },
+      "130": {
+        "detections": 18,
+        "labeled": 7,
+        "unknown": 11,
+        "jev": 7
+      },
+      "131": {
+        "detections": 19,
+        "labeled": 8,
+        "unknown": 11,
+        "jev": 8
+      },
+      "132": {
+        "detections": 20,
+        "labeled": 8,
+        "unknown": 12,
+        "jev": 8
+      },
+      "133": {
+        "detections": 20,
+        "labeled": 9,
+        "unknown": 11,
+        "jev": 9
+      },
+      "134": {
+        "detections": 23,
+        "labeled": 10,
+        "unknown": 13,
+        "jev": 10
+      },
+      "135": {
+        "detections": 22,
+        "labeled": 10,
+        "unknown": 12,
+        "jev": 10
+      },
+      "136": {
+        "detections": 20,
+        "labeled": 13,
+        "unknown": 7,
+        "jev": 13
+      },
+      "137": {
+        "detections": 24,
+        "labeled": 15,
+        "unknown": 9,
+        "jev": 15
+      },
+      "138": {
+        "detections": 25,
+        "labeled": 14,
+        "unknown": 11,
+        "jev": 14
+      },
+      "139": {
+        "detections": 22,
+        "labeled": 12,
+        "unknown": 10,
+        "jev": 12
+      },
+      "140": {
+        "detections": 24,
+        "labeled": 14,
+        "unknown": 10,
+        "jev": 14
+      },
+      "141": {
+        "detections": 20,
+        "labeled": 13,
+        "unknown": 7,
+        "jev": 13
+      },
+      "142": {
+        "detections": 22,
+        "labeled": 14,
+        "unknown": 8,
+        "jev": 14
+      },
+      "143": {
+        "detections": 20,
+        "labeled": 14,
+        "unknown": 6,
+        "jev": 14
+      },
+      "144": {
+        "detections": 21,
+        "labeled": 15,
+        "unknown": 6,
+        "jev": 15
+      },
+      "145": {
+        "detections": 19,
+        "labeled": 12,
+        "unknown": 7,
+        "jev": 12
+      },
+      "146": {
+        "detections": 21,
+        "labeled": 13,
+        "unknown": 8,
+        "jev": 13
+      },
+      "147": {
+        "detections": 19,
+        "labeled": 12,
+        "unknown": 7,
+        "jev": 12
+      },
+      "148": {
+        "detections": 25,
+        "labeled": 14,
+        "unknown": 11,
+        "jev": 14
+      },
+      "149": {
+        "detections": 22,
+        "labeled": 13,
+        "unknown": 9,
+        "jev": 13
+      },
+      "150": {
+        "detections": 26,
+        "labeled": 14,
+        "unknown": 12,
+        "jev": 14
+      },
+      "151": {
+        "detections": 24,
+        "labeled": 14,
+        "unknown": 10,
+        "jev": 14
+      },
+      "152": {
+        "detections": 21,
+        "labeled": 12,
+        "unknown": 9,
+        "jev": 12
+      },
+      "153": {
+        "detections": 23,
+        "labeled": 10,
+        "unknown": 13,
+        "jev": 10
+      },
+      "154": {
+        "detections": 24,
+        "labeled": 11,
+        "unknown": 13,
+        "jev": 11
+      },
+      "155": {
+        "detections": 18,
+        "labeled": 11,
+        "unknown": 7,
+        "jev": 11
+      },
+      "156": {
+        "detections": 19,
+        "labeled": 9,
+        "unknown": 10,
+        "jev": 9
+      },
+      "157": {
+        "detections": 20,
+        "labeled": 12,
+        "unknown": 8,
+        "jev": 12
+      },
+      "158": {
+        "detections": 19,
+        "labeled": 12,
+        "unknown": 7,
+        "jev": 12
+      },
+      "159": {
+        "detections": 20,
+        "labeled": 11,
+        "unknown": 9,
+        "jev": 11
+      },
+      "160": {
+        "detections": 23,
+        "labeled": 9,
+        "unknown": 14,
+        "jev": 9
+      },
+      "161": {
+        "detections": 20,
+        "labeled": 7,
+        "unknown": 13,
+        "jev": 7
+      },
+      "162": {
+        "detections": 19,
+        "labeled": 5,
+        "unknown": 14,
+        "jev": 5
+      },
+      "163": {
+        "detections": 13,
+        "labeled": 3,
+        "unknown": 10,
+        "jev": 3
+      },
+      "164": {
+        "detections": 14,
+        "labeled": 5,
+        "unknown": 9,
+        "jev": 5
+      }
+    }
+  },
+  "totals": {
+    "detections": 10412,
+    "labeled": 3546,
+    "unknown": 6866,
+    "jev": 3546
+  },
+  "preview_only": false,
+  "mode": "jev_only",
+  "all_named_observations_from_jev": true,
+  "provenance_methods": {
+    "jev": [
+      "jev_numeric_2d_proposal",
+      "jev_numeric_geometry_proposal"
+    ]
+  },
+  "input_sha256": {
+    "labels": "e2e121e39b6e0d4d6eab37c97438ba717c9f6733c4e2918af02e974f8be2a20d"
+  },
+  "validation_summary": {
+    "1차 판정": {
+      "카메라와 프레임 묶음": 600,
+      "판정한 새 검출점": 10412,
+      "Jev가 처음 이름을 고른 관측": 7828
+    },
+    "충돌 재판정": {
+      "재심 묶음": 30,
+      "재심 후 최종 남은 관측": 7,
+      "반복 횟수": 1
+    },
+    "최종 2D 표시": {
+      "이전 라벨 복사": 0,
+      "Jev 이름 관측": 3546,
+      "이름 보류 관측": 6866,
+      "1차 응답에서 유지": 3539,
+      "재심 응답에서 유지": 7,
+      "카메라 수": 8
+    },
+    "별도 검증": {
+      "정답을 가린 기존 ID": 136,
+      "2D 입력 최종 정답": 40,
+      "2D와 3D 예측 입력 최종 정답": 50,
+      "3D 예측 입력 최종 오답": 0,
+      "3D 예측 입력 보류": 86,
+      "정답 없는 제안은 미채점": 20
+    }
+  },
+  "notice": "이전 라벨은 참고 자료입니다. 새 검출점의 이름은 Jev 응답을 기하·시간 검사한 뒤 표시했습니다."
+}
